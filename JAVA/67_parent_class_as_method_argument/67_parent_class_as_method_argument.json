@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_67_parent_class_as_method_argument/1_instance_67_parent_class_as_method_argument.json"
+    ]
+}

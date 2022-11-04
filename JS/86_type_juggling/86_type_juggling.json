@@ -1,0 +1,12 @@
+{
+    "name": "Type Juggling",
+    "definition": "The first HTML form takes as input the number of characters of the string put in the second form. The function simply prints the second string after having performed on it some operations. _CharCodeAt_ returns the ASCII number of the specified index of the string. _String.fromCharCode_ operates as the contrary.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_86_type_juggling/1_instance_86_type_juggling.json",
+        "./2_instance_86_type_juggling/2_instance_86_type_juggling.json",
+        "./3_instance_86_type_juggling/3_instance_86_type_juggling.json",
+        "./4_instance_86_type_juggling/4_instance_86_type_juggling.json"
+    ]
+}

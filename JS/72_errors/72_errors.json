@@ -1,0 +1,15 @@
+{
+    "name": "Errors",
+    "definition": "Error is the parent object, all the others are inherited. Noticeable, all Errors that inherits from Error object, 'reflect' also the outcomes given by the arsenal toolset.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_72_errors/1_instance_72_errors.json",
+        "./2_instance_72_errors/2_instance_72_errors.json",
+        "./3_instance_72_errors/3_instance_72_errors.json",
+        "./4_instance_72_errors/4_instance_72_errors.json",
+        "./5_instance_72_errors/5_instance_72_errors.json",
+        "./6_instance_72_errors/6_instance_72_errors.json",
+        "./7_instance_72_errors/7_instance_72_errors.json"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_34_bind_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_34_bind_server.js",
+        "sink_line": 26,
+        "source_file": "./1_instance_34_bind_server.js",
+        "source_line": 18,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./1_instance_34_bind.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "explicity write a function and pass this with the arguments",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

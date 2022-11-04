@@ -1,0 +1,9 @@
+{
+    "name": "For Of",
+    "definition": "For ... of statement creates a loop iterating over iterable objects (array, map, set, arguments object etc).",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_93_for_of/1_instance_93_for_of.json"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Object to Array",
+    "description": "",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_46_object_to_array/1_instance_46_object_to_array.json"
+    ]
+}

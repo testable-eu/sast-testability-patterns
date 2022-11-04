@@ -1,0 +1,11 @@
+{
+    "name": "Promise",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_68_promise/1_instance_68_promise.json",
+        "./2_instance_68_promise/2_instance_68_promise.json",
+        "./3_instance_68_promise/3_instance_68_promise.json"
+    ]
+}

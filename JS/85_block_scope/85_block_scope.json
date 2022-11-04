@@ -1,0 +1,9 @@
+{
+    "name": "Block Scope",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_85_block_scope/1_instance_85_block_scope.json"
+    ]
+}

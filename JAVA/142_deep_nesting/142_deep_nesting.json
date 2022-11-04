@@ -1,0 +1,14 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_142_deep_nesting/1_instance_142_deep_nesting.json",
+        "./2_instance_142_deep_nesting/2_instance_142_deep_nesting.json",
+        "./3_instance_142_deep_nesting/3_instance_142_deep_nesting.json"
+    ]
+}

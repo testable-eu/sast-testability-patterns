@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_20_use_with_closures.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./1_instance_20_use_with_closures.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
+        "notes": "To be perfect this rule could check that the BIND_LEXICAL is not associated to the reference of the variable used."
+    },
+    "compile": {
+        "binary": "./1_instance_20_use_with_closures.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_20_use_with_closures.php",
+        "sink_line": 13,
+        "source_file": "./1_instance_20_use_with_closures.php",
+        "source_line": 2,
+        "expectation": false
+    },
+    "properties": {
+        "category": "D2",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": true
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

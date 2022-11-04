@@ -1,0 +1,9 @@
+{
+    "name": "ForEach in Nested",
+    "definition": "forEach can be used over a callback function, but it has to be changed in a loop with that function body if it is in a too deep level of functions nested.Y",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_23_forEach_in_nested/1_instance_23_forEach_in_nested.json"
+    ]
+}

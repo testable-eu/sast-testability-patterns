@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./7_instance_7_string_arithmetic_operations.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./7_instance_7_string_arithmetic_operations.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
+        "notes": "To be Perfect the discovery rule should be able to recognize when the variable, on which the operation is performed, is not a integer"
+    },
+    "compile": {
+        "binary": "",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./7_instance_7_string_arithmetic_operations.php",
+        "sink_line": 9,
+        "source_file": "./7_instance_7_string_arithmetic_operations.php",
+        "source_line": 6,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": true,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

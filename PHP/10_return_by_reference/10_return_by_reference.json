@@ -1,0 +1,9 @@
+{
+    "name": "Return By Reference",
+    "description": "[Return by reference](https://www.php.net/manual/en/language.references.return.php) in PHP, when the variable will be referenced to the returned variable from a specific function. Returning by reference is useful when you want to use a function to find to which variable a reference should be bound. If there are more than one return in the function, the variable will be referenced for the first one.",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_10_return_by_reference/1_instance_10_return_by_reference.json"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Try Catch",
+    "definition": "Function _print_ call _inverse_ which throw exception as parameter passed by HTML form.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_84_try_catch/1_instance_84_try_catch.json",
+        "./2_instance_84_try_catch/2_instance_84_try_catch.json",
+        "./3_instance_84_try_catch/3_instance_84_try_catch.json"
+    ]
+}

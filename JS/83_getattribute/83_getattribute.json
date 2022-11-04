@@ -1,0 +1,9 @@
+{
+    "name": "getAttribute",
+    "definition": "getAttribute could be source of XSS if its content is not sanitized",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_83_getAttribute/1_instance_83_getAttribute.json"
+    ]
+}

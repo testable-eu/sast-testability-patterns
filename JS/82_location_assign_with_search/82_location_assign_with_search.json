@@ -1,0 +1,9 @@
+{
+    "name": "Location Assign With Search",
+    "definition": "_window.location.search_ takes the parameters passed after ? in the URL. While _window.location.assign()_ upload the page with parameter passed as argument. Combination of these two is a testability pattern.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_82_location_assign_with_search/1_instance_82_location_assign_with_search.json"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "window Global",
+    "definition": "Differently from PHP, in JavaScript does not exist the $GLOBALS array through which have access to all the global variables. \nOn the other hand, in JS, all the global variables and functions can be retrieved by _global_",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_43_window_global/1_instance_43_window_global.json"
+    ]
+}

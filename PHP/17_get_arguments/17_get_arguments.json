@@ -1,0 +1,10 @@
+{
+    "name": "Get Arguments",
+    "description": "In PHP it is not possible to define more than one function with the same name, even if the number of arguments are different between the two functions. \n```php\n<?php\nfunction F($x){\necho $x;\n}\nfunction F($x,$y){\necho $x;\necho $y;\n}\nF(2,3);\n// FATAL ERROR: CANNOT RE-DECLARE F\n```\nIn addition to that, It is possible to send arguments to a function more than what it will be received. Then the function [func_get_args](https://www.php.net/manual/en/function.func-get-args.php) will return an array with the rest of the arguments. In PHP7 there is [Variadic](https://gitlab.eurecom.fr/alkasar/static-tools---latex/issues/18) which begin to be used instead of the function func_get_args.\n```php\n<?php\nfunction F($x){\necho $x; // 3\nvar_dump(func_get_args()); // 5, 7 , 11\n}\nF(3,5,7,11);\n```\nThe problem when the scanners are not processing the received arguments with this function.\nThe scanners can solve this pattern, there is no difficulty to receive the array of the arguments from the function. The problem that this feature is only in PHP and it is missed with many of the testing tools. ",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_17_get_arguments/1_instance_17_get_arguments.json",
+        "./2_instance_17_get_arguments/2_instance_17_get_arguments.json"
+    ]
+}

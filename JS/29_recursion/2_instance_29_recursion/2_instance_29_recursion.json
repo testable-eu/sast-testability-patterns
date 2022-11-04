@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./2_instance_29_recursion_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_29_recursion_server.js",
+        "sink_line": 39,
+        "source_file": "./2_instance_29_recursion_server.js",
+        "source_line": 19,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./2_instance_29_recursion.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "call within a loop: while (recursion stop conditions not verified){ function_of_recusion(args) }",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

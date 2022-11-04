@@ -1,0 +1,20 @@
+{
+    "name": "collectors",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_34_collectors/1_instance_34_collectors.json",
+        "./2_instance_34_collectors/2_instance_34_collectors.json",
+        "./3_instance_34_collectors/3_instance_34_collectors.json",
+        "./4_instance_34_collectors/4_instance_34_collectors.json",
+        "./5_instance_34_collectors/5_instance_34_collectors.json",
+        "./6_instance_34_collectors/6_instance_34_collectors.json",
+        "./7_instance_34_collectors/7_instance_34_collectors.json",
+        "./8_instance_34_collectors/8_instance_34_collectors.json",
+        "./9_instance_34_collectors/9_instance_34_collectors.json"
+    ]
+}

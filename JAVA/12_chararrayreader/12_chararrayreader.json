@@ -1,0 +1,13 @@
+{
+    "name": "CharArrayReader",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_12_chararrayreader/1_instance_12_chararrayreader.json",
+        "./2_instance_12_chararrayreader/2_instance_12_chararrayreader.json"
+    ]
+}

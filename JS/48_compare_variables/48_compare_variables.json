@@ -1,0 +1,9 @@
+{
+    "name": "Compare Variables",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_48_compare_variables/1_instance_48_compare_variables.json"
+    ]
+}

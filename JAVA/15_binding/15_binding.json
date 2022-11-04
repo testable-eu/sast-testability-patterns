@@ -1,0 +1,14 @@
+{
+    "name": "binding",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_15_binding/1_instance_15_binding.json",
+        "./2_instance_15_binding/2_instance_15_binding.json",
+        "./3_instance_15_binding/3_instance_15_binding.json"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_41_finalize/1_instance_41_finalize.json"
+    ]
+}

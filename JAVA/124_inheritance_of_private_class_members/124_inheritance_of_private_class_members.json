@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_124_inheritance_of_private_class_members/1_instance_124_inheritance_of_private_class_members.json"
+    ]
+}

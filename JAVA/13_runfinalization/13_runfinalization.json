@@ -1,0 +1,13 @@
+{
+    "name": "runFinalization",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_13_runfinalization/1_instance_13_runfinalization.json",
+        "./2_instance_13_runfinalization/2_instance_13_runfinalization.json"
+    ]
+}

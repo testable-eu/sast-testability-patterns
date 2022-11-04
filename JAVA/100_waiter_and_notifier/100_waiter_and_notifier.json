@@ -1,0 +1,12 @@
+{
+    "name": "waiter_and_notifier",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_100_waiter_and_notifier/1_instance_100_waiter_and_notifier.json"
+    ]
+}

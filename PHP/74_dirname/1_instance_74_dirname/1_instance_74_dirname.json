@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./folder/a.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./1_instance_74_dirname.py",
+        "method": "python",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./folder/a.php",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./_includes/ttt/b.php",
+        "sink_line": 3,
+        "source_file": "./folder/a.php",
+        "source_line": 3,
+        "expectation": true
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": true,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

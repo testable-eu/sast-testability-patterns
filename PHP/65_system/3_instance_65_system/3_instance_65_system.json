@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./3_instance_65_system.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./3_instance_65_system.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./3_instance_65_system.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "path_manipulation",
+        "sink_file": "./3_instance_65_system.php",
+        "sink_line": 3,
+        "source_file": "./3_instance_65_system.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": true,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

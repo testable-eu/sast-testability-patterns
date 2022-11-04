@@ -1,0 +1,13 @@
+{
+    "name": "Callback Functions",
+    "description": "[Callbacks](https://www.php.net/manual/en/language.types.callable.php) are defined in PHP.\n>>>\nSome functions like call_user_func() or usort() accept user-defined callback functions as a parameter. Calls the callback given by the first parameter and passes the remaining parameters as arguments.\nSpecial cases:\n*  call_user_func function\n*  call_user_func_array function\n*  usort function\n*  call_user_func with reference\n*  call_user_func_array with reference\n*  function name as a variable (hard coded and source variable)\n*  call_user_func with object\n>>>\nNote:\nCallbacks registered with functions such as call_user_func() and call_user_func_array() will not be called if there is an uncaught exception thrown in a previous callback.",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_80_callback_functions/1_instance_80_callback_functions.json",
+        "./2_instance_80_callback_functions/2_instance_80_callback_functions.json",
+        "./3_instance_80_callback_functions/3_instance_80_callback_functions.json",
+        "./4_instance_80_callback_functions/4_instance_80_callback_functions.json",
+        "./5_instance_80_callback_functions/5_instance_80_callback_functions.json"
+    ]
+}

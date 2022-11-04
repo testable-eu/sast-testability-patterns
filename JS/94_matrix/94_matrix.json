@@ -1,0 +1,11 @@
+{
+    "name": "Matrix",
+    "definition": "Creation and assignment to a simple bi-dimensional array",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_94_matrix/1_instance_94_matrix.json",
+        "./2_instance_94_matrix/2_instance_94_matrix.json",
+        "./3_instance_94_matrix/3_instance_94_matrix.json"
+    ]
+}

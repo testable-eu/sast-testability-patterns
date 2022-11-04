@@ -1,0 +1,9 @@
+{
+    "name": "Global Variables",
+    "description": "",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_2_global_variables/1_instance_2_global_variables.json"
+    ]
+}

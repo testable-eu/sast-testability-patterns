@@ -1,0 +1,11 @@
+{
+    "name": "Object Literals",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_96_object_literals/1_instance_96_object_literals.json",
+        "./2_instance_96_object_literals/2_instance_96_object_literals.json",
+        "./3_instance_96_object_literals/3_instance_96_object_literals.json"
+    ]
+}

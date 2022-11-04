@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_75_functions_in_object_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_75_functions_in_object_server.js",
+        "sink_line": 43,
+        "source_file": "./1_instance_75_functions_in_object_server.js",
+        "source_line": 19,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./1_instance_75_functions_in_object.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "./server_rewritten.js",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

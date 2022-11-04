@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./2_instance_3_global_array.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./../1_instance_3_global_array/1_instance_3_global_array.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
+        "notes": "Using discovery rule of another instance. A specific discovery rule for this instance would be more accurate if we could check if the GLOBALS fetch is done INSIDE the main block"
+    },
+    "remediation": {
+        "notes": null,
+        "transformation": null,
+        "modeling_rule": null
+    },
+    "compile": {
+        "binary": "",
+        "dependencies": null,
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_3_global_array.php",
+        "sink_line": 5,
+        "source_file": "./2_instance_3_global_array.php",
+        "source_line": 3,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    }
+}

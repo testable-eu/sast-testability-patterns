@@ -1,0 +1,9 @@
+{
+    "name": "Finite",
+    "definition": "Function isFinite() determines whether the passed value is a finite number. If  needed, the parameter is first converted to a number. It returns a boolean value",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_24_finite/1_instance_24_finite.json"
+    ]
+}

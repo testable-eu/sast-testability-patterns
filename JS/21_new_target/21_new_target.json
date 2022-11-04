@@ -1,0 +1,9 @@
+{
+    "name": "New Target",
+    "definition": "_new.target_ lets to detect if a function has been called with _new_ or not. (normally is undefined).",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_21_new_target/1_instance_21_new_target.json"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "list_copyof",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_106_list_copyof/1_instance_106_list_copyof.json"
+    ]
+}

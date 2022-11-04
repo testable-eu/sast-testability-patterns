@@ -1,0 +1,9 @@
+{
+    "name": "Object Argument",
+    "description": "",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_23_object_argument/1_instance_23_object_argument.json"
+    ]
+}

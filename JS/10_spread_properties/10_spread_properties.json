@@ -1,0 +1,9 @@
+{
+    "name": "Spread Properties",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_10_spread_properties/1_instance_10_spread_properties.json"
+    ]
+}

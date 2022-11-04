@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_69_create_function.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./1_instance_69_create_function.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./1_instance_69_create_function.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_69_create_function.php",
+        "sink_line": 3,
+        "source_file": "./1_instance_69_create_function.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

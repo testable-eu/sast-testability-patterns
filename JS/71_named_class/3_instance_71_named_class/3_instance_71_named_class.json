@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./3_instance_71_named_class_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./3_instance_71_named_class_server.js",
+        "sink_line": 27,
+        "source_file": "./3_instance_71_named_class_server.js",
+        "source_line": 19,
+        "expectation": false
+    },
+    "discovery": {
+        "rule": "./3_instance_71_named_class.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": true
+    },
+    "remediation": {
+        "notes": "write class not as a variable",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

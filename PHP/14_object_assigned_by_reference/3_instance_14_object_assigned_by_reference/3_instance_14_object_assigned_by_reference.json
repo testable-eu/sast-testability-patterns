@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./3_instance___14_object_assigned_by_reference.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./../1_instance___14_object_assigned_by_reference/1_instance___14_object_assigned_by_reference.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./3_instance___14_object_assigned_by_reference.php",
+        "sink_line": 10,
+        "source_file": "./3_instance___14_object_assigned_by_reference.php",
+        "source_line": 5,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./3_instance_37_generators_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./3_instance_37_generators_server.js",
+        "sink_line": 22,
+        "source_file": "./3_instance_37_generators_server.js",
+        "source_line": 17,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./3_instance_37_generators.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D3",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "return instead of yield and call function in classic way",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

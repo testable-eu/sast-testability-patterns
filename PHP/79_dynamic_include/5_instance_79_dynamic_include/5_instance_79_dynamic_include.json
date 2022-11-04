@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./5_instance_79_dynamic_include.php",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./a.php",
+        "sink_line": 2,
+        "source_file": "./5_instance_79_dynamic_include.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "compile": {
+        "binary": "./5_instance_79_dynamic_include.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "discovery": {
+        "rule": "./5_instance_79_dynamic_include.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

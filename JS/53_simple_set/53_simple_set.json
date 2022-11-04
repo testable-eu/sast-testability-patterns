@@ -1,0 +1,9 @@
+{
+    "name": "Simple Set",
+    "definition": "Set object lets to store unique values of any type. A value in Set may occur only once (it is unique).",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_53_simple_set/1_instance_53_simple_set.json"
+    ]
+}

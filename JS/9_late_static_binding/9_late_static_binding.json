@@ -1,0 +1,9 @@
+{
+    "name": "Late Static Binding",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_9_late_static_binding/1_instance_9_late_static_binding.json"
+    ]
+}

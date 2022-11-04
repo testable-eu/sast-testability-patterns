@@ -1,0 +1,10 @@
+{
+    "name": "Try Catch Finally",
+    "description": "",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_52_try_catch_finally/1_instance_52_try_catch_finally.json",
+        "./2_instance_52_try_catch_finally/2_instance_52_try_catch_finally.json"
+    ]
+}

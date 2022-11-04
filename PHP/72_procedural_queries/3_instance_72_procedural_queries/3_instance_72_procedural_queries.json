@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./3_instance_72_procedural_queries.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "../72_procedural_queries.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./3_instance_72_procedural_queries.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "sqli",
+        "sink_file": "./3_instance_72_procedural_queries.php",
+        "sink_line": 6,
+        "source_file": "./3_instance_72_procedural_queries.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": true,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "InnerHTML outerHTML",
+    "definition": "innerHTML and outerHTML permit to change HTML element on client side (not available for server side JS). ",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_101_innerhtml_outerhtml/1_instance_101_innerhtml_outerhtml.json",
+        "./2_instance_101_innerhtml_outerhtml/2_instance_101_innerhtml_outerhtml.json"
+    ]
+}

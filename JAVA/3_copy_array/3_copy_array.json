@@ -1,0 +1,13 @@
+{
+    "name": "Copy Array",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_3_copy_array/1_instance_3_copy_array.json",
+        "./2_instance_3_copy_array/2_instance_3_copy_array.json"
+    ]
+}

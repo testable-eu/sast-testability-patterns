@@ -1,0 +1,10 @@
+{
+    "name": "Proxy",
+    "definition": "Proxy object permits to intercept certain operations and implement custom behaviors. Proxy object defines a _target_ and an _handler_ object in which _get_ trap is implemented. By this way, a proxied object will not return _undefined_ when get undefined properties.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_89_proxy/1_instance_89_proxy.json",
+        "./2_instance_89_proxy/2_instance_89_proxy.json"
+    ]
+}

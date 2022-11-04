@@ -1,0 +1,13 @@
+{
+    "name": "New Character",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_14_new_character/1_instance_14_new_character.json",
+        "./2_instance_14_new_character/2_instance_14_new_character.json"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_118_re-inheritance_of_fields/1_instance_118_re-inheritance_of_fields.json"
+    ]
+}

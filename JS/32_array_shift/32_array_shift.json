@@ -1,0 +1,10 @@
+{
+    "name": "Array Shift",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_32_array_shift/1_instance_32_array_shift.json",
+        "./2_instance_32_array_shift/2_instance_32_array_shift.json"
+    ]
+}

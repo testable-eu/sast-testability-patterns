@@ -1,0 +1,9 @@
+{
+    "name": "Global Variable",
+    "definition": "The function _F_ change the value of the global variable _result_ by putting inside the value of the html form.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_51_global_variable/1_instance_51_global_variable.json"
+    ]
+}

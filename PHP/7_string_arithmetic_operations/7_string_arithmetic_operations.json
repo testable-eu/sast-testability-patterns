@@ -1,0 +1,20 @@
+{
+    "name": "String Arithmetic Operations",
+    "description": "",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_7_string_arithmetic_operations/1_instance_7_string_arithmetic_operations.json",
+        "./2_instance_7_string_arithmetic_operations/2_instance_7_string_arithmetic_operations.json",
+        "./3_instance_7_string_arithmetic_operations/3_instance_7_string_arithmetic_operations.json",
+        "./4_instance_7_string_arithmetic_operations/4_instance_7_string_arithmetic_operations.json",
+        "./5_instance_7_string_arithmetic_operations/5_instance_7_string_arithmetic_operations.json",
+        "./6_instance_7_string_arithmetic_operations/6_instance_7_string_arithmetic_operations.json",
+        "./7_instance_7_string_arithmetic_operations/7_instance_7_string_arithmetic_operations.json",
+        "./8_instance_7_string_arithmetic_operations/8_instance_7_string_arithmetic_operations.json",
+        "./9_instance_7_string_arithmetic_operations/9_instance_7_string_arithmetic_operations.json",
+        "./10_instance_7_string_arithmetic_operations/10_instance_7_string_arithmetic_operations.json",
+        "./11_instance_7_string_arithmetic_operations/11_instance_7_string_arithmetic_operations.json",
+        "./12_instance_7_string_arithmetic_operations/12_instance_7_string_arithmetic_operations.json"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Reference Argument",
+    "definition": "In JS to pass by reference a variable to a function, the variable has to be an object or an array. This pattern simply assign the query.name to another variable (an object) through a function. ",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_76_reference_argument/1_instance_76_reference_argument.json"
+    ]
+}

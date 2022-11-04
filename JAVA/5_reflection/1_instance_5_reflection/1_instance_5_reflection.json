@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./src/Reflection.java",
+        "injection_skeleton_broken": false
+    },
+    "remediation": {
+        "notes": null,
+        "transformation": null,
+        "modeling_rule": null
+    },
+    "discovery": {
+        "rule": "./1_instance_5_reflection.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary":null,
+        "dependencies":"./lib",
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./src/Reflection.java",
+        "sink_line": 18,
+        "source_file": "./src/Reflection.java",
+        "source_line": 14,
+        "expectation": true
+    },
+    "properties": {
+        "category": "D1",
+        "feature_vs_internal_api": null,
+        "input_sanitizer": "no",
+        "source_and_sink": "no",
+        "negative_test_case": "no"
+    }
+}

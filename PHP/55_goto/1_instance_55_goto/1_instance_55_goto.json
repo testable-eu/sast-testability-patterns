@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_55_goto.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./1_instance_55_goto.py",
+        "method": "python",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./1_instance_55_goto.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_55_goto.php",
+        "sink_line": 5,
+        "source_file": "./1_instance_55_goto.php",
+        "source_line": 6,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

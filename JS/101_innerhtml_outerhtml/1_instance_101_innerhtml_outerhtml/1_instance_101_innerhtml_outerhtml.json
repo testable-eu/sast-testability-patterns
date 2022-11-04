@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_101_innerhtml_outerhtml_server.js",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./1_instance_101_innerhtml_outerhtml.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_101_innerhtml_outerhtml_server.js",
+        "sink_line": 3,
+        "source_file": "./1_instance_101_innerhtml_outerhtml_server.js",
+        "source_line": 3,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": true,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "./inner_rewritten.js",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

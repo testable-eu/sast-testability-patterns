@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./src",
+        "injection_skeleton_broken": null
+    },
+    "remediation": {
+        "notes": null,
+        "transformation": null,
+        "modeling_rule": null
+    },
+    "discovery": {
+        "rule": null,
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary":null,
+        "dependencies":"./lib",
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./src/pack1/QuickServlet2.java",
+        "sink_line": null,
+        "source_file": "./src/pack1/pack1_in/QuickServlet.java",
+        "source_line": null,
+        "expectation": true
+    },
+    "properties": {
+        "category": null,
+        "feature_vs_internal_api": null,
+        "input_sanitizer": null,
+        "source_and_sink": null,
+        "negative_test_case": null
+    }
+}

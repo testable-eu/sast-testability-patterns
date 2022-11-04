@@ -1,0 +1,10 @@
+{
+    "name": "Reflect Get",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_70_reflect_get/1_instance_70_reflect_get.json",
+        "./2_instance_70_reflect_get/2_instance_70_reflect_get.json"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Function Apply",
+    "definition": "Function is called by every object (passed as first argument), the other arguments are passed as array",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_4_function_apply/1_instance_4_function_apply.json"
+    ]
+}

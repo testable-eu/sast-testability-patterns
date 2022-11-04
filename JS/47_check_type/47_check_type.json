@@ -1,0 +1,9 @@
+{
+    "name": "Check Type",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_47_check_type/1_instance_47_check_type.json"
+    ]
+}

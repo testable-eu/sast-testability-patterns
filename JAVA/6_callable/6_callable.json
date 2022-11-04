@@ -1,0 +1,14 @@
+{
+    "name": "callable",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_6_callable/1_instance_6_callable.json",
+        "./2_instance_6_callable/2_instance_6_callable.json",
+        "./3_instance_6_callable/3_instance_6_callable.json"
+    ]
+}

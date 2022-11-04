@@ -1,0 +1,10 @@
+{
+    "name": "Weak Map",
+    "definition": "Map in which keys are weakly referenced. Keys must be objects while values arbitrary values.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_25_weak_map/1_instance_25_weak_map.json",
+        "./2_instance_25_weak_map/2_instance_25_weak_map.json"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./3_instance_16_variadic_functions.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./../1_instance_16_variadic_functions/1_instance_16_variadic_functions.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./3_instance_16_variadic_functions.php",
+        "sink_line": 15,
+        "source_file": "./3_instance_16_variadic_functions.php",
+        "source_line": 13,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

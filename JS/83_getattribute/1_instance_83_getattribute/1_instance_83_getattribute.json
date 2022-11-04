@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_83_getattribute_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_83_getattribute_server.js",
+        "sink_line": 2,
+        "source_file": "./1_instance_83_getattribute_server.js",
+        "source_line": 1,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./1_instance_83_getAttribute.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": true,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "var content = document.getElementById('data_type').value;",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

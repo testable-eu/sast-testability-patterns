@@ -1,0 +1,9 @@
+{
+    "name": "Continue",
+    "definition": "In JavaScript there is no _goto_ statement, but there is _continue_ for loops.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_46_continue/1_instance_46_continue.json"
+    ]
+}

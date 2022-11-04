@@ -1,0 +1,41 @@
+{
+    "code": {
+        "path": "./3_instance_18_send_unpack.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": null,
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "reporting": {
+        "neglect_sast_measurement": true,
+        "neglect_instance_discovery": true
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./3_instance_18_send_unpack.php",
+        "sink_line": 9,
+        "source_file": "./3_instance_18_send_unpack.php",
+        "source_line": 7,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

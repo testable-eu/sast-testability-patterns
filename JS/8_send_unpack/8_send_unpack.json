@@ -1,0 +1,9 @@
+{
+    "name": "Send Unpack",
+    "definition": "Function _add_ takes two parameters given by the vector a, which is composed by number 1 and element retrieved by an HTML form. This can cause XSS.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_8_send_unpack/1_instance_8_send_unpack.json"
+    ]
+}

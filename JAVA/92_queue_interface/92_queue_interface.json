@@ -1,0 +1,15 @@
+{
+    "name": "string_queue_interface",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_92_queue_interface/1_instance_92_queue_interface.json",
+        "./2_instance_92_queue_interface/2_instance_92_queue_interface.json",
+        "./3_instance_92_queue_interface/3_instance_92_queue_interface.json",
+        "./4_instance_92_queue_interface/4_instance_92_queue_interface.json"
+    ]
+}

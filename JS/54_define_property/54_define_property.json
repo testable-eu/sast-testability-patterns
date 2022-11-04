@@ -1,0 +1,10 @@
+{
+    "name": "Define Property",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_54_define_property/1_instance_54_define_property.json",
+        "./2_instance_54_define_property/2_instance_54_define_property.json"
+    ]
+}

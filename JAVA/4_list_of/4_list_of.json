@@ -1,0 +1,13 @@
+{
+    "name": "list_of",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_4_list_of/1_instance_4_list_of.json",
+        "./2_instance_4_list_of/2_instance_4_list_of.json"
+    ]
+}

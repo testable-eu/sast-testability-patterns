@@ -1,0 +1,9 @@
+{
+    "name": "Array Map",
+    "definition": "Array map in JS creates a new array populated with the results of calling a provided function on every element in the calling array.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_44_array_map/1_instance_44_array_map.json"
+    ]
+}

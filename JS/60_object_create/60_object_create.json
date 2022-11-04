@@ -1,0 +1,9 @@
+{
+    "name": "Object Create",
+    "definition": "Object.create permits to create an object, using an existing object as the prototype of the newly created object.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_60_object_create/1_instance_60_object_create.json"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Throwable",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_1_throwable/1_instance_1_throwable.json",
+        "./2_instance_1_throwable/2_instance_1_throwable.json",
+        "./3_instance_1_throwable/3_instance_1_throwable.json",
+        "./4_instance_1_throwable/4_instance_1_throwable.json"
+    ]
+}

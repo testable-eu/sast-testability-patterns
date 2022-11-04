@@ -1,0 +1,9 @@
+{
+    "name": "Catch Exceptions",
+    "description": "",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_51_catch_exceptions/1_instance_51_catch_exceptions.json"
+    ]
+}

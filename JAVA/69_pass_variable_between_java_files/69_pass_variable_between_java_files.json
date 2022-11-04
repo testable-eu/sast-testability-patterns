@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_69_pass_variable_between_java_files/1_instance_69_pass_variable_between_java_files.json"
+    ]
+}

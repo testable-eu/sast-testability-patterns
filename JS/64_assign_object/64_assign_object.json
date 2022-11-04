@@ -1,0 +1,9 @@
+{
+    "name": "Assign Object",
+    "definition": "Assignment between two objects. The change on one affect the other.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_64_assign_object/1_instance_64_assign_object.json"
+    ]
+}

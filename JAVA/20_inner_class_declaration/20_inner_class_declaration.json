@@ -1,0 +1,12 @@
+{
+    "name": "inner_class_declaration",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_20_inner_class_declaration/1_instance_20_inner_class_declaration.json","./2_instance_20_inner_class_declaration/2_instance_20_inner_class_declaration.json"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Variadic",
+    "definition": "The rest parameter syntax (three dots) allows to represent in indefinite number of arguments as an array. The ... permits to put all the arguments passed to the function into an array.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_5_variadic/1_instance_5_variadic.json"
+    ]
+}

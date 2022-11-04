@@ -1,0 +1,11 @@
+{
+    "name": "Function Get Arguments",
+    "definition": "Differently from PHP, in JavaScript it is possible to define two equivalent name functions with a different number of arguments. The latter is the redeclaration of the first one.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_39_function_get_arguments/1_instance_39_function_get_arguments.json",
+        "./2_instance_39_function_get_arguments/2_instance_39_function_get_arguments.json",
+        "./3_instance_39_function_get_arguments/3_instance_39_function_get_arguments.json"
+    ]
+}

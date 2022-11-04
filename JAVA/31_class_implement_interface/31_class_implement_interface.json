@@ -1,0 +1,13 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_31_class_implement_interface/1_instance_31_class_implement_interface.json",
+        "./2_instance_31_class_implement_interface/2_instance_31_class_implement_interface.json"
+    ]
+}

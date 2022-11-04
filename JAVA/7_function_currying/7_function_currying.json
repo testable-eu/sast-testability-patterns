@@ -1,0 +1,13 @@
+{
+    "name": "function_currying",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_7_function_currying/1_instance_7_function_currying.json",
+        "./2_instance_7_function_currying/2_instance_7_function_currying.json"
+    ]
+}

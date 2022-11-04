@@ -1,0 +1,10 @@
+{
+    "name": "Evaluated Call Time",
+    "definition": "The default argument is evaluated at call time, so a new object is created each time the function is called.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_3_evaluated_call_time/1_instance_3_evaluated_call_time.json",
+        "./2_instance_3_evaluated_call_time/2_instance_3_evaluated_call_time.json"
+    ]
+}

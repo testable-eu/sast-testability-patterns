@@ -1,0 +1,9 @@
+{
+    "name": "Conditional Assign",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_50_conditional_assign/1_instance_50_conditional_assign.json"
+    ]
+}

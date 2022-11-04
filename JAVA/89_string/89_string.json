@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_89_string/1_instance_89_string.json",
+        "./2_instance_89_string/2_instance_89_string.json",
+        "./3_instance_89_string/3_instance_89_string.json",
+        "./4_instance_89_string/4_instance_89_string.json",
+        "./5_instance_89_string/5_instance_89_string.json",
+        "./6_instance_89_string/6_instance_89_string.json",
+        "./7_instance_89_string/7_instance_89_string.json",
+        "./8_instance_89_string/8_instance_89_string.json"
+    ]
+}

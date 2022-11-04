@@ -1,0 +1,10 @@
+{
+    "name": "Delete Properties",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_61_delete_properties/1_instance_61_delete_properties.json",
+        "./2_instance_61_delete_properties/2_instance_61_delete_properties.json"
+    ]
+}

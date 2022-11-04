@@ -1,0 +1,10 @@
+{
+    "name": "Nested Function Declaration",
+    "description": "Declaring a function inside another function",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_15_nested_function/1_instance_15_nested_function.json",
+        "./2_instance_15_nested_function/2_instance_15_nested_function.json"
+    ]
+}

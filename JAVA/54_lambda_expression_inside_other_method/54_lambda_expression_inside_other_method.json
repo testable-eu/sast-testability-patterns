@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_54_lambda_expression_inside_other_method/1_instance_54_lambda_expression_inside_other_method.json"
+    ]
+}

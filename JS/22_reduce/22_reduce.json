@@ -1,0 +1,9 @@
+{
+    "name": "Reduce",
+    "definition": "For each array element, it applies a callback in order to reduce the list of items to a single value. Then, the final value is returned from callback function.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_22_reduce/1_instance_22_reduce.json"
+    ]
+}

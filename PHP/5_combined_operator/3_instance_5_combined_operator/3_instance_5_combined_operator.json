@@ -1,0 +1,36 @@
+{
+    "code": {
+        "path": "./3_instance_5_combined_operator.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "",
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./3_instance_5_combined_operator.php",
+        "sink_line": 4,
+        "source_file": "./3_instance_5_combined_operator.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

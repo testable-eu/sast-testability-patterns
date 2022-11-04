@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_26_late_static_binding.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "../26_late_static_binding.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./1_instance_26_late_static_binding.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_26_late_static_binding.php",
+        "sink_line": 13,
+        "source_file": "./1_instance_26_late_static_binding.php",
+        "source_line": 17,
+        "expectation": true
+    },
+    "properties": {
+        "category": "D2",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

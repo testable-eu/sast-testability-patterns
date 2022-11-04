@@ -1,0 +1,9 @@
+{
+    "name": "Symbol to String Tag",
+    "definition": "The Symbol.toStringTag is a string valued property that is used in the creation of the default string description of an object. It is accessed internally by the Object.prototype.toString() method.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_67_symbol_to_string_tag/1_instance_67_symbol_to_string_tag.json"
+    ]
+}

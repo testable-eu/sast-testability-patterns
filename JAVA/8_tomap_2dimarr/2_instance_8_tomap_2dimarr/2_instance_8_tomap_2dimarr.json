@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./src/ToMap.java",
+        "injection_skeleton_broken": false
+    },
+    "remediation": {
+        "notes": null,
+        "transformation": null,
+        "modeling_rule": null
+    },
+    "discovery": {
+        "rule": "./2_instance_8_tomap_2dimarr.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary":null,
+        "dependencies":"./lib",
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./src/ToMap.java",
+        "sink_line": 20,
+        "source_file": "./src/ToMap.java",
+        "source_line": 15,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": null,
+        "input_sanitizer": "no",
+        "source_and_sink": "no",
+        "negative_test_case": "no"
+    }
+}

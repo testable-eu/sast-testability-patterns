@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./3_instance_83_array_variable_key.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./3_instance_83_array_variable_key.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./3_instance_83_array_variable_key.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./3_instance_83_array_variable_key.php",
+        "sink_line": 6,
+        "source_file": "./3_instance_83_array_variable_key.php",
+        "source_line": 4,
+        "expectation": false
+    },
+    "properties": {
+        "category": "D4",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Inline Function",
+    "definition": "stringify method of JSON produces a string from the object passed as argument.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_79_inline_function/1_instance_79_inline_function.json"
+    ]
+}

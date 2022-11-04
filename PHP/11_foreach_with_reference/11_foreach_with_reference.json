@@ -1,0 +1,9 @@
+{
+    "name": "ForEach with Reference",
+    "description": "Foreach is used by high level programming languages to iterate over arrays and objects.\n```php\n<?php\n$arr = array(1,2,3);\nforeach($arr as $value){\necho $value;\n}\n```\nIn this example, any change on the variable $value will not change on the array $arr. If we want to keep the changes we have to add a reference.\n```php\n<?php\n$arr = array(1,2,3);\nforeach($arr as &$value){\n...\n}\n```",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_11_foreach_with_reference/1_instance_11_foreach_with_reference.json"
+    ]
+}

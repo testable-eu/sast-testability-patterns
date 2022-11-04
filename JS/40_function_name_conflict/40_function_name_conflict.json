@@ -1,0 +1,9 @@
+{
+    "name": "Function Name Conflict",
+    "definition": "Name conflict happens when two arguments or variables in the scopes of a closure have the same name. In this case, the more nested scope, takes precedence (inner-most scope has got the highest precedence).",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_40_function_name_conflict/1_instance_40_function_name_conflict.json"
+    ]
+}

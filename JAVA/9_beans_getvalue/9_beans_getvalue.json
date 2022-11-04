@@ -1,0 +1,12 @@
+{
+    "name": "Beans GetValue",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_9_beans_getvalue/1_instance_9_beans_getvalue.json"
+    ]
+}

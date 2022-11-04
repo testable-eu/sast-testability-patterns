@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_12_make_ref.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./1_instance_12_make_ref.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./1_instance_12_make_ref.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_12_make_ref.php",
+        "sink_line": 5,
+        "source_file": "./1_instance_12_make_ref.php",
+        "source_line": 4,
+        "expectation": false
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": true
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Super Property",
+    "definition": "When a class extends another and a property is add to the super class, the child class will inherits it at run time.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_52_super_property/1_instance_52_super_property.json"
+    ]
+}

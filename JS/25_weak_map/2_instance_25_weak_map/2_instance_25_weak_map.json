@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./2_instance_25_weak_map_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_25_weak_map_server.js",
+        "sink_line": 31,
+        "source_file": "./2_instance_25_weak_map_server.js",
+        "source_line": 16,
+        "expectation": false
+    },
+    "discovery": {
+        "rule": "./2_instance_25_weak_map.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D2",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": true
+    },
+    "remediation": {
+        "notes": "developer intervention",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

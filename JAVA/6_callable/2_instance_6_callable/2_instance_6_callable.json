@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./src/Call.java",
+        "injection_skeleton_broken": false
+    },
+    "remediation": {
+        "notes": null,
+        "transformation": null,
+        "modeling_rule": null
+    },
+    "discovery": {
+        "rule": null,
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary":null,
+        "dependencies":"./lib",
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./src/Call.java",
+        "sink_line": null,
+        "source_file": "./src/Call.java",
+        "source_line": null,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": null,
+        "input_sanitizer": "no",
+        "source_and_sink": "no",
+        "negative_test_case": "no"
+    }
+}

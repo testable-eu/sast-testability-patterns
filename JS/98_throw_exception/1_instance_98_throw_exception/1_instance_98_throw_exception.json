@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_98_throw_exception_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_98_throw_exception_server.js",
+        "sink_line": 29,
+        "source_file": "./1_instance_98_throw_exception_server.js",
+        "source_line": 19,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./1_instance_98_throw_exception.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D2",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": true,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "return message passed as error",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Cast String Array",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_27_cast_string_array/1_instance_27_cast_string_array.json"
+    ]
+}

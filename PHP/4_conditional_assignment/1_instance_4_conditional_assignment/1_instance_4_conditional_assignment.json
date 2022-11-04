@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_4_conditional_assignment.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "./1_instance_4_conditional_assignment.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": "This rule should discover all conditional assignment"
+    },
+    "remediation": {
+        "notes": "./docs/remediation_notes.md",
+        "transformation": null,
+        "modeling_rule": null
+    },
+    "compile": {
+        "binary": "./1_instance_4_conditional_assignment.bash",
+        "dependencies": null,
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_4_conditional_assignment.php",
+        "sink_line": 5,
+        "source_file": "./1_instance_4_conditional_assignment.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Recursion",
+    "definition": "One of the way a function can call itself (recursion) is through _arguments.callee_.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_29_recursion/1_instance_29_recursion.json",
+        "./2_instance_29_recursion/2_instance_29_recursion.json"
+    ]
+}

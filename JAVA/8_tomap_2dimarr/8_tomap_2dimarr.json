@@ -1,0 +1,16 @@
+{
+    "name": "tomap_2dimarr",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_8_tomap_2dimarr/1_instance_8_tomap_2dimarr.json",
+        "./2_instance_8_tomap_2dimarr/2_instance_8_tomap_2dimarr.json",
+        "./3_instance_8_tomap_2dimarr/3_instance_8_tomap_2dimarr.json",
+        "./4_instance_8_tomap_2dimarr/4_instance_8_tomap_2dimarr.json",
+        "./5_instance_8_tomap_2dimarr/5_instance_8_tomap_2dimarr.json"
+    ]
+}

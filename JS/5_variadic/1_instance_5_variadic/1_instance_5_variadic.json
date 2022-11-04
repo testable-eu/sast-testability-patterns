@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_5_variadic_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_5_variadic_server.js",
+        "sink_line": 42,
+        "source_file": "./1_instance_5_variadic_server.js",
+        "source_line": 19,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./1_instance_5_variadic.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "./server_rewrite.js",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "socketpermission",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_18_socketpermission/1_instance_18_socketpermission.json"
+    ]
+}

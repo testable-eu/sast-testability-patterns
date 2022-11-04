@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_60_array_walk.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "../60_array_walk.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./1_instance_60_array_walk.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_60_array_walk.php",
+        "sink_line": 5,
+        "source_file": "./1_instance_60_array_walk.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "properties": {
+        "category": "D2",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

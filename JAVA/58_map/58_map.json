@@ -1,0 +1,17 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_58_map/1_instance_58_map.json",
+        "./2_instance_58_map/2_instance_58_map.json",
+        "./3_instance_58_map/3_instance_58_map.json",
+        "./4_instance_58_map/4_instance_58_map.json",
+        "./5_instance_58_map/5_instance_58_map.json",
+        "./6_instance_58_map/6_instance_58_map.json"
+    ]
+}

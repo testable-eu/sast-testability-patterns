@@ -1,0 +1,10 @@
+{
+    "name": "Simple Array",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_90_simple_array/1_instance_90_simple_array.json",
+        "./2_instance_90_simple_array/2_instance_90_simple_array.json"
+    ]
+}

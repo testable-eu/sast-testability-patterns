@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./2_instance_3_evaluated_call_time_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_3_evaluated_call_time_server.js",
+        "sink_line": 21,
+        "source_file": "./2_instance_3_evaluated_call_time_server.js",
+        "source_line": 16,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./2_instance_3_evaluated_call_time.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "Define explicity as first line of body function the value instead of doing it at call time:e.g. message = greeting + ' ' +name",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Text Encoder",
+    "definition": "The TextEncoder() constructor returns a newly created utf-8 TextEncoder object. ",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_81_text_encoder/1_instance_81_text_encoder.json"
+    ]
+}

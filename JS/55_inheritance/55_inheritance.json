@@ -1,0 +1,9 @@
+{
+    "name": "Inheritance",
+    "definition": "In Js, as in PHP there is the possibility to create a new class that extends another, by inheriting from that variables and methods.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_55_inheritance/1_instance_55_inheritance.json"
+    ]
+}

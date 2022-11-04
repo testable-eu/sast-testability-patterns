@@ -1,0 +1,9 @@
+{
+    "name": "Static Method from Variable",
+    "description": "",
+    "family": "code_pattern_php",
+    "tags": ["sast", "php", "php_v7.4.9"],
+    "instances": [
+        "./1_instance_45_static_method_from_variable/1_instance_45_static_method_from_variable.json"
+    ]
+}

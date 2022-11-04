@@ -1,0 +1,12 @@
+{
+    "name": "addition_assignment_operator",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_22_addition_assignment_operator/1_instance_22_addition_assignment_operator.json"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_76_session/1_instance_76_session.json",
+        "./2_instance_76_session/2_instance_76_session.json"
+    ]
+}

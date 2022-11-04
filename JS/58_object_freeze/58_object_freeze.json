@@ -1,0 +1,9 @@
+{
+    "name": "Object Freeze",
+    "definition": "The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_58_object_freeze/1_instance_58_object_freeze.json"
+    ]
+}

@@ -1,0 +1,1 @@
+Likely this tarpit should be solved at the SAST tool side. Transforming a static variable into a non-static one is unfeasible. It is unclear how to create a modeling rule for the static keyword.   

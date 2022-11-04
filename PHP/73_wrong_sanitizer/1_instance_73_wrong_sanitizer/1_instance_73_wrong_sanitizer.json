@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./1_instance_73_wrong_sanitizer.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "../73_wrong_sanitizer.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./1_instance_73_wrong_sanitizer.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./1_instance_73_wrong_sanitizer.php",
+        "sink_line": 8,
+        "source_file": "./1_instance_73_wrong_sanitizer.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": true,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

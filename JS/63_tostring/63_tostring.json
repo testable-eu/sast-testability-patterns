@@ -1,0 +1,9 @@
+{
+    "name": "toString",
+    "definition": "Override of the method _toString_.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_63_tostring/1_instance_63_tostring.json"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Skip stream",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_2_skip_stream/1_instance_2_skip_stream.json",
+        "./2_instance_2_skip_stream/2_instance_2_skip_stream.json"
+    ]
+}

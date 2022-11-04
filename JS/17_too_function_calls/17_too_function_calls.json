@@ -1,0 +1,10 @@
+{
+    "name": "Too Function Calls",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_17_too_function_calls/1_instance_17_too_function_calls.json",
+        "./2_instance_17_too_function_calls/2_instance_17_too_function_calls.json"
+    ]
+}

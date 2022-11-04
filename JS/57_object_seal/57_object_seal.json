@@ -1,0 +1,9 @@
+{
+    "name": "Object Seal",
+    "definition": "The Object.seal() method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_57_object_seal/1_instance_57_object_seal.json"
+    ]
+}

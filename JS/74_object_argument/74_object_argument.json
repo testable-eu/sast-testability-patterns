@@ -1,0 +1,9 @@
+{
+    "name": "Object Argument",
+    "definition": "Changing of object variable.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_74_object_argument/1_instance_74_object_argument.json"
+    ]
+}

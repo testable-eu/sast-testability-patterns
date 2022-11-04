@@ -1,0 +1,12 @@
+{
+    "name": "collections_ncopies",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_17_collections_ncopies/1_instance_17_collections_ncopies.json"
+    ]
+}

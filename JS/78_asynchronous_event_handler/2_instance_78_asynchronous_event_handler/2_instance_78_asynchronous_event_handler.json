@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./2_instance_78_asynchronous_event_handler_server.js",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_78_asynchronous_event_handler_server.js",
+        "sink_line": 10,
+        "source_file": "./2_instance_78_asynchronous_event_handler_server.js",
+        "source_line": 24,
+        "expectation": true
+    },
+    "discovery": {
+        "rule": "./2_instance_78_asynchronous_event_handler.sc",
+        "method": null,
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": null,
+        "instruction": null,
+        "dependencies": null
+    },
+    "properties": {
+        "category": "D4",
+        "feature_vs_internal_api": "INTERNAL_API",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

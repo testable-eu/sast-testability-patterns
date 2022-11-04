@@ -1,0 +1,9 @@
+{
+    "name": "Symbol",
+    "definition": "The method Symbol.for(tokenString) returns a symbol value from the registry, and Symbol.keyFor(symbolValue) returns a token string from the registry.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_41_symbol/1_instance_41_symbol.json"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Nullish Coaleshing Operator",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_16_nullish_coaleshing_operator/1_instance_16_nullish_coaleshing_operator.json"
+    ]
+}

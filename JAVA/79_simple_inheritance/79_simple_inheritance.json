@@ -1,0 +1,13 @@
+{
+    "name": "",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_79_simple_inheritance/1_instance_79_simple_inheritance.json",
+        "./2_instance_79_simple_inheritance/2_instance_79_simple_inheritance.json"
+    ]
+}

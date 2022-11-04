@@ -1,0 +1,9 @@
+{
+    "name": "GET Ajax",
+    "definition": "It is client side.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_99_GET_ajax/1_instance_99_GET_ajax.json"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Static Variable",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_62_static_variable/1_instance_62_static_variable.json"
+    ]
+}

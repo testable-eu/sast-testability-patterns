@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./src/SkipStream.java",
+        "injection_skeleton_broken": false
+    },
+    "remediation": {
+        "notes": null,
+        "transformation": null,
+        "modeling_rule": null
+    },
+    "discovery": {
+        "rule": "./1_instance_2_skip_stream.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": null
+    },
+    "compile": {
+        "binary":null,
+        "dependencies":"./lib",
+        "instruction": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./src/SkipStream.java",
+        "sink_line": 17,
+        "source_file": "./src/SkipStream.java",
+        "source_line": 12,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": null,
+        "input_sanitizer": "no",
+        "source_and_sink": "no",
+        "negative_test_case": "no"
+    }
+}

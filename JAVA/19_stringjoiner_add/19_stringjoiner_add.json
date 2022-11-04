@@ -1,0 +1,12 @@
+{
+    "name": "stringjoiner_add",
+    "description": "",
+    "family": "code_pattern_java",
+    "tags": [
+        "sast",
+        "java"
+    ],
+    "instances": [
+        "./1_instance_19_stringjoiner_add/1_instance_19_stringjoiner_add.json"
+    ]
+}

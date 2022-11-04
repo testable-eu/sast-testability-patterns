@@ -1,0 +1,9 @@
+{
+    "name": "Weak Set",
+    "definition": "WeakSet object permits tp store weakly held objects in a collection.\nWeakSet are generally used to avoid multiple inclusions.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_73_weak_set/1_instance_73_weak_set.json"
+    ]
+}

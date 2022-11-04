@@ -1,0 +1,10 @@
+{
+    "name": "Escape Unescape(Deprecated)",
+    "definition": "To escape string from certain characters.",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_45_escape_unescape(deprecated)/1_instance_45_escape_unescape(deprecated).json",
+        "./2_instance_45_escape_unescape(deprecated)/2_instance_45_escape_unescape(deprecated).json"
+    ]
+}

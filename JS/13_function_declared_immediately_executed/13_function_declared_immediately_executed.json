@@ -1,0 +1,9 @@
+{
+    "name": "Function Declared Immediately Executed",
+    "definition": "",
+    "family": "code_pattern_js",
+    "tags": [],
+    "instances": [
+        "./1_instance_13_function_declared_immediately_executed/1_instance_13_function_declared_immediately_executed.json"
+    ]
+}

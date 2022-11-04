@@ -1,0 +1,37 @@
+{
+    "code": {
+        "path": "./2_instance_44_verify_return_type.php",
+        "injection_skeleton_broken": false
+    },
+    "discovery": {
+        "rule": "../44_verify_return_type.sc",
+        "method": "joern",
+        "rule_accuracy": null,
+        "notes": null
+    },
+    "compile": {
+        "binary": "./2_instance_44_verify_return_type.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_44_verify_return_type.php",
+        "sink_line": 10,
+        "source_file": "./2_instance_44_verify_return_type.php",
+        "source_line": 20,
+        "expectation": true
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}
