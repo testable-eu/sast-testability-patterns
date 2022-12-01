@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/103_event_handler_registration/1_instance_103_event_handler_registration/ -l JS -m joern -r ./testability_patterns/JS/103_event_handler_registration/1_instance_103_event_handler_registration/pattern_discovery_rule.sc

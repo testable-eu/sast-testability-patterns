@@ -1,0 +1,9 @@
+{
+    "name": "Event Dispatch",
+    "description": "./README.md",
+    "family": "code_pattern_js",
+    "tags": ["sast", "js"],
+    "instances": [
+        "./1_instance_102_event_dispatch/1_instance_102_event_dispatch.json",
+    ]
+}

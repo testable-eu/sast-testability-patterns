@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/102_event_dispatch/1_instance_102_event_dispatch/ -l JS -m joern -r ./testability_patterns/JS/102_event_dispatch/1_instance_102_event_dispatch/pattern_discovery_rule.sc
