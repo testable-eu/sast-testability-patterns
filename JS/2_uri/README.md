@@ -6,6 +6,9 @@ Function
 
 ## Definition
 
+The [encodeURI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) and [decodeURI](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI) functions can be used to encode and decode a URL by replacing each instance of certain characters by one, two, three, or four escape sequences representing the UTF-8 encoding of the character. SAST tools not modeling the semantics of these functions can produce false positives when assessing the feasibility of security-sensitive source-sink data flows. 
+
+
 ## Instances
 
 ### Instance 1
@@ -18,12 +21,11 @@ Function
 - CODE:
 
 ```javascript
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
-const b = query.name;   //it is always a string
-
+const uri = decodeURI(query.name);  // tarpit
 res.writeHead(200, {"Content-Type" : "text/html"});
-res.write(decodeURI(b));
+res.write(uri); // sink
 res.end();
 ```
 
@@ -34,29 +36,7 @@ res.end();
 | Vulnerability | YES  |     NO     | YES         |    YES  |   YES     | YES        |
 Measurements Date: 20 May 2021
 
-- DISCOVERY:
 
-
-
-**Ideal discovery rule**:
-
-```
-```
-
-**Implementation:**
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-```
-```
-
-**Discovery Difficulty Level: **
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```
-```
 ### Instance 2
 
 - CATEGORY: S0
@@ -67,12 +47,11 @@ Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it
 - CODE:
 
 ```javascript
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
-const b = query.name;   //it is always a string
-
+const uri = encodeURI(query.name);  // tarpit
 res.writeHead(200, {"Content-Type" : "text/html"});
-res.write(encodeURI(b));
+res.write(uri); // sink
 res.end();
 ```
 
@@ -83,26 +62,7 @@ res.end();
 | Vulnerability |  NO  |    NO      |   YES       |    NO   |   YES     | NO         |
 Measurements Date: 20 May 2021
 
-- DISCOVERY:
 
-
-
-**Ideal discovery rule**:
-
-```
-```
-
-**Implementation:**
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-```
-```
-
-**Discovery Difficulty Level: **
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
 developer intervention
 ```

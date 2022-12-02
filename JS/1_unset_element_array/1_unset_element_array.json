@@ -1,6 +1,6 @@
 {
     "name": "Unset Element Array",
-    "description": "In JavaScript there is no type casting system, therefore the _(array)variable_ operation that is performed in PHP can not be done in JS.",
+    "description": "./README.md",
     "family": "code_pattern_js",
     "tags": ["sast", "js"],
     "instances": [

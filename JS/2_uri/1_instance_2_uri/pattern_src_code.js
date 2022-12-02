@@ -12,13 +12,13 @@ function handleServer(req, res){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        // pattern  
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
-        const b = query.name;   //it is always a string
+        const b = decodeURI(query.name);  // tarpit
 
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(decodeURI(b));
+        res.write(b); // sink
         res.end();
     
     }else{

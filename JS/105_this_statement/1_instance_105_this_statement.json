@@ -1,10 +1,9 @@
 {
-    "name": "Uri",
+    "name": "This Statment",
     "description": "./README.md",
     "family": "code_pattern_js",
     "tags": ["sast", "js"],
     "instances": [
-        "./1_instance_2_uri/1_instance_2_uri.json",
-        "./2_instance_2_uri/2_instance_2_uri.json"
+        "./1_instance_105_this_statement/1_instance_105_this_statement.json",
     ]
 }

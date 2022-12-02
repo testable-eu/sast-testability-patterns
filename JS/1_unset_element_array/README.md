@@ -75,13 +75,13 @@ if (path.isCallExpression() && path.node.callee != undefined) {
 
 ```javascript
 const parsed = route.parse(req.url);
-const query  = querystring.parse(parsed.query);
+const query  = querystring.parse(parsed.query); // source
 var c = query.name;
 array = ['a', 'b', c, 'd'];
-array.splice(3, 1);
+array.splice(3, 1); // tarpit
 res.writeHead(200, {"Content-Type" : "text/html"});
 array.forEach(element => {
-	res.write(element);
+	res.write(element); // sink
 });
 res.end();
 ```
@@ -94,7 +94,6 @@ res.end();
 Measurements Date: 21 July 2021
 
 - DISCOVERY:
-
 
 
 Ideal discovery rule matches with implementation.
@@ -112,11 +111,8 @@ if (path.isCallExpression() && path.node.callee != undefined) {
 ```
 
 
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
-Instead of using function "splite", a new array could be defined simply use array index access assegnation (e.g. array2[0]=array1[0] etc)
+Use the array index operator to retrieve the list element instead of using the `splice` function (e.g., x = arr[idx])
 ```javascript
 ```
 ## Popularity (Measurements)

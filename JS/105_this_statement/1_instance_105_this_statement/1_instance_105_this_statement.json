@@ -1,4 +1,4 @@
-{
+{   
     "description": "./../README.md",
     "code": {
         "path": "./pattern_src_code.js",
@@ -7,31 +7,31 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./pattern_src_code.js",
-        "sink_line": 21,
+        "sink_line": 20,
         "source_file": "./pattern_src_code.js",
-        "source_line": 16,
-        "expectation": true
-    },
-    "discovery": {
-        "rule": "./pattern_discovery_rule.sc",
-        "method": null,
-        "rule_accuracy": "Perfect",
-        "notes": null
+        "source_line": 10,
+        "expectation": false
     },
     "compile": {
         "binary": null,
         "instruction": null,
         "dependencies": null
     },
+    "discovery": {
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": null
+    },
     "properties": {
-        "category": "S0",
+        "category": "D2",
         "feature_vs_internal_api": "FEATURE",
         "input_sanitizer": false,
         "source_and_sink": false,
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "developer intervention",
+        "notes": "",
         "transformation": null,
         "modeling_rule": null
     }
