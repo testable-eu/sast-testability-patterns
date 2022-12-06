@@ -9,7 +9,7 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": "./1_instance_1_throwable.ssc",
+        "rule": "./1_instance_1_throwable.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
         "notes": "Anytime a non-constant object is used within an exception, this is returned."
