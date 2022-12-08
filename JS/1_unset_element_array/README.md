@@ -6,7 +6,10 @@ Functions
 
 ## Definition
 
-In JavaScript there is no type casting system, therefore the _(array)variable_ operation that is performed in PHP can not be done in JS.
+If we have an array that contains an element that is tainted with a source, changing the contents of the array by adding, removing or replacing existing elements can render the taint analysis inaccurate.
+
+In JavaScript, the [`splice(startIndex, deleteCount, item1, item2, ..., itemN)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) method can be used to perform such operations.
+
 
 ## Instances
 
@@ -20,14 +23,14 @@ In JavaScript there is no type casting system, therefore the _(array)variable_ o
 - CODE:
 
 ```javascript
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
 var c = query.name;
 array = ['a', 'b', c, 'd'];
-array.splice(2, 1);
+array.splice(2, 1); // tarpit
 res.writeHead(200, {"Content-Type" : "text/html"});
 array.forEach(element => {
-	res.write(element);
+	res.write(element); // sink
 });
 res.end();
 ```
@@ -58,12 +61,6 @@ if (path.isCallExpression() && path.node.callee != undefined) {
 ```
 
 
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```javascript
-```
 ### Instance 2
 
 - CATEGORY: S0
@@ -74,8 +71,8 @@ if (path.isCallExpression() && path.node.callee != undefined) {
 - CODE:
 
 ```javascript
-const parsed = route.parse(req.url);
-const query  = querystring.parse(parsed.query); // source
+const parsed = route.parse(req.url); // source
+const query  = querystring.parse(parsed.query); 
 var c = query.name;
 array = ['a', 'b', c, 'd'];
 array.splice(3, 1); // tarpit

@@ -6,7 +6,7 @@ Functions
 
 ## Definition
 
-It is client side.
+Function call argument to parameter binding could be challenging for SAST tools when handling anonymous function calls (i.e., invoking anonymous functions immediately after they are declared) for data flow / taint analysis. 
 
 ## Instances
 
@@ -20,14 +20,14 @@ It is client side.
 - CODE:
 
 ```javascript
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
 var a = query.name;
 (function(val, out) {
     out.writeHead(200, {"Content-Type" : "text/html"});
-    out.write(val);  
+    out.write(val); // sink  
     out.end(); 
-}(a, res));
+}(a, res)); // tarpit
 ```
 
 - MEASUREMENT:
@@ -37,26 +37,6 @@ var a = query.name;
 | Vulnerability | NO   |     NO     |    NO    |     NO  |    NO     | YES        |
 Measurements Date: 20 May 2021
 
-- DISCOVERY:
-
-
-
-**Ideal discovery rule**:
-
-```
-```
-
-**Implementation:**
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-```
-```
-
-**Discovery Difficulty Level: **
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
 ```js
 function f(val, out) {

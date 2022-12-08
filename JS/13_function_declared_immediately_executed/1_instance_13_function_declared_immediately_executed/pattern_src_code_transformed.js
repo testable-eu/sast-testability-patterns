@@ -1,3 +1,11 @@
+/**
+ * testability pattern: function_declared_immediately_executed 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: (function (p1, p2, ..., pn){ ... })(a1, a2, ..., an)
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -12,13 +20,14 @@ function handleServer(req, res){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1}
-        //it takes element from a form 
-        const parsed = route.parse(req.url);
+        // -------------------------------------------- // 
+        //      Pattern Code 
+        // -------------------------------------------- // 
+        const parsed = route.parse(req.url); 
         const query  = querystring.parse(parsed.query);
         var a = query.name;
-        //transformation
-        f(a, res);
+        f(a, res); //transformation
+        // -------------------------------------------- // 
     }else{
         res.writeHead(404, {"Content-Type": "text/plain"});
         res.end('Page not found');

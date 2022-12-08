@@ -1,3 +1,11 @@
+/**
+ * testability pattern: function_declared_immediately_executed 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: (function (p1, p2, ..., pn){ ... })(a1, a2, ..., an)
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -10,10 +18,10 @@ function handleServer(req, res) {
         res.writeHead(200, {"Content-Type": "text/html"});
         fs.createReadStream('./index.html').pipe(res);
     } else if (path.pathname === '/query/') {
-        console.log(req.method);
 
-        //PATTERN CODE {1}
-        //it takes element from a form 
+        // -------------------------------------------- // 
+        //      Pattern Code 
+        // -------------------------------------------- // 
         const parsed = route.parse(req.url);
         const query = querystring.parse(parsed.query);
         var a = query.name;
@@ -23,6 +31,7 @@ function handleServer(req, res) {
         res.writeHead(200, {"Content-Type": "text/html"});
         res.write(b);
         res.end();
+        // -------------------------------------------- // 
     } else {
         res.writeHead(404, {"Content-Type": "text/plain"});
         res.end('Page not found');

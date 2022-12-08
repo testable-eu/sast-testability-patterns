@@ -7,9 +7,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./pattern_src_code.js",
-        "sink_line": 24,
+        "sink_line": 33,
         "source_file": "./pattern_src_code.js",
-        "source_line": 17,
+        "source_line": 26,
         "expectation": true
     },
     "discovery": {
