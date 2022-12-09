@@ -1,3 +1,11 @@
+/**
+ * testability pattern: function_get_arguments 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: call argument-to-parameter binding for functions using the special `arguments` keyword
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -14,9 +22,8 @@ function handleServer(req, response){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1}
-        //it takes element from a form 
-        const parsed = route.parse(req.url);
+        // pattern code
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
         var b = query.name;
         var f = query.func.toString().trim();
@@ -30,13 +37,13 @@ function handleServer(req, response){
     }
 }
 
+global.F = function F(){
+    for (var i = 0; i < arguments.length; i++) {
+        res.write(arguments[i]); // sink
+    }
+}
+
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
-//PATTERN CODE {2}
-global.F = function F(){
-	for (var i = 0; i < arguments.length; i++) {
-		res.write(arguments[i]);
-	}
-}
 

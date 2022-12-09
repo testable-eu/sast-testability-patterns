@@ -6,7 +6,13 @@ Functions
 
 ## Definition
 
-Differently from PHP, in JavaScript it is possible to define two equivalent name functions with a different number of arguments. The latter is the redeclaration of the first one.
+Function call argument-to-parameter binding is important for inter-procedural data flow analysis for SAST tools. However, this could be a challenging task in JavaScript. 
+
+For example, Different from other languages like C++ and PHP, defining two functions with the same name but different number of arguments does not lead to function overloading in JavaScript. Instead, the second function declaration (in the control flow) overwrites/redefines the first function declaration. This feature may cause confusion for SAST tools to determine which function is called, and hence how call arguments are mapped to the function parameters. 
+
+Similarly, function definitions may use the special [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object to access function call arguments. Also in these cases, call argument-to-parameter bindings may be inaccurate if the tool does not model the semantic of the `arguments` object.
+
+
 
 ## Instances
 
@@ -24,19 +30,18 @@ function F(a){
 	res.write(a);
 }
 
-//this redefines the previous function
+// this redefines the previous function
 function F(a, b){
 	res.write(a);
 	res.write(b);
 }
 
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
 var b = query.name;
 res.writeHead(200, {"Content-Type" : "text/html"});
-// F('a'); //it prints 2 'undefined' due to the redefinition of F. but cannot send it back in packet.
-F('a', 'b');
-F('c', b);
+F('a');  // it prints 2 'undefined' due to the redefinition of F. It does NOT call the first definition of F.
+F('c', b); // sink
 res.end();
 ```
 
@@ -55,24 +60,12 @@ Measurements Date: 20 May 2021
 
 ```
 if(function call && finite arguments){
-	if(in function arguments variable is used){
+	if(there are at least two function definitions with the same name as the callee){
 		STOP: PATTERN FOUND
 	}
 }
 ```
 
-Based on Abstract Syntax Tree with Babel parser for second challenge and Esprima for the first one.
-
-```
-```
-
-
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```
-```
 ### Instance 2
 
 - CATEGORY: D2
@@ -85,12 +78,11 @@ Based on Abstract Syntax Tree with Babel parser for second challenge and Esprima
 ```javascript
 function F(){
 	for (var i = 0; i < arguments.length; i++) {
-        //XSS
-		res.write(arguments[i]);
+		res.write(arguments[i]); // sink
 	}
 }
 
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
 var b = query.name;
 res.writeHead(200, {"Content-Type" : "text/html"});
@@ -107,8 +99,6 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
 **Ideal Discovery Rule:**
 
 ```
@@ -119,18 +109,6 @@ if(function call && finite arguments){
 }
 ```
 
-Based on Abstract Syntax Tree with Babel parser for second challenge and Esprima for the first one.
-
-```
-```
-
-
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```
-```
 ### Instance 3
 
 - CATEGORY: D4
@@ -143,11 +121,11 @@ Based on Abstract Syntax Tree with Babel parser for second challenge and Esprima
 ```javascript
 global.F = function F(){
 	for (var i = 0; i < arguments.length; i++) {
-		res.write(arguments[i]);
+		res.write(arguments[i]); // sink
 	}
 }
 
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
 var b = query.name;
 var f = query.func.toString().trim();
@@ -165,31 +143,19 @@ Measurements Date: 16 July 2021
 
 - DISCOVERY:
 
-
-
 **Ideal Discovery Rule:**
 
 ```
 if(function call && finite arguments){
-	if(in function arguments variable is used){
+	if(in function arguments object is used){
 		STOP: PATTERN FOUND
 	}
 }
 ```
 
-Based on Abstract Syntax Tree with Babel parser for second challenge and Esprima for the first one.
-
-```
-```
-
-
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
 explicity define arguments inside function definition
-```
-```
+
 ## Popularity (Measurements)
 
 Open Source Web Applications (from testbed):

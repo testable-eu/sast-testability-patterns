@@ -1,3 +1,11 @@
+/**
+ * testability pattern: function_get_arguments 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: call argument-to-parameter binding for functions using the special `arguments` keyword
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -14,15 +22,12 @@ function handleServer(req, response){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1}
-        //it takes element from a form 
-        const parsed = route.parse(req.url);
+        // pattern code
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
         var b = query.name;
         res.writeHead(200, {"Content-Type" : "text/html"});
-	   // F('a'); //it prints 2 'undefined' due to the redefinition of F. but cannot send it back in packet.
-	    F('a', 'b');
-        F('c', b);
+        F('1', '2', '3', b);
         res.end();
 
     }else{
@@ -34,14 +39,9 @@ function handleServer(req, response){
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
-//PATTERN CODE {2}
-function F(a){
-    res.write(a);
-}
-
-//this redefines the previous function
-function F(a, b){
-	res.write(a);
-    res.write(b);
+function F(){
+	for (var i = 0; i < arguments.length; i++) {
+		res.write(arguments[i]); // sink
+	}
 }
 
