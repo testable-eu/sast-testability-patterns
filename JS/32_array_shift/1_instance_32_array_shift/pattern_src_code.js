@@ -1,3 +1,11 @@
+/**
+ * testability pattern: array_shift 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: array.shift()
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -12,22 +20,15 @@ function handleServer(req, res){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        // pattern code
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
-        const b = query.name; 
-        const wm1 = new WeakMap();
-        const wm2 = new WeakMap();
-
-        const obj1 = {},
-              obj2 = function(){};
-
-        wm2.set(obj1, b);
-        wm1.set(obj2, 'foo'); 
-        wm2.set(wm1, wm2);//keys and values can be any objects, also WeakMaps
+        const b = query.name;   
+        let myArray = new Array(b, '1', '2');
+        element = myArray.shift(); // tarpit
 
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(wm2.get(wm1).get(obj1));
+        res.write(element); // sink
         res.end();
     
     }else{

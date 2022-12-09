@@ -1,3 +1,11 @@
+/**
+ * testability pattern: array_shift 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: array.shift()
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -12,15 +20,17 @@ function handleServer(req, res){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        // pattern code
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
         const b = query.name;   
         let myArray = new Array(b, '1', '2');
-        element = myArray.shift();
+        element = myArray.shift(); // tarpit
 
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(element);
+        for(let i = 0; i<myArray.length; i++){
+            res.write(myArray[i]); // sink
+        }
         res.end();
     
     }else{

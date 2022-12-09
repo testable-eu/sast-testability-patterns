@@ -1,3 +1,11 @@
+/**
+ * testability pattern: weak_map 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: WeakMap()
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -10,19 +18,23 @@ function handleServer(req, res){
         res.writeHead(200, {"Content-Type" : "text/html"});
         fs.createReadStream('./index.html').pipe(res);
     }else if(path.pathname === '/query/'){
-        console.log(req.method);
 
-        //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        // pattern code
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
-        const b = query.name;   
-        let myArray = new Array(b, '1', '2');
-        element = myArray.shift();
+        const b = query.name; 
+        const wm1 = new WeakMap();
+        const wm2 = new WeakMap();
+
+        const obj1 = {},
+              obj2 = function(){};
+
+        wm2.set(obj1, b);
+        wm1.set(obj2, 'foo'); 
+        wm2.set(wm1, wm2); //keys and values can be any objects, also WeakMaps
 
         res.writeHead(200, {"Content-Type" : "text/html"});
-        for(let i = 0; i<myArray.length; i++){
-            res.write(myArray[i]);
-        }
+        res.write(wm2.get(wm1).get(obj1)); // sink
         res.end();
     
     }else{

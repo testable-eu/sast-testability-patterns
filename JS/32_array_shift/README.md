@@ -1,4 +1,4 @@
-# Pattern: Weak Map
+# Pattern: Array Shift
 
 ## Category
 
@@ -6,35 +6,32 @@ Function
 
 ## Definition
 
-Map in which keys are weakly referenced. Keys must be objects while values arbitrary values.
+The [`shift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) method removes the first element of an array and returns that element. 
+
+This operation is important for taint tracking. For example, assuming an array is tainted with a source, performing a `shift()` operation may remove the taint from the array if the source data has tainted (only) the first element of that array. SAST tools not handling the `shift()` semantic will incorrectly assume the array is tainted while the taint has been removed, possibly resulting in false positives in data flow analysis.  
+
 
 ## Instances
 
 ### Instance 1
 
-- CATEGORY: D2
-- FEATURE vs INTERNAL API: API
+- CATEGORY: S0
+- FEATURE vs INTERNAL API: FEATURE
 - INPUT SANITIZERS: NO
 - SOURCES AND SINKS: NO
 - NEGATIVE TEST CASES: NO
 - CODE:
 
 ```javascript
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
-const b = query.name; 
-const wm1 = new WeakMap();
-const wm2 = new WeakMap();
-
-const obj1 = {},
-      obj2 = function(){};
-
-wm2.set(obj1, b);
-wm1.set(obj2, 'foo');  
-wm2.set(wm1, wm2);//keys and values can be any objects, also WeakMaps
+const b = query.name;   
+let myArray = new Array(b, '1', '2');
+element = myArray.shift(); // tarpit
 
 res.writeHead(200, {"Content-Type" : "text/html"});
-res.write(wm2.get(wm1).get(obj1));
+// XSS 
+res.write(element); // sink
 res.end();
 ```
 
@@ -42,58 +39,30 @@ res.end();
 
 |     Tool      | LGTM | NodeJsScan | Comm_3 | Comm_1 | Comm_2 | Vulnerable |
 | :-----------: | :--: | :--------: | :------: | ------- | --------- | ---------- |
-| Vulnerability | YES  |     NO     |    NO   |    YES  |     YES   | YES        |
+| Vulnerability |  YES |    NO      |    NO   |    YES  |    YES    |  YES       |
 Measurements Date: 20 May 2021
 
-- DISCOVERY:
-
-
-
-**Ideal discovery rule**:
-
-```
-```
-
-**Implementation:**
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-```
-```
-
-**Discovery Difficulty Level: **
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```
-```
 ### Instance 2
 
-- CATEGORY: D2
-- FEATURE vs INTERNAL API: API
+- CATEGORY: S0
+- FEATURE vs INTERNAL API: FEATURE
 - INPUT SANITIZERS: NO
 - SOURCES AND SINKS: NO
 - NEGATIVE TEST CASES: YES
 - CODE:
 
 ```javascript
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
-const b = query.name; 
-const wm1 = new WeakMap();
-const wm2 = new WeakMap();
-
-const obj1 = {},
-      obj2 = function(){};
-
-wm2.set(obj1, b);
-wm2.set(obj2, 'foo');
-wm1.set(obj2, 'foo');  
-wm2.set(wm1, wm2);//keys and values can be any objects, also WeakMaps
+const b = query.name;   
+let myArray = new Array(b, '1', '2');
+element = myArray.shift(); // tarpit
 
 res.writeHead(200, {"Content-Type" : "text/html"});
-res.write(wm2.get(wm1).get(obj2));
+// no XSS
+for(let i = 0; i<myArray.length; i++){
+    res.write(myArray[i]); // sink
+}
 res.end();
 ```
 
@@ -104,29 +73,13 @@ res.end();
 | Vulnerability | YES  |    -      |    -   |    YES  |    YES    | NO         |
 Measurements Date: 20 May 2021
 
-- DISCOVERY:
 
-
-
-**Ideal discovery rule**:
-
-```
-```
-
-**Implementation:**
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-```
-```
-
-**Discovery Difficulty Level: **
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
-developer intervention
+shift explicity the array:
 ```
+array[n-1]=array[n]
+...
+array[0]=array[1]
 ```
 
 ## Popularity (Measurements)

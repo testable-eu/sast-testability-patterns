@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/25_weak_map/2_instance_25_weak_map/ -l JS -m joern -r ./testability_patterns/JS/25_weak_map/pattern_discovery_rule.sc
