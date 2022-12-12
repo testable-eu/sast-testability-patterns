@@ -1,6 +1,6 @@
 {
     "name": "tomap_2dimarr",
-    "description": "",
+    "description": "Consuming a (2-dimensional) array containing user-controlled data by converting them into a `Stream` and then consuming them with functions such as `collect` of `forEach` makes it hard for some SAST tools to reason about the dataflow.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
@@ -11,6 +11,5 @@
         "./2_instance_8_tomap_2dimarr/2_instance_8_tomap_2dimarr.json",
         "./3_instance_8_tomap_2dimarr/3_instance_8_tomap_2dimarr.json",
         "./4_instance_8_tomap_2dimarr/4_instance_8_tomap_2dimarr.json",
-        "./5_instance_8_tomap_2dimarr/5_instance_8_tomap_2dimarr.json"
     ]
 }

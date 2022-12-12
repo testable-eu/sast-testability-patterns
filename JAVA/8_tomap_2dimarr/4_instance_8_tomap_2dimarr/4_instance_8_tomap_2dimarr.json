@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": null,
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./4_instance_8_tomap_2dimarr.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
@@ -22,9 +22,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./src/ToMap.java",
-        "sink_line": null,
+        "sink_line": 16,
         "source_file": "./src/ToMap.java",
-        "source_line": null,
+        "source_line": 11,
         "expectation": true
     },
     "properties": {
