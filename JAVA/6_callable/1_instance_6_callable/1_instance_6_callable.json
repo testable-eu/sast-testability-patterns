@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": "./1_instance_6_callable.sc",
+        "rule": "1_instance_6_callable.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
@@ -22,7 +22,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./src/Call.java",
-        "sink_line": 38,
+        "sink_line": 29,
         "source_file": "./src/Call.java",
         "source_line": 27,
         "expectation": true

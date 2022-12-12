@@ -1,6 +1,6 @@
 {
     "name": "callable",
-    "description": "",
+    "description": "In Java, `Callable` as well as `Runnable` are interfaces that are to be implemented by a class intended to be executed by a thread. For many SAST tools, it is hard to reason about dataflow, if a callable class accesses user input and subsequently gets processed inside a thread.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
@@ -8,7 +8,6 @@
     ],
     "instances": [
         "./1_instance_6_callable/1_instance_6_callable.json",
-        "./2_instance_6_callable/2_instance_6_callable.json",
-        "./3_instance_6_callable/3_instance_6_callable.json"
+        "./2_instance_6_callable/2_instance_6_callable.json"
     ]
 }
