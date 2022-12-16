@@ -1,3 +1,11 @@
+/**
+ * testability pattern: object_clone 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: call Object.assign(target, source) for clone a source object into target
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -16,7 +24,7 @@ function handleServer(req, response){
 
         //PATTERN CODE {1}
         //it takes element from a form 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
 	    b = query.name;
 	    obj1 = new myClass(b);
@@ -43,7 +51,7 @@ class myClass{
 	out(){
         //XSS
         res.writeHead(200, {"Content-Type" : "text/html"});
-	    res.write(this.b);
+	    res.write(this.b);//sink
         res.end();	
 	}
 }

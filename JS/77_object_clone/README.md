@@ -5,7 +5,7 @@
 Object
 
 ## Definition
-
+ 
 To clone an object, in JavaScript is used the _Object.assign()_ method, which copies all the enumerable own properties from one or more source object to the returned target one.
 
 ## Instances

@@ -1,8 +1,8 @@
 {
     "name": "Object Clone",
-    "definition": "To clone an object, in JavaScript is used the _Object.assign()_ method, which copies all the enumerable own properties from one or more source object to the returned target one. ",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js","server-side","nodejs"],
     "instances": [
         "./1_instance_77_object_clone/1_instance_77_object_clone.json"
     ]
