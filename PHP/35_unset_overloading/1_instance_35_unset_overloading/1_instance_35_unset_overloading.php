@@ -1,19 +1,22 @@
 <?php
+
 class PropertyTest
 {
     private $x = 'safe';
 
-    public function __get($name){
-        echo "Getting".$this->x;
+    public function __get($name)
+    {
         return $this->var;
     }
 
-    public function setx($b){
+    public function setx($b)
+    {
         $this->x = $b;
     }
 
-    public function __unset($name){
-        echo "Unsetting '$this->x'\n";
+    public function __unset($name)
+    {
+        echo "Unsetting " . $this->x;
     }
 }
 

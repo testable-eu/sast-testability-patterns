@@ -6,7 +6,7 @@
     "discovery": {
         "rule": "./1_instance_27_get_called_class.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {

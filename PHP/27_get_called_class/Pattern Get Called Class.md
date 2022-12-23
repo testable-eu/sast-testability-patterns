@@ -6,6 +6,8 @@ Objects
 
 ## Definition
 
+https://www.php.net/manual/en/function.get-called-class.php
+
 ## Instances
 
 ### Instance 1

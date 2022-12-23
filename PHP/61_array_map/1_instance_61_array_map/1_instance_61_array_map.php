@@ -1,10 +1,10 @@
 <?php
 // closure
-$func = function($a) {
+$func = function ($a) {
     echo $a;
 };
 
 $a = $_GET["p1"];
-$input = [$a,$a,$a];
+$input = [$a, "b", "c"];
 //call the closure for each element in the array
 array_map($func, $input);
