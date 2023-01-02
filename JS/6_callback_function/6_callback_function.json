@@ -1,8 +1,8 @@
 {
     "name": "Callback Function",
-    "definition": "The function is assigned to a variable and passed as a parameter to another function.",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_6_callback_function/1_instance_6_callback_function.json",
         "./2_instance_6_callback_function/2_instance_6_callback_function.json"

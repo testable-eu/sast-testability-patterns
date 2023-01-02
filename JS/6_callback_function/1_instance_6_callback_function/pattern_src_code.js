@@ -1,3 +1,11 @@
+/**
+ * testability pattern: callback_function 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: the usage of a callback function
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -14,7 +22,7 @@ function handleServer(req, res){
 
         //PATTERN CODE {1}
         // Pass `MyFunction` as an argument to `print` function
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url); //source
         const query  = querystring.parse(parsed.query);
         var n = query.name;
         print(n, MyFunction, res);
@@ -40,6 +48,6 @@ function MyFunction(n) {
 
  function print(n, message, res) {
     res.writeHead(200, {"Content-Type" : "text/html"});
-    res.write(message(n));
+    res.write(message(n)); //sink
     res.end();
  }
