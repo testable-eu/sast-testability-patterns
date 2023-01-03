@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/38_while_break/1_instance_38_while_break/ -l JS -m joern -r ./testability_patterns/JS/38_while_break/1_instance_38_while_break/pattern_discovery_rule.sc

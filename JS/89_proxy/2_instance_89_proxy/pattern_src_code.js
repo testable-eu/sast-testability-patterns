@@ -12,15 +12,16 @@ function handleServer(req, res){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1} 
+        // PATTERN CODE 
         const parsed = route.parse(req.url);
         const query  = querystring.parse(parsed.query);
-        let b = query.name;
-
+        var b = query.name;
+        let p = new Proxy({}, handler);
+        p._secret = b;
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(F(b));
+        res.write(p._secret);
         res.end();
-
+          
     }else{
         res.writeHead(404, {"Content-Type": "text/plain"});
         res.end('Page not found');
@@ -30,18 +31,22 @@ function handleServer(req, res){
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
-//PATTERN CODE {2}
-function F(val){
-    let return_value='returned_value';
-    let index = 0;
-    while(true){
-        index ++;
-        if(index === 1){
-            break;
-        }
-        //dead code
-        return_value = val;
+// PATTERN CODE {2}
+var handler = {
+    defineProperty(target, key, descriptor){
+        return prop(key, 'define', target, descriptor);
+    },
+    get: function(target, name){
+        return name in target? target[name]: 'proxy prop not defined';
     }
-    return return_value;
 }
 
+function prop(key, action, target, descriptor){    
+    if(key[0] === '_'){
+        return false
+    }
+    if(action === 'define'){
+        target[key] = descriptor;
+        return true;
+    }   
+}

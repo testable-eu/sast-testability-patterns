@@ -1,7 +1,30 @@
+/**
+ * testability pattern: while_break 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: while(cond1) { if(cond2){ break; } }
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
 const querystring = require('querystring');
+
+// pattern code
+function F(val){
+    let return_value='returned_value';
+    let index = 0;
+    while(true){
+        index ++;
+        if(index === 1){
+            break; // tarpit
+        }
+        // dead code
+        return_value = val;
+    }
+    return return_value;
+}
 
 function handleServer(req, res){
     var path = route.parse(req.url, true);
@@ -10,18 +33,15 @@ function handleServer(req, res){
         res.writeHead(200, {"Content-Type" : "text/html"});
         fs.createReadStream('./index.html').pipe(res);
     }else if(path.pathname === '/query/'){
-        console.log(req.method);
 
-        //PATTERN CODE 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
-        var b = query.name;
-        let p = new Proxy({}, handler);
-        p._secret = b;
+        let b = query.name;
+
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(p._secret);
+        res.write(F(b)); // sink
         res.end();
-          
+
     }else{
         res.writeHead(404, {"Content-Type": "text/plain"});
         res.end('Page not found');
@@ -31,22 +51,3 @@ function handleServer(req, res){
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
-//PATTERN CODE {2}
-var handler = {
-    defineProperty(target, key, descriptor){
-        return prop(key, 'define', target, descriptor);
-    },
-    get: function(target, name){
-        return name in target? target[name]: 'proxy prop not defined';
-    }
-}
-
-function prop(key, action, target, descriptor){    
-    if(key[0] === '_'){
-        return false
-    }
-    if(action === 'define'){
-        target[key] = descriptor;
-        return true;
-    }   
-}

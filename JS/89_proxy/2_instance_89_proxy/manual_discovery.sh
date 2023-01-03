@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/89_proxy/2_instance_89_proxy/ -l JS -m joern -r ./testability_patterns/JS/89_proxy/pattern_discovery_rule.sc
