@@ -1,8 +1,33 @@
+/**
+ * testability pattern: variadic/rest parameter
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: func(...params) 
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
 const querystring = require('querystring');
 var res = '';
+
+// pattern
+function sum(a, b, c, d){
+    res.writeHead(200, {"Content-Type" : "text/html"});
+    out(a);
+    out(b);
+    out(c);
+    out(d);
+    // alternatively, use the `arguments` keyword
+    // for(let i=0; i<arguments.length; i++){ out(arguments[i]); }
+
+    res.end();
+}
+
+function out(val){
+    res.write(val); // sink 
+}
 
 function handleServer(req, response){
     res = response;
@@ -12,14 +37,12 @@ function handleServer(req, response){
         res.writeHead(200, {"Content-Type" : "text/html"});
         fs.createReadStream('./index.html').pipe(res);
     }else if(path.pathname === '/query/'){
-        console.log(req.method);
 
-        //PATTERN CODE {1}
-        //it takes element from a form 
-        const parsed = route.parse(req.url);
+        // pattern
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
         var b = query.name;
-        sum('a', 'b', 'c', b);
+        sum('a', 'b', 'c', b); // tarpit
     
     }else{
         res.writeHead(404, {"Content-Type": "text/plain"});
@@ -30,25 +53,5 @@ function handleServer(req, response){
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
-//PATTERN CODE {2}
-/*function sum(...numbers){
-    res.writeHead(200, {"Content-Type" : "text/html"});
-    numbers.forEach(out);
-    res.end();
-}*/
-
-//pattern rewrite in order to avoid FNs
-function sum(){
-    res.writeHead(200, {"Content-Type" : "text/html"});
-    for(let i=0; i<arguments.length; i++){
-        out(arguments[i]);
-    }
-    res.end();
-}
-
-function out(val){
-	// XSS vulnerability
-    res.write(val); 
-}
 
 

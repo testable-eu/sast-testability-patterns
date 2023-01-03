@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_5_variadic_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_5_variadic_server.js",
-        "sink_line": 42,
-        "source_file": "./1_instance_5_variadic_server.js",
-        "source_line": 19,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 23,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 36,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_5_variadic.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FNs",
         "notes": null
     },
     "compile": {
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "./server_rewrite.js",
+        "notes": "./pattern_transformation.js",
         "transformation": null,
         "modeling_rule": null
     }

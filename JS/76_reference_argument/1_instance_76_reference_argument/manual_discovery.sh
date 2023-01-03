@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/76_reference_argument/1_instance_76_reference_argument/ -l JS -m joern -r ./testability_patterns/JS/76_reference_argument/1_instance_76_reference_argument/pattern_discovery_rule.sc

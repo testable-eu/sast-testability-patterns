@@ -6,7 +6,7 @@ Functions
 
 ## Definition
 
-The rest parameter syntax (three dots) allows to represent in indefinite number of arguments as an array. The ... permits to put all the arguments passed to the function into an array.
+The [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) syntax (three dots) allows to represent an indefinite number of arguments as an array, also known as variadic function parameters. SAST tools that do not support the rest parameter syntax may fall short of mapping call arguments to their respective function parameters.
 
 ## Instances
 
@@ -27,14 +27,13 @@ function sum(...numbers){
 }
 
 function out(val){
-	// XSS vulnerability
-    res.write(val); 
+    res.write(val); // sink
 }
 
-const parsed = route.parse(req.url);
+const parsed = route.parse(req.url); // source
 const query  = querystring.parse(parsed.query);
 var b = query.name;
-sum('a', 'b', 'c', b);
+sum('a', 'b', 'c', b); // tarpit
 ```
 
 - MEASUREMENT:
@@ -46,22 +45,12 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
-Ideal discovery rule matches with implementation
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-The node type of AST has to be a RestElement.
+Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it. The node type of AST has to be a RestElement.
 
 ```
 node.isRestElement()
 ```
 
-
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
 ```javascript
 function sum(v1, v2, v3, v4, v5){
@@ -75,7 +64,6 @@ function sum(v1, v2, v3, v4, v5){
 }
 
 function out(val){
-	// XSS vulnerability
     res.write(val); 
 }
 
@@ -104,16 +92,4 @@ Open Source Web Applications (from testbed):
 |         Ember         |     48      |
 |          Vue          |      5      |
 |        JQuery         |      1      |
-
-
-
-
-
-
-
-
-
-
-
-
 
