@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/64_assign_object/1_instance_64_assign_object/ -l JS -m joern -r ./testability_patterns/JS/64_assign_object/1_instance_64_assign_object/pattern_discovery_rule.sc

@@ -1,8 +1,8 @@
 {
     "name": "Assign Object",
-    "definition": "Assignment between two objects. The change on one affect the other.",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_64_assign_object/1_instance_64_assign_object.json"
     ]
