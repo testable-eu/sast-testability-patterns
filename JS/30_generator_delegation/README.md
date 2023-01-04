@@ -6,6 +6,8 @@ Function
 
 ## Definition
 
+In JavaScript, the `yield*` operator can be used to delegate to another generator or iterable object. However, SAST tools can be challenged with JavaScript dynamic features like [generator delegations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*).
+
 ## Instances
 
 ### Instance 1

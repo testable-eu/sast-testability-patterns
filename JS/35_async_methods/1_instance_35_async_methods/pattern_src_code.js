@@ -1,3 +1,11 @@
+/**
+ * testability pattern: async_methods 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: async methods and await function calls
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -15,9 +23,9 @@ function handleServer(req, response){
         console.log(req.method);
 
         //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
-        asyncCall(query.name);
+        asyncCall(query.name); // tarpit
     
     }else{
         res.writeHead(404, {"Content-Type": "text/plain"});
@@ -40,7 +48,7 @@ function resolveAfter1Seconds(val) {
 async function asyncCall(val) {
     var result = await resolveAfter1Seconds(val);
     res.writeHead(200, {"Content-Type" : "text/html"});
-    res.write(result);     
+    res.write(result);  // sink   
     res.end();
 }
   

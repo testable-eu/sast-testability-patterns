@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_35_async_methods_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_35_async_methods_server.js",
-        "sink_line": 43,
-        "source_file": "./1_instance_35_async_methods_server.js",
-        "source_line": 18,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 51,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 26,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_35_async_methods.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FN",
         "notes": null
     },
     "compile": {

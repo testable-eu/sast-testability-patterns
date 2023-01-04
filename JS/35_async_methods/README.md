@@ -6,6 +6,9 @@ Functions
 
 ## Definition
 
+In JavaScript, the transfer of control can also be asynchronous with the use of so-called [Promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises). For example, the `async` and `await` keywords enable asynchronous, promise-based behavior, avoiding the need to explicitly configure promise chains. When a function is defined with the [async](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) keyword, the interpreter will run it asynchronously. Determining and modeling asynchronous execution flows can be challenging for SAST tools. 
+
+
 ## Instances
 
 ### Instance 1
@@ -46,24 +49,14 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
-Ideal discovery rule matches with implementation.
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-The node type of AST has to be a FunctionDeclaration with async set to true.
+Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it. The node type of AST has to be a `FunctionDeclaration` with `async` property set to true.
 
 ```
 path.isFunctionDeclaration && path.node.async === true   
 ```
 
-
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
-rewrite it in synchronous way calling directly the function associated
+rewrite the code in synchronous way by calling directly the respective function.
 
 ## Popularity (Measurements)
 
