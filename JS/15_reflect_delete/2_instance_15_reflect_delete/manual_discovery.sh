@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/15_reflect_delete/2_instance_15_reflect_delete/ -l JS -m joern -r ./testability_patterns/JS/15_reflect_delete/pattern_discovery_rule.sc

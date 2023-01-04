@@ -5,6 +5,7 @@
 Functions
 
 ## Definition
+[Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect) is a built-in object that provides methods for interceptable JavaScript operations. In particular the [Reflect.deleteProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/deleteProperty) static method allows to delete properties and its usage in a program may break the data flow analysis in SAST tools.
 
 ## Instances
 

@@ -1,3 +1,11 @@
+/**
+ * testability pattern: reflect_delete 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: Reflect.deleteProperty();
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -13,21 +21,18 @@ function handleServer(req, res){
         console.log(req.method);
 
         //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url); //source
         const query  = querystring.parse(parsed.query);
         const b = query.name;  
-        var p = query.prop; 
+        const p = query.prop; 
 
         let o = {property1: b};
 
-        if(p != 'property1'){
-            p = 'property1';
-        }
-        Reflect.deleteProperty(o, p);
+        Reflect.deleteProperty(o, p); //tarpit
         
         res.writeHead(200, {"Content-Type" : "text/html"});
         for(i in o){
-            res.write(o[i]);
+            res.write(o[i]); //sink
         }
         res.end();
     
