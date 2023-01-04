@@ -1,3 +1,11 @@
+/**
+ * testability pattern: reflect_delete 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: bind();
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -15,15 +23,15 @@ function handleServer(req, response){
         console.log(req.method);
 
         //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url); //source
         const query  = querystring.parse(parsed.query);
         let b = query.name;
 
-        const boundGetX = getX.bind();
+        const boundGetX = getX.bind(); //tarpit
 
         res.writeHead(200, {"Content-Type" : "text/html"});
         //XSS
-        res.write(boundGetX(b));
+        res.write(boundGetX(b)); //sink
         res.end();
 
 
