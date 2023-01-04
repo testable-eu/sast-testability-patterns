@@ -1,8 +1,8 @@
 {
     "name": "Closures",
-    "definition": "In JavaScript there is possibility to create/define nested functions. In particular, they are called closures. In particular, the nested function is returned as an not already executed object by the 'wrapper' one. The closure is the combination of the function returned and the lexical environment in which the function was declared (local variables included).",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_28_closures/1_instance_28_closures.json",
         "./2_instance_28_closures/2_instance_28_closures.json",

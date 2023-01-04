@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",    
     "code": {
-        "path": "./3_instance_28_closures_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./3_instance_28_closures_server.js",
-        "sink_line": 38,
-        "source_file": "./3_instance_28_closures_server.js",
-        "source_line": 19,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 44,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 25,
         "expectation": true
     },
     "discovery": {
-        "rule": "./3_instance_28_closures.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./../pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FN",
         "notes": null
     },
     "compile": {

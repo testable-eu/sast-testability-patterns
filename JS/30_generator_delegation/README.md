@@ -47,31 +47,13 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
-**Ideal discovery rule**:
-
-```
-if(yieldexpression && delegate == true)
-```
-
-Ideal discovery rule matches with implementation.
-
-**Implementation:**
-
 Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
 
 ```
 path.isYieldExpression() && path.node.delegate === true
 ```
 
-**Discovery Difficulty Level:  LOW**
 
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```
-```
 ### Instance 2
 
 - CATEGORY: D4
@@ -111,53 +93,11 @@ Measurements Date: 17 July 2021
 
 - DISCOVERY:
 
-
-
-**Ideal discovery rule**:
-
-```
-if(yieldexpression && delegate == true)
-```
-
-Ideal discovery rule matches with implementation.
-
-**Implementation:**
-
 Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
 
 ```
 path.isYieldExpression() && path.node.delegate === true
 ```
-
-**Discovery Difficulty Level:  LOW**
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-Write it as a normal function, with explicit calls
-```
-```
-
-## Popularity (Measurements)
-
-Open Source Web Applications (from testbed):
-
-|    Web Application    | #Occurences |
-| :-------------------: | :---------: |
-|      Mattermost       |      /      |
-|        PayPal         |      /      |
-|      SoundCloud       |      /      |
-| Facebook Business SDK |      /      |
-|      Vynchronize      |      /      |
-|      Wiki Vnext       |      /      |
-|         Uppy          |      /      |
-|        SheetJs        |      /      |
-|        Meteor         |      /      |
-|        Express        |      /      |
-|          Pug          |      /      |
-|         Ember         |      /      |
-|          Vue          |      /      |
-|        JQuery         |      /      |
 
 
 

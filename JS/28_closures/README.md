@@ -6,7 +6,7 @@ Functions
 
 ## Definition
 
-In JavaScript there is possibility to create/define nested functions. In particular, they are called closures. In particular, the nested function is returned as an not already executed object by the "wrapper" one. The closure is the combination of the function returned and the lexical environment in which the function was declared (local variables included).
+In JavaScript, it is possible to create nested functions called [closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures). In particular, the nested function is returned as an "not-already-executed-object" by the "wrapper" object. The closure is the combination of the returned function and the lexical environment in which the function was declared (local variables included). Modeling and analyzing closures requires SAST tools to keep the state of local variables of nested functions everytime they are called, which is challenging. 
 
 ## Instances
 
@@ -44,35 +44,15 @@ res.end();
 Measurements Date: 20 May 2021
 
 - DISCOVERY:
-
-
-
-**Ideal discovery rule**:
-
 ```
 if(return function definition){
 	STOP: PATTERN FOUND
 }
 ```
 
-**Implementation:**
-
-Based on Abstract Syntax Tree and Babel parser.
-
-The pattern is found checking for VariableDeclarator of type var outside the scope functions, therefore, every variable in the program body.
-
-```
-path.isTryStatement() && path.node.handler.type === "CatchClause" && path.node.finalizer == undefined
-```
-
-
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
 rewrite function in classical way
-```
-```
+
 ### Instance 2
 
 - CATEGORY: D2
@@ -107,34 +87,16 @@ v();
 Measurements Date: 20 May 2021
 
 - DISCOVERY:
-
-
-
-**Ideal discovery rule**:
-
 ```
 if(return function definition){
 	STOP: PATTERN FOUND
 }
 ```
 
-**Implementation:**
-
-Based on Abstract Syntax Tree and Babel parser.
-
-The pattern is found checking for VariableDeclarator of type var outside the scope functions, therefore, every variable in the program body.
-
-```
-path.isTryStatement() && path.node.finalizer != undefined
-```
-
-
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
-```
-```
+rewrite function in classical way
+
+
 ### Instance 3
 
 - CATEGORY: D2
@@ -145,7 +107,7 @@ path.isTryStatement() && path.node.finalizer != undefined
 - CODE:
 
 ```javascript
-//in JS there is no possibility to define private methods, so closures can be used to "emulate" them
+// in JS, there is no such concept as that of private methods, so closures can be used to "emulate" them
 var p = (function() {
 	function printVal(val) {
         res.writeHead(200, {"Content-Type" : "text/html"});
@@ -174,51 +136,12 @@ p.printable(b);
 Measurements Date: 20 May 2021
 
 - DISCOVERY:
-
-
-
-**Ideal discovery rule**:
-
 ```
 if(return function definition){
 	STOP: PATTERN FOUND
 }
 ```
 
-**Implementation:**
-
-Based on Abstract Syntax Tree and Babel parser.
-
-The pattern is found checking for VariableDeclarator of type var outside the scope functions, therefore, every variable in the program body.
-
-```
-path.isTryStatement() && path.node.finalizer != undefined
-```
-
-
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
-
-## Popularity (Measurements)
-
-Open Source Web Applications (from testbed):
-
-|    Web Application    | #Occurences |
-| :-------------------: | :---------: |
-|      Mattermost       |             |
-|        PayPal         |             |
-|      SoundCloud       |             |
-| Facebook Business SDK |             |
-|      Vynchronize      |             |
-|      Wiki Vnext       |             |
-|         Uppy          |             |
-|        SheetJs        |             |
-|        Meteor         |             |
-|        Express        |             |
-|          Pug          |             |
-|         Ember         |             |
-|          Vue          |             |
-|        JQuery         |             |
+rewrite function in classical way
 

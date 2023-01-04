@@ -1,3 +1,11 @@
+/**
+ * testability pattern: generator delegation
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: yield object
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -10,10 +18,8 @@ function handleServer(req, res){
         res.writeHead(200, {"Content-Type" : "text/html"});
         fs.createReadStream('./index.html').pipe(res);
     }else if(path.pathname === '/query/'){
-        console.log(req.method);
 
         //PATTERN CODE {1}
-        //it takes element from a form 
         const parsed = route.parse(req.url);
         const query  = querystring.parse(parsed.query);
         var b_to_func = query.name;
