@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./4_instance_37_generators_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./4_instance_37_generators_server.js",
+        "sink_file": "./pattern_src_code.js",
         "sink_line": 24,
-        "source_file": "./4_instance_37_generators_server.js",
+        "source_file": "./pattern_src_code.js",
         "source_line": 17,
         "expectation": true
     },
     "discovery": {
-        "rule": "./4_instance_37_generators.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./../pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FN",
         "notes": null
     },
     "compile": {

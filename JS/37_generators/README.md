@@ -6,7 +6,7 @@ Functions
 
 ## Definition
 
-Generator functions allow to define an iterative algorithm by writing a single function which is not continuous. Therefore, once these functions are called, they do not initially execute their code, but return a **generator** which is an iterator ({ value: nextIndex, done: false }). The generator function executes until it reaches the _yield_ keyword. Yield values are computed by generator on demand (this increase efficiency).
+Generator functions allow to define an iterative algorithm by writing a single function which is not continuous. Therefore, once these functions are called, they do not initially execute their code, but return a **generator** which is an iterator ({ value: nextIndex, done: false }). The generator function executes until it reaches the _yield_ keyword. Yield values are computed by generator on demand (this increase efficiency). 
 
 ## Instances
 
@@ -46,25 +46,13 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
-Ideal discovery rule matches implementation
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-The node type of AST has to be a FunctionDeclaration and the generator attribute has to be set on true.
+Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it. The node type of AST has to be a `FunctionDeclaration` and the `generator` attribute has to be set to true.
 
 ```
 node.isFunctionDeclaration() && node.generator === true
 ```
 
 
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```
-```
 ### Instance 2
 
 - CATEGORY: D3
@@ -99,25 +87,12 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
-Ideal discovery rule matches implementation
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-The node type of AST has to be a FunctionDeclaration and the generator attribute has to be set on true.
+Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it. The node type of AST has to be a `FunctionDeclaration` and the `generator` attribute has to be set to true.
 
 ```
 node.isFunctionDeclaration() && node.generator === true
 ```
 
-
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-```
-```
 ### Instance 3
 
 - CATEGORY: D3
@@ -154,23 +129,12 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
-Ideal discovery rule matches implementation
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-The node type of AST has to be a FunctionDeclaration and the generator attribute has to be set on true.
+Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it. The node type of AST has to be a `FunctionDeclaration` and the `generator` attribute has to be set to true.
 
 ```
 node.isFunctionDeclaration() && node.generator === true
 ```
 
-
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
 
 ### Instance 4
 
@@ -205,26 +169,12 @@ Measurements Date: 21 July 2021
 
 - DISCOVERY:
 
-
-
-Ideal discovery rule matches implementation
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-The node type of AST has to be a FunctionDeclaration and the generator attribute has to be set on true.
+Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it. The node type of AST has to be a `FunctionDeclaration` and the `generator` attribute has to be set to true.
 
 ```
 node.isFunctionDeclaration() && node.generator === true
 ```
 
-
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-return instead of yield and call function in classic way
-```
-```
 
 ## Popularity (Measurements)
 

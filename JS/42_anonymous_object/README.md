@@ -6,7 +6,7 @@ Built-In Function
 
 ## Definition
 
-In JavaScript there is no _goto_ statement, but there is _continue_ for loops.
+In JavaScript, objects can be created by anonymous constructors that do not have a specific name to be referenced with (e.g., an anonymous `class`). This kind of syntactic dynamicity may not be supported by SAST tools. 
 
 ## Instances
 
@@ -43,26 +43,8 @@ res.end();
 | Vulnerability | YES  |   NO       |    NO    |    NO   |   NO      | YES        |
 Measurements Date: 20 May 2021
 
-- DISCOVERY:
 
 
-
-Ideal discovery rule matches with implementation.
-
-Based on Abstract Syntax Tree and Babel parser.
-
-```
-path.isClassExpression() && path.node.name === undefined
-```
-
-
-
-- PRECONDITIONS:
-   1.
-- TRANSFORMATION:
-write it explicity as a class
-```javascript
-```
 ## Popularity (Measurements)
 
 Open Source Web Applications (from testbed):

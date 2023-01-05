@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/42_anonymous_object/1_instance_42_anonymous_object/ -l JS -m joern -r ./testability_patterns/JS/42_anonymous_object/1_instance_42_anonymous_object/pattern_discovery_rule.sc
