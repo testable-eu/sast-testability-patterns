@@ -1,25 +1,25 @@
 {
     "code": {
-        "path": "./1_instance_35_unset_overloading.php",
+        "path": "./2_instance_34_isset_overloading.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_35_unset_overloading.sc",
+        "rule": "./2_instance_34_isset_overloading.sc",
         "method": "joern",
         "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
-        "binary": "./1_instance_35_unset_overloading.bash",
+        "binary": "./2_instance_34_isset_overloading.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_35_unset_overloading.php",
-        "sink_line": 19,
-        "source_file": "./1_instance_35_unset_overloading.php",
-        "source_line": 23,
+        "sink_file": "./2_instance_34_isset_overloading.php",
+        "sink_line": 9,
+        "source_file": "./2_instance_34_isset_overloading.php",
+        "source_line": 19,
         "expectation": true
     },
     "properties": {

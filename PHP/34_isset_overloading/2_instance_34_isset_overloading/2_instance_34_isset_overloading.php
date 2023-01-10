@@ -21,6 +21,6 @@ $obj = new PropertyTest;
 $obj->setx($b);
 
 // XSS vulnerability in the function __isset()
-if (isset($obj->x)) {
+if (empty($obj->x)) {
     echo "isset called";
 }
