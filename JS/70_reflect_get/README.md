@@ -6,6 +6,8 @@ Object
 
 ## Definition
 
+The [Reflect.get()] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect/get) static method works like getting a property from an object as a function. 
+
 ## Instances
 
 ### Instance 1

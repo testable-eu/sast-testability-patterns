@@ -1,3 +1,11 @@
+/**
+ * testability pattern: reflect_get 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: Reflect.get();
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -13,15 +21,12 @@ function handleServer(req, res){
         console.log(req.method);
 
         //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
         const b = query.name;   
-
-        const obj = {};
-        Reflect.set(obj, 'input', b);
         
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(Reflect.get(obj, 'input'));
+        res.write(Reflect.get(['a', b], 1));//sink
         res.end();
     
     }else{
