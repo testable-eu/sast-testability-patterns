@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/65_proto/1_instance_65_proto/ -l JS -m joern -r ./testability_patterns/JS/65_proto/1_instance_65_proto/pattern_discovery_rule.sc

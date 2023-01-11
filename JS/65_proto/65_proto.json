@@ -1,8 +1,8 @@
 {
     "name": "Proto",
-    "definition": "To change the value of an object property at run time and have that value inherited by all descendants, the property has to be defined not in constructor function but added on the constructor's associated prototype.\n__proto__ is set when object is constructed and set to the value of prototype property. _instanceOf_ returns true if the object inherits from the function prototype.",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_65_proto/1_instance_65_proto.json"
     ]

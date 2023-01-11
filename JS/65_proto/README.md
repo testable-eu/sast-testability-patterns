@@ -8,7 +8,7 @@ Object
 
 To change the value of an object property at run time and have that value inherited by all descendants, the property has to be defined not in constructor function but added on the constructor's associated prototype.
 
-__proto__ is set when object is constructed and set to the value of prototype property. _instanceOf_ returns true if the object inherits from the function prototype.
+The [__proto__](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto) accessor property of Object.prototype exposes the [Prototype Chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) of this object. The __proto__ property is set when objects are constructed and set to the value of prototype property. _instanceOf_ returns true if the object inherits from the function prototype.
 
 ## Instances
 
@@ -65,13 +65,7 @@ Measurements Date: 20 May 2021
 
 - DISCOVERY:
 
-
-
-Ideal discovery rule matches with implementation.
-
-Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it.
-
-The node type of AST has to be a  MemberExpression and property name prototype or __proto\_\_.
+Based on Abstract Syntax Tree (AST) and Babel parser to generate and traverse it. The node type of AST has to be a  MemberExpression and property name prototype or __proto\_\_.
 
 ```
 if(path.isMemberExpression && path.node.property != undefined){
@@ -81,14 +75,9 @@ if(path.isMemberExpression && path.node.property != undefined){
 }    
 ```
 
-
-
-- PRECONDITIONS:
-   1.
 - TRANSFORMATION:
 developer intervention
-```javascript
-```
+
 ## Popularity (Measurements)
 
 Open Source Web Applications (from testbed):
