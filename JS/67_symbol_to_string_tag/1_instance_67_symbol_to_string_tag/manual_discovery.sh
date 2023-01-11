@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/67_symbol_to_string_tag/1_instance_67_symbol_to_string_tag/ -l JS -m joern -r ./testability_patterns/JS/67_symbol_to_string_tag/1_instance_67_symbol_to_string_tag/pattern_discovery_rule.sc

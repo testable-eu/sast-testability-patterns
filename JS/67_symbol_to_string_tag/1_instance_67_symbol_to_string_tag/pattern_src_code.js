@@ -1,7 +1,25 @@
+/**
+ * testability pattern: symbol_to_string_tag 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: Symbol.toStringTag
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
 const querystring = require('querystring');
+
+// pattern code
+class MyClass {
+    constructor(val){
+        this.value = val;
+    }
+    get [Symbol.toStringTag]() { // tarpit
+      return this.value;
+    }
+}
 
 function handleServer(req, res){
     var path = route.parse(req.url, true);
@@ -12,13 +30,13 @@ function handleServer(req, res){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        // pattern code
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
         const b = query.name;   
         
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(Object.prototype.toString.call(new MyClass(b)));
+        res.write(Object.prototype.toString.call(new MyClass(b))); // sink
         res.end();
     
     }else{
@@ -30,12 +48,3 @@ function handleServer(req, res){
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
-//PATTERN CODE {2}
-class MyClass {
-    constructor(val){
-        this.value = val;
-    }
-    get [Symbol.toStringTag]() {
-      return this.value;
-    }
-}
