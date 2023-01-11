@@ -1,19 +1,19 @@
 {
     "description": "./../README.md",
     "code": {
-        "path": "./1_instance_67_symbol_to_string_tag_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_67_symbol_to_string_tag_server.js",
+        "sink_file": "./pattern_src_code.js",
         "sink_line": 39,
-        "source_file": "./1_instance_67_symbol_to_string_tag_server.js",
+        "source_file": "./pattern_src_code.js",
         "source_line": 34,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_67_symbol_to_string_tag.sc",
+        "rule": "./pattern_discovery_rule.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
         "notes": null
