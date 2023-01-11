@@ -1,20 +1,20 @@
 {
     "code": {
-        "path": "./1_instance_83_getattribute_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_83_getattribute_server.js",
-        "sink_line": 2,
-        "source_file": "./1_instance_83_getattribute_server.js",
-        "source_line": 1,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 10,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 9,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_83_getAttribute.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
