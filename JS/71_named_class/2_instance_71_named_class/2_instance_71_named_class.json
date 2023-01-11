@@ -1,4 +1,5 @@
 {
+    "description": "./../README.md",
     "code": {
         "path": "./2_instance_71_named_class_server.js",
         "injection_skeleton_broken": false
@@ -6,15 +7,15 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_71_named_class_server.js",
-        "sink_line": 26,
+        "sink_line": 32,
         "source_file": "./2_instance_71_named_class_server.js",
-        "source_line": 19,
+        "source_line": 25,
         "expectation": true
     },
     "discovery": {
-        "rule": "./2_instance_71_named_class.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./../pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {

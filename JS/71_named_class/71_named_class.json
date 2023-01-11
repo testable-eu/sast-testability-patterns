@@ -1,8 +1,8 @@
 {
     "name": "Named Class",
-    "definition": "The reference to current class can be made inside the class body, through the _named class expression_. As consequence, the name is only visible within the scope of the class expression itself.",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_71_named_class/1_instance_71_named_class.json",
         "./2_instance_71_named_class/2_instance_71_named_class.json",

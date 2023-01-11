@@ -1,3 +1,11 @@
+/**
+ * testability pattern: named_class 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: var/let/const x = class namedClass { ... }
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -12,19 +20,16 @@ function handleServer(req, response){
         res.writeHead(200, {"Content-Type" : "text/html"});
         fs.createReadStream('./index.html').pipe(res);
     }else if(path.pathname === '/query/'){
-        console.log(req.method);
 
-        //PATTERN CODE {1}
-        //it takes element from a form 
-        const parsed = route.parse(req.url);
+        // pattern code
+        const parsed = route.parse(req.url); // source
         const query  = querystring.parse(parsed.query);
         var b = query.name;
         const bar = new Foo(b);
-        bar.printX();
 	    bar.printX = function (){
             res.writeHead(200, {"Content-Type" : "text/html"});
             // XSS vulnerability
-            res.write(this.x); 
+            res.write(this.x); // sink
             res.end();
         }
         bar.printX();
@@ -38,12 +43,9 @@ function handleServer(req, response){
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
-//PATTERN CODE {2}
+// pattern code
 const Foo = class NamedFoo {
 	constructor(b) {
 		this.x = b;
 	}
-    printX(){
-        this.x = 'safe';
-    }
 }

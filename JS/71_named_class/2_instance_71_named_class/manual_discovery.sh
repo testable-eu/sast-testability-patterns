@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/71_named_class/2_instance_71_named_class/ -l JS -m joern -r ./testability_patterns/JS/71_named_class/pattern_discovery_rule.sc
