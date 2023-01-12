@@ -1,3 +1,11 @@
+/**
+ * testability pattern: set to array 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: array = [...set]; 
+ * sink: response.send()
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -13,7 +21,7 @@ function handleServer(req, res){
         console.log(req.method);
 
         //PATTERN CODE 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
         var b = query.name;
         var set = new Set();
@@ -26,7 +34,7 @@ function handleServer(req, res){
         res.writeHead(200, {"Content-Type" : "text/html"});
         var i = 0;
 	    while(array[i]!=undefined){
-		    res.write(array[i]);
+		    res.write(array[i]);//sink
 		    i = i +1;
 	    }
         res.end();

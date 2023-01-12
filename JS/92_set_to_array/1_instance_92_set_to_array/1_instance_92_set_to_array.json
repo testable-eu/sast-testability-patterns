@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_92_set_to_array_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_92_set_to_array_server.js",
-        "sink_line": 30,
-        "source_file": "./1_instance_92_set_to_array_server.js",
-        "source_line": 16,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 38,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 24,
         "expectation": false
     },
     "discovery": {
-        "rule": "./1_instance_92_set_to_array.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {

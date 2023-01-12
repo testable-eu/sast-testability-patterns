@@ -1,5 +1,5 @@
 /**
- * testability pattern: reflect_get 
+ * testability pattern: modules 
  * ----------------------------------------------
  * source: request.url
  * tarpit: require modules
