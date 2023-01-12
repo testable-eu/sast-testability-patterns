@@ -1,5 +1,5 @@
 /**
- * testability pattern: reflect_get 
+ * testability pattern: getattribute 
  * ----------------------------------------------
  * source: data_type
  * tarpit: getAttribute();

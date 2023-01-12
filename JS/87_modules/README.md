@@ -6,7 +6,7 @@ Property
 
 ## Definition
 
-Since node.js is used, _import_ keyword has to be changed with _require_.
+Since nodejs is used, _import_ keyword has to be changed with _require_.
 
 ## Instances
 

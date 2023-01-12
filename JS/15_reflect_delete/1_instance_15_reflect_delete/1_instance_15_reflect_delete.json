@@ -1,4 +1,5 @@
 {
+    "description": "./../README.md",
     "code": {
         "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
