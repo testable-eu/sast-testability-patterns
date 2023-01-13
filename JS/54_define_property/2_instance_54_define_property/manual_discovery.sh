@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/54_define_property/2_instance_54_define_property/ -l JS -m joern -r ./testability_patterns/JS/54_define_property/pattern_discovery_rule.sc

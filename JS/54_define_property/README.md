@@ -6,6 +6,7 @@ Object
 
 ## Definition
 
+The [Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) static method defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
 ## Instances
 
 ### Instance 1
