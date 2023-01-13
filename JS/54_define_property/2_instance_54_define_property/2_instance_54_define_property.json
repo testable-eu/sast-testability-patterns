@@ -15,7 +15,7 @@
     "discovery": {
         "rule": "./../pattern_discovery_rule.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
