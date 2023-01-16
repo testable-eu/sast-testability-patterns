@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "TypeInference",
+    "description": "As not all SAST tools offer robust type inference, using generics can make it harder to reason about the flow of data.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
