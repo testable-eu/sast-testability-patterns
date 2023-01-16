@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": "./.",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "../13_runfinalization_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
@@ -22,9 +22,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./src/Finalization.java",
-        "sink_line": null,
+        "sink_line": 19,
         "source_file": "./src/Finalization.java",
-        "source_line": null,
+        "source_line": 27,
         "expectation": true
     },
     "properties": {

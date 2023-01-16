@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": "./1_instance_13_runfinalization.sc",
+        "rule": "../13_runfinalization_rule.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
