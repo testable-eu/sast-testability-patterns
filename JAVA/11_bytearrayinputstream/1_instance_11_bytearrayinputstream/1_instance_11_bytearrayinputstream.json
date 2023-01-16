@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": "./.",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./../11_bytearrayinputstream_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
