@@ -1,6 +1,6 @@
 {
     "name": "CharArrayReader",
-    "description": "",
+    "description": "Transforming a user-controlled string to a CharArray and then working on its elements might obfuscate data accesses.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

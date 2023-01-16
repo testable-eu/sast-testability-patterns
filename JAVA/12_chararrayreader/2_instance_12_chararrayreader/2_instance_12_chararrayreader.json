@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": null,
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./2_instance_12_chararrayreader.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
@@ -22,9 +22,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./src/CharArrReader.java",
-        "sink_line": null,
+        "sink_line": 18,
         "source_file": "./src/CharArrReader.java",
-        "source_line": null,
+        "source_line": 12,
         "expectation": true
     },
     "properties": {
