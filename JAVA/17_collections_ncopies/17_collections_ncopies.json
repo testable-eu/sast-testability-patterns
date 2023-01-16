@@ -1,6 +1,6 @@
 {
     "name": "collections_ncopies",
-    "description": "",
+    "description": "Duplicating objects with the Java collection `nCopies` method might restrict a SAST tool's view on the dataflow.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
