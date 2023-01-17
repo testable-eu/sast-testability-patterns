@@ -5,7 +5,7 @@
 Built-in Functions
 
 ## Definition
-
+Old PHP versions (before PHP8) allowed programmers to create functions with `create_function()`.
 ## Instances
 
 ### Instance 1
