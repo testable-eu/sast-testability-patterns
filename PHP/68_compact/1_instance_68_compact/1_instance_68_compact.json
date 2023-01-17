@@ -4,9 +4,9 @@
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "../68_compact.sc",
+        "rule": "./1_instance_68_compact.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
@@ -17,13 +17,13 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_68_compact.php",
-        "sink_line": 10,
+        "sink_line": 8,
         "source_file": "./1_instance_68_compact.php",
         "source_line": 2,
         "expectation": true
     },
     "properties": {
-        "category": "D2",
+        "category": "D1",
         "feature_vs_internal_api": "INTERNAL_API",
         "input_sanitizer": false,
         "source_and_sink": false,

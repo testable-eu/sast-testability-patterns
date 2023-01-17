@@ -2,5 +2,6 @@
 $a = $_GET["p1"];
 ob_start();
 echo $a;
-echo ob_end_clean();
-?>
+$x = ob_get_contents();
+ob_end_clean();
+echo $x;

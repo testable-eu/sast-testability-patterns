@@ -1,11 +1,8 @@
 <?php
 $a = $_GET["p1"];
-$city  = "San Francisco";
+$city = "San Francisco";
 $state = "CA";
 $event = $a;
 
-$location_vars = array("city", "state");
-$event = "event";
-$result = compact($event, $location_vars);
+$result = compact(["event", "city", "state"]);
 echo $result['event'];
-?>

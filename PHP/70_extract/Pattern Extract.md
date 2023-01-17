@@ -5,7 +5,7 @@
 Built-in Functions
 
 ## Definition
-
+`extract` turns key-values pairs from an array into variables in the current scope.
 ## Instances
 
 ### Instance 1

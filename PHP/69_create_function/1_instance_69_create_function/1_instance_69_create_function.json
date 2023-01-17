@@ -6,7 +6,7 @@
     "discovery": {
         "rule": "./1_instance_69_create_function.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {

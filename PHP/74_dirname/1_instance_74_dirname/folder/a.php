@@ -2,8 +2,7 @@
 
 $a = $_GET["p1"];
 
+$dirroot = dirname(dirname(__FILE__));
+$dirinc = $dirroot . '/_includes';
 
-define('DIR_ROOT', dirname(dirname(__FILE__)));
-define('DIR_INC', DIR_ROOT . '/_includes');
-
-include(DIR_INC . "/ttt/b.php");
+include($dirinc . "/ttt/b.php");

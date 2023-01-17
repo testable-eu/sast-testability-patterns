@@ -6,7 +6,7 @@
     "discovery": {
         "rule": "./1_instance_74_dirname.py",
         "method": "python",
-        "rule_accuracy": null,
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
