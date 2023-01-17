@@ -5,7 +5,7 @@
 Built-in Functions
 
 ## Definition
-
+PHP has built-in functions operating on arrays instead of regular variables.
 ## Instances
 
 ### Instance 1
