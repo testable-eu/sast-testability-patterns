@@ -1,11 +1,17 @@
+/**
+ * testability pattern: vulnerable_key_dictionary 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: dictionary;
+ * sink: response.send();
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
 const querystring = require('querystring');
-var res = '';
 
-function handleServer(req, response){
-    res = response;
+function handleServer(req, res){
     var path = route.parse(req.url, true);
 
     if(req.url === '/'){
@@ -14,14 +20,24 @@ function handleServer(req, response){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {2}
-        const parsed = route.parse(req.url);
+        //PATTERN CODE
+        //it takes element from a form 
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
-        var b = query.name;
-        var obj = new myObject(b);
-        delete obj.property;
         res.writeHead(200, {"Content-Type" : "text/html"});
-        obj.out();
+        var a = query.name;
+        var dictionary = {
+            foo: 'foo',
+            'doo': 'doo',
+            10: 100,
+
+        };
+        dictionary[a]=10;
+
+        for(var i in dictionary){
+            //XSS
+            res.write(i.toString());//sink
+        }
         res.end();
     
     }else{
@@ -32,15 +48,3 @@ function handleServer(req, response){
 
 http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
-
-//PATTERN CODE {2}
-class myObject{
-    constructor(val){
-        this.property = val;
-        this.property2 = this.property
-    }
-
-    out(){
-        res.write('property ' + this.property2);
-    }
-}

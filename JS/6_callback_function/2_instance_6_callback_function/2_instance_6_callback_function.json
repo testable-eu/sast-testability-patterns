@@ -12,8 +12,8 @@
         "expectation": true
     },
     "discovery": {
-        "rule": "./pattern_discovery_rule.sc",
-        "method": "joern"
+        "rule": "TO DO",
+        "method": "joern",
         "rule_accuracy": null,
         "notes": null
     },

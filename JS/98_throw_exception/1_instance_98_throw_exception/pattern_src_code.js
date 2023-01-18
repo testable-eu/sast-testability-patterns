@@ -1,3 +1,11 @@
+/**
+ * testability pattern: throw_exception 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: throw new Error(b);
+ * sink: response.send();
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -16,18 +24,17 @@ function handleServer(req, response){
 
         //PATTERN CODE {1}
         //it takes element from a form 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
-        var b_to_func = query.name1;
-        var to_invert = query.name2.toString().trim();;
+        var b_to_func = query.name;
 	    try{
-		    global[to_invert](0, b_to_func);
-            global[to_invert](1, b_to_func);
+		    inverse(5, b_to_func);
+		    inverse(0, b_to_func);
 	    }catch(err){
             //XSS
             res.writeHead(200, {"Content-Type" : "text/html"});
-	    // XSS vulnerability
-            res.write("Exception " + err.message); 
+	        // XSS vulnerability
+            res.write("Exception " + err.message); //sink
             res.end();
 	    }
             
@@ -41,10 +48,10 @@ http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
 //PATTERN CODE {2}
-global.inverse = function inverse(x,b) {
-    if(x != 0){
+function inverse(x,b) {
+    if(!x){
 		throw new Error(b);
 	}
-	return x;
+	return 1/x;
 }
 

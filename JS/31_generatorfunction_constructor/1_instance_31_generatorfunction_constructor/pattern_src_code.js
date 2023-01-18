@@ -1,3 +1,11 @@
+/**
+ * testability pattern: generatorfunction_constructor
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: Object.getPrototypeOf(function*(){}).constructor
+ * sink: response.send();
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -13,7 +21,7 @@ function handleServer(req, res){
         console.log(req.method);
 
         //PATTERN CODE {1} 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
         const b = query.name;   
         var GeneratorFunction = Object.getPrototypeOf(function*(){}).constructor
@@ -21,7 +29,7 @@ function handleServer(req, res){
         var iterator = g(b);
 
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(iterator.next().value);
+        res.write(iterator.next().value);//sink
         res.end();
     
     }else{

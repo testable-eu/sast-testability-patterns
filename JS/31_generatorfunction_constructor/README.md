@@ -6,6 +6,9 @@ Functions
 
 ## Definition
 
+The [function*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*?retiredLocale=it) declaration (function keyword followed by an asterisk) defines a generator function, which returns a Generator object.
+You can also define generator functions using the GeneratorFunction constructor, or the function expression syntax.
+The [GeneratorFunction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction) object provides methods for generator functions. In JavaScript, every generator function is actually a GeneratorFunction object. 
 ## Instances
 
 ### Instance 1

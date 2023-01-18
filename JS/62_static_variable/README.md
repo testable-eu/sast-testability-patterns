@@ -6,6 +6,8 @@ Object
 
 ## Definition
 
+The [static](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#static_methods_and_properties) keyword defines a static method or field for a class. Static properties (fields and methods) are defined on the class itself instead of each instance. The static fields are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+
 ## Instances
 
 ### Instance 1

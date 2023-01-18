@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/56_weak_ref/1_instance_56_weak_ref/ -l JS -m joern -r ./testability_patterns/JS/56_weak_ref/1_instance_56_weak_ref/pattern_discovery_rule.sc

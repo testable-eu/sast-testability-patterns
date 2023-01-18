@@ -1,8 +1,8 @@
 {
     "name": "Static Variable",
-    "definition": "",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_62_static_variable/1_instance_62_static_variable.json"
     ]

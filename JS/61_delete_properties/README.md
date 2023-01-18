@@ -6,6 +6,8 @@ Object
 
 ## Definition
 
+The [delete](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+
 ## Instances
 
 ### Instance 1

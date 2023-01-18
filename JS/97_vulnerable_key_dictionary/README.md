@@ -5,7 +5,7 @@
 Dictionary
 
 ## Definition
-
+The [dictionary] is an Object used to store various keys-values collections.
 ## Instances
 
 ### Instance 1

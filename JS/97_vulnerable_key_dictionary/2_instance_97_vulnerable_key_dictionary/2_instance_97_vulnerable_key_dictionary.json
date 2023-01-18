@@ -1,21 +1,22 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./2_instance_97_vulnerable_key_dictionary_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./2_instance_97_vulnerable_key_dictionary_server.js",
-        "sink_line": 31,
-        "source_file": "./2_instance_97_vulnerable_key_dictionary_server.js",
-        "source_line": 17,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 39,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 25,
         "expectation": true
     },
     "discovery": {
-        "rule": "./2_instance_97_vulnerable_key_dictionary.sc",
-        "method": null,
-        "rule_accuracy": null,
-        "notes": null
+        "rule": "./../pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FPFN",
+        "notes": "this discovery rule check only for pattern that match the regex inside the discovery rule but could be bypassed with different indentations"
     },
     "compile": {
         "binary": null,

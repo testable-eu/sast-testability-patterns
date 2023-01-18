@@ -1,3 +1,12 @@
+
+/**
+ * testability pattern: weak_ref 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: new WeakRef(element);
+ * sink: response.send();
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -12,17 +21,19 @@ function handleServer(req, res){
     }else if(path.pathname === '/query/'){
         console.log(req.method);
 
-        //PATTERN CODE {1}
-        //it takes element from a form 
-        const parsed = route.parse(req.url);
+        //PATTERN CODE {1} 
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
-        var b = query.name;
+        //WeakRef needs an object
+        let b = [query.name];
+        let c = new Counter(b); 
+
         res.writeHead(200, {"Content-Type" : "text/html"});
-        c = new MyClass();
-	    c.F(b); //set the static variable
-	    res.write(c.F()); //the statiVar is not dead inside F, so it prints the previous value
+        // Get the element from the weak reference, if it still exists
+        let v = c.ref.deref();
+        res.write(v[0]);//sink
         res.end();
-            
+    
     }else{
         res.writeHead(404, {"Content-Type": "text/plain"});
         res.end('Page not found');
@@ -33,16 +44,9 @@ http.createServer(handleServer).listen(8080);
 console.log('Server running on port 8080.');
 
 //PATTERN CODE {2}
-class MyClass{
-    static variable = 'safe';
-    F(v){
-        if(v != undefined){
-            this.variable = v;
-        }else{
-            return this.variable;
-        }
+class Counter {
+    constructor(element) {
+      this.ref = new WeakRef(element);
     }
-    
 }
-
 
