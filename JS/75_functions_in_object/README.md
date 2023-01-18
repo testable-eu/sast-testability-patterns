@@ -6,6 +6,8 @@ Object
 
 ## Definition
 
+In JS an Object can contains functions as properties inside itself
+
 ## Instances
 
 ### Instance 1

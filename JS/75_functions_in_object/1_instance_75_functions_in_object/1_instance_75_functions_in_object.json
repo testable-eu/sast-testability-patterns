@@ -1,19 +1,19 @@
 {
     "code": {
-        "path": "./1_instance_75_functions_in_object_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_75_functions_in_object_server.js",
-        "sink_line": 43,
-        "source_file": "./1_instance_75_functions_in_object_server.js",
-        "source_line": 19,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 51,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 27,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_75_functions_in_object.sc",
-        "method": null,
+        "rule": "TO DO",
+        "method": "joern",
         "rule_accuracy": null,
         "notes": null
     },
@@ -30,7 +30,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "./server_rewritten.js",
+        "notes": "./../server_rewritten.js",
         "transformation": null,
         "modeling_rule": null
     }

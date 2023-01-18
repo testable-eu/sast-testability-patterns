@@ -1,3 +1,11 @@
+/**
+ * testability pattern: type_juggling 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: String.fromCharCode(od);
+ * sink: response.send();
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -14,20 +22,20 @@ function handleServer(req, res){
 
         //PATTERN CODE
         //it takes element from a form 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
         var number = query.name1;
         var stringa = query.name2;
         var result = stringa.slice(0, number -1);
 
-        var od = stringa.charCodeAt(number -1) + 1;
+        var od = stringa.charCodeAt(number -1);
         od = od - 1;
         //return index and concatenate with res
         result = result.concat(String.fromCharCode(od));
 
         // XSS vulnerability, will print word
         res.writeHead(200, {"Content-Type" : "text/html"});
-        res.write(result); 
+        res.write(result); //sink
         res.end();
     }else{
         res.writeHead(404, {"Content-Type": "text/plain"});

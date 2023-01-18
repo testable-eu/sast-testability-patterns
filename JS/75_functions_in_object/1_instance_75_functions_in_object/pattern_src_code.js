@@ -1,3 +1,11 @@
+/**
+ * testability pattern: functions_in_object 
+ * ----------------------------------------------
+ * source: request.url
+ * tarpit: functions in utils;
+ * sink: response.send();
+ */
+
 var http = require('http');
 var fs = require('fs');
 var route = require('url');
@@ -16,7 +24,7 @@ function handleServer(req, response){
 
         //PATTERN CODE {1}
         //it takes element from a form 
-        const parsed = route.parse(req.url);
+        const parsed = route.parse(req.url);//source
         const query  = querystring.parse(parsed.query);
         var a = query.name;
         f1(a);
@@ -40,7 +48,7 @@ function f1(arg){
         f3: function(arg2){
             //vulnerability
             res.writeHead(200, {"Content-Type" : "text/html"});
-            res.write(arg2);
+            res.write(arg2);//sink
             res.end(); 
         }
     }
