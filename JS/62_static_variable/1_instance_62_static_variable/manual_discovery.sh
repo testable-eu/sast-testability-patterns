@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/62_static_variable/1_instance_62_static_variable/ -l JS -m joern -r ./testability_patterns/JS/62_static_variable/1_instance_62_static_variable/pattern_discovery_rule.sc

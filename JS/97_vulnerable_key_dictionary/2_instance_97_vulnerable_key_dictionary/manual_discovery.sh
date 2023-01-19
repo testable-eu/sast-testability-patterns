@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/97_vulnerable_key_dictionary/2_instance_97_vulnerable_key_dictionary/ -l JS -m joern -r ./testability_patterns/JS/97_vulnerable_key_dictionary/pattern_discovery_rule.sc

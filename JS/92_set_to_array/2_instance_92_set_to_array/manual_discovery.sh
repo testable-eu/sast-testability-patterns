@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/92_set_to_array/2_instance_92_set_to_array/ -l JS -m joern -r ./testability_patterns/JS/92_set_to_array/pattern_discovery_rule.sc

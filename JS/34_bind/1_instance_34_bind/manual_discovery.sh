@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/34_bind/1_instance_34_bind/ -l JS -m joern -r ./testability_patterns/JS/34_bind/1_instance_34_bind/pattern_discovery_rule.sc

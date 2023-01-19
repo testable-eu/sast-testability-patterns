@@ -1,21 +1,22 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_87_modules_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_87_modules_server.js",
-        "sink_line": 23,
-        "source_file": "./1_instance_87_modules_server.js",
-        "source_line": 17,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 31,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 25,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_87_modules.sc",
-        "method": null,
-        "rule_accuracy": null,
-        "notes": null
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
+        "notes": "the false positives are given when require is used for not custom modules"
     },
     "compile": {
         "binary": null,
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "./server_rewrite.js",
+        "notes": "./../server_rewrite.js",
         "transformation": null,
         "modeling_rule": null
     }

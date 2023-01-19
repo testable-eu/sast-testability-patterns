@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./2_instance_70_reflect_get_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./2_instance_70_reflect_get_server.js",
-        "sink_line": 21,
-        "source_file": "./2_instance_70_reflect_get_server.js",
-        "source_line": 16,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 29,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 24,
         "expectation": true
     },
     "discovery": {
-        "rule": "./2_instance_70_reflect_get.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./../pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {

@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/98_throw_exception/1_instance_98_throw_exception/ -l JS -m joern -r ./testability_patterns/JS/98_throw_exception/pattern_discovery_rule.sc
