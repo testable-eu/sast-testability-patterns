@@ -1,18 +1,19 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./4_instance_86_type_juggling_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./4_instance_86_type_juggling_server.js",
-        "sink_line": 30,
-        "source_file": "./4_instance_86_type_juggling_server.js",
-        "source_line": 17,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 49,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 25,
         "expectation": false
     },
     "discovery": {
-        "rule": "./4_instance_86_type_juggling.sc",
+        "rule": "TO DO",
         "method": null,
         "rule_accuracy": null,
         "notes": null

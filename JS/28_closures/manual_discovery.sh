@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/28_closures/1_instance_28_closures/ -l JS -m joern -r ./testability_patterns/JS/28_closures/pattern_discovery_rule.sc

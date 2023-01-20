@@ -11,7 +11,7 @@
     "discovery": {
         "rule": "./1_instance_7_function_currying.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {

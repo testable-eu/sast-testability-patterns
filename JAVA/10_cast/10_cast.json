@@ -1,6 +1,6 @@
 {
     "name": "Cast",
-    "description": "",
+    "description": "Casting user-controlled data between classes might restrict a SAST tool's view on the flow of data.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

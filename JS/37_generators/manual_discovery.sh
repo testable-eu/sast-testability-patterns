@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/37_generators/1_instance_37_generators/ -l JS -m joern -r ./testability_patterns/JS/37_generators/pattern_discovery_rule.sc

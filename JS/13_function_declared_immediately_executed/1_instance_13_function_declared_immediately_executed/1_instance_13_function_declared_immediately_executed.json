@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_13_function_declared_immediately_executed_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_13_function_declared_immediately_executed_server.js",
-        "sink_line": 22,
-        "source_file": "./1_instance_13_function_declared_immediately_executed_server.js",
-        "source_line": 17,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 32,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 25,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_13_function_declared_immediately_executed.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FPFN",
         "notes": null
     },
     "compile": {
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "./server_rewritten.js",
+        "notes": "./pattern_src_code_transformed.js",
         "transformation": null,
         "modeling_rule": null
     }

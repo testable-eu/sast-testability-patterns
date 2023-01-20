@@ -1,6 +1,6 @@
 {
     "name": "byteArrayInputStream",
-    "description": "",
+    "description": "Consuming user input with a ByteArrayInputStream might conceal dataflow and could make it hard for SAST tools to reason about it.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

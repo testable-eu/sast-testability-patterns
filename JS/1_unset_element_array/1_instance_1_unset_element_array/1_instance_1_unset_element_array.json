@@ -1,18 +1,19 @@
-{
+{   
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_1_unset_element_array_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_1_unset_element_array_server.js",
-        "sink_line": 24,
-        "source_file": "./1_instance_1_unset_element_array_server.js",
-        "source_line": 17,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 33,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 26,
         "expectation": false
     },
     "discovery": {
-        "rule": "../1_unset_element_array.sc",
+        "rule": "./../pattern_discovery_rule.sc",
         "method": null,
         "rule_accuracy": null,
         "notes": null
@@ -30,7 +31,7 @@
         "negative_test_case": true
     },
     "remediation": {
-        "notes": "Instead of using function 'splite', a new array could be defined simply use array index access assegnation (e.g. array[0]=array[0] etc)",
+        "notes": "Use the array index operator to retrieve the list element instead of using the `splice` function (e.g., x = arr[idx])",
         "transformation": null,
         "modeling_rule": null
     }

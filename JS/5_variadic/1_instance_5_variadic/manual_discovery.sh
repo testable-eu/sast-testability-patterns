@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/5_variadic/1_instance_5_variadic/ -l JS -m joern -r ./testability_patterns/JS/5_variadic/1_instance_5_variadic/pattern_discovery_rule.sc

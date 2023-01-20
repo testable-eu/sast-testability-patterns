@@ -1,6 +1,6 @@
 {
     "name": "socketpermission",
-    "description": "",
+    "description": "Passing user-controlled data into a complex class such as `SocketPermission` makes it harder for SAST tools to track the dataflow.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

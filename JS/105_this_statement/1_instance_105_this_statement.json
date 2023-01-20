@@ -1,0 +1,9 @@
+{
+    "name": "This Statment",
+    "description": "./README.md",
+    "family": "code_pattern_js",
+    "tags": ["sast", "js", "client-side"],
+    "instances": [
+        "./1_instance_105_this_statement/1_instance_105_this_statement.json",
+    ]
+}

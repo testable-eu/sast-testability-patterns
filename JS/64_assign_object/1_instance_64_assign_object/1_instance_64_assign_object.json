@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_64_assign_object_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_64_assign_object_server.js",
-        "sink_line": 24,
-        "source_file": "./1_instance_64_assign_object_server.js",
-        "source_line": 17,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 35,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 29,
         "expectation": true
     },
     "discovery": {
-        "rule": "./1_instance_64_assign_object.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FPFN",
         "notes": null
     },
     "compile": {
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "explicity assign object also to obj1",
+        "notes": "explicity assign values to object properties.",
         "transformation": null,
         "modeling_rule": null
     }

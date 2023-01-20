@@ -1,8 +1,8 @@
 {
     "name": "Reflect Delete",
-    "definition": "",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_15_reflect_delete/1_instance_15_reflect_delete.json",
         "./2_instance_15_reflect_delete/2_instance_15_reflect_delete.json",

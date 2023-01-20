@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/105_this_statement/1_instance_105_this_statement/ -l JS -m joern -r ./testability_patterns/JS/105_this_statement/1_instance_105_this_statement/pattern_discovery_rule.sc

@@ -1,8 +1,8 @@
 {
     "name": "Generators",
-    "definition": "Generator functions allow to define an iterative algorithm by writing a single function which is not continuous. Therefore, once these functions are called, they do not initially execute their code, but return a **generator** which is an iterator ({ value: nextIndex, done: false }). The generator function executes until it reaches the _yield_ keyword. Yield values are computed by generator on demand (this increase efficiency).",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_37_generators/1_instance_37_generators.json",
         "./2_instance_37_generators/2_instance_37_generators.json",

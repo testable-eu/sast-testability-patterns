@@ -1,6 +1,6 @@
 {
     "name": "runFinalization",
-    "description": "",
+    "description": "SAST tools might not consider override implementations for the `finalize` method, called before garbage collection of an object.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

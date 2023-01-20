@@ -1,18 +1,19 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./2_instance_89_proxy_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./2_instance_89_proxy_server.js",
+        "sink_file": "./pattern_src_code.js",
         "sink_line": 22,
-        "source_file": "./2_instance_89_proxy_server.js",
+        "source_file": "./pattern_src_code.js",
         "source_line": 16,
         "expectation": false
     },
     "discovery": {
-        "rule": "./2_instance_89_proxy.sc",
+        "rule": "./../pattern_discovery_rule.sc",
         "method": null,
         "rule_accuracy": null,
         "notes": null

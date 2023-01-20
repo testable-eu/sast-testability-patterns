@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./1_instance_38_while_break_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_38_while_break_server.js",
-        "sink_line": 21,
-        "source_file": "./1_instance_38_while_break_server.js",
-        "source_line": 16,
-        "expectation": true
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 37,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 42,
+        "expectation": false
     },
     "discovery": {
-        "rule": "./1_instance_38_while_break.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "FPFN",
         "notes": null
     },
     "compile": {
@@ -27,10 +28,10 @@
         "feature_vs_internal_api": "FEATURE",
         "input_sanitizer": false,
         "source_and_sink": false,
-        "negative_test_case": false
+        "negative_test_case": true
     },
     "remediation": {
-        "notes": "write if condition inside while condition to avoid break",
+        "notes": "append the if-condition to the while-condition to avoid break",
         "transformation": null,
         "modeling_rule": null
     }

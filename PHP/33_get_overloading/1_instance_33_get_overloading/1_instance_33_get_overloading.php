@@ -15,4 +15,4 @@ class PropertyTest{
 $b = $_GET["p1"];
 $obj = new PropertyTest;
 $obj->var = $b;
-$res = $obj->var . "\n\n";
+$res = $obj->var;

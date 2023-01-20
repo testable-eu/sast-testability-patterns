@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/83_getattribute/1_instance_83_getattribute/ -l JS -m joern -r ./testability_patterns/JS/83_getattribute/1_instance_83_getattribute/pattern_discovery_rule.sc

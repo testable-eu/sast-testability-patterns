@@ -1,20 +1,21 @@
 {
+    "description": "./../README.md",
     "code": {
-        "path": "./3_instance_15_reflect_delete_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./3_instance_15_reflect_delete_server.js",
-        "sink_line": 30,
-        "source_file": "./3_instance_15_reflect_delete_server.js",
-        "source_line": 16,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 38,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 24,
         "expectation": false
     },
     "discovery": {
-        "rule": "./3_instance_15_reflect_delete.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./../pattern_discovery_rule.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {

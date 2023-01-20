@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/84_try_catch/1_instance_84_try_catch/ -l JS -m joern -r ./testability_patterns/JS/84_try_catch/pattern_discovery_rule.sc

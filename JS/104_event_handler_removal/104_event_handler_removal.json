@@ -1,0 +1,9 @@
+{
+    "name": "Event Handler Removal",
+    "description": "./README.md",
+    "family": "code_pattern_js",
+    "tags": ["sast", "js", "client-side"],
+    "instances": [
+        "./1_instance_104_event_handler_removal/1_instance_104_event_handler_removal.json",
+    ]
+}

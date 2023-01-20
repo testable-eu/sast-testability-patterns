@@ -6,6 +6,8 @@ Objects
 
 ## Definition
 
+https://www.php.net/manual/en/language.oop5.overloading.php#object.callstatic
+
 ## Instances
 
 ### Instance 1

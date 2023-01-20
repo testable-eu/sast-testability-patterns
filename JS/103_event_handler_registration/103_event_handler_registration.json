@@ -1,0 +1,9 @@
+{
+    "name": "Event Handler Registration",
+    "description": "./README.md",
+    "family": "code_pattern_js",
+    "tags": ["sast", "js", "client-side"],
+    "instances": [
+        "./1_instance_103_event_handler_registration/1_instance_103_event_handler_registration.json",
+    ]
+}

@@ -6,7 +6,7 @@
     "discovery": {
         "rule": "./1_instance_75_buffer.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
@@ -17,7 +17,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_75_buffer.php",
-        "sink_line": 4,
+        "sink_line": 7,
         "source_file": "./1_instance_75_buffer.php",
         "source_line": 2,
         "expectation": true

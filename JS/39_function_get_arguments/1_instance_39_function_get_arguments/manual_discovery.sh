@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/39_function_get_arguments/1_instance_39_function_get_arguments/ -l JS -m joern -r ./testability_patterns/JS/39_function_get_arguments/1_instance_39_function_get_arguments/pattern_discovery_rule.sc

@@ -1,19 +1,19 @@
 {
     "code": {
-        "path": "./2_instance_6_callback_function_server.js",
+        "path": "./pattern_src_code.js",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./2_instance_6_callback_function_server.js",
-        "sink_line": 45,
-        "source_file": "./2_instance_6_callback_function_server.js",
-        "source_line": 19,
+        "sink_file": "./pattern_src_code.js",
+        "sink_line": 53,
+        "source_file": "./pattern_src_code.js",
+        "source_line": 25,
         "expectation": true
     },
     "discovery": {
-        "rule": "./2_instance_6_callback_function.sc",
-        "method": null,
+        "rule": "TO DO",
+        "method": "joern",
         "rule_accuracy": null,
         "notes": null
     },

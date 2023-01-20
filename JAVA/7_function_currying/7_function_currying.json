@@ -1,6 +1,6 @@
 {
     "name": "function_currying",
-    "description": "",
+    "description": "Java Currying, i.e., breaking down a multi-argument function to form multiple functions with single arguments such that the output remains same, might be hard to reason about for SAST tools.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

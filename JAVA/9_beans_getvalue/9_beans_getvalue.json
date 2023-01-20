@@ -1,6 +1,6 @@
 {
     "name": "Beans GetValue",
-    "description": "",
+    "description": "Accessing user-controlled data in serializable objects such as `beans.Expression`, which represents a primitive expression in which a single method is applied to a target and a set of arguments to return a result, via `getValue` might obfuscate the dataflow so that SAST tools cannot reason about it.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/70_reflect_get/2_instance_70_reflect_get/ -l JS -m joern -r ./testability_patterns/JS/70_reflect_get/pattern_discovery_rule.sc

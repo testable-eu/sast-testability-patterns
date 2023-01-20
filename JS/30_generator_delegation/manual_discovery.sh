@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/30_generator_delegation/1_instance_30_generator_delegation/ -l JS -m joern -r ./testability_patterns/JS/30_generator_delegation/pattern_discovery_rule.sc

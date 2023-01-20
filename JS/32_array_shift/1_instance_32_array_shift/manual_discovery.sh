@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/32_array_shift/1_instance_32_array_shift/ -l JS -m joern -r ./testability_patterns/JS/32_array_shift/pattern_discovery_rule.sc

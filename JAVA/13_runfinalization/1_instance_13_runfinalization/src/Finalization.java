@@ -21,16 +21,16 @@ public class Finalization extends HttpServlet {
         }
     }
 
-        public void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+        throws IOException {
         // source
         String s = request.getParameter("t1") ;
-            for (int i = 0; i < 1; i++) {
-                Car car = new Car(s,response);
-                System.gc();
-                System.runFinalization();
-            }
+        for (int i = 0; i < 1; i++) {
+            Car car = new Car(s,response);
             System.gc();
             System.runFinalization();
+        }
+        System.gc();
+        System.runFinalization();
     }
 }

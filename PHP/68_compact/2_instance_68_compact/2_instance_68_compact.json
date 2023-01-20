@@ -4,9 +4,9 @@
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "../68_compact.sc",
+        "rule": "./2_instance_68_compact.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {

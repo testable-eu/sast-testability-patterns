@@ -1,8 +1,8 @@
 {
     "name": "Set to Array",
-    "definition": "A Set object can be cast to array through spread operator (...) or thanks to _Array.from_. In array, multiple equal elements are deleted.",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_92_set_to_array/1_instance_92_set_to_array.json",
         "./2_instance_92_set_to_array/2_instance_92_set_to_array.json"

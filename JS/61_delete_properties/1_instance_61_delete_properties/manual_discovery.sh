@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/61_delete_properties/1_instance_61_delete_properties/ -l JS -m joern -r ./testability_patterns/JS/61_delete_properties/pattern_discovery_rule.sc

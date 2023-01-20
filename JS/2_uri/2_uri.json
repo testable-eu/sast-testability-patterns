@@ -1,8 +1,8 @@
 {
     "name": "Uri",
-    "definition": "",
+    "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": [],
+    "tags": ["sast", "js", "server-side", "nodejs"],
     "instances": [
         "./1_instance_2_uri/1_instance_2_uri.json",
         "./2_instance_2_uri/2_instance_2_uri.json"

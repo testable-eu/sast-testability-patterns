@@ -1,0 +1,1 @@
+tpframework manual-discovery -t ./testability_patterns/JS/77_object_clone/1_instance_77_object_clone/ -l JS -m joern -r ./testability_patterns/JS/77_object_clone/pattern_discovery_rule.sc
