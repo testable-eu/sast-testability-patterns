@@ -26,8 +26,9 @@ Each pattern is contained inside a folder `ID_pattern_name` (`ID` is the pattern
 
 Each pattern has a `json` metadata file that specifies the pattern name, description, family, tags, and its instances. Similarly, pattern instances have a `json` file specifying different metadata information.
 
-The pattern `json` metadata:
+### The pattern `json` metadata
 
+Structure: 
 ```json
 {
     "name": "string",
@@ -42,14 +43,32 @@ The pattern `json` metadata:
 }
 ```
 
-The instance `json` metadata:
+Description:
 
+- **name**: pattern name
+- **description**: pattern description or path to an `md` file (e.g., README.md)
+- **family**: catalogue family, e.g., `code_pattern_php`, `code_pattern_js`, `code_pattern_java`, etc
+- **tags**: some labels, e.g., `["sast", "php", "php_v7.4.9"]` or `["sast", "js", "client-side"]`
+- **instances**: list of pattern instances
+
+
+### The instance `json` metadata:
+
+Structure: 
 ```json
 {
     "description": "string | path/to/file",
     "code": {
         "path": "path/to/src_code",
         "injection_skeleton_broken": "boolean"
+    },
+    "expectation": {
+        "type": "string",
+        "sink_file": "path/to/file",
+        "sink_line": "number",
+        "source_file": "path/to/file",
+        "source_line": "number",
+        "expectation": "boolean"
     },
     "discovery": {
         "rule": "path/to/discovery_rule",
@@ -67,14 +86,6 @@ The instance `json` metadata:
         "binary": "path/to/binary",
         "instruction": "string"
     },
-    "expectation": {
-        "type": "string",
-        "sink_file": "path/to/file",
-        "sink_line": "number",
-        "source_file": "path/to/file",
-        "source_line": "number",
-        "expectation": "boolean"
-    },
     "properties": {
         "category": "S0 | D1 | D2 | D3 | D4",
         "feature_vs_internal_api": "FEATURE | INTERNAL_API",
@@ -84,3 +95,41 @@ The instance `json` metadata:
     }
 }
 ```
+
+Description:
+
+- **description**: pattern instance description or path to an `md` file (e.g., README.md)
+- **code->path**: path to the pattern instance source code
+- **code->injection_skeleton_broken**: does the instance follow the general pattern of `source -> testability pattern -> sink` or not? Specify `injection_skeleton_broken=true` if it does not follow the common format. 
+- **expectation->type**: vulnerability type (e.g., `xss`)
+- **expectation->sink_file**: sink file path name
+- **expectation->sink_line**: sink line number
+- **expectation->source_file**: source file path name
+- **expectation->source_line**: source line of code
+- **expectation->expectation**: boolean value showing if the vulnerability exists or not (i.e., negative test case)
+- **properties->category**: how dynamic this instance is?
+    -  `S0`: not dynamic at all
+    - `D1`:  dynamic functions are used but with constant values as params that make the dynamicity solvable at static time (e.g., `call_user_func("foo",$x)`)
+    - `D2`: dynamic functions are used with some variables that can be however resolved at static time by simple constant propagation (e.g., `$f="foo"; call_user_func($f,$x);`)
+    - `D3`:  dynamic functions are used with some operators and variables that can be however partially resolved at static time by simple constant propagation (e.g., `$f="foo";call_user_func($f."_whatever",$x)`)
+
+- **properties->feature_vs_internal_api**: is this capturing an internal API or not?
+- **properties->input_sanitizer**:  is the instance capturing an input sanitizer that may be not supported by SAST tools?
+- **properties->source_and_sink**: is the instance capturing an source/sink that may be not supported by SAST tools?
+- **properties->negative_test_case**: whether this is a negative example. This is always the `not` of `expectation->expectation` value. This is to test how big the over-approximation of a SAST tool could be w.r.t. this instance.
+
+- **discovery->rule**: path to the discovery rule or query
+- **discovery->method**: the tool used to run the discovery rule or query
+- **discovery->rule_accuracy** what is the estimated accuracy of the discovery rule? Options are: (i) `FP`= false positives, (ii) `FN`= false negatives, (iii) `FPFN` = false positives and negatives, and (iv) `Perfect`.
+- **remediation->transformation** TBD
+- **remediation->modeling_rule**: TBD
+- **remediation->notes**: transformation nodes. This is optional for the time being, but if you see an easy way to remediate this pattern instance, add a note
+
+- **compile->dependencies**: If the target programming language is compilable, then the "compile" property should be properly filled and "dependencies" should be provided (if any).
+- **compile->binary**: path to the binary file. 
+- **compile->instruction**: If some specific instruction is required, this can be specified here. Note that the [sast-tp-framework](https://github.com/testable-eu/sast-tp-framework) uses only standard compilation instructions by default.
+
+
+
+
+

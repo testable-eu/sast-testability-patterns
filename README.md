@@ -24,14 +24,14 @@ This project has a OWASP website available at: [https://owasp.org/www-project-te
 
 
 
-## Contribution and Issues
+## Contributions
 
 We are delighted to know that you would like to contribute to this repository. Please follow our [contribution guideline](./docs/contribution-guidelines.md) before you submit a PR.
 
 For any questions, suggestions, feedback or concerns. please [raise an issue in the repository](https://github.com/testable-eu/sast-testability-patterns/issues). We welcome suggestions and feedback from the community. 
 
 
-## Publication
+## Publications
 
 ```bibtex
 @article{altestability,
@@ -41,6 +41,8 @@ For any questions, suggestions, feedback or concerns. please [raise an issue in 
   year = {2022},
 }
 ```
+
+For more information, please visit [https://testable.eu/publications/](https://testable.eu/publications/).
 
 ## License
 
