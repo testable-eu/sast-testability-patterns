@@ -112,7 +112,6 @@ Description:
     - `D1`:  dynamic functions are used but with constant values as params that make the dynamicity solvable at static time (e.g., `call_user_func("foo",$x)`)
     - `D2`: dynamic functions are used with some variables that can be however resolved at static time by simple constant propagation (e.g., `$f="foo"; call_user_func($f,$x);`)
     - `D3`:  dynamic functions are used with some operators and variables that can be however partially resolved at static time by simple constant propagation (e.g., `$f="foo";call_user_func($f."_whatever",$x)`)
-
 - **properties->feature_vs_internal_api**: is this capturing an internal API or not?
 - **properties->input_sanitizer**:  is the instance capturing an input sanitizer that may be not supported by SAST tools?
 - **properties->source_and_sink**: is the instance capturing an source/sink that may be not supported by SAST tools?
@@ -124,11 +123,13 @@ Description:
 - **remediation->transformation** TBD
 - **remediation->modeling_rule**: TBD
 - **remediation->notes**: transformation nodes. This is optional for the time being, but if you see an easy way to remediate this pattern instance, add a note
-
 - **compile->dependencies**: If the target programming language is compilable, then the "compile" property should be properly filled and "dependencies" should be provided (if any).
 - **compile->binary**: path to the binary file. 
 - **compile->instruction**: If some specific instruction is required, this can be specified here. Note that the [sast-tp-framework](https://github.com/testable-eu/sast-tp-framework) uses only standard compilation instructions by default.
 
+### Pattern Template
+
+You can find an example template of a testability pattern [here](https://github.com/testable-eu/sast-testability-patterns/tree/master/pattern_template).
 
 
 

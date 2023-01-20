@@ -10,9 +10,11 @@ This project has a OWASP website available at: [https://owasp.org/www-project-te
 
 - [What is a testability pattern?](./docs/testability-patterns.md)
 - [Testability patterns structure](./docs/testability-patterns-structure.md)
+- [Example pattern template](https://github.com/testable-eu/sast-testability-patterns/tree/master/pattern_template)
 - [Adding a pattern](./docs/testability-patterns-adding)
 - [Contribution guidelines](./docs/contribution-guidelines.md)
 - [Pattern discovery](https://github.com/testable-eu/sast-tp-framework)
+
 
 ## Overview 
 
