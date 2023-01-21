@@ -15,6 +15,7 @@ This project has a OWASP website available at: [https://owasp.org/www-project-te
 - [Contribution guidelines](./docs/contribution-guidelines.md)
 - [Pattern discovery](https://github.com/testable-eu/sast-tp-framework)
 
+For more detailed documentation, see the [docs](https://github.com/testable-eu/sast-testability-patterns/tree/master/docs) folder.
 
 ## Overview 
 
@@ -31,6 +32,10 @@ We are delighted to know that you would like to contribute to this repository. P
 
 For any questions, suggestions, feedback or concerns. please [raise an issue in the repository](https://github.com/testable-eu/sast-testability-patterns/issues). We welcome suggestions and feedback from the community. 
 
+
+## News
+
+Follow us on Twitter on [@Testable_EU](https://twitter.com/Testable_EU) or check out TESTABLE website available at [https://testable.eu/](https://testable.eu/).
 
 ## Publications
 
