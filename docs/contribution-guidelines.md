@@ -1,16 +1,18 @@
-# Contribution Guidelines
+# Contribution Policy
 
 We thank you for considering to contribute to the SAST testability patterns catalouge.
 
-You can contribute to this repository by adding, improveing, correcting, or modifying: 
+You can contribute to this repository through bug-reports, bug-fixes, new code or new documentation, especially by adding, improveing, correcting, or modifying: 
 
 - testability pattern definitions
 - pattern discovery rules
-- metadata information like `json` files
+- metadata information of patterns like `json` files
 
-## Steps
 
-1. Create a [new issue](https://github.com/testable-eu/sast-testability-patterns/issue) in the repository, briefly explaning (i) what is the current problem (ii) what do you propose to fix it, and (iii) if you would like to submit a PR to do the proposed changes. 
+
+## Guidelines
+
+1. Create a [new issue](https://github.com/testable-eu/sast-testability-patterns/issue) in the repository, briefly explaning (i) what is the problem with the current state (ii) what do you propose to fix it, and (iii) if you would like to submit a PR to do the proposed changes. 
 
 2. Have the issue acknoweldged/approved by the repository maintainers.
 

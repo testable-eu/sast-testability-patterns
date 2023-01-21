@@ -11,19 +11,18 @@ This project has a OWASP website available at: [https://owasp.org/www-project-te
 - [What is a testability pattern?](./docs/testability-patterns.md)
 - [Testability patterns structure](./docs/testability-patterns-structure.md)
 - [Example pattern template](https://github.com/testable-eu/sast-testability-patterns/tree/master/pattern_template)
-- [Adding a pattern](./docs/testability-patterns-adding)
+- [Adding a pattern](./docs/testability-patterns-adding.md)
 - [Contribution guidelines](./docs/contribution-guidelines.md)
 - [Pattern discovery](https://github.com/testable-eu/sast-tp-framework)
 
 
 ## Overview 
 
-| Language   	| # Patterns 	| # Instances 	| Link                                                                               	|
-|------------	|------------	|-------------	|------------------------------------------------------------------------------------	|
-| JavaScript 	| 104        	| 157         	| [JS](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS)  	|
-| PhP        	| 84         	| 144         	| [PHP](https://github.com/testable-eu/sast-testability-patterns/tree/master/PHP) 	|
-| Java       	| 143        	| 220         	| [JAVA](https://github.com/testable-eu/sast-testability-patterns/tree/master/JAVA)  	|
-
+| Language    | # Patterns  | # Instances   | Link                                                                                |
+|------------ |------------ |-------------  |------------------------------------------------------------------------------------ |
+| JavaScript  | 105         | 157           | [JS](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS)   |
+| PhP         | 84          | 145           | [PHP](https://github.com/testable-eu/sast-testability-patterns/tree/master/PHP)   |
+| Java        | 143         | 218           | [JAVA](https://github.com/testable-eu/sast-testability-patterns/tree/master/JAVA)   |
 
 
 ## Contributions
@@ -44,9 +43,18 @@ For any questions, suggestions, feedback or concerns. please [raise an issue in 
 }
 ```
 
-For more information, please visit [https://testable.eu/publications/](https://testable.eu/publications/).
+To see the complete list of relevant publications, please visit [https://testable.eu/publications/](https://testable.eu/publications/).
 
 ## License
 
 This project is licensed under `GNU AFFERO GENERAL PUBLIC LICENSE V3.0`. See [LICENSE](LICENSE) for more information.
+
+## Acknowledgements
+
+This project received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No. 101019206.
+
+<p align="center">
+  <img src="https://testable.eu/img/eu_flag.png"><br>
+  Funded by the European Union
+</p>
 
