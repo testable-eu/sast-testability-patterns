@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "Asynchronous",
+    "description": "Using asynchronous functionallity in Java adds additional levels ob abstraction and can restrict a SAST tools capability to reason about the flow of data being passed into them.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
