@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "assign_class_to_interface",
+    "description": "Directly assigning an object to an interface might restrict some SAST tools' ability to analyze the dataflow.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
