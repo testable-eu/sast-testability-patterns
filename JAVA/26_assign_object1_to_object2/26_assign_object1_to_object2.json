@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "AssignObject1toObject2",
+    "description": "Making an assignment from an already used object which has access to some data, e.g., by setting some property, restricts a SAST tool's view on the dataflow.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
