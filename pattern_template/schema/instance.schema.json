@@ -1,0 +1,188 @@
+{
+    "title": "An instance of a specific testability pattern",
+    "type": "object",
+    "properties": {
+        "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "A description of this instance"
+        },
+        "code": {
+            "type": "object",
+            "properties": {
+                "path": {
+                    "title": "Code",
+                    "description": "path to source code",
+                    "type": "string"
+                },
+                "injection_skeleton_broken": {
+                    "type": "boolean",
+                    "description": "Describes if the standard injection_skeleton (source-tarpit-sink) is broken",
+                    "default": false
+                }
+            }
+        },
+        "discovery": {
+            "type": "object",
+            "properties": {
+                "rule": {
+                    "type": "string",
+                    "description": "path to discovery rule"
+                },
+                "method": {
+                    "type": "string",
+                    "description": "method used to execute the rule, e.g. joern or python",
+                    "examples": [
+                        "python",
+                        "joern"
+                    ]
+                },
+                "rule_accuracy": {
+                    "type": "string",
+                    "description": "How accurate is this rule in detecting the pattern?",
+                    "enum": [
+                        "FP",
+                        "FN",
+                        "FPFN",
+                        "Perfect"
+                    ]
+                },
+                "notes": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "remediation": {
+            "type": "object",
+            "properties": {
+                "transformation": {},
+                "modeling_rule": {},
+                "notes": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "compile": {
+            "type": "object",
+            "properties": {
+                "dependencies": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "path to dependencies"
+                },
+                "binary": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "description": "path to binary"
+                },
+                "instruction": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            }
+        },
+        "expectation": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "What type of vulnerability is expected?",
+                    "examples": [
+                        "xss"
+                    ]
+                },
+                "sink_file": {
+                    "type": "string",
+                    "description": "path to file including the sink"
+                },
+                "sink_line": {
+                    "type": "number",
+                    "description": "line number of the sink"
+                },
+                "source_file": {
+                    "type": "string",
+                    "description": "path to file including the source"
+                },
+                "source_line": {
+                    "type": "number",
+                    "description": "line number of the source"
+                },
+                "expectation": {
+                    "type": "boolean",
+                    "default": "true",
+                    "description": "Do we expect that this instance is detected as vulnerable?"
+                }
+            },
+            "required": [
+                "sink_file",
+                "sink_line",
+                "source_file",
+                "source_line"
+            ]
+        },
+        "properties": {
+            "type": "object",
+            "properties": {
+                "category": {
+                    "description": "How dynamic is this instance? \n- S0: not dynamic at all \n- D1: dynamic functions are used but with constant values as params that make the dynamicity solvable at static time (e.g., `call_user_func(\"foo\",$x)`\n-D2: dynamic functions are used with some variables that can be however resolved at static time by simple constant propagation. E.g.: `\n$f=\"foo\";\ncall_user_func($f,$x)`\n- D3: dynamic functions are used with some operators and variables that can be however partially resolved at static time by simple constant propagation. E.g.: `$f=\"foo\";call_user_func($f.\"_whatever\",$x)`\n- D4: dynamic functions are used with variables and/or operators that cannot be resolved at static time",
+                    "type": "string",
+                    "enum": [
+                        "S0",
+                        "D0",
+                        "D1",
+                        "D2",
+                        "D3"
+                    ]
+                },
+                "feature_vs_internal_api": {
+                    "description": "Is this capturing an internal API?",
+                    "type": "string",
+                    "enum": [
+                        "FEATURE",
+                        "INTERNAL_API"
+                    ]
+                },
+                "input_sanitizer": {
+                    "type": "boolean",
+                    "description": "Is the instance capturing an input sanitizer that may be not supported by SAST tools?",
+                    "default": "false"
+                },
+                "source_and_sink": {
+                    "type": "boolean",
+                    "description": "Is the instance capturing an input sanitizer that may be not supported by SAST tools?",
+                    "default": "false"
+                },
+                "negative_test_case": {
+                    "type": "boolean",
+                    "description": "Negation of `expectation.expectation`. Can be used to test if SAST tools are overapproximating.",
+                    "default": "false"
+                }
+            },
+            "required": [
+                "category",
+                "feature_vs_internal_api",
+                "input_sanitizer",
+                "source_and_sink",
+                "negative_test_case"
+            ]
+        }
+    }
+}
