@@ -1,0 +1,39 @@
+{
+    "title": "A testability pattern",
+    "type": "object",
+    "required": ["name", "description", "instances", "tags", "family"],
+    "properties": {
+        "name": {
+            "type": "string",
+            "title": "Name",
+            "description": "The name of the testability pattern."
+        },
+        "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "A description of this testability pattern"
+        },
+        "family": {
+            "type": "string",
+            "title": "Family",
+            "description": "The family of the pattern, i.e. the programming language.",
+            "enum": ["code_pattern_java", "code_pattern_js", "code_pattern_php"]
+        },
+        "tags": {
+            "type": "array",
+            "title": "Tags",
+            "description": "Tags for this pattern",
+            "items": {
+                "type": "string"
+            }
+        },
+        "instances": {
+            "type": "array",
+            "title": "Instances",
+            "description": "A list of relative paths of instance json files belonging to this pattern.",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
