@@ -6,7 +6,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./3_instance_80_callback_functions.php",
-        "sink_line": 3,
+        "sink_line": 9,
         "source_file": "./3_instance_80_callback_functions.php",
         "source_line": 6,
         "expectation": true

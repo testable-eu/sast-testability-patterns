@@ -1,7 +1,8 @@
 <?php
 function F($var){
-    echo $var;
+    return $var;
 }
 
-$a = $_GET["p1"];
-call_user_func($func, $a);
+$a = $_GET["p1"]; //source
+$b = call_user_func($func, $a); // tarpit, $func is completely unknown
+echo $b; // sink

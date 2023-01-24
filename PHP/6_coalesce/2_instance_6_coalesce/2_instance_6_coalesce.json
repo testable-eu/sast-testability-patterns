@@ -4,7 +4,7 @@
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./../1_instance_6_coalesce/1_instance_6_coalesce.sc",
+        "rule": "./2_instance_6_coalesce.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
         "notes": "This rule should discover all usages of the null coalescing operator"

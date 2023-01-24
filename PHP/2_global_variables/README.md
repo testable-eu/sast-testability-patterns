@@ -1,4 +1,5 @@
 # Pattern: Global Variables
+This pattern targets `global` variables. Global variables may be challenging for SAST tools: if an attacker controlled value ends-up in a global variable in a program scope, is a SAST tool able to properly propagate that information to other scopes?
 
 ## Category
 
