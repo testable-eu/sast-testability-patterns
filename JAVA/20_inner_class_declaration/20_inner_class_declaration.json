@@ -1,12 +1,13 @@
 {
     "name": "inner_class_declaration",
-    "description": "",
+    "description": "In Java, method-local inner classes are treated as local types and their scope and visibility is restricted within the method itself. If a tainted value is inserted into the dataflow by using inner class properties, it may be difficult to be analyzed by specific SAST tools.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
         "java"
     ],
     "instances": [
-        "./1_instance_20_inner_class_declaration/1_instance_20_inner_class_declaration.json","./2_instance_20_inner_class_declaration/2_instance_20_inner_class_declaration.json"
+        "./1_instance_20_inner_class_declaration/1_instance_20_inner_class_declaration.json",
+        "./2_instance_20_inner_class_declaration/2_instance_20_inner_class_declaration.json"
     ]
 }

@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": null,
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./2_instance_20_inner_class_declaration.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
@@ -29,9 +29,9 @@
     },
     "properties": {
         "category": "S0",
-        "feature_vs_internal_api": null,
-        "input_sanitizer": "no",
-        "source_and_sink": "no",
-        "negative_test_case": "no"
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
     }
 }
