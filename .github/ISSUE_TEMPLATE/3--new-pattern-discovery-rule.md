@@ -10,18 +10,15 @@ assignees: ''
 <!--- Please complete the sections below -->
 
 
-## What is the proposed testability pattern?
-<!--- A short summary of what the testability pattern is about -->
+## Testability Pattern
+<!--- For which testability pattern/instances would you like to propose a discovery rule? -->
+
+## Discovery Rule
+<!--- What is the new proposed discovery rule? -->
 
 
-
-## Code snippet examples
-<!--- an example code snippet with the proposed pattern-->
-
-
-
-## Affected testing tools
-<!--- which security testing tools are affected by this pattern? -->
+## Discovery Approach
+<!--- Brief summary of how the proposed discovery rule works and its estimated accuracy -->
 
 
 ## Other
