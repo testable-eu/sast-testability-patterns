@@ -1,0 +1,20 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "JAVA/*/*.json",
+        "JS/*/*.json",
+        "PHP/*/*.json"
+      ],
+      "url": "./pattern_template/schema/pattern.schema.json"
+    },
+    {
+      "fileMatch": [
+        "JAVA/*/*/*_instance_*.json",
+        "JS/*/*/*_instance_*.json",
+        "PHP/*/*/*_instance_*.json"
+      ],
+      "url": "./pattern_template/schema/instance.schema.json"
+    }
+  ]
+}

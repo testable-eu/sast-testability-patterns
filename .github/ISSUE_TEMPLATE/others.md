@@ -1,7 +1,7 @@
 ---
 name: Other
 about: Used to report a typo, bug, or other minor issues in the patterns
-title: '[PUT_ISSUE_NAME_HERE]'
+title: "[PUT_ISSUE_NAME_HERE]"
 labels: ''
 assignees: ''
 

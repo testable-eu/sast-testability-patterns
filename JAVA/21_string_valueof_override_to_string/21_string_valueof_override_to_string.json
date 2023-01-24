@@ -1,6 +1,6 @@
 {
     "name": "string_valueof_override_to_string",
-    "description": "",
+    "description": "Overriding the default implementation for typical sink methods such as `toString` can make it harder for SAST tools to find problematic dataflows.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
@@ -9,7 +9,6 @@
     "instances": [
         "./1_instance_21_string_valueof_override_to_string/1_instance_21_string_valueof_override_to_string.json",
         "./2_instance_21_string_valueof_override_to_string/2_instance_21_string_valueof_override_to_string.json",
-        "./3_instance_21_string_valueof_override_to_string/3_instance_21_string_valueof_override_to_string.json",
-        "./4_instance_21_string_valueof_override_to_string/4_instance_21_string_valueof_override_to_string.json"
+        "./3_instance_21_string_valueof_override_to_string/3_instance_21_string_valueof_override_to_string.json"
     ]
 }

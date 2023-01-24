@@ -1,6 +1,6 @@
 {
     "name": "addition_assignment_operator",
-    "description": "",
+    "description": "Using the basic operator `+=` for String concatenation may restrict some SAST tools.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

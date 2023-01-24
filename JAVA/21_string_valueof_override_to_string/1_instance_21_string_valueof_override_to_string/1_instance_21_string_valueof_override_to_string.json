@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": "./1_instance_21_string_valueof_override_to_string.sc",
+        "rule": "../21_string_valueof_override_to_string_pattern.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "Perfect",
         "notes": null
     },
     "compile": {
@@ -22,16 +22,16 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./src/QuickServlet.java",
-        "sink_line": null,
+        "sink_line": 32,
         "source_file": "./src/QuickServlet.java",
-        "source_line": null,
+        "source_line": 28,
         "expectation": true
     },
     "properties": {
-        "category": null,
+        "category": "S0",
         "feature_vs_internal_api": null,
-        "input_sanitizer": null,
-        "source_and_sink": null,
-        "negative_test_case": null
+        "input_sanitizer": "no",
+        "source_and_sink": "no",
+        "negative_test_case": "no"
     }
 }

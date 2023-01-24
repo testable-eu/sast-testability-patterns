@@ -1,7 +1,9 @@
-**/.idea
-**/.vscode/
+**/.idea/*
+**/.vscode/*
+!.vscode/settings.json
 **/venv
 *.log
 *.iml
 /measurements
-/reviews/
+/reviews
+__pycache__

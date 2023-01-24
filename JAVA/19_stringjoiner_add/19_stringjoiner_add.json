@@ -1,6 +1,6 @@
 {
     "name": "stringjoiner_add",
-    "description": "",
+    "description": "Manually concatenating strings via StringJoiner adds additional complexity. The complex class acts as an intermediary, making it hard for SAST tools to reason about the dataflow.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

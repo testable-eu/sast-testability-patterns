@@ -1,8 +1,8 @@
 ---
-name: New Testability Pattern Proposal
+name: 1. New Testability Pattern Proposal
 about: Used to propose a new testability pattern for the SAST catalogue.
 title: 'New TP Proposal: [PUT_TARGET_TP_NAME_HERE]'
-labels: NEW_TP, ACK_WAITING
+labels: ACK_WAITING, NEW_TP
 assignees: ''
 
 ---
