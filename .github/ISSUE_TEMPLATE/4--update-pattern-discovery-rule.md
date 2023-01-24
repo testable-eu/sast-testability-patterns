@@ -1,8 +1,8 @@
 ---
-name: Update Pattern Discovery Rule
+name: 4. Update Pattern Discovery Rule
 about: Used to update a testability pattern discovery rule in the SAST catalogue.
 title: 'Update DiscovRule: [PUT_TARGET_TP_NAME_HERE]'
-labels: UPDATE_DISCOV_RULE, ACK_WAITING
+labels: ACK_WAITING, UPDATE_DISCOV_RULE
 assignees: ''
 
 ---

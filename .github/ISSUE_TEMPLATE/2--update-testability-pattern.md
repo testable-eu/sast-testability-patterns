@@ -1,8 +1,8 @@
 ---
-name: Update Testability Pattern
+name: 2. Update Testability Pattern
 about: Used to update a testability pattern in the SAST catalogue.
 title: 'Update TP: [PUT_TARGET_TP_NAME_HERE]'
-labels: UPDATE_TP, ACK_WAITING
+labels: ACK_WAITING, UPDATE_TP
 assignees: ''
 
 ---

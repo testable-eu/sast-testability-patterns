@@ -1,8 +1,8 @@
 ---
-name: New Pattern Discovery Rule
+name: 3. New Pattern Discovery Rule
 about: Used to to add a new discovery rule to for a SAST testability pattern.
 title: 'New DiscovRule: [PUT_TARGET_TP_NAME_HERE]'
-labels: NEW_DISCOV_RULE, ACK_WAITING
+labels: ACK_WAITING, NEW_DISCOV_RULE
 assignees: ''
 
 ---
