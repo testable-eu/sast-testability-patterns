@@ -1,6 +1,6 @@
 {
     "name": "",
-    "description": "",
+    "description": "In Java the Session object is a way to persist data for a specified time period, across more than one connection or page request from the user. Its design and the fact that is a global shared accessible object may break the dataflow tainting performed by specific SAST tools.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
