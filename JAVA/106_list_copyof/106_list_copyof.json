@@ -1,6 +1,6 @@
 {
     "name": "list_copyof",
-    "description": "",
+    "description": "The Java util method List.copyOf creates an unmodifiable List object containing the elements in the initial collection. The usage of this utility may break the dataflow tainting analysis performed by certain SAST tools.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
