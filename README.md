@@ -136,10 +136,10 @@ To view the complete list of testability patterns, click on the respective catal
 |99|get_ajax|v0.draft|[JS/99_get_ajax](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/99_get_ajax)|
 |100|replace_substring|v0.draft|[JS/100_replace_substring](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/100_replace_substring)|
 |101|innerhtml_outerhtml|v0.draft|[JS/101_innerhtml_outerhtml](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/101_innerhtml_outerhtml)|
-|102|event_dispatch|v0.draft|[JS/102_event_dispatch](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/102_event_dispatch)|
-|103|event_handler_registration|v0.draft|[JS/103_event_handler_registration](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/103_event_handler_registration)|
-|104|event_handler_removal|v0.draft|[JS/104_event_handler_removal](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/104_event_handler_removal)|
-|105|this_statement|v0.draft|[JS/105_this_statement](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/105_this_statement)|
+|102|event_dispatch|v1.0|[JS/102_event_dispatch](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/102_event_dispatch)|
+|103|event_handler_registration|v1.0|[JS/103_event_handler_registration](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/103_event_handler_registration)|
+|104|event_handler_removal|v1.0|[JS/104_event_handler_removal](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/104_event_handler_removal)|
+|105|this_statement|v1.0|[JS/105_this_statement](https://github.com/testable-eu/sast-testability-patterns/tree/master/JS/105_this_statement)|
 
 </details>
 
