@@ -1,6 +1,6 @@
 {
     "name": "collections_ncopies",
-    "description": "",
+    "description": "The method nCopies in the Java utils collection creates an immutable list containing n copies of the provided object. The usage of utilities or external libraries may be difficult to be handled by a SAST tool since the function internals may break the normal dataflow taint analysis performed by the tool.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
