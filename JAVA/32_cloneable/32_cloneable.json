@@ -1,6 +1,6 @@
 {
     "name": "",
-    "description": "",
+    "description": "In Java cloned objects are separate identical copies of the original instance. SAST tools may face difficulties in analyzing the taint dataflow in cloned objects.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
