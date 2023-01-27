@@ -392,9 +392,12 @@ To view the complete list of testability patterns, click on the respective catal
 
 ## Contributions
 
-We are delighted to know that you would like to contribute to this repository. Please follow our [contribution guideline](./docs/contribution-guidelines.md) before you submit a PR.
+We are delighted to know that you would like to contribute to this repository. Please follow our [contribution guideline](./docs/contribution-guidelines.md) before you submit a PR. 
 
 For any questions, suggestions, feedback or concerns. please [raise an issue in the repository](https://github.com/testable-eu/sast-testability-patterns/issues). We welcome suggestions and feedback from the community. 
+
+**Important:** When opening a new issue, please follow our [provided issue templates](https://github.com/testable-eu/sast-testability-patterns/issues/new/choose), if possible. For example, if you want to add a new testability pattern, please choose the [`New Testability Pattern Proposal`](https://github.com/testable-eu/sast-testability-patterns/issues/new?assignees=&labels=ACK_WAITING%2C+NEW_TP&template=1--new-testability-pattern-proposal.md&title=New+TP+Proposal%3A+%5BPUT_TARGET_TP_NAME_HERE%5D) template.
+
 
 
 ## News
