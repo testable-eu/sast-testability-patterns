@@ -7,8 +7,6 @@
         "java"
     ],
     "instances": [
-        "./1_instance_24_arraylist/1_instance_24_arraylist.json",
-        "./2_instance_24_arraylist/2_instance_24_arraylist.json",
-        "./3_instance_24_arraylist/3_instance_24_arraylist.json"
+        "./24_arraylist_rule.sc"
     ]
 }
