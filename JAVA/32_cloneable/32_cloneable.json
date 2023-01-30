@@ -1,13 +1,12 @@
 {
-    "name": "",
-    "description": "",
+    "name": "Clonable",
+    "description": "Cloning Objects via `.clone()` can hinder dataflow analysis, especially with custom implementations of `clone`.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
         "java"
     ],
     "instances": [
-        "./1_instance_32_cloneable/1_instance_32_cloneable.json",
-        "./2_instance_32_cloneable/2_instance_32_cloneable.json"
+        "./32_cloneable_rule.sc"
     ]
 }
