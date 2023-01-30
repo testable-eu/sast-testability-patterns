@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "ArrayList",
+    "description": "Using user-data in classses with complex accessors such as ArrayList can hinder dataflow analysis.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
