@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "Array",
+    "description": "Accessing dynamic user input through an array or defining elements from them may restrict a SAST too's view on the flow of data.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

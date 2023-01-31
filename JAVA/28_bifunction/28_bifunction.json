@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "BiFunction",
+    "description": "Using Java's BiFunction as a functional interface to take two arguments and return an object makes it hard for some SAST tools to reason about the dataflow.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

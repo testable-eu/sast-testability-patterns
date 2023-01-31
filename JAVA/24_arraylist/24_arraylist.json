@@ -1,14 +1,12 @@
 {
-    "name": "",
-    "description": "",
+    "name": "ArrayList",
+    "description": "Using user-data in classses with complex accessors such as ArrayList can hinder dataflow analysis.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
         "java"
     ],
     "instances": [
-        "./1_instance_24_arraylist/1_instance_24_arraylist.json",
-        "./2_instance_24_arraylist/2_instance_24_arraylist.json",
-        "./3_instance_24_arraylist/3_instance_24_arraylist.json"
+        "./24_arraylist_rule.sc"
     ]
 }

@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "Closeable",
+    "description": "Closing Objects via `.close()` (implicitly or explicitly) can hinder dataflow analysis, especially with custom implementations of `close`.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
