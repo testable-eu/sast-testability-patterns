@@ -13,7 +13,7 @@ This project has a OWASP website available at: [https://owasp.org/www-project-te
 - [Example pattern template](https://github.com/testable-eu/sast-testability-patterns/tree/master/pattern_template)
 - [Adding a pattern](./docs/testability-patterns-adding.md)
 - [Contribution guidelines](./docs/contribution-guidelines.md)
-- [Pattern discovery](https://github.com/testable-eu/sast-tp-framework)
+- [Pattern discovery (TP-Frameork)](https://github.com/testable-eu/sast-tp-framework)
 
 For more detailed documentation, see the [docs](https://github.com/testable-eu/sast-testability-patterns/tree/master/docs) folder.
 
