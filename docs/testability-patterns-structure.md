@@ -1,5 +1,5 @@
 ## Prerequisites
-- [Testability patterns](./Testability-Patterns.md)
+- [Testability patterns](./testability-patterns.md)
 
 ## TP Structure: File System and JSON
 
