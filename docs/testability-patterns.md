@@ -1,4 +1,4 @@
-## Introduction
+## Testability Patterns: Introduction
 
 When scanning application code, SAST tools may encounter some code instructions that they are not able to properly interpret and analyse. Code instructions used for [reflective programming](https://en.wikipedia.org/wiki/Reflective_programming)---such as the PHP `call_user_func($f, $a)`, that at runtime will execute a function depending on the value of `$f`---are a classical example, but there are many more. When a SAST tool encounter such an instruction, it may not know which function will be invoked and therefore may get lost in its analysis. 
 
