@@ -4,6 +4,6 @@
     "family": "code_pattern_js",
     "tags": ["sast", "js", "client-side"],
     "instances": [
-        "./1_instance_102_event_dispatch/1_instance_102_event_dispatch.json",
+        "./1_instance_102_event_dispatch/1_instance_102_event_dispatch.json"
     ]
 }
