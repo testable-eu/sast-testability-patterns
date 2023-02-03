@@ -14,8 +14,8 @@
     },
     "discovery": {
         "rule": "./pattern_discovery_rule.sc",
-        "method": null,
-        "rule_accuracy": null,
+        "method": "joern",
+        "rule_accuracy": "FPFN",
         "notes": null
     },
     "compile": {
