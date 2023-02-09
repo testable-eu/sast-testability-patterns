@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": null,
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./2_instance_14_new_character.sc",
+        "method": "joern",
+        "rule_accuracy": "FN",
         "notes": null
     },
     "compile": {
@@ -22,9 +22,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./src/NewCharacter.java",
-        "sink_line": null,
+        "sink_line": 19,
         "source_file": "./src/NewCharacter.java",
-        "source_line": null,
+        "source_line": 11,
         "expectation": true
     },
     "properties": {

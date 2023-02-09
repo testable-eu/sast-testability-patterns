@@ -1,6 +1,6 @@
 {
     "name": "New Character",
-    "description": "",
+    "description": "Instantiating new chars from dynamic code might restrict a SAST tool's ability to reason about the flow of data.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
