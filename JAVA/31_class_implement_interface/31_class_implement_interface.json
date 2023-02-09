@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "ClassImplementsInterface",
+    "description": "In cases where a class or childclass implements another interface, dataflow might become harder to reason about because it might not be obvious to a SAST tool where additional attributes and methods are derived from.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
