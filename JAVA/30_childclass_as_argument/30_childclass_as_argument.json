@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "description": "",
+    "name": "ChildclassArgument",
+    "description": "Passing a child class to a method of its parent class can lead to high-complexity dataflows, making it hard for SAST tools to reason about it.",
     "family": "code_pattern_java",
     "tags": [
         "sast",
