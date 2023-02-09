@@ -1,6 +1,6 @@
 {
     "name": "binding",
-    "description": "",
+    "description": "When creating a Java binding of a value directly to a field of a class, this can greatly restrict a SAST tool's capability to reason about the flow of data as field accesses might become implicit and hard to track.",
     "family": "code_pattern_java",
     "tags": [
         "sast",

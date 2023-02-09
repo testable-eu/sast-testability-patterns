@@ -1,7 +1,7 @@
 {
     "code": {
         "path": "./src/QuickServlet.java",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "remediation": {
         "notes": null,
@@ -9,9 +9,9 @@
         "modeling_rule": null
     },
     "discovery": {
-        "rule": null,
-        "method": null,
-        "rule_accuracy": null,
+        "rule": "./1_instance_15_binding.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
@@ -24,7 +24,7 @@
         "sink_file": "./src/QuickServlet.java",
         "sink_line": null,
         "source_file": "./src/QuickServlet.java",
-        "source_line": null,
+        "source_line": 12,
         "expectation": true
     },
     "properties": {
