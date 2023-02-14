@@ -419,7 +419,7 @@ To see the complete list of relevant publications, please visit [https://testabl
 
 ## License
 
-This project is licensed under `GNU AFFERO GENERAL PUBLIC LICENSE V3.0`. See [LICENSE](LICENSE) for more information.
+This project is licensed under `Apache License Version 2.0 `. See [LICENSE](LICENSE) for more information. 
 
 ## Acknowledgements
 
