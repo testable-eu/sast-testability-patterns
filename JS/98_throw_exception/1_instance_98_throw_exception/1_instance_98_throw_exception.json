@@ -15,8 +15,8 @@
     "discovery": {
         "rule": "./../pattern_discovery_rule.sc",
         "method": "joern",
-        "rule_accuracy": "Perfect",
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "this rules find also comments that contains the word throw"
     },
     "compile": {
         "binary": null,
