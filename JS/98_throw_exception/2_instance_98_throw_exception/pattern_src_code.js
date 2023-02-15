@@ -2,7 +2,7 @@
  * testability pattern: throw_exception 
  * ----------------------------------------------
  * source: request.url
- * tarpit: throw new Error(b);
+ * tarpit: throws;
  * sink: response.send();
  */
 

@@ -13,7 +13,7 @@
         "expectation": false
     },
     "discovery": {
-        "rule": "./pattern_discovery_rule.sc",
+        "rule": "./../pattern_discovery_rule.sc",
         "method": "joern",
         "rule_accuracy": "FP",
         "notes": null

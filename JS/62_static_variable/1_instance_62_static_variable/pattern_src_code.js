@@ -2,7 +2,7 @@
  * testability pattern: static_variable 
  * ----------------------------------------------
  * source: request.url
- * tarpit: static variable = 'safe';
+ * tarpit: Static var
  * sink: response.send();
  */
 
