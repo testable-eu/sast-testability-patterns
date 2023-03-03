@@ -6,11 +6,8 @@ import javax.servlet.http.HttpServletResponse;
 public class Throw extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-        //source
-        String s = request.getParameter("t1");
-        //pattern
-        Error e = new Error(s);
-        //sink
-        response.getWriter().write(e.getMessage());
+        String s = request.getParameter("t1"); //source
+        Error e = new Error(s); //tarpit
+        response.getWriter().write(e.getMessage()); //sink
     }
 }

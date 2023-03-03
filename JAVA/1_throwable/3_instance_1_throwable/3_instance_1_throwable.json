@@ -22,9 +22,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./src/Throw.java",
-        "sink_line": 14,
+        "sink_line": 11,
         "source_file": "./src/Throw.java",
-        "source_line": 10,
+        "source_line": 9,
         "expectation": true
     },
     "properties": {
