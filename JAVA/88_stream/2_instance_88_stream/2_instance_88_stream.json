@@ -1,7 +1,7 @@
 {
     "code": {
         "path": "./src/QuickServlet.java",
-        "injection_skeleton_broken": null
+        "injection_skeleton_broken": true
     },
     "remediation": {
         "notes": null,

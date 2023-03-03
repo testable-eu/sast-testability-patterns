@@ -8,7 +8,6 @@
     ],
     "instances": [
         "./1_instance_88_stream/1_instance_88_stream.json",
-        "./2_instance_88_stream/2_instance_88_stream.json",
-        "./3_instance_88_stream/3_instance_88_stream.json"
+        "./2_instance_88_stream/2_instance_88_stream.json"
     ]
 }
