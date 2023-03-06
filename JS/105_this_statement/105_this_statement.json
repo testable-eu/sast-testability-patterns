@@ -1,5 +1,5 @@
 {
-    "name": "This Statment",
+    "name": "This Statement",
     "description": "./README.md",
     "family": "code_pattern_js",
     "tags": ["sast", "js", "client-side"],

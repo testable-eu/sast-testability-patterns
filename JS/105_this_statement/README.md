@@ -1,4 +1,4 @@
-# Pattern: This Statment
+# Pattern: This Statement
 
 ## Category
 Function
