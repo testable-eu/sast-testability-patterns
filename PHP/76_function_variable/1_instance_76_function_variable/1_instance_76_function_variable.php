@@ -1,9 +1,9 @@
 <?php
 function F($st){
-    echo $st;
+    return $st;
 }
-$b = $_GET["p1"];
+$a = $_GET["p1"]; // source
 $func = "F";
-// it will call the function F
-// it will print $b, XSS
-$func($b); 
+$b = $func($a); // tarpit: call to function F pointed by variable $func
+echo $b; // sink
+

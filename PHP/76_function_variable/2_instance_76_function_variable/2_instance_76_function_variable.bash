@@ -1,27 +1,27 @@
 
-$_main: ; (lines=13, args=0, vars=2, tmps=7)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/7_function_variable/second/second_ex.php:1-9
-L0 (5):     EXT_STMT
-L1 (5):     T2 = FETCH_R (global) string("_GET")
-L2 (5):     T3 = FETCH_DIM_R T2 string("p1")
-L3 (5):     ASSIGN CV0($b) T3
-L4 (6):     EXT_STMT
-L5 (6):     T5 = FETCH_R (global) string("_GET")
-L6 (6):     T6 = FETCH_DIM_R T5 string("p2")
-L7 (6):     ASSIGN CV1($func) T6
-L8 (9):     EXT_STMT
-L9 (9):     INIT_DYNAMIC_CALL 1 CV1($func)
-L10 (9):    SEND_VAR_EX CV0($b) 1
-L11 (9):    DO_FCALL
-L12 (9):    RETURN int(1)
+$_main:
+     ; (lines=12, args=0, vars=3, tmps=8)
+     ; (before optimizer)
+     ; /tp-framework/testability_patterns/PHP/76_function_variable/2_instance_76_function_variable/2_instance_76_function_variable.php:1-8
+     ; return  [] RANGE[0..0]
+0000 T3 = FETCH_R (global) string("_GET")
+0001 T4 = FETCH_DIM_R T3 string("p1")
+0002 ASSIGN CV0($a) T4
+0003 T6 = FETCH_R (global) string("_GET")
+0004 T7 = FETCH_DIM_R T6 string("p2")
+0005 ASSIGN CV1($func) T7
+0006 INIT_DYNAMIC_CALL 1 CV1($func)
+0007 SEND_VAR_EX CV0($a) 1
+0008 V9 = DO_FCALL
+0009 ASSIGN CV2($b) V9
+0010 ECHO CV2($b)
+0011 RETURN int(1)
 
-F: ; (lines=6, args=1, vars=1, tmps=0)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/7_function_variable/second/second_ex.php:2-4
-L0 (2):     EXT_NOP
-L1 (2):     CV0($st) = RECV 1
-L2 (3):     EXT_STMT
-L3 (3):     ECHO CV0($st)
-L4 (4):     EXT_STMT
-L5 (4):     RETURN null
+F:
+     ; (lines=3, args=1, vars=1, tmps=0)
+     ; (before optimizer)
+     ; /tp-framework/testability_patterns/PHP/76_function_variable/2_instance_76_function_variable/2_instance_76_function_variable.php:2-4
+     ; return  [] RANGE[0..0]
+0000 CV0($st) = RECV 1
+0001 RETURN CV0($st)
+0002 RETURN null

@@ -6,8 +6,8 @@
     "discovery": {
         "rule": "./2_instance_76_function_variable.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "Rule identifies an INIT_DYNAMIC_CALL made on a non-literal element"
     },
     "compile": {
         "binary": "./2_instance_76_function_variable.bash",
