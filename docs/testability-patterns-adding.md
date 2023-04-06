@@ -40,4 +40,4 @@ A pattern can be created for a SAST catalog either manually or via the tp-framew
 
 You can find a starter template of a simple testability pattern [here](https://github.com/testable-eu/sast-testability-patterns/tree/master/pattern_template).
 
-**Note**: the pattern folder shall be _self-contained_ as files and folders outside it will be neglected by the [tp-framework](https://github.com/testable-eu/sast-tp-framework). For example, dependencies should not point outside the pattern folder.
+**Note**: the pattern folder shall be *self-contained* as files and folders outside it will be neglected by the [tp-framework](https://github.com/testable-eu/sast-tp-framework). For example, dependencies should not point outside the pattern folder.

@@ -8,7 +8,7 @@
 
 The pattern folder structure is:
 
-```
+```text
 00_pattern_name
 |-- 00_pattern_name.json
 |-- README.md
