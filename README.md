@@ -2,7 +2,7 @@
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
-This repository includes catalogs of SAST testability patterns for the [OWASP Testability Patterns](https://owasp.org/www-project-testability-patterns-for-web-applications/) project. Testability Patterns (TPs) are problematic code instructions that affect the capability of code analysis tools for security testing. Due to TPs, SAST tools may not detect an existing vulnerability, or conversely, report a false alarm. 
+This repository includes catalogs of SAST testability patterns for the [OWASP Testability Patterns](https://owasp.org/www-project-testability-patterns-for-web-applications/) project. Testability Patterns (TPs) are problematic code instructions that affect the capability of code analysis tools for security testing. Due to TPs, SAST tools may not detect an existing vulnerability, or conversely, report a false alarm.
 
 This project has a OWASP website available at: [https://owasp.org/www-project-testability-patterns-for-web-applications/](https://owasp.org/www-project-testability-patterns-for-web-applications/).
 
@@ -17,7 +17,7 @@ This project has a OWASP website available at: [https://owasp.org/www-project-te
 
 For more detailed documentation, see the [docs](https://github.com/testable-eu/sast-testability-patterns/tree/master/docs) folder.
 
-## Overview 
+## Overview
 
 | Language    | # Patterns  | # Instances   | Link                                                                                |
 |------------ |------------ |-------------  |------------------------------------------------------------------------------------ |
@@ -25,8 +25,7 @@ For more detailed documentation, see the [docs](https://github.com/testable-eu/s
 | PhP         | 84          | 145           | [PHP](https://github.com/testable-eu/sast-testability-patterns/tree/master/PHP)   |
 | Java        | 143         | 218           | [JAVA](https://github.com/testable-eu/sast-testability-patterns/tree/master/JAVA)   |
 
-
-## List of Patterns 
+## List of Patterns
 
 To view the complete list of testability patterns, click on the respective catalogue to expand.  
 
@@ -235,7 +234,6 @@ To view the complete list of testability patterns, click on the respective catal
 
 </details>
 
-
 <details markdown="1">
 <summary><b>Java</b></summary>
 
@@ -387,9 +385,6 @@ To view the complete list of testability patterns, click on the respective catal
 
 </details>
 
-
-
-
 ## Contributions
 
 We are delighted to know that you would like to contribute to this repository. Please follow our [contribution guideline](./docs/contribution-guidelines.md) before you submit a PR. 
@@ -397,8 +392,6 @@ We are delighted to know that you would like to contribute to this repository. P
 For any questions, suggestions, feedback or concerns. please [raise an issue in the repository](https://github.com/testable-eu/sast-testability-patterns/issues). We welcome suggestions and feedback from the community. 
 
 **Important:** When opening a new issue, please follow our [provided issue templates](https://github.com/testable-eu/sast-testability-patterns/issues/new/choose), if possible. For example, if you want to add a new testability pattern, please choose the [`New Testability Pattern Proposal`](https://github.com/testable-eu/sast-testability-patterns/issues/new?assignees=&labels=ACK_WAITING%2C+NEW_TP&template=1--new-testability-pattern-proposal.md&title=New+TP+Proposal%3A+%5BPUT_TARGET_TP_NAME_HERE%5D) template.
-
-
 
 ## News
 
@@ -419,7 +412,7 @@ To see the complete list of relevant publications, please visit [https://testabl
 
 ## License
 
-This project is licensed under `Apache License Version 2.0 `. See [LICENSE](LICENSE) for more information. 
+This project is licensed under `Apache License Version 2.0 `. See [LICENSE](LICENSE) for more information.
 
 ## Acknowledgements
 
@@ -429,4 +422,3 @@ This project received funding from the European Union's Horizon 2020 research an
   <img src="https://testable.eu/img/eu_flag.png"><br>
   Funded by the European Union
 </p>
-
