@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_65_object_shallow_copy/1_instance_65_object_shallow_copy.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

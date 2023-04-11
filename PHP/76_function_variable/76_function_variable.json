@@ -2,9 +2,14 @@
     "name": "Function Variable",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_76_function_variable/1_instance_76_function_variable.json",
         "./2_instance_76_function_variable/2_instance_76_function_variable.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

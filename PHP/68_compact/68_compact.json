@@ -2,9 +2,14 @@
     "name": "Compact",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_68_compact/1_instance_68_compact.json",
         "./2_instance_68_compact/2_instance_68_compact.json"
-    ]
+    ],
+    "version": "v1.0"
 }

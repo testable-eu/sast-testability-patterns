@@ -2,8 +2,14 @@
     "name": "Symbol to String Tag",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_67_symbol_to_string_tag/1_instance_67_symbol_to_string_tag.json"
-    ]
+    ],
+    "version": "v1.0"
 }

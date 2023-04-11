@@ -2,10 +2,16 @@
     "name": "Named Class",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_71_named_class/1_instance_71_named_class.json",
         "./2_instance_71_named_class/2_instance_71_named_class.json",
         "./3_instance_71_named_class/3_instance_71_named_class.json"
-    ]
+    ],
+    "version": "v1.0"
 }

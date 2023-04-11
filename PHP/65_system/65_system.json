@@ -2,10 +2,15 @@
     "name": "System",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_65_system/1_instance_65_system.json",
         "./2_instance_65_system/2_instance_65_system.json",
         "./3_instance_65_system/3_instance_65_system.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

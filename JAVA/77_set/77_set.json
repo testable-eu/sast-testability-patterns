@@ -11,5 +11,6 @@
         "./2_instance_77_set/2_instance_77_set.json",
         "./3_instance_77_set/3_instance_77_set.json",
         "./4_instance_77_set/4_instance_77_set.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

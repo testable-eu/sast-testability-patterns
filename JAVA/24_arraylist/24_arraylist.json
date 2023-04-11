@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./24_arraylist_rule.sc"
-    ]
+    ],
+    "version": "v0.draft"
 }

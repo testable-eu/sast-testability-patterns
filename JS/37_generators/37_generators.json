@@ -2,11 +2,17 @@
     "name": "Generators",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_37_generators/1_instance_37_generators.json",
         "./2_instance_37_generators/2_instance_37_generators.json",
         "./3_instance_37_generators/3_instance_37_generators.json",
         "./4_instance_37_generators/4_instance_37_generators.json"
-    ]
+    ],
+    "version": "v1.0"
 }

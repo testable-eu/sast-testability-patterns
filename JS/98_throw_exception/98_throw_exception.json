@@ -2,9 +2,15 @@
     "name": "Throw Exception",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_98_throw_exception/1_instance_98_throw_exception.json",
         "./2_instance_98_throw_exception/2_instance_98_throw_exception.json"
-    ]
+    ],
+    "version": "v1.0"
 }

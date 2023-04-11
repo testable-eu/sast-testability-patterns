@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_35_conditional_operator/1_instance_35_conditional_operator.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

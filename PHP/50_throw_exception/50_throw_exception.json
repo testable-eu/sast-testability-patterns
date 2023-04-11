@@ -2,8 +2,13 @@
     "name": "Throw Exception",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_50_throw_exception/1_instance_50_throw_exception.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

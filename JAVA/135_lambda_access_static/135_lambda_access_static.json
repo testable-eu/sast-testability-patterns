@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_135_lambda_access_static/1_instance_135_lambda_access_static.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

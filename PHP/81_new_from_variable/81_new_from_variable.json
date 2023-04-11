@@ -2,10 +2,15 @@
     "name": "New From Variable",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_81_new_from_variable/1_instance_81_new_from_variable.json",
         "./2_instance_81_new_from_variable/2_instance_81_new_from_variable.json",
         "./3_instance_81_new_from_variable/3_instance_81_new_from_variable.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

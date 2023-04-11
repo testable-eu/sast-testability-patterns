@@ -2,8 +2,13 @@
     "name": "Clone",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_25_clone/1_instance_25_clone.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

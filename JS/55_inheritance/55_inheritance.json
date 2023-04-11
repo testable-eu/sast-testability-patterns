@@ -2,8 +2,14 @@
     "name": "Inheritance",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_55_inheritance/1_instance_55_inheritance.json"
-    ]
+    ],
+    "version": "v1.0"
 }

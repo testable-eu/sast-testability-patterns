@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_139_method_erasure/1_instance_139_method_erasure.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

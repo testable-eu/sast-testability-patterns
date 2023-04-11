@@ -11,5 +11,6 @@
         "./2_instance_92_queue_interface/2_instance_92_queue_interface.json",
         "./3_instance_92_queue_interface/3_instance_92_queue_interface.json",
         "./4_instance_92_queue_interface/4_instance_92_queue_interface.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

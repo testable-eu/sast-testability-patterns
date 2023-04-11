@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_114_vector_setsize/1_instance_114_vector_setsize.json"
-    ]
+    ],
+    "version": "v0.draft"
 }
