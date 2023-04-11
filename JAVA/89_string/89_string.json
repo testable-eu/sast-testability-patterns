@@ -15,5 +15,6 @@
         "./6_instance_89_string/6_instance_89_string.json",
         "./7_instance_89_string/7_instance_89_string.json",
         "./8_instance_89_string/8_instance_89_string.json"
-    ]
+    ],
+    "version": "v0"
 }

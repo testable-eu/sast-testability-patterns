@@ -11,5 +11,6 @@
         "./5_instance_72_errors/5_instance_72_errors.json",
         "./6_instance_72_errors/6_instance_72_errors.json",
         "./7_instance_72_errors/7_instance_72_errors.json"
-    ]
+    ],
+    "version": "v0"
 }

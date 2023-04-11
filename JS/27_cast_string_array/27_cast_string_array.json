@@ -5,5 +5,6 @@
     "tags": [],
     "instances": [
         "./1_instance_27_cast_string_array/1_instance_27_cast_string_array.json"
-    ]
+    ],
+    "version": "v0"
 }

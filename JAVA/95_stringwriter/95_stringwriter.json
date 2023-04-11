@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_95_stringwriter/1_instance_95_stringwriter.json",
         "./2_instance_95_stringwriter/2_instance_95_stringwriter.json"
-    ]
+    ],
+    "version": "v0"
 }

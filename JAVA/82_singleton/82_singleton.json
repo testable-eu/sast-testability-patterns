@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_82_singleton/1_instance_82_singleton.json"
-    ]
+    ],
+    "version": "v0"
 }

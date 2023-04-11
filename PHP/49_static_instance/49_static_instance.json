@@ -2,8 +2,13 @@
     "name": "Static Instance",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_49_static_instance/1_instance_49_static_instance.json"
-    ]
+    ],
+    "version": "v0"
 }

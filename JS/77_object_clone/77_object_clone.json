@@ -2,8 +2,14 @@
     "name": "Object Clone",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js","server-side","nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_77_object_clone/1_instance_77_object_clone.json"
-    ]
+    ],
+    "version": "v1"
 }

@@ -5,5 +5,6 @@
     "tags": [],
     "instances": [
         "./1_instance_59_simple_object/1_instance_59_simple_object.json"
-    ]
+    ],
+    "version": "v0"
 }

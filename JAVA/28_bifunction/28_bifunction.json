@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_28_bifunction/1_instance_28_bifunction.json"
-    ]
+    ],
+    "version": "v0"
 }

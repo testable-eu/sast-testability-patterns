@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_123_variables_hiding/1_instance_123_variables_hiding.json"
-    ]
+    ],
+    "version": "v0"
 }

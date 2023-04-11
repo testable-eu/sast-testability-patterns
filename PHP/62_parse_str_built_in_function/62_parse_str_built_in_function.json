@@ -2,8 +2,13 @@
     "name": "Parse str built in function",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_62_parse_str_built_in_function/1_instance_62_parse_str_built_in_function.json"
-    ]
+    ],
+    "version": "v0"
 }

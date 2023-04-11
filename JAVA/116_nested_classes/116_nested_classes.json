@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_116_nested_classes/1_instance_116_nested_classes.json"
-    ]
+    ],
+    "version": "v0"
 }

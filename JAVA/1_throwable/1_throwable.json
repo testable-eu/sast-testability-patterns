@@ -11,5 +11,6 @@
         "./2_instance_1_throwable/2_instance_1_throwable.json",
         "./3_instance_1_throwable/3_instance_1_throwable.json",
         "./4_instance_1_throwable/4_instance_1_throwable.json"
-    ]
+    ],
+    "version": "v1"
 }

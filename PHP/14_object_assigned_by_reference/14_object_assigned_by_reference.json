@@ -2,10 +2,15 @@
     "name": "Object Assigned By Reference",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_14_object_assigned_by_reference/1_instance_14_object_assigned_by_reference.json",
         "./2_instance_14_object_assigned_by_reference/2_instance_14_object_assigned_by_reference.json",
         "./3_instance_14_object_assigned_by_reference/3_instance_14_object_assigned_by_reference.json"
-    ]
+    ],
+    "version": "v0"
 }

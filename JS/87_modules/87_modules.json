@@ -2,8 +2,14 @@
     "name": "Modules",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_87_modules/1_instance_87_modules.json"
-    ]
+    ],
+    "version": "v1"
 }

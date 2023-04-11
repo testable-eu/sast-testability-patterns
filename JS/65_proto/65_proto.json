@@ -2,8 +2,14 @@
     "name": "Proto",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_65_proto/1_instance_65_proto.json"
-    ]
+    ],
+    "version": "v1"
 }

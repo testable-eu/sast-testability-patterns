@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_68_pass_by_value/1_instance_68_pass_by_value.json",
         "./2_instance_68_pass_by_value/2_instance_68_pass_by_value.json"
-    ]
+    ],
+    "version": "v0"
 }

@@ -2,10 +2,15 @@
     "name": "Variadic Functions",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_16_variadic_functions/1_instance_16_variadic_functions.json",
         "./2_instance_16_variadic_functions/2_instance_16_variadic_functions.json",
         "./3_instance_16_variadic_functions/3_instance_16_variadic_functions.json"
-    ]
+    ],
+    "version": "v0"
 }

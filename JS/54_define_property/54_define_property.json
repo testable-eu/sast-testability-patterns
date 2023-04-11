@@ -2,9 +2,15 @@
     "name": "Define Property",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_54_define_property/1_instance_54_define_property.json",
         "./2_instance_54_define_property/2_instance_54_define_property.json"
-    ]
+    ],
+    "version": "v1"
 }

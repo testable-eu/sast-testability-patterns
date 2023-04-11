@@ -10,5 +10,6 @@
         "./1_instance_11_bytearrayinputstream/1_instance_11_bytearrayinputstream.json",
         "./2_instance_11_bytearrayinputstream/2_instance_11_bytearrayinputstream.json",
         "./3_instance_11_bytearrayinputstream/3_instance_11_bytearrayinputstream.json"
-    ]
+    ],
+    "version": "v1"
 }

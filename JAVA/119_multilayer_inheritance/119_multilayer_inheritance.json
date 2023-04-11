@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_119_multilayer_inheritance/1_instance_119_multilayer_inheritance.json"
-    ]
+    ],
+    "version": "v0"
 }

@@ -2,9 +2,15 @@
     "name": "Reflect Get",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_70_reflect_get/1_instance_70_reflect_get.json",
         "./2_instance_70_reflect_get/2_instance_70_reflect_get.json"
-    ]
+    ],
+    "version": "v1"
 }

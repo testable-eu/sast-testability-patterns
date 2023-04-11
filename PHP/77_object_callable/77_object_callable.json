@@ -2,9 +2,14 @@
     "name": "Object Callable",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_77_object_callable/1_instance_77_object_callable.json",
         "./2_instance_77_object_callable/2_instance_77_object_callable.json"
-    ]
+    ],
+    "version": "v0"
 }

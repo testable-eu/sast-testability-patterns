@@ -2,9 +2,15 @@
     "name": "Unset Element Array",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_1_unset_element_array/1_instance_1_unset_element_array.json",
         "./2_instance_1_unset_element_array/2_instance_1_unset_element_array.json"
-    ]
+    ],
+    "version": "v1"
 }

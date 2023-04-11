@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_23_array/1_instance_23_array.json",
         "./2_instance_23_array/2_instance_23_array.json"
-    ]
+    ],
+    "version": "v0"
 }

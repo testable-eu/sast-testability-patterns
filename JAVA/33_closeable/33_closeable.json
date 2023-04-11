@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_33_closeable/1_instance_33_closeable.json",
         "./2_instance_33_closeable/2_instance_33_closeable.json"
-    ]
+    ],
+    "version": "v0"
 }

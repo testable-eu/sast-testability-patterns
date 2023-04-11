@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_102_collection_taint_propagation/1_instance_102_collection_taint_propagation.json",
         "./2_instance_102_collection_taint_propagation/2_instance_102_collection_taint_propagation.json"
-    ]
+    ],
+    "version": "v0"
 }

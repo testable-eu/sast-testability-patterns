@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_75_scriptengine_javascript_redirect/1_instance_75_scriptengine_javascript_redirect.json"
-    ]
+    ],
+    "version": "v0"
 }

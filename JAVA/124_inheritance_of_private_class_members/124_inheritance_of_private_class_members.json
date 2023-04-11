@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_124_inheritance_of_private_class_members/1_instance_124_inheritance_of_private_class_members.json"
-    ]
+    ],
+    "version": "v0"
 }

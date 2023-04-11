@@ -2,9 +2,14 @@
     "name": "Make Ref",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_12_make_ref/1_instance_12_make_ref.json",
         "./2_instance_12_make_ref/2_instance_12_make_ref.json"
-    ]
+    ],
+    "version": "v0"
 }

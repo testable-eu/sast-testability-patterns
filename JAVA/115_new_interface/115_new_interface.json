@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_115_new_interface/1_instance_115_new_interface.json"
-    ]
+    ],
+    "version": "v0"
 }

@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_143_late_addition/1_instance_143_late_addition.json"
-    ]
+    ],
+    "version": "v0"
 }

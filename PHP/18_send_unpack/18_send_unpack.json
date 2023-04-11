@@ -2,10 +2,15 @@
     "name": "Send Unpack",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_18_send_unpack/1_instance_18_send_unpack.json",
         "./2_instance_18_send_unpack/2_instance_18_send_unpack.json",
         "./3_instance_18_send_unpack/3_instance_18_send_unpack.json"
-    ]
+    ],
+    "version": "v0"
 }

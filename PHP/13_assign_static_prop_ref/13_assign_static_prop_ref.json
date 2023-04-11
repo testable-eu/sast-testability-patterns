@@ -2,8 +2,13 @@
     "name": "Assign Static Prop Ref",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_13_assign_static_prop_ref/1_instance_13_assign_static_prop_ref.json"
-    ]
+    ],
+    "version": "v0"
 }

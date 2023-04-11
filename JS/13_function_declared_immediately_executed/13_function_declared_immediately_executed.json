@@ -2,8 +2,14 @@
     "name": "Function Declared Immediately Executed",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_13_function_declared_immediately_executed/1_instance_13_function_declared_immediately_executed.json"
-    ]
+    ],
+    "version": "v1"
 }

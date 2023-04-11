@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_22_addition_assignment_operator/1_instance_22_addition_assignment_operator.json"
-    ]
+    ],
+    "version": "v1"
 }

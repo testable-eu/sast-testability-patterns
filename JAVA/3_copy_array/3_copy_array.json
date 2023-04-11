@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_3_copy_array/1_instance_3_copy_array.json",
         "./2_instance_3_copy_array/2_instance_3_copy_array.json"
-    ]
+    ],
+    "version": "v0"
 }

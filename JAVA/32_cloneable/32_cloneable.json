@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./32_cloneable_rule.sc"
-    ]
+    ],
+    "version": "v1"
 }

@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_5_reflection/1_instance_5_reflection.json",
         "./2_instance_5_reflection/2_instance_5_reflection.json"
-    ]
+    ],
+    "version": "v0"
 }

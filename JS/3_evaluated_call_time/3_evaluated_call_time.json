@@ -6,5 +6,6 @@
     "instances": [
         "./1_instance_3_evaluated_call_time/1_instance_3_evaluated_call_time.json",
         "./2_instance_3_evaluated_call_time/2_instance_3_evaluated_call_time.json"
-    ]
+    ],
+    "version": "v0"
 }

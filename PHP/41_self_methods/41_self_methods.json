@@ -2,8 +2,13 @@
     "name": "Self Methods",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_41_self_methods/1_instance_41_self_methods.json"
-    ]
+    ],
+    "version": "v0"
 }

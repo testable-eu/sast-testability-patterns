@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_53_labels/1_instance_53_labels.json",
         "./2_instance_53_labels/2_instance_53_labels.json"
-    ]
+    ],
+    "version": "v0"
 }

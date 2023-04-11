@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_71_recursion/1_instance_71_recursion.json"
-    ]
+    ],
+    "version": "v0"
 }

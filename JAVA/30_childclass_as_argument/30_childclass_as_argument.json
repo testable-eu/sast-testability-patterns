@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_30_childclass_as_argument/1_instance_30_childclass_as_argument.json"
-    ]
+    ],
+    "version": "v0"
 }

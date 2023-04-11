@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_62_multiple_files/1_instance_62_multiple_files.json"
-    ]
+    ],
+    "version": "v0"
 }

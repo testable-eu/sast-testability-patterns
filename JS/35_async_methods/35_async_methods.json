@@ -2,8 +2,14 @@
     "name": "Async Methods",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_35_async_methods/1_instance_35_async_methods.json"
-    ]
+    ],
+    "version": "v1"
 }

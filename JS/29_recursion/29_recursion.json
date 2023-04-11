@@ -6,5 +6,6 @@
     "instances": [
         "./1_instance_29_recursion/1_instance_29_recursion.json",
         "./2_instance_29_recursion/2_instance_29_recursion.json"
-    ]
+    ],
+    "version": "v0"
 }

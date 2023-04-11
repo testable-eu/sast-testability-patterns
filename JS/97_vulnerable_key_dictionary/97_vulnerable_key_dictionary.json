@@ -2,9 +2,15 @@
     "name": "Vulnerable Key Dictionary",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_97_vulnerable_key_dictionary/1_instance_97_vulnerable_key_dictionary.json",
         "./2_instance_97_vulnerable_key_dictionary/2_instance_97_vulnerable_key_dictionary.json"
-    ]
+    ],
+    "version": "v1"
 }

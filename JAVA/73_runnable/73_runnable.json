@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_73_runnable/1_instance_73_runnable.json"
-    ]
+    ],
+    "version": "v0"
 }

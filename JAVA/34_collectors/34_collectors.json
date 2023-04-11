@@ -16,5 +16,6 @@
         "./7_instance_34_collectors/7_instance_34_collectors.json",
         "./8_instance_34_collectors/8_instance_34_collectors.json",
         "./9_instance_34_collectors/9_instance_34_collectors.json"
-    ]
+    ],
+    "version": "v0"
 }

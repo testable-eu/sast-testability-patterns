@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_104_collections_class/1_instance_104_collections_class.json",
         "./2_instance_104_collections_class/2_instance_104_collections_class.json"
-    ]
+    ],
+    "version": "v0"
 }

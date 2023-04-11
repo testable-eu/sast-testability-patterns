@@ -2,9 +2,15 @@
     "name": "Array Shift",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_32_array_shift/1_instance_32_array_shift.json",
         "./2_instance_32_array_shift/2_instance_32_array_shift.json"
-    ]
+    ],
+    "version": "v1"
 }

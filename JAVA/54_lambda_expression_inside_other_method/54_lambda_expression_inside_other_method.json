@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_54_lambda_expression_inside_other_method/1_instance_54_lambda_expression_inside_other_method.json"
-    ]
+    ],
+    "version": "v0"
 }

@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_17_collections_ncopies/1_instance_17_collections_ncopies.json"
-    ]
+    ],
+    "version": "v1"
 }

@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_61_method_within_method/1_instance_61_method_within_method.json",
         "./2_instance_61_method_within_method/2_instance_61_method_within_method.json"
-    ]
+    ],
+    "version": "v0"
 }

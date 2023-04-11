@@ -6,5 +6,6 @@
     "instances": [
         "./1_instance_45_escape_unescape(deprecated)/1_instance_45_escape_unescape(deprecated).json",
         "./2_instance_45_escape_unescape(deprecated)/2_instance_45_escape_unescape(deprecated).json"
-    ]
+    ],
+    "version": "v0"
 }

@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_81_simple_raw_type/1_instance_81_simple_raw_type.json"
-    ]
+    ],
+    "version": "v0"
 }

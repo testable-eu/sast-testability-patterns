@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_64_nested_methods/1_instance_64_nested_methods.json"
-    ]
+    ],
+    "version": "v0"
 }

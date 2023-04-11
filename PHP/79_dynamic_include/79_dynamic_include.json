@@ -2,12 +2,17 @@
     "name": "Dynamic Include",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_79_dynamic_include/1_instance_79_dynamic_include.json",
         "./2_instance_79_dynamic_include/2_instance_79_dynamic_include.json",
         "./3_instance_79_dynamic_include/3_instance_79_dynamic_include.json",
         "./4_instance_79_dynamic_include/4_instance_79_dynamic_include.json",
         "./5_instance_79_dynamic_include/5_instance_79_dynamic_include.json"
-    ]
+    ],
+    "version": "v0"
 }

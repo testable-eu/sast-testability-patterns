@@ -2,8 +2,14 @@
     "name": "Weak Ref",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_56_weak_ref/1_instance_56_weak_ref.json"
-    ]
+    ],
+    "version": "v1"
 }

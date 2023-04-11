@@ -6,5 +6,6 @@
     "instances": [
         "./1_instance_95_arithmetic_operation_array_index/1_instance_95_arithmetic_operation_array_index.json",
         "./2_instance_95_arithmetic_operation_array_index/2_instance_95_arithmetic_operation_array_index.json"
-    ]
+    ],
+    "version": "v0"
 }

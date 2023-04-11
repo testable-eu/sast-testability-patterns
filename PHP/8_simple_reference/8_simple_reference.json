@@ -2,8 +2,13 @@
     "name": "Simple Reference",
     "description": "[References](https://www.php.net/manual/en/language.references.whatare.php) in PHP. References in PHP are a means to access the same variable content by different names. They are not like C pointers; for instance, you cannot perform pointer arithmetic using them, they are not actual memory addresses, and so on. PHP offers assign by reference, this means that the new variable simply references the original variable. Changes to the new variable affect the original, and vice versa. This assign is a challenge for the security scanners because they have to follow both of the variables and when one of them will change the other one have to change also.",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_8_simple_reference/1_instance_8_simple_reference.json"
-    ]
+    ],
+    "version": "v0"
 }

@@ -2,8 +2,13 @@
     "name": "Simple Object",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_21_simple_object/1_instance_21_simple_object.json"
-    ]
+    ],
+    "version": "v0"
 }

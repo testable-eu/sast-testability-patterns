@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_112_getdeclaredfields/1_instance_112_getdeclaredfields.json"
-    ]
+    ],
+    "version": "v0"
 }

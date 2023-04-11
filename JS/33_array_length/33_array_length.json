@@ -6,5 +6,6 @@
     "instances": [
         "./1_instance_33_array_length/1_instance_33_array_length.json",
         "./2_instance_33_array_length/2_instance_33_array_length.json"
-    ]
+    ],
+    "version": "v0"
 }

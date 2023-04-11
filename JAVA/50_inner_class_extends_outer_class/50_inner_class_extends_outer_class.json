@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_50_inner_class_extends_outer_class/1_instance_50_inner_class_extends_outer_class.json"
-    ]
+    ],
+    "version": "v0"
 }

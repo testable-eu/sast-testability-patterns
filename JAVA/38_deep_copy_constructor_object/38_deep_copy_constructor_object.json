@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_38_deep_copy_constructor_object/1_instance_38_deep_copy_constructor_object.json"
-    ]
+    ],
+    "version": "v0"
 }

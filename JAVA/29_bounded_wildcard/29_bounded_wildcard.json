@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_29_bounded_wildcard/1_instance_29_bounded_wildcard.json"
-    ]
+    ],
+    "version": "v0"
 }

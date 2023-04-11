@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_12_chararrayreader/1_instance_12_chararrayreader.json",
         "./2_instance_12_chararrayreader/2_instance_12_chararrayreader.json"
-    ]
+    ],
+    "version": "v1"
 }

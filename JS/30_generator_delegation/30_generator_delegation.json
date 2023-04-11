@@ -2,9 +2,15 @@
     "name": "Generator Delegation",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_30_generator_delegation/1_instance_30_generator_delegation.json",
         "./2_instance_30_generator_delegation/2_instance_30_generator_delegation.json"
-    ]
+    ],
+    "version": "v1"
 }

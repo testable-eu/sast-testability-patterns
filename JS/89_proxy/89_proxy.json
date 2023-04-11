@@ -2,9 +2,15 @@
     "name": "Proxy",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_89_proxy/1_instance_89_proxy.json",
         "./2_instance_89_proxy/2_instance_89_proxy.json"
-    ]
+    ],
+    "version": "v1"
 }

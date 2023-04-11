@@ -7,6 +7,8 @@
         "java"
     ],
     "instances": [
-        "./1_instance_20_inner_class_declaration/1_instance_20_inner_class_declaration.json","./2_instance_20_inner_class_declaration/2_instance_20_inner_class_declaration.json"
-    ]
+        "./1_instance_20_inner_class_declaration/1_instance_20_inner_class_declaration.json",
+        "./2_instance_20_inner_class_declaration/2_instance_20_inner_class_declaration.json"
+    ],
+    "version": "v1"
 }

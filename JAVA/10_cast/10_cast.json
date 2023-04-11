@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_10_cast/1_instance_10_cast.json"
-    ]
+    ],
+    "version": "v1"
 }

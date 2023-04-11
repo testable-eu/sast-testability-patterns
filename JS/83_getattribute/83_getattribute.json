@@ -2,8 +2,13 @@
     "name": "getAttribute",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side"
+    ],
     "instances": [
         "./1_instance_83_getattribute/1_instance_83_getattribute.json"
-    ]
+    ],
+    "version": "v1"
 }

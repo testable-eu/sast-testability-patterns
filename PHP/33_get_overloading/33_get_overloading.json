@@ -2,8 +2,13 @@
     "name": "Get Overloading",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_33_get_overloading/1_instance_33_get_overloading.json"
-    ]
+    ],
+    "version": "v1"
 }

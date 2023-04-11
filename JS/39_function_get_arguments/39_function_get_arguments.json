@@ -2,10 +2,16 @@
     "name": "Function Get Arguments",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_39_function_get_arguments/1_instance_39_function_get_arguments.json",
         "./2_instance_39_function_get_arguments/2_instance_39_function_get_arguments.json",
         "./3_instance_39_function_get_arguments/3_instance_39_function_get_arguments.json"
-    ]
+    ],
+    "version": "v1"
 }
