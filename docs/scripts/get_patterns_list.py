@@ -63,9 +63,7 @@ def write_result_to_readme(result_str):
 
 	with open("README.md", "w") as new_readme_file:
 		for line in new_readme:
-			new_readme_file.write(f"{line}\n")	
-	print(end_index)
-	#print(readme_lines)
+			new_readme_file.write(f"{line}\n")
 
 
 def main():
@@ -87,8 +85,8 @@ def main():
 
 	all_patterns = {
 		"JS": js_patterns,
-		"JAVA": java_patterns,
-		"PHP": php_patterns
+		"PHP": php_patterns,
+		"JAVA": java_patterns
 	}
 	language_lookup = {
 		"JS": "JavaScript",
