@@ -12,5 +12,5 @@
         "./1_instance_30_generator_delegation/1_instance_30_generator_delegation.json",
         "./2_instance_30_generator_delegation/2_instance_30_generator_delegation.json"
     ],
-    "version": "v1"
+    "version": "v1.0"
 }

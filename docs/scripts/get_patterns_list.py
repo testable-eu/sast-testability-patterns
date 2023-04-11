@@ -44,6 +44,30 @@ def get_pattern_version(path_to_pattern):
 	return result["version"]
 
 
+def write_result_to_readme(result_str):
+	path_to_readme = os.path.join(BASE_DIR, "README.md")
+	with open(path_to_readme, "r") as readme:
+		readme_lines = [line.strip() for line in readme.readlines()]
+	result_list = result_str.split("\n")
+	start_index = readme_lines.index(result_list[0])
+	end_index = -1
+	for line in readme_lines[start_index:]:
+		if line.startswith("#"):
+			end_index = readme_lines.index(line)
+			break
+	assert end_index > 0, "Could not find heading after first `<details markdown='1'>`"
+
+	new_readme = readme_lines[:start_index]
+	new_readme += result_list
+	new_readme += readme_lines[end_index:]
+
+	with open("README.md", "w") as new_readme_file:
+		for line in new_readme:
+			new_readme_file.write(f"{line}\n")	
+	print(end_index)
+	#print(readme_lines)
+
+
 def main():
 	
 	BASE_LINK_MASTER = "https://github.com/testable-eu/sast-testability-patterns/tree/master"
@@ -72,24 +96,32 @@ def main():
 		"PHP": "PHP"
 	}
 
-	with open("./patterns_status.out", 'w') as fd:
-		for language in all_patterns:
-			# Markdown for collapsible list and table headers
-			fd.write('<details markdown="1">\n')
-			fd.write(f"<summary><b>{language_lookup[language]}</b></summary>\n\n")
-			fd.write("|ID|Pattern Name|Version|Link|\n")
-			fd.write("|:--|:--|:--|:--|\n")
+	final_str = ""
+	for language in all_patterns:
+		# Markdown for collapsible list and table headers
+		final_str += '<details markdown="1">\n'
+		final_str += f"<summary><b>{language_lookup[language]}</b></summary>\n\n"
+		final_str += "|ID|Pattern Name|Version|Link|\n"
+		final_str += "|:--|:--|:--|:--|\n"
 
-			for pattern in get_sorted_patterns(all_patterns[language]):
-				# Get details for each pattern
-				pattern_id = pattern.split("_")[0]
-				pattern_name = pattern[pattern.index(pattern_id) + len(pattern_id) + 1:]
-				pattern_link_preview = f"{language}/{pattern}"
-				pattern_link = f"{BASE_LINK_MASTER}/{pattern_link_preview}"
-				pattern_version = get_pattern_version(os.path.join(BASE_DIR, language, pattern))
-				fd.write(f"|{pattern_id}|{pattern_name}|{pattern_version}|[{pattern_link_preview}]({pattern_link})|\n")
-			# Finish one collapsable list
-			fd.write("\n</details>\n\n")
+		for pattern in get_sorted_patterns(all_patterns[language]):
+			# Get details for each pattern
+			pattern_id = pattern.split("_")[0]
+			pattern_name = pattern[pattern.index(pattern_id) + len(pattern_id) + 1:]
+			pattern_link_preview = f"{language}/{pattern}"
+			pattern_link = f"{BASE_LINK_MASTER}/{pattern_link_preview}"
+			pattern_version = get_pattern_version(os.path.join(BASE_DIR, language, pattern))
+			final_str += f"|{pattern_id}|{pattern_name}|{pattern_version}|[{pattern_link_preview}]({pattern_link})|\n"
+		# Finish one collapsable list
+		final_str += "\n</details>\n\n"
+
+	with open("./patterns_status.out", 'w') as fd:
+		fd.write(final_str)
+
+	print("Do you want the result directly written to the README.md")
+	print("\033[93mWarning, this will replace all lines between the first `<details markdown='1'>` to the next heading starting with '#'\033[0m")
+	if input("Type 'y' to write result to README.md ") == "y":
+		write_result_to_readme(final_str)
 
 
 if __name__ == "__main__":

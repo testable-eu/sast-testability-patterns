@@ -27,7 +27,7 @@ For more detailed documentation, see the [docs](https://github.com/testable-eu/s
 
 ## List of Patterns
 
-To view the complete list of testability patterns, click on the respective catalogue to expand.  
+To view the complete list of testability patterns, click on the respective catalogue to expand.
 
 <details markdown="1">
 <summary><b>JavaScript</b></summary>
@@ -385,11 +385,12 @@ To view the complete list of testability patterns, click on the respective catal
 
 </details>
 
+
 ## Contributions
 
-We are delighted to know that you would like to contribute to this repository. Please follow our [contribution guideline](./docs/contribution-guidelines.md) before you submit a PR. 
+We are delighted to know that you would like to contribute to this repository. Please follow our [contribution guideline](./docs/contribution-guidelines.md) before you submit a PR.
 
-For any questions, suggestions, feedback or concerns. please [raise an issue in the repository](https://github.com/testable-eu/sast-testability-patterns/issues). We welcome suggestions and feedback from the community. 
+For any questions, suggestions, feedback or concerns. please [raise an issue in the repository](https://github.com/testable-eu/sast-testability-patterns/issues). We welcome suggestions and feedback from the community.
 
 **Important:** When opening a new issue, please follow our [provided issue templates](https://github.com/testable-eu/sast-testability-patterns/issues/new/choose), if possible. For example, if you want to add a new testability pattern, please choose the [`New Testability Pattern Proposal`](https://github.com/testable-eu/sast-testability-patterns/issues/new?assignees=&labels=ACK_WAITING%2C+NEW_TP&template=1--new-testability-pattern-proposal.md&title=New+TP+Proposal%3A+%5BPUT_TARGET_TP_NAME_HERE%5D) template.
 
@@ -401,10 +402,10 @@ Follow us on Twitter on [@Testable_EU](https://twitter.com/Testable_EU) or check
 
 ```bibtex
 @article{altestability,
-  title={Testability Tarpits: the Impact of Code Patterns on the Security Testing of Web Applications},
-  author={Al Kassar, Feras and Clerici, Giulia and Compagna, Luca and Yamaguchi, Fabian and Balzarotti, Davide},
-  booktitle = {NDSS},
-  year = {2022},
+title={Testability Tarpits: the Impact of Code Patterns on the Security Testing of Web Applications},
+author={Al Kassar, Feras and Clerici, Giulia and Compagna, Luca and Yamaguchi, Fabian and Balzarotti, Davide},
+booktitle = {NDSS},
+year = {2022},
 }
 ```
 
@@ -419,6 +420,6 @@ This project is licensed under `Apache License Version 2.0 `. See [LICENSE](LICE
 This project received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No. 101019206.
 
 <p align="center">
-  <img src="https://testable.eu/img/eu_flag.png"><br>
-  Funded by the European Union
+<img src="https://testable.eu/img/eu_flag.png"><br>
+Funded by the European Union
 </p>

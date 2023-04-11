@@ -9,5 +9,5 @@
     "instances": [
         "./1_instance_101_weakref/1_instance_101_weakref.json"
     ],
-    "version": "v0"
+    "version": "v0.draft"
 }

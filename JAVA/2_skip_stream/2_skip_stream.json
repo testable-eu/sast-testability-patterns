@@ -10,5 +10,5 @@
         "./1_instance_2_skip_stream/1_instance_2_skip_stream.json",
         "./2_instance_2_skip_stream/2_instance_2_skip_stream.json"
     ],
-    "version": "v0"
+    "version": "v0.draft"
 }
