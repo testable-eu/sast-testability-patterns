@@ -1,7 +1,8 @@
-
+// Client-side XSS
 function print(message) {
-  document.body.innerHTML = document.getElementById("formElement1").value;
-  document.write(document.body.innerHTML);
+  var input = document.getElementById("formElement1").value // source
+  document.body.innerHTML = input; // sink and tarpit
+  document.write(document.body.innerHTML); // sink: additional to ease the SAST analysis
 }
 
 

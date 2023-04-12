@@ -17,7 +17,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_101_innerhtml_outerhtml_server.js",
-        "sink_line": 3,
+        "sink_line": 4,
         "source_file": "./2_instance_101_innerhtml_outerhtml_server.js",
         "source_line": 3,
         "expectation": true
