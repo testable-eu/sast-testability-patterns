@@ -13,5 +13,6 @@
         "./4_instance_58_map/4_instance_58_map.json",
         "./5_instance_58_map/5_instance_58_map.json",
         "./6_instance_58_map/6_instance_58_map.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

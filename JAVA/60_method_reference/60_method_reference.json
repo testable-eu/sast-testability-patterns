@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_60_method_reference/1_instance_60_method_reference.json",
         "./2_instance_60_method_reference/2_instance_60_method_reference.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

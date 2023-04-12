@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_100_waiter_and_notifier/1_instance_100_waiter_and_notifier.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

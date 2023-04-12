@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_90_string_charat/1_instance_90_string_charat.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

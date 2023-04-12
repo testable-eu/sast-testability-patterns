@@ -6,5 +6,6 @@
     "instances": [
         "./1_instance_20_too_function_calls/1_instance_20_too_function_calls.json",
         "./2_instance_20_too_function_calls/2_instance_20_too_function_calls.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

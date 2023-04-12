@@ -2,8 +2,14 @@
     "name": "Reference Argument",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_76_reference_argument/1_instance_76_reference_argument.json"
-    ]
+    ],
+    "version": "v1.0"
 }

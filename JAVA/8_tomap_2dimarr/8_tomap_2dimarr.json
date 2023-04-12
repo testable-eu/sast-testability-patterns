@@ -10,6 +10,7 @@
         "./1_instance_8_tomap_2dimarr/1_instance_8_tomap_2dimarr.json",
         "./2_instance_8_tomap_2dimarr/2_instance_8_tomap_2dimarr.json",
         "./3_instance_8_tomap_2dimarr/3_instance_8_tomap_2dimarr.json",
-        "./4_instance_8_tomap_2dimarr/4_instance_8_tomap_2dimarr.json",
-    ]
+        "./4_instance_8_tomap_2dimarr/4_instance_8_tomap_2dimarr.json"
+    ],
+    "version": "v1.0"
 }

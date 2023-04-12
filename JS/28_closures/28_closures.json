@@ -2,10 +2,16 @@
     "name": "Closures",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_28_closures/1_instance_28_closures.json",
         "./2_instance_28_closures/2_instance_28_closures.json",
         "./3_instance_28_closures/3_instance_28_closures.json"
-    ]
+    ],
+    "version": "v1.0"
 }

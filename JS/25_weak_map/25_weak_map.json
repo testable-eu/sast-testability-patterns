@@ -2,9 +2,15 @@
     "name": "Weak Map",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_25_weak_map/1_instance_25_weak_map.json",
         "./2_instance_25_weak_map/2_instance_25_weak_map.json"
-    ]
+    ],
+    "version": "v1.0"
 }

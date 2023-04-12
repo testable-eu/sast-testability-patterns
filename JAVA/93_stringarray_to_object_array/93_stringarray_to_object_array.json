@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_93_stringarray_to_object_array/1_instance_93_stringarray_to_object_array.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

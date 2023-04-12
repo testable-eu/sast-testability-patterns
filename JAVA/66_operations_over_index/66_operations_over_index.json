@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_66_operations_over_index/1_instance_66_operations_over_index.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

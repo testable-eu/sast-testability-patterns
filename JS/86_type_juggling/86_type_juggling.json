@@ -2,11 +2,17 @@
     "name": "Type Juggling",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_86_type_juggling/1_instance_86_type_juggling.json",
         "./2_instance_86_type_juggling/2_instance_86_type_juggling.json",
         "./3_instance_86_type_juggling/3_instance_86_type_juggling.json",
         "./4_instance_86_type_juggling/4_instance_86_type_juggling.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_111_linkedhashmap/1_instance_111_linkedhashmap.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

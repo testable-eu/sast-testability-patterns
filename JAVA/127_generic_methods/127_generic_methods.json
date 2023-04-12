@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_127_generic_methods/1_instance_127_generic_methods.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

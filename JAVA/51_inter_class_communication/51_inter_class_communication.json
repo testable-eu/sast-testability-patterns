@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_51_inter_class_communication/1_instance_51_inter_class_communication.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

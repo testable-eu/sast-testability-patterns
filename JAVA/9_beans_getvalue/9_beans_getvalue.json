@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_9_beans_getvalue/1_instance_9_beans_getvalue.json"
-    ]
+    ],
+    "version": "v1.0"
 }

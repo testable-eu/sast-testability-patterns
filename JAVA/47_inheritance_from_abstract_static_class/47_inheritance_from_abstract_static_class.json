@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_47_inheritance_from_abstract_static_class/1_instance_47_inheritance_from_abstract_static_class.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

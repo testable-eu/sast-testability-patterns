@@ -2,8 +2,13 @@
     "name": "Global Variables",
     "description": "./docs/description.md",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_2_global_variables/1_instance_2_global_variables.json"
-    ]
+    ],
+    "version": "v1.0"
 }

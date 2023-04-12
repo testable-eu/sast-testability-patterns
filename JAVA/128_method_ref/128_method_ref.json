@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_128_method_ref/1_instance_128_method_ref.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

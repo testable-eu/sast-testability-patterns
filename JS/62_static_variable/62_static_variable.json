@@ -2,8 +2,14 @@
     "name": "Static Variable",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_62_static_variable/1_instance_62_static_variable.json"
-    ]
+    ],
+    "version": "v1.0"
 }

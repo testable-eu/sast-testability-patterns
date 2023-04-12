@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_13_runfinalization/1_instance_13_runfinalization.json",
         "./2_instance_13_runfinalization/2_instance_13_runfinalization.json"
-    ]
+    ],
+    "version": "v1.0"
 }

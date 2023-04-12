@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_103_arrays_aslist/1_instance_103_arrays_aslist.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

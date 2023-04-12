@@ -2,8 +2,13 @@
     "name": "Get Called Class",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_27_get_called_class/1_instance_27_get_called_class.json"
-    ]
+    ],
+    "version": "v1.0"
 }

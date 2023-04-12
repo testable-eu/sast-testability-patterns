@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_134_dead_code_behavior/1_instance_134_dead_code_behavior.json",
         "./2_instance_134_dead_code_behavior/2_instance_134_dead_code_behavior.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

@@ -2,9 +2,15 @@
     "name": "Delete Properties",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_61_delete_properties/1_instance_61_delete_properties.json",
         "./2_instance_61_delete_properties/2_instance_61_delete_properties.json"
-    ]
+    ],
+    "version": "v1.0"
 }

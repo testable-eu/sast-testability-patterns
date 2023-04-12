@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_126_chained_assignment/1_instance_126_chained_assignment.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

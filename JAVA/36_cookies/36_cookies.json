@@ -9,5 +9,6 @@
     "instances": [
         "./1_instance_36_cookies/1_instance_36_cookies.json",
         "./2_instance_36_cookies/2_instance_36_cookies.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

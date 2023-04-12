@@ -5,5 +5,6 @@
     "tags": [],
     "instances": [
         "./1_instance_11_closure_scope_chain/1_instance_11_closure_scope_chain.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

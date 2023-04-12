@@ -2,8 +2,13 @@
     "name": "Construct With Inheritance",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_48_construct_with_inheritance/1_instance_48_construct_with_inheritance.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

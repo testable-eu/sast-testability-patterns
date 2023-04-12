@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_48_inherited_object_as_argument/1_instance_48_inherited_object_as_argument.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

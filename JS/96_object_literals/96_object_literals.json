@@ -7,5 +7,6 @@
         "./1_instance_96_object_literals/1_instance_96_object_literals.json",
         "./2_instance_96_object_literals/2_instance_96_object_literals.json",
         "./3_instance_96_object_literals/3_instance_96_object_literals.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

@@ -8,5 +8,6 @@
     ],
     "instances": [
         "./1_instance_85_sink_in_interface_method/1_instance_85_sink_in_interface_method.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

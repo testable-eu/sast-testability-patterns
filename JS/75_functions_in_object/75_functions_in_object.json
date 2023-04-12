@@ -2,8 +2,14 @@
     "name": "Functions In Object",
     "definition": "",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_75_functions_in_object/1_instance_75_functions_in_object.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

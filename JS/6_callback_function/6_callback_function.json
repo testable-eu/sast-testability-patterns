@@ -2,9 +2,15 @@
     "name": "Callback Function",
     "description": "./README.md",
     "family": "code_pattern_js",
-    "tags": ["sast", "js", "server-side", "nodejs"],
+    "tags": [
+        "sast",
+        "js",
+        "server-side",
+        "nodejs"
+    ],
     "instances": [
         "./1_instance_6_callback_function/1_instance_6_callback_function.json",
         "./2_instance_6_callback_function/2_instance_6_callback_function.json"
-    ]
+    ],
+    "version": "v0.draft"
 }

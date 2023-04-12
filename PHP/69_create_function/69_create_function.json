@@ -2,8 +2,13 @@
     "name": "Create Function",
     "description": "",
     "family": "code_pattern_php",
-    "tags": ["sast", "php", "php_v7.4.9"],
+    "tags": [
+        "sast",
+        "php",
+        "php_v7.4.9"
+    ],
     "instances": [
         "./1_instance_69_create_function/1_instance_69_create_function.json"
-    ]
+    ],
+    "version": "v1.0"
 }
