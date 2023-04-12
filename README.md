@@ -4,18 +4,16 @@
 
 This repository includes catalogs of SAST testability patterns for the [OWASP Testability Patterns](https://owasp.org/www-project-testability-patterns-for-web-applications/) project. Testability Patterns (TPs) are problematic code instructions that affect the capability of code analysis tools for security testing. Due to TPs, SAST tools may not detect an existing vulnerability, or conversely, report a false alarm.
 
-This project has a OWASP website available at: [https://owasp.org/www-project-testability-patterns-for-web-applications/](https://owasp.org/www-project-testability-patterns-for-web-applications/).
-
 ## Quick Start
 
 - [What is a testability pattern?](./docs/testability-patterns.md)
 - [Testability patterns structure](./docs/testability-patterns-structure.md)
 - [Example pattern template](https://github.com/testable-eu/sast-testability-patterns/tree/master/pattern_template)
 - [Adding a pattern](./docs/testability-patterns-adding.md)
-- [Pattern discovery (TP-Framework)](https://github.com/testable-eu/sast-tp-framework)
+- [Pattern discovery: how to write discovery rules (TP-Framework)](https://github.com/testable-eu/sast-tp-framework/blob/main/docs/How-to-write-discovery-rules-in-Joern.md)
 - [Contribution guidelines](./docs/contribution-guidelines.md)
 
-For more detailed documentation, see the [docs](https://github.com/testable-eu/sast-testability-patterns/tree/master/docs) folder.
+For more detailed documentation, see the [testability pattern framework documentation](https://github.com/testable-eu/sast-tp-framework).
 
 ## Overview
 

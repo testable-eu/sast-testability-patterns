@@ -146,10 +146,10 @@
                     "type": "string",
                     "enum": [
                         "S0",
-                        "D0",
                         "D1",
                         "D2",
-                        "D3"
+                        "D3",
+                        "D4"
                     ]
                 },
                 "feature_vs_internal_api": {
