@@ -129,7 +129,12 @@ Description:
     - `FP`: false positives
     - `FN`: false negatives
     - `FPFN`: false positives and negatives
-    - `Perfect`: except for some artificial special cases, the rule works and recognizes the pattern 
+    - `Perfect`: the rule works and recognizes the pattern in all the non-dynamic artificial cases
+       
+       > with dynamic programming is always possible to create some artificial cases where specific patterns are impossible to be found. These cases are not considered, thus the `Perfect` keyword, as we have never encountered them in real applications.
+
+       > **Example**: Let us assume the pattern to discover is about `call_user_func` instructions having a constant as first argument. A developer could write an app building the call to `call_user_func` in some weird way, but there is no reason it should do so.
+
   - **notes**: notes for discovery rule, query or method, can be used i.e. to explain, on how the rule accuracy could be improved
 
 - **remediation**

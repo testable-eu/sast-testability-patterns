@@ -19,7 +19,7 @@ Thank you again for your contribution.
 
 ## Creating a New Testability Pattern
 
-A pattern can be created for a SAST catalog either manually or via the tp-framework (see [here](https://github.com/testable-eu/sast-tp-framework)). In both the cases the pattern needs first to be created based on the format specified in [testability patterns structure](./testability-patterns-structure.md):
+A pattern can be created for a SAST catalog either manually or via the tp-framework (see [here](https://github.com/testable-eu/sast-tp-framework/blob/main/docs/How-to-run-add-pattern.md)). In both the cases the pattern needs first to be created based on the format specified in [testability patterns structure](./testability-patterns-structure.md):
 
 ```
 00_pattern_name
