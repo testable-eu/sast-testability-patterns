@@ -8,4 +8,4 @@ These catalogs need to follow a precise file system structure so to be properly 
 - each pattern in a catalog is captured as a sub-folder of the catalog folder, e.g., `.\testability_patterns\PHP\1_static_variables`
 - each pattern is required to follow the guidelines described [here](./testability-patterns-structure.md)
 
-We recommend adding patterns to a catalog via the `add` operation of the framework (). This will fill-in automatically some necessary metadata and will ensure your pattern is well-written and properly added. However, patterns can also be added manually by adding a new pattern folder to the catalog and by manually providing all the necessary metadata and artifact for that pattern.
+We recommend adding patterns to a catalog via the `add` operation of the [framework](https://github.com/testable-eu/sast-tp-framework). This will fill-in automatically some necessary metadata and will ensure your pattern is well-written and properly added. However, patterns can also be added manually by adding a new pattern folder to the catalog and by manually providing all the necessary metadata and artifact for that pattern.
