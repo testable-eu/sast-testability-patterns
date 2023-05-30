@@ -1,7 +1,7 @@
 <?php
 class class1 {
    public $x;
-   public function __construct($y){
+   public function __construct($y) {
       $this->x = $y;
    }
 }

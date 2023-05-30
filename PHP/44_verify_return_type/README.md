@@ -42,7 +42,7 @@ class TestClass {
 }
 
 // will call the function __toString(), XSS vulnerability
-function F(string $c){
+function F(string $c) {
     echo 'message';
 }
 

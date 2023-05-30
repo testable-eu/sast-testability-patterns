@@ -1,10 +1,10 @@
 <?php
 class Foo {
     static $x = 'safe';
-    function __construct($b){
+    function __construct($b) {
         self::$x = $b;
     }
-    function baz(){
+    function baz() {
         return self::$x;
     }
 }

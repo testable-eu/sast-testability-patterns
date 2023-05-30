@@ -3,7 +3,7 @@ Foreach is used by high level programming languages to iterate over arrays and o
 ```php
 <?php
 $arr = array(1,2,3);
-foreach($arr as $value){
+foreach($arr as $value) {
     echo $value;
 }
 ```
@@ -13,7 +13,7 @@ In this example, any change on the variable $value will not change on the array 
 ```php
 <?php
 $arr = array(1,2,3);
-foreach($arr as &$value){
+foreach($arr as &$value) {
     ...
 }
 ```

@@ -12,10 +12,10 @@ In PHP it is not possible to define more than one function with the same name, e
 
 ```php
 <?php
-function F($x){
+function F($x) {
     echo $x;
 }
-function F($x,$y){
+function F($x,$y ) {
     echo $x;
     echo $y;
 }
@@ -28,7 +28,7 @@ In PHP7 there is [Variadic](https://www.phptutorial.net/php-tutorial/php-variadi
 
 ```php
 <?php
-function F($x){
+function F($x) {
     echo $x; // 3
     var_dump(func_get_args()); // 5, 7 , 11
 }

@@ -1,6 +1,6 @@
 <?php
 class myclass {
-	function F($b){
+	function F($b) {
 		return $b;
 	}
 }

@@ -49,7 +49,7 @@ $a = $_GET["p1"]; // source
 $obj  = new MyClass1($a);
 
 class MyClass1 {
-    function __construct($b){
+    function __construct($b) {
         echo $b; // sink
     }
 }

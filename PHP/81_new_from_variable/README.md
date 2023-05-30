@@ -252,7 +252,7 @@ This instance calls `new` on a variable, that uses the prefix 'class' and concat
 <?php
 class class1 {
    public $x;
-   public function __construct($y){
+   public function __construct($y) {
       $this->x = $y;
    }
 }

@@ -30,7 +30,7 @@ This instance calls a method defined in a variable on an object that was created
 ```PHP
 <?php
 class myclass {
-	function F($b){
+	function F($b) {
 		return $b;
 	}
 }
