@@ -1,6 +1,6 @@
 {
-    "name": "Substring replace built in function",
-    "description": "",
+    "name": "Substring Replace Built In Function",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_63_substring_replace_built_in_function/1_instance_63_substring_replace_built_in_function.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

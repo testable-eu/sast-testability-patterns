@@ -1,6 +1,6 @@
 {
     "name": "Object Assigned By Reference",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -12,5 +12,5 @@
         "./2_instance_14_object_assigned_by_reference/2_instance_14_object_assigned_by_reference.json",
         "./3_instance_14_object_assigned_by_reference/3_instance_14_object_assigned_by_reference.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

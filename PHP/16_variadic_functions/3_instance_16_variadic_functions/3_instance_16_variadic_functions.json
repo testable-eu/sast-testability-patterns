@@ -1,25 +1,26 @@
 {
+    "description": "The instance shows a function, that takes an arbitrary number of arguments and returns the first argument, that is not 1, so if the user controlled value is something different than 1, it ends up in the sink.",
     "code": {
         "path": "./3_instance_16_variadic_functions.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./../1_instance_16_variadic_functions/1_instance_16_variadic_functions.sc",
+        "rule": "../16_variadic_functions.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `RECV_VARIADIC`."
     },
     "compile": {
-        "binary": null,
+        "binary": "./3_instance_16_variadic_functions.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
         "sink_file": "./3_instance_16_variadic_functions.php",
-        "sink_line": 15,
+        "sink_line": 14,
         "source_file": "./3_instance_16_variadic_functions.php",
-        "source_line": 13,
+        "source_line": 12,
         "expectation": true
     },
     "properties": {

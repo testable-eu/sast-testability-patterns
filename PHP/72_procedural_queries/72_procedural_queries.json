@@ -1,6 +1,6 @@
 {
     "name": "Procedural Queries",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -12,5 +12,5 @@
         "./2_instance_72_procedural_queries/2_instance_72_procedural_queries.json",
         "./3_instance_72_procedural_queries/3_instance_72_procedural_queries.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,4 +1,5 @@
 {
+    "description": "This instance demonstrates the use of anonymous classes.",
     "code": {
         "path": "./1_instance_30_anonymous_classes.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_30_anonymous_classes.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The opecode searches for `DECLARE_ANON_CLASS` in the opcode."
     },
     "compile": {
         "binary": "./1_instance_30_anonymous_classes.bash",
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_30_anonymous_classes.php",
-        "sink_line": 6,
+        "sink_line": 10,
         "source_file": "./1_instance_30_anonymous_classes.php",
         "source_line": 2,
         "expectation": true
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "If named classes are easier for SAST tools, it should be possible to transform an anonymous class into a named class.",
         "transformation": null,
         "modeling_rule": null
     }

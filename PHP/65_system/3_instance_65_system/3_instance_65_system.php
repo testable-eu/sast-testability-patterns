@@ -1,3 +1,3 @@
 <?php
-$a = $_GET["p1"];
-unlink($a);
+$a = $_GET["p1"]; // source
+unlink($a); // sink

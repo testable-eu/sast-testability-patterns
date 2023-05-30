@@ -1,10 +1,11 @@
 {
+    "description": "The instance shows, a variable containing the value for a function, that should be called.",
     "code": {
         "path": "./1_instance_76_function_variable.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_76_function_variable.sc",
+        "rule": "../76_function_variable.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
         "notes": "Rule identifies an INIT_DYNAMIC_CALL made on a non-literal element"

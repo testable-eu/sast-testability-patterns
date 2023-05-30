@@ -1,5 +1,5 @@
 <?php
-function F($st){
+function F($st) {
     return $st;
 }
 $a = $_GET["p1"]; // source

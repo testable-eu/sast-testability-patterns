@@ -1,6 +1,6 @@
 {
     "name": "Dynamic Include",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -14,5 +14,5 @@
         "./4_instance_79_dynamic_include/4_instance_79_dynamic_include.json",
         "./5_instance_79_dynamic_include/5_instance_79_dynamic_include.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows what happens, when the value captured by the `use` keyword is passed by reference. Any changes made to the value will also be reflected in the scope of the closure. Therefor, this instance is vulnerable",
     "code": {
         "path": "./2_instance_20_use_with_closures.php",
         "injection_skeleton_broken": false

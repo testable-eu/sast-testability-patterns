@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows a 'try, catch, finally' construct. The unsanitized `$bar` from the `catch` will be returned.",
     "code": {
         "path": "./1_instance_52_try_catch_finally.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_52_try_catch_finally.sc",
+        "rule": "../52_try_catch_finally.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `FAST_RET` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_52_try_catch_finally.bash",
@@ -19,7 +20,7 @@
         "sink_file": "./1_instance_52_try_catch_finally.php",
         "sink_line": 18,
         "source_file": "./1_instance_52_try_catch_finally.php",
-        "source_line": 17,
+        "source_line": 16,
         "expectation": true
     },
     "properties": {

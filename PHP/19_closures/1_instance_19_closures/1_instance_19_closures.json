@@ -1,26 +1,27 @@
 {
+    "description": "This instance captures the declaration of an unnamed function.",
     "code": {
         "path": "./1_instance_19_closures.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_19_closures.sc",
+        "rule": "../19_closures.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "Declaring unnamed functions has an opcode statement `DECLARE_LAMBDA_FUNCTION`, which this rule searches for."
     },
     "compile": {
-        "binary": null,
+        "binary": "./1_instance_19_closures.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_19_closures.php",
-        "sink_line": 8,
+        "sink_line": 7,
         "source_file": "./1_instance_19_closures.php",
-        "source_line": 6,
-        "expectation": false
+        "source_line": 5,
+        "expectation": true
     },
     "properties": {
         "category": "D2",
@@ -30,7 +31,7 @@
         "negative_test_case": true
     },
     "remediation": {
-        "notes": "",
+        "notes": "../docs/remediation_notes.md",
         "transformation": null,
         "modeling_rule": null
     }

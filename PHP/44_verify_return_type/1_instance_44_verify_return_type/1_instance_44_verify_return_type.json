@@ -1,13 +1,14 @@
 {
+    "description": "The instance defines a function, that takes a string as an argument. So if the argument is an object, `__toString` will be called on that object.",
     "code": {
         "path": "./1_instance_44_verify_return_type.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "../44_verify_return_type.sc",
+        "rule": "./1_instance_44_verify_return_type.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The discovery rule first gets all class names, where the method `__toString` is defined.\nAfterwards it collects all `NEW` calles and filters them to see which of the instanciated objects has the method `__toString` defined.\nThe rule would be perfect, if we could additionally check, if one of the created objects invokes the `__toString` method within its lifetime."
     },
     "compile": {
         "binary": "./1_instance_44_verify_return_type.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_44_verify_return_type.php",
-        "sink_line": 11,
+        "sink_line": 9,
         "source_file": "./1_instance_44_verify_return_type.php",
-        "source_line": 21,
+        "source_line": 19,
         "expectation": true
     },
     "properties": {
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "Call `__toString` manually on the object, when it is passed to a function, that takes strings as arguments.",
         "transformation": null,
         "modeling_rule": null
     }

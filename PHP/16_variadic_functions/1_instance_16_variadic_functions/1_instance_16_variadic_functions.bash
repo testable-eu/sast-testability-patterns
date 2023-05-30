@@ -1,33 +1,31 @@
 
-$_main: ; (lines=12, args=0, vars=1, tmps=4)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/10_variadic_functions/10_variadic_functions.php:1-12
-L0 (11):    EXT_STMT
-L1 (11):    T1 = FETCH_R (global) string("_GET")
-L2 (11):    T2 = FETCH_DIM_R T1 string("p1")
-L3 (11):    ASSIGN CV0($b) T2
-L4 (12):    EXT_STMT
-L5 (12):    INIT_FCALL 4 192 string("sum")
-L6 (12):    SEND_VAL int(1) 1
-L7 (12):    SEND_VAL int(2) 2
-L8 (12):    SEND_VAL int(3) 3
-L9 (12):    SEND_VAR CV0($b) 4
-L10 (12):   DO_FCALL
-L11 (12):   RETURN int(1)
+$_main:
+     ; (lines=10, args=0, vars=1, tmps=4)
+     ; (before optimizer)
+     ; /.../PHP/16_variadic_functions/1_instance_16_variadic_functions/1_instance_16_variadic_functions.php:1-11
+     ; return  [] RANGE[0..0]
+0000 T1 = FETCH_R (global) string("_GET")
+0001 T2 = FETCH_DIM_R T1 string("p1")
+0002 ASSIGN CV0($a) T2
+0003 INIT_FCALL 4 192 string("sum")
+0004 SEND_VAL int(1) 1
+0005 SEND_VAL int(2) 2
+0006 SEND_VAL int(3) 3
+0007 SEND_VAR CV0($a) 4
+0008 DO_UCALL
+0009 RETURN int(1)
 
-sum: ; (lines=11, args=0, vars=2, tmps=1)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/10_variadic_functions/10_variadic_functions.php:4-9
-L0 (4):     EXT_NOP
-L1 (4):     CV0($numbers) = RECV_VARIADIC 1
-L2 (5):     EXT_STMT
-L3 (5):     V2 = FE_RESET_R CV0($numbers) L8
-L4 (5):     FE_FETCH_R V2 CV1($n) L8
-L5 (7):     EXT_STMT
-L6 (7):     ECHO CV1($n)
-L7 (5):     JMP L4
-L8 (5):     FE_FREE V2
-L9 (9):     EXT_STMT
-L10 (9):    RETURN null
+sum:
+     ; (lines=7, args=0, vars=2, tmps=1)
+     ; (before optimizer)
+     ; /.../PHP/16_variadic_functions/1_instance_16_variadic_functions/1_instance_16_variadic_functions.php:3-8
+     ; return  [] RANGE[0..0]
+0000 CV0($numbers) = RECV_VARIADIC 1
+0001 V2 = FE_RESET_R CV0($numbers) 0005
+0002 FE_FETCH_R V2 CV1($n) 0005
+0003 ECHO CV1($n)
+0004 JMP 0002
+0005 FE_FREE V2
+0006 RETURN null
 LIVE RANGES:
-        2: L4 - L8 (loop)
+     2: 0002 - 0005 (loop)

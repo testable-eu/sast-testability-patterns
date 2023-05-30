@@ -1,19 +1,17 @@
 <?php
-class Test
-{
+class Test {
     private $foo;
 
-    public function __construct($foo)
-    {
+    public function __construct($foo) {
         $this->foo = $foo;
     }
 
-    public function getfoo(){
+    public function getfoo() {
         return $this->foo;
     }
 }
 
-$b = $_GET["p1"];
-$test = new Test($b);
+$b = $_GET["p1"]; // source
+$test = new Test($b); // tarpit
 // XSS vulnerability
-echo $test->getfoo();
+echo $test->getfoo(); // sink

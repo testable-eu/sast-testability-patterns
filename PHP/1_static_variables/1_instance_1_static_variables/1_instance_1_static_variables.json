@@ -1,4 +1,5 @@
 {
+    "description": "This instance, focuses on the static variables in functions not the static properties in objects nor static methods.",
     "code": {
         "path": "./1_instance_1_static_variables.php",
         "injection_skeleton_broken": true
@@ -7,7 +8,7 @@
         "rule": "./1_instance_1_static_variables.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": "The `BIND_STATIC` opcode is only for static variables that are normally used inside code blocks. The SAST tools may not able to keep the proper values for these static variables. As such the discovery rule should be accurate as it is"
+        "notes": "./docs/discovery_notes.md"
     },
     "remediation": {
         "notes": "./docs/remediation_notes.md",

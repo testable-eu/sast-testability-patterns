@@ -1,0 +1,3 @@
+[Closures or anonymous functions](https://www.php.net/manual/en/functions.anonymous.php) allow the creation of functions, that have no specific name. In PHP, a closure does not inherit the scope it was defined in. It rather encapsulates its scope and any variable that you want to access must be bind to the function manually.
+
+Instance 2 targets the usage of [arrow functions](https://www.php.net/manual/en/functions.arrow.php). In PHP the implementation of arrow function uses the closure class as well, they both have the same features. Except arrow functions capture variables from the parent scope by value automatically.

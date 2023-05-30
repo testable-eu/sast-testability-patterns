@@ -1,15 +1,13 @@
 <?php
-class TestClass
-{
-    public $foo;
-    public $doo = 'safe';
-    public function __construct($foo){
-        $this->foo = $foo;
+class TestClass {
+    public $x;
+    public function __construct($val) {
+        $this->x = $val;
     }
 
-    public function __toString(){
-        echo 'XSS: ' . $this->foo;
-        return $this->foo;
+    public function __toString() {
+        echo $this->x; // sink
+        return $this->x;
     }
 }
 
@@ -18,6 +16,6 @@ function F(string $c){
     echo 'message';
 }
 
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 $c = new TestClass($b);
 F($c);

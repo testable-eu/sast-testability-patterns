@@ -1,0 +1,1 @@
+`__toString()` is one of PHP magic functions, that override PHP's default behaviour. When implementing this function you can decide what happens when the object is treated as a string.

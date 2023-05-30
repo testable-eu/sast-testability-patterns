@@ -1,5 +1,5 @@
 <?php
-$a = $_GET["p1"];
+$a = $_GET["p1"]; // source
 $message = "safe";
 // Inherit $message
 $example = function () use ($message) {
@@ -10,4 +10,4 @@ $example = function () use ($message) {
 };
 $message = $a;
 $b = $example();
-echo $b;
+echo $b; // sink

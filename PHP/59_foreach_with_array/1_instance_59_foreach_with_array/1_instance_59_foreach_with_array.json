@@ -1,4 +1,5 @@
 {
+    "description": "The instance shows an example of iterating over an array using a `foreach` loop and the `array_keys` function.",
     "code": {
         "path": "./1_instance_59_foreach_with_array.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_59_foreach_with_array.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for calls to the function `array_keys`. But it does not check if these calls were done from a `foreach` loop."
     },
     "compile": {
         "binary": "./1_instance_59_foreach_with_array.bash",

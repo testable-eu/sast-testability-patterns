@@ -1,13 +1,11 @@
 <?php
-
-class myclass
-{
-    static function F($b)
-    {
-        echo $b;
+class myclass {
+    static function F($b) {
+        return $b;
     }
 }
 
-$a = $_GET["p1"];
+$a = $_GET["p1"]; // source
 $func = "F";
-myclass::$func($a);
+$b = myclass::$func($a);
+echo $b; // sink 

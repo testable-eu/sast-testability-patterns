@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows, then when assigning one object to another object, they both point to the same object in memory, so they have the same attributes.",
     "code": {
         "path": "./1_instance_22_assign_object.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_22_assign_object.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
         "binary": "./1_instance_22_assign_object.bash",

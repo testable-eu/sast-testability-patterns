@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows a simple example for throwing and catching an exception.",
     "code": {
         "path": "./1_instance_50_throw_exception.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_50_throw_exception.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for a call for `THROW` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_50_throw_exception.bash",

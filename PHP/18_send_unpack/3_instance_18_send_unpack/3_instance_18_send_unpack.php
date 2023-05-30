@@ -4,6 +4,6 @@ function add($a, $b) {
     return $b;
 }
 
-$b = $_GET["p1"];
-$c = add(1, $b);
-echo $c;
+$b = $_GET["p1"]; // source
+$c = add(1, $b); // tarpit
+echo $c; // sink

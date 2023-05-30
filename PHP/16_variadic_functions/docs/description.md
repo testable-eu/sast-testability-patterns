@@ -1,0 +1,1 @@
+Variadic functions in PHP allow a function to accept an arbitrary number of arguments, which are automatically collected into an array, using the ... (ellipsis) operator.

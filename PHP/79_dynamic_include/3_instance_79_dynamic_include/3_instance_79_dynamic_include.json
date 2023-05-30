@@ -1,26 +1,27 @@
 {
+    "description": "This instance leaves it up to the user controlled variable, which file to include. In this example, if `$_GET['p2']` is `3_instance_79_dynamic_include_0.php` it will include the sink file.",
     "code": {
-        "path": "./3_instance_79_dynamic_include.php",
+        "path": "./3_instance_79_dynamic_include_0.php",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./abc.php",
+        "sink_file": "./3_instance_79_dynamic_include_1.php",
         "sink_line": 2,
-        "source_file": "./3_instance_79_dynamic_include.php",
-        "source_line": 4,
+        "source_file": "./3_instance_79_dynamic_include_0.php",
+        "source_line": 2,
         "expectation": true
     },
     "compile": {
-        "binary": "./3_instance_79_dynamic_include.bash",
+        "binary": "./3_instance_79_dynamic_include_0.bash",
         "instruction": null,
         "dependencies": null
     },
     "discovery": {
         "rule": "./3_instance_79_dynamic_include.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "Checks for an include statement with a variable on opcode level."
     },
     "properties": {
         "category": "D4",

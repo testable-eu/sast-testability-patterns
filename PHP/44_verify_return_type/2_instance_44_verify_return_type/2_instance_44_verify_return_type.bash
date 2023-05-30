@@ -1,58 +1,56 @@
 
-$_main: ; (lines=10, args=0, vars=1, tmps=4)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/85_verify_return_type/second_ex/second_ex.php:1-22
-L0 (4):     NOP
-L1 (20):    EXT_STMT
-L2 (20):    T1 = FETCH_R (global) string("_GET")
-L3 (20):    T2 = FETCH_DIM_R T1 string("p1")
-L4 (20):    ASSIGN CV0($b) T2
-L5 (22):    EXT_STMT
-L6 (22):    INIT_FCALL 1 160 string("f")
-L7 (22):    SEND_VAR CV0($b) 1
-L8 (22):    DO_FCALL
-L9 (22):    RETURN int(1)
+$_main:
+     ; (lines=8, args=0, vars=1, tmps=4)
+     ; (before optimizer)
+     ; /.../PHP/44_verify_return_type/2_instance_44_verify_return_type/2_instance_44_verify_return_type.php:1-20
+     ; return  [] RANGE[0..0]
+0000 DECLARE_CLASS string("testclass")
+0001 T1 = FETCH_R (global) string("_GET")
+0002 T2 = FETCH_DIM_R T1 string("p1")
+0003 ASSIGN CV0($b) T2
+0004 INIT_FCALL 1 160 string("f")
+0005 SEND_VAR CV0($b) 1
+0006 DO_UCALL
+0007 RETURN int(1)
 
-F: ; (lines=13, args=1, vars=2, tmps=3)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/85_verify_return_type/second_ex/second_ex.php:16-19
-L0 (16):    EXT_NOP
-L1 (16):    CV0($b) = RECV 1
-L2 (17):    EXT_STMT
-L3 (17):    V2 = NEW 1 string("TestClass")
-L4 (17):    SEND_VAR_EX CV0($b) 1
-L5 (17):    DO_FCALL
-L6 (17):    ASSIGN CV1($class) V2
-L7 (18):    EXT_STMT
-L8 (18):    VERIFY_RETURN_TYPE CV1($class)
-L9 (18):    RETURN CV1($class)
-L10 (19):   EXT_STMT
-L11 (19):   VERIFY_RETURN_TYPE
-L12 (19):   RETURN null
+F:
+     ; (lines=9, args=1, vars=2, tmps=3)
+     ; (before optimizer)
+     ; /.../PHP/44_verify_return_type/2_instance_44_verify_return_type/2_instance_44_verify_return_type.php:15-18
+     ; return  [] RANGE[0..0]
+0000 CV0($b) = RECV 1
+0001 V2 = NEW 1 string("TestClass")
+0002 SEND_VAR_EX CV0($b) 1
+0003 DO_FCALL
+0004 ASSIGN CV1($class) V2
+0005 VERIFY_RETURN_TYPE CV1($class)
+0006 RETURN CV1($class)
+0007 VERIFY_RETURN_TYPE
+0008 RETURN null
 LIVE RANGES:
-        2: L4 - L6 (new)
+     2: 0002 - 0004 (new)
 
-TestClass::__construct: ; (lines=7, args=1, vars=1, tmps=1)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/85_verify_return_type/second_ex/second_ex.php:5-7
-L0 (5):     EXT_NOP
-L1 (5):     CV0($foo) = RECV 1
-L2 (6):     EXT_STMT
-L3 (6):     ASSIGN_OBJ THIS string("foo")
-L4 (6):     OP_DATA CV0($foo)
-L5 (7):     EXT_STMT
-L6 (7):     RETURN null
+TestClass::__construct:
+     ; (lines=4, args=1, vars=1, tmps=1)
+     ; (before optimizer)
+     ; /.../PHP/44_verify_return_type/2_instance_44_verify_return_type/2_instance_44_verify_return_type.php:4-6
+     ; return  [] RANGE[0..0]
+0000 CV0($val) = RECV 1
+0001 ASSIGN_OBJ THIS string("x")
+0002 OP_DATA CV0($val)
+0003 RETURN null
 
-TestClass::__toString: ; (lines=10, args=0, vars=0, tmps=3)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/85_verify_return_type/second_ex/second_ex.php:9-12
-L0 (9):     EXT_NOP
-L1 (10):    EXT_STMT
-L2 (10):    T0 = FETCH_OBJ_R THIS string("foo")
-L3 (10):    T1 = CONCAT string("XSS: ") T0
-L4 (10):    ECHO T1
-L5 (11):    EXT_STMT
-L6 (11):    T2 = FETCH_OBJ_R THIS string("foo")
-L7 (11):    RETURN T2
-L8 (12):    EXT_STMT
-L9 (12):    RETURN null
+TestClass::__toString:
+     ; (lines=7, args=0, vars=0, tmps=2)
+     ; (before optimizer)
+     ; /.../PHP/44_verify_return_type/2_instance_44_verify_return_type/2_instance_44_verify_return_type.php:8-11
+     ; return  [] RANGE[0..0]
+0000 T0 = FETCH_OBJ_R THIS string("x")
+0001 ECHO T0
+0002 T1 = FETCH_OBJ_R THIS string("x")
+0003 VERIFY_RETURN_TYPE T1
+0004 RETURN T1
+0005 VERIFY_RETURN_TYPE
+0006 RETURN null
+LIVE RANGES:
+     1: 0003 - 0004 (tmp/var)

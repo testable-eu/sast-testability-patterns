@@ -1,6 +1,6 @@
 {
     "name": "Self Methods",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_41_self_methods/1_instance_41_self_methods.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

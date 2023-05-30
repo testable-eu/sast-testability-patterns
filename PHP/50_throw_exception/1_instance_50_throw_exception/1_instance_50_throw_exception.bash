@@ -1,56 +1,47 @@
 
-$_main: ; (lines=26, args=0, vars=2, tmps=6)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/40_throw_exception/40_throw_exception.php:1-16
-L0 (9):     EXT_STMT
-L1 (9):     T2 = FETCH_R (global) string("_GET")
-L2 (9):     T3 = FETCH_DIM_R T2 string("p1")
-L3 (9):     ASSIGN CV0($b) T3
-L4 (10):    NOP
-L5 (11):    EXT_STMT
-L6 (11):    INIT_FCALL 2 176 string("inverse")
-L7 (11):    SEND_VAL int(5) 1
-L8 (11):    SEND_VAR CV0($b) 2
-L9 (11):    DO_FCALL
-L10 (12):   EXT_STMT
-L11 (12):   INIT_FCALL 2 176 string("inverse")
-L12 (12):   SEND_VAL int(0) 1
-L13 (12):   SEND_VAR CV0($b) 2
-L14 (12):   DO_FCALL
-L15 (12):   JMP L25
-L16 (13):   CV1($e) = CATCH string("Exception")
-L17 (15):   EXT_STMT
-L18 (15):   ECHO string("Caught exception: ")
-L19 (15):   EXT_STMT
-L20 (15):   INIT_METHOD_CALL 0 CV1($e) string("getMessage")
-L21 (15):   V7 = DO_FCALL
-L22 (15):   ECHO V7
-L23 (15):   EXT_STMT
-L24 (15):   ECHO string("
+$_main:
+     ; (lines=19, args=0, vars=2, tmps=6)
+     ; (before optimizer)
+     ; /.../PHP/50_throw_exception/1_instance_50_throw_exception/1_instance_50_throw_exception.php:1-16
+     ; return  [] RANGE[0..0]
+0000 T2 = FETCH_R (global) string("_GET")
+0001 T3 = FETCH_DIM_R T2 string("p1")
+0002 ASSIGN CV0($b) T3
+0003 INIT_FCALL 2 176 string("inverse")
+0004 SEND_VAL int(5) 1
+0005 SEND_VAR CV0($b) 2
+0006 DO_UCALL
+0007 INIT_FCALL 2 176 string("inverse")
+0008 SEND_VAL int(0) 1
+0009 SEND_VAR CV0($b) 2
+0010 DO_UCALL
+0011 JMP 0018
+0012 CV1($e) = CATCH string("Exception")
+0013 ECHO string("Caught exception: ")
+0014 INIT_METHOD_CALL 0 CV1($e) string("getMessage")
+0015 V7 = DO_FCALL
+0016 ECHO V7
+0017 ECHO string("
 ")
-L25 (16):   RETURN int(1)
+0018 RETURN int(1)
 EXCEPTION TABLE:
-        L5, L16, -, -
+     0003, 0012, -, -
 
-inverse: ; (lines=16, args=2, vars=2, tmps=4)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/40_throw_exception/40_throw_exception.php:2-7
-L0 (2):     EXT_NOP
-L1 (2):     CV0($x) = RECV 1
-L2 (2):     CV1($b) = RECV 2
-L3 (3):     EXT_STMT
-L4 (3):     T2 = BOOL_NOT CV0($x)
-L5 (3):     JMPZ T2 L11
-L6 (4):     EXT_STMT
-L7 (4):     V3 = NEW 1 string("Exception")
-L8 (4):     SEND_VAR_EX CV1($b) 1
-L9 (4):     DO_FCALL
-L10 (4):    THROW V3
-L11 (6):    EXT_STMT
-L12 (6):    T5 = DIV int(1) CV0($x)
-L13 (6):    RETURN T5
-L14 (7):    EXT_STMT
-L15 (7):    RETURN null
+inverse:
+     ; (lines=11, args=2, vars=2, tmps=4)
+     ; (before optimizer)
+     ; /.../PHP/50_throw_exception/1_instance_50_throw_exception/1_instance_50_throw_exception.php:2-7
+     ; return  [] RANGE[0..0]
+0000 CV0($x) = RECV 1
+0001 CV1($b) = RECV 2
+0002 T2 = BOOL_NOT CV0($x)
+0003 JMPZ T2 0008
+0004 V3 = NEW 1 string("Exception")
+0005 SEND_VAR_EX CV1($b) 1
+0006 DO_FCALL
+0007 THROW V3
+0008 T5 = DIV int(1) CV0($x)
+0009 RETURN T5
+0010 RETURN null
 LIVE RANGES:
-        3: L8 - L10 (new)
-
+     3: 0005 - 0007 (new)

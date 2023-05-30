@@ -1,3 +1,4 @@
-<?php 
-// payload=<img%20src=x%20onerror=alert();>
-echo(json_encode($_GET["p1"]));
+<?php
+$b = $_GET["p1"]; // source
+$a = json_encode($b);
+echo $a; // sink

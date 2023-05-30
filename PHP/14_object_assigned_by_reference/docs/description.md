@@ -1,0 +1,1 @@
+Instance variables can be assigned by reference, every change to a variable referencing an instance variable of an object will be reflected in the instance variable and vice versa.

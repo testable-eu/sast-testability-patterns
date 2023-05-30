@@ -1,6 +1,6 @@
 {
     "name": "Throw Exception",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_50_throw_exception/1_instance_50_throw_exception.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

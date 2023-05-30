@@ -1,10 +1,10 @@
 <?php
-class myclass{
+class myclass {
    public $b = "safe";
 }
 $obj1 = new myclass();
 $obj1->b = "safe2";
 $obj2 = $obj1;
-$obj2->b = $_GET["p1"];
+$obj2->b = $_GET["p1"]; // source
 // XSS vulnerability
-echo $obj1->b;
+echo $obj1->b; // sink

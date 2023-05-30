@@ -1,0 +1,1 @@
+In PHP [`odbc_execute`](https://www.php.net/manual/en/function.odbc-execute.php) executes a statement on a database.

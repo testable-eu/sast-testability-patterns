@@ -1,18 +1,19 @@
 <?php
 class A {
     public static function who($b) {
-        echo "safe";
+        return "safe";
     }
     public static function test($b) {
-        static::who($b); // Here comes Late Static Bindings
+        return static::who($b); // Here comes Late Static Bindings
     }
 }
 
 class B extends A {
     public static function who($b) {
-        echo $b;
+        return $b;
     }
 }
 
-$b = $_GET["p1"];
-B::test($b);
+$b = $_GET["p1"]; // source
+$a = B::test($b);
+echo $a; // sink

@@ -1,0 +1,1 @@
+A [generator](https://www.php.net/manual/en/language.generators.overview.php) in PHP provides an easy way to implement simple iterators without implementing a class that implements the Iterator interface.

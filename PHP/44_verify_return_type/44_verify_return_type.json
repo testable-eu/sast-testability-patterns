@@ -1,6 +1,6 @@
 {
     "name": "Verify Return Type",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -11,5 +11,5 @@
         "./1_instance_44_verify_return_type/1_instance_44_verify_return_type.json",
         "./2_instance_44_verify_return_type/2_instance_44_verify_return_type.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

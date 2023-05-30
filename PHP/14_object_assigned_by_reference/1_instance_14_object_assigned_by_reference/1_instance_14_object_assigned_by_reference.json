@@ -1,13 +1,14 @@
 {
+    "description": "The instance shows a variable assigned to an instance variable of an object by reference. The instance variable is first assigned to the other variable and than the other variable is set to a user controlled input.",
     "code": {
         "path": "./1_instance_14_object_assigned_by_reference.php",
         "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "./1_instance_14_object_assigned_by_reference.sc",
+        "rule": "../14_object_assigned_by_reference.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
         "binary": "./1_instance_14_object_assigned_by_reference.bash",

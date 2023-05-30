@@ -1,0 +1,1 @@
+Redirects in Javascript can be done using `window.location`. This patterns tries to find redirects like this.

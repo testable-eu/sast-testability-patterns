@@ -1,0 +1,1 @@
+The PHP callable syntax allows for flexible and dynamic creation of functions and methods that can be called at a later time. This pattern targets the callable syntax on objects

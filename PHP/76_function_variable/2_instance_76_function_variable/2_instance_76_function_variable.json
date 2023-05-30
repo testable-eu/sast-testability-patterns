@@ -1,10 +1,11 @@
 {
+    "description": "This instance takes the function, that should be called as an user defined input. In this case: if the user controlled value is 'F', the script calls the function F.",
     "code": {
         "path": "./2_instance_76_function_variable.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./2_instance_76_function_variable.sc",
+        "rule": "../76_function_variable.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
         "notes": "Rule identifies an INIT_DYNAMIC_CALL made on a non-literal element"
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_76_function_variable.php",
-        "sink_line": 3,
+        "sink_line": 8,
         "source_file": "./2_instance_76_function_variable.php",
         "source_line": 5,
         "expectation": true

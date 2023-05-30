@@ -1,0 +1,1 @@
+In PHP `serialize()` can be used to bring an object in a storable format. `unserialize()` does the opposite and creates a PHP value from a stored representation.

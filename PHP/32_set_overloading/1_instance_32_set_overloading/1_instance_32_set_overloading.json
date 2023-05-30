@@ -1,13 +1,14 @@
 {
+    "description": "The instance shows, that writing data to the existing but private variable `var` of `obj` triggers `__set` to be called, which is vulnerable.",
     "code": {
         "path": "./1_instance_32_set_overloading.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "./1_instance_32_set_overloading.sc",
+        "rule": "../32_set_overloading.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
         "binary": "./1_instance_32_set_overloading.bash",

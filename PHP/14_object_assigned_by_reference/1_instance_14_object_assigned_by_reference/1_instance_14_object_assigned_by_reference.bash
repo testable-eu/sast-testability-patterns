@@ -1,20 +1,20 @@
 
-$_main: ; (lines=16, args=0, vars=2, tmps=7)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/121_object_assigned_by_reference/121_object_assigned_by_reference.php:1-9
-L0 (3):     NOP
-L1 (5):     EXT_STMT
-L2 (5):     ASSIGN CV0($x) string("safe")
-L3 (6):     EXT_STMT
-L4 (6):     ASSIGN CV1($obj) string("abc")
-L5 (7):     EXT_STMT
-L6 (7):     ASSIGN_OBJ_REF CV1($obj) string("prop")
-L7 (7):     OP_DATA CV0($x)
-L8 (8):     EXT_STMT
-L9 (8):     T5 = FETCH_R (global) string("_GET")
-L10 (8):    T6 = FETCH_DIM_R T5 string("p1")
-L11 (8):    ASSIGN CV0($x) T6
-L12 (9):    EXT_STMT
-L13 (9):    T8 = FETCH_OBJ_R CV1($obj) string("prop")
-L14 (9):    ECHO T8
-L15 (9):    RETURN int(1)
+$_main:
+     ; (lines=12, args=0, vars=2, tmps=9)
+     ; (before optimizer)
+     ; /.../PHP/14_object_assigned_by_reference/1_instance_14_object_assigned_by_reference/1_instance_14_object_assigned_by_reference.php:1-9
+     ; return  [] RANGE[0..0]
+0000 ASSIGN CV0($x) string("safe")
+0001 V3 = NEW 0 string("myclass")
+0002 DO_FCALL
+0003 ASSIGN CV1($obj) V3
+0004 ASSIGN_OBJ_REF CV1($obj) string("prop")
+0005 OP_DATA CV0($x)
+0006 T7 = FETCH_R (global) string("_GET")
+0007 T8 = FETCH_DIM_R T7 string("p1")
+0008 ASSIGN CV0($x) T8
+0009 T10 = FETCH_OBJ_R CV1($obj) string("prop")
+0010 ECHO T10
+0011 RETURN int(1)
+LIVE RANGES:
+     3: 0002 - 0003 (new)

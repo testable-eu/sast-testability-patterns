@@ -1,0 +1,1 @@
+In PHP [`array_map`](https://www.php.net/manual/en/function.array-map.php) applies a callback function to all elements of an array.

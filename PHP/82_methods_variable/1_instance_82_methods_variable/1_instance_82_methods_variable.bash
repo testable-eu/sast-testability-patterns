@@ -1,31 +1,30 @@
 
-$_main: ; (lines=15, args=0, vars=3, tmps=8)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/114_methods_variable/first_ex/first_ex.php:1-15
-L0 (10):    EXT_STMT
-L1 (10):    T3 = FETCH_R (global) string("_GET")
-L2 (10):    T4 = FETCH_DIM_R T3 string("p1")
-L3 (10):    ASSIGN CV0($a) T4
-L4 (12):    EXT_STMT
-L5 (12):    V6 = NEW 0 string("myclass")
-L6 (12):    DO_FCALL
-L7 (12):    ASSIGN CV1($obj) V6
-L8 (13):    EXT_STMT
-L9 (13):    ASSIGN CV2($func) string("F")
-L10 (14):   EXT_STMT
-L11 (14):   INIT_METHOD_CALL 1 CV1($obj) CV2($func)
-L12 (14):   SEND_VAR_EX CV0($a) 1
-L13 (14):   DO_FCALL
-L14 (15):   RETURN int(1)
+$_main:
+     ; (lines=13, args=0, vars=4, tmps=9)
+     ; (before optimizer)
+     ; /.../PHP/82_methods_variable/1_instance_82_methods_variable/1_instance_82_methods_variable.php:1-12
+     ; return  [] RANGE[0..0]
+0000 T4 = FETCH_R (global) string("_GET")
+0001 T5 = FETCH_DIM_R T4 string("p1")
+0002 ASSIGN CV0($b) T5
+0003 V7 = NEW 0 string("myclass")
+0004 DO_FCALL
+0005 ASSIGN CV1($obj) V7
+0006 ASSIGN CV2($func) string("F")
+0007 INIT_METHOD_CALL 1 CV1($obj) CV2($func)
+0008 SEND_VAR_EX CV0($b) 1
+0009 V11 = DO_FCALL
+0010 ASSIGN CV3($a) V11
+0011 ECHO CV3($a)
+0012 RETURN int(1)
 LIVE RANGES:
-        6: L6 - L7 (new)
+     7: 0004 - 0005 (new)
 
-myclass::F: ; (lines=6, args=1, vars=1, tmps=0)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/114_methods_variable/first_ex/first_ex.php:5-7
-L0 (5):     EXT_NOP
-L1 (5):     CV0($b) = RECV 1
-L2 (6):     EXT_STMT
-L3 (6):     ECHO CV0($b)
-L4 (7):     EXT_STMT
-L5 (7):     RETURN null
+myclass::F:
+     ; (lines=3, args=1, vars=1, tmps=0)
+     ; (before optimizer)
+     ; /.../PHP/82_methods_variable/1_instance_82_methods_variable/1_instance_82_methods_variable.php:3-5
+     ; return  [] RANGE[0..0]
+0000 CV0($b) = RECV 1
+0001 RETURN CV0($b)
+0002 RETURN null

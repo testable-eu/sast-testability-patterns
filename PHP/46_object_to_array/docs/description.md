@@ -1,0 +1,1 @@
+In PHP you can cast any object to a simple 1D array using `(array)`.

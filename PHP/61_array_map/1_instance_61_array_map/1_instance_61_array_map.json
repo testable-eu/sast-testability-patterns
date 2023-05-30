@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows a predefined closure applied to all elements of an array using `array_map`.",
     "code": {
         "path": "./1_instance_61_array_map.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_61_array_map.sc",
+        "rule": "../61_array_map.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calles to `array_map`."
     },
     "compile": {
         "binary": "./1_instance_61_array_map.bash",

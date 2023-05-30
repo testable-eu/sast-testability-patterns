@@ -1,19 +1,20 @@
 <?php
-  class A {
-      public $one = 1;
+class A {
+    public $one = 1;
 
-      function __construct($b){
-        $this->one = $b;
-      }
-    
-      public function show_one() {
-          echo $this->one;
-      }
-  }
+    function __construct($b) {
+      $this->one = $b;
+    }
   
-$b = $_GET["p1"];
+    public function show_one() {
+        return $this->one;
+    }
+}
+  
+$b = $_GET["p1"]; // source
 $a = new A($b);
 $s = serialize($a);
 $h = unserialize($s);
 // will print $b, XSS vulnerability
-$h->show_one();
+$c = $h->show_one();
+echo $c; // sink

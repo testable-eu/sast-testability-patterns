@@ -1,4 +1,5 @@
 {
+    "description": "This instance captures the use of the keyword `use` in closures without reference, so any changes made to the value captured by the closure will not affect the captured value within the closure. Therefor this instance is not vulnerable",
     "code": {
         "path": "./1_instance_20_use_with_closures.php",
         "injection_skeleton_broken": false

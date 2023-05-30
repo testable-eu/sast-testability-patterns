@@ -1,12 +1,15 @@
 
-$_main: ; (lines=8, args=0, vars=0, tmps=3)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/72_wrong_sanitizer/second_ex/second_ex.php:1-4
-L0 (3):     EXT_STMT
-L1 (3):     INIT_FCALL 1 96 string("json_encode")
-L2 (3):     T0 = FETCH_R (global) string("_GET")
-L3 (3):     T1 = FETCH_DIM_R T0 string("p1")
-L4 (3):     SEND_VAL T1 1
-L5 (3):     V2 = DO_FCALL
-L6 (3):     ECHO V2
-L7 (4):     RETURN int(1)
+$_main:
+     ; (lines=9, args=0, vars=2, tmps=5)
+     ; (before optimizer)
+     ; /.../PHP/73_wrong_sanitizer/2_instance_73_wrong_sanitizer/2_instance_73_wrong_sanitizer.php:1-4
+     ; return  [] RANGE[0..0]
+0000 T2 = FETCH_R (global) string("_GET")
+0001 T3 = FETCH_DIM_R T2 string("p1")
+0002 ASSIGN CV0($b) T3
+0003 INIT_FCALL 1 96 string("json_encode")
+0004 SEND_VAR CV0($b) 1
+0005 V5 = DO_ICALL
+0006 ASSIGN CV1($a) V5
+0007 ECHO CV1($a)
+0008 RETURN int(1)

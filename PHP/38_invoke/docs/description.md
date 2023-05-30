@@ -1,0 +1,1 @@
+`__invoke` is one of PHP [Magic Methods](https://www.php.net/manual/en/language.oop5.magic.php), that override PHP default actions. It is called when a script tries to call an object as a function.

@@ -1,32 +1,30 @@
 
-$_main: ; (lines=13, args=0, vars=2, tmps=6)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/11_send_unpack/11_send_unpack.php:1-11
-L0 (9):     EXT_STMT
-L1 (9):     T2 = FETCH_R (global) string("_GET")
-L2 (9):     T3 = FETCH_DIM_R T2 string("p1")
-L3 (9):     ASSIGN CV0($b) T3
-L4 (10):    EXT_STMT
-L5 (10):    T5 = INIT_ARRAY 2 (packed) int(1) NEXT
-L6 (10):    T5 = ADD_ARRAY_ELEMENT CV0($b) NEXT
-L7 (10):    ASSIGN CV1($a) T5
-L8 (11):    EXT_STMT
-L9 (11):    INIT_FCALL 0 112 string("add")
-L10 (11):   SEND_UNPACK CV1($a)
-L11 (11):   DO_FCALL
-L12 (11):   RETURN int(1)
+$_main:
+     ; (lines=11, args=0, vars=2, tmps=6)
+     ; (before optimizer)
+     ; /.../PHP/18_send_unpack/1_instance_18_send_unpack/1_instance_18_send_unpack.php:1-11
+     ; return  [] RANGE[0..0]
+0000 T2 = FETCH_R (global) string("_GET")
+0001 T3 = FETCH_DIM_R T2 string("p1")
+0002 ASSIGN CV0($b) T3
+0003 T5 = INIT_ARRAY 2 (packed) int(1) NEXT
+0004 T5 = ADD_ARRAY_ELEMENT CV0($b) NEXT
+0005 ASSIGN CV1($a) T5
+0006 INIT_FCALL 0 112 string("add")
+0007 SEND_UNPACK CV1($a)
+0008 CHECK_UNDEF_ARGS
+0009 DO_UCALL
+0010 RETURN int(1)
 LIVE RANGES:
-        5: L6 - L7 (tmp/var)
+     5: 0004 - 0005 (tmp/var)
 
-add: ; (lines=9, args=2, vars=2, tmps=0)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/11_send_unpack/11_send_unpack.php:3-7
-L0 (3):     EXT_NOP
-L1 (3):     CV0($a) = RECV 1
-L2 (3):     CV1($b) = RECV 2
-L3 (4):     EXT_STMT
-L4 (4):     ECHO CV0($a)
-L5 (6):     EXT_STMT
-L6 (6):     ECHO CV1($b)
-L7 (7):     EXT_STMT
-L8 (7):     RETURN null
+add:
+     ; (lines=5, args=2, vars=2, tmps=0)
+     ; (before optimizer)
+     ; /.../PHP/18_send_unpack/1_instance_18_send_unpack/1_instance_18_send_unpack.php:3-7
+     ; return  [] RANGE[0..0]
+0000 CV0($a) = RECV 1
+0001 CV1($b) = RECV 2
+0002 ECHO CV0($a)
+0003 ECHO CV1($b)
+0004 RETURN null

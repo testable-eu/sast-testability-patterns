@@ -1,2 +1,3 @@
 <?php
-    echo $_SERVER['SERVER_NAME'];
+$a = $_SERVER['SERVER_NAME']; // source
+echo $a; // sink

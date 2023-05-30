@@ -1,13 +1,14 @@
 {
+    "description": "This instance demonstrates the usage of `compact` using some predefined variables, one of them contains user controlled input.",
     "code": {
         "path": "./1_instance_68_compact.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_68_compact.sc",
+        "rule": "../68_compact.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for function calls to `compact` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_68_compact.bash",

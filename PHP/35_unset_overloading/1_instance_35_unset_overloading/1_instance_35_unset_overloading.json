@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows, that `__unset` is invoked, when `unset` is called on an instance of the class.",
     "code": {
         "path": "./1_instance_35_unset_overloading.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "./1_instance_35_unset_overloading.sc",
+        "rule": "../35_unset_overloading.sc",
         "method": "joern",
         "rule_accuracy": "FP",
-        "notes": null
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
         "binary": "./1_instance_35_unset_overloading.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_35_unset_overloading.php",
-        "sink_line": 19,
+        "sink_line": 10,
         "source_file": "./1_instance_35_unset_overloading.php",
-        "source_line": 23,
+        "source_line": 14,
         "expectation": true
     },
     "properties": {

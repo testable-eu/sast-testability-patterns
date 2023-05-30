@@ -1,6 +1,6 @@
 {
     "name": "Superglobals",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -13,5 +13,5 @@
         "./3_instance_66_superglobals/3_instance_66_superglobals.json",
         "./4_instance_66_superglobals/4_instance_66_superglobals.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

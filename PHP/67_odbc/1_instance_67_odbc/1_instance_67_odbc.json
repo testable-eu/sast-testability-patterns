@@ -1,4 +1,5 @@
 {
+    "description": "This pattern focuses on the function call `odbc_exec`.",
     "code": {
         "path": "./1_instance_67_odbc.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_67_odbc.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calls to `odbc_exec` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_67_odbc.bash",

@@ -1,6 +1,6 @@
 {
     "name": "Try Catch Finally",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -11,5 +11,5 @@
         "./1_instance_52_try_catch_finally/1_instance_52_try_catch_finally.json",
         "./2_instance_52_try_catch_finally/2_instance_52_try_catch_finally.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

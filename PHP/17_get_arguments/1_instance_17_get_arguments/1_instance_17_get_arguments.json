@@ -1,13 +1,14 @@
 {
+    "description": "This instance uses `func_get_args` and iterates over all the arguments passed to the function and outputs those. The sink is within this for loop.",
     "code": {
         "path": "./1_instance_17_get_arguments.php",
         "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "./1_instance_17_get_arguments.sc",
+        "rule": "../17_get_arguments.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "In opcode there is a special opcode for this function `FUNC_GET_ARGS`."
     },
     "compile": {
         "binary": "./1_instance_17_get_arguments.bash",

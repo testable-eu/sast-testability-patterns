@@ -1,0 +1,1 @@
+In PHP [`parse_str`](https://www.php.net/manual/en/function.parse-str) parses a string into variables.

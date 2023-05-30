@@ -1,6 +1,6 @@
 {
     "name": "Conditional Assignment",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_4_conditional_assignment/1_instance_4_conditional_assignment.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

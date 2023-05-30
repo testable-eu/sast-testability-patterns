@@ -1,0 +1,1 @@
+In PHP `new self` is used to create a new instance of the same class in which it appears.

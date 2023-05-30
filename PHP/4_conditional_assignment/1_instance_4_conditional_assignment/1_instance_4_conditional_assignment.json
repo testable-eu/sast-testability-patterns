@@ -1,4 +1,5 @@
 {
+    "description": "This instance captures the conditional assignment of a variable using the Question Mark Operator.",
     "code": {
         "path": "./1_instance_4_conditional_assignment.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./1_instance_4_conditional_assignment.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": "This rule should discover all conditional assignment"
+        "notes": "The rule searches for `QM_ASSIGN`, which stands for Question Mark Assign. This rule should discover all conditional assignments."
     },
     "remediation": {
         "notes": "./docs/remediation_notes.md",
@@ -24,7 +25,7 @@
         "sink_file": "./1_instance_4_conditional_assignment.php",
         "sink_line": 5,
         "source_file": "./1_instance_4_conditional_assignment.php",
-        "source_line": 2,
+        "source_line": 3,
         "expectation": true
     },
     "properties": {

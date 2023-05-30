@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows, that when you have a callable object and you call the object, `__invoke` will be called.",
     "code": {
         "path": "./1_instance_38_invoke.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_38_invoke.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The discovery rule first gets all class names, where the method `__invoke` is defined.\nAfterwards it collects all `NEW` calles and filters them to see which of the instanciated objects has the method `__invoke` defined.\nThe rule would be perfect, if we could additionally check, if one of the created objects invokes the `__invoke` method within its lifetime."
     },
     "compile": {
         "binary": "./1_instance_38_invoke.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_38_invoke.php",
-        "sink_line": 6,
+        "sink_line": 10,
         "source_file": "./1_instance_38_invoke.php",
-        "source_line": 11,
+        "source_line": 8,
         "expectation": true
     },
     "properties": {

@@ -1,4 +1,5 @@
 {
+    "description": "This instance demonstrates the usage of `exec`.",
     "code": {
         "path": "./2_instance_65_system.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./2_instance_65_system.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calls to `exec`."
     },
     "compile": {
         "binary": "./2_instance_65_system.bash",

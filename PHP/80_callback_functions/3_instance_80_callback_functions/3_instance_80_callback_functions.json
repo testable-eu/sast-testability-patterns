@@ -1,4 +1,5 @@
 {
+    "description": "The instance concatenates the name of the function ('F') with the string 'something' before calling `call_user_func` on it, the second argument is a user controlled value.",
     "code": {
         "path": "./3_instance_80_callback_functions.php",
         "injection_skeleton_broken": false
@@ -19,8 +20,8 @@
     "discovery": {
         "rule": "./3_instance_80_callback_functions.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for a call of `call_user_func`, that is reachable by a `CONCAT` statement."
     },
     "properties": {
         "category": "D2",

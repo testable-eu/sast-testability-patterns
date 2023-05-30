@@ -1,6 +1,5 @@
 <?php
+$a = "b";
+$b = $_GET["p1"]; // source
 
-$a = 'b';
-$b = $_GET["p1"];
-
-echo $$a;
+echo $$a; // sink

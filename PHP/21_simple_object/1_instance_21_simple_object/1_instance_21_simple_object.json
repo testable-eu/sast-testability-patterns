@@ -1,4 +1,5 @@
 {
+    "description": "This instance targets the use of a simple object, where an argument is passed to the constructor of that object.",
     "code": {
         "path": "./1_instance_21_simple_object.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_21_simple_object.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule could be more accurate, if we could check if there was an argument passed to the constructor."
     },
     "compile": {
         "binary": "./1_instance_21_simple_object.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_21_simple_object.php",
-        "sink_line": 19,
+        "sink_line": 17,
         "source_file": "./1_instance_21_simple_object.php",
-        "source_line": 16,
+        "source_line": 14,
         "expectation": true
     },
     "properties": {

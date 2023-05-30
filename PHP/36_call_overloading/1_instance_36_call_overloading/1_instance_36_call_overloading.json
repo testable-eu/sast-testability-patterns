@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows how the `__call` method is invoked.",
     "code": {
         "path": "./1_instance_36_call_overloading.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
         "rule": "./1_instance_36_call_overloading.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The discovery rule first gets all class names, where the method `__call` is defined.\nAfterwards it collects all `NEW` calles and filters them to see which of the instanciated objects has the method `__call` defined.\nThe rule would be perfect, if we could additionally check, if one of the created objects invokes the `__call` method within its lifetime."
     },
     "compile": {
         "binary": "./1_instance_36_call_overloading.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_36_call_overloading.php",
-        "sink_line": 7,
+        "sink_line": 5,
         "source_file": "./1_instance_36_call_overloading.php",
-        "source_line": 12,
+        "source_line": 10,
         "expectation": true
     },
     "properties": {

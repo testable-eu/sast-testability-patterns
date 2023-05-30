@@ -1,6 +1,6 @@
 {
-    "name": "JS Redirect",
-    "description": "",
+    "name": "Js Redirect",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -8,7 +8,7 @@
         "php_v7.4.9"
     ],
     "instances": [
-        "./1_instance_57_JS_redirect/1_instance_57_JS_redirect.json"
+        "./1_instance_57_js_redirect/1_instance_57_js_redirect.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

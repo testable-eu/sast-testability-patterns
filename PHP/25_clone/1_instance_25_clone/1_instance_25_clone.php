@@ -1,19 +1,16 @@
 <?php
-class Foo
-{
+class Foo {
     public $b = 'safe';
-    function __construct($b){
+    function __construct($b) {
         $this->b = $b;
     }
-    public function baz()
-    {
+    public function baz() {
         // $b has the input, XSS Vulnerability
-        echo $this->b;
+        return $this->b;
     }
 }
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 $ob1 = new Foo($b);
-$ob2 = clone $ob1;
-$ob2->baz();
-//$ob->baz();
-//array(new Foo($b), "baz")();
+$ob2 = clone $ob1; // tarpit
+$a = $ob2->baz();
+echo $a; // sink

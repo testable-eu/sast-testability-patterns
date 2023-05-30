@@ -1,0 +1,1 @@
+In PHP, clone is used to create a copy of an existing object, and it can be used to create a new instance with the same properties and values as the original one.

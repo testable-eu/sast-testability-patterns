@@ -1,13 +1,14 @@
 {
+    "description": "This instance captures another possibility of declaring an unnamed function in php, using arrow functions.",
     "code": {
         "path": "./2_instance_19_closures.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./2_instance_19_closures.sc",
+        "rule": "../19_closures.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "In May 2023, this instance throws an error while trying to generate the CPG using Joern."
     },
     "compile": {
         "binary": "./2_instance_19_closures.bash",
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_19_closures.php",
-        "sink_line": 4,
+        "sink_line": 5,
         "source_file": "./2_instance_19_closures.php",
         "source_line": 2,
         "expectation": true
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "../docs/remediation_notes.md",
         "transformation": null,
         "modeling_rule": null
     }

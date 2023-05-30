@@ -1,6 +1,6 @@
 <?php
-
-$a = $_GET["p1"]; // The input value is 'b'
+// The input value is 'b'
+$a = $_GET["p1"]; // source
 $b = $_GET["p2"];
 
-echo $$a;
+echo $$a; // sink

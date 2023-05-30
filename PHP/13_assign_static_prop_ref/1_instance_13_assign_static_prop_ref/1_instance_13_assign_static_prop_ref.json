@@ -1,4 +1,5 @@
 {
+    "description": "The instance shows the assignement by reference to a static class variable.",
     "code": {
         "path": "./1_instance_13_assign_static_prop_ref.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./1_instance_13_assign_static_prop_ref.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule is searching for `ASSIGN_STATIC_PROP_REF`, which assignes a value by reference to a static property."
     },
     "compile": {
         "binary": "./1_instance_13_assign_static_prop_ref.bash",

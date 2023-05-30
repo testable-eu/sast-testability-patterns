@@ -1,4 +1,5 @@
 {
+    "description": "The instance shows `serialize` and `unserialize` called on an object as tarpits. After the object is unserialized, it has the same properties as before.",
     "code": {
         "path": "./1_instance_39_serialize_unserialize.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_39_serialize_unserialize.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for a function call to serialize or unserialize in opcode."
     },
     "compile": {
         "binary": "./1_instance_39_serialize_unserialize.bash",
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_39_serialize_unserialize.php",
-        "sink_line": 10,
+        "sink_line": 20,
         "source_file": "./1_instance_39_serialize_unserialize.php",
         "source_line": 14,
         "expectation": true

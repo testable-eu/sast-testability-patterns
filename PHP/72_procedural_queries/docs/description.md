@@ -1,0 +1,1 @@
+In PHP [`mysqli`](https://www.php.net/manual/en/intro.mysqli.php) and [`mysql`](https://www.php.net/manual/en/intro.mysql.php) are extensions to access MySQL databases. `mysql` is deprecated as of PHP 5.5.0. This pattern targets explicitly the usage of `query()`.

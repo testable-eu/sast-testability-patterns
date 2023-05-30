@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows an for each loop with references.",
     "code": {
         "path": "./1_instance_11_foreach_with_reference.php",
         "injection_skeleton_broken": false
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "If possible, a copy of the array could be created and it could than be looped over the copy of that array. After the loop, the copy could be assigned back to the original array. However, is highly dependent on the content of the loop and can therefor only be done manually.",
         "transformation": null,
         "modeling_rule": null
     }

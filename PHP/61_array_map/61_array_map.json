@@ -1,6 +1,6 @@
 {
     "name": "Array Map",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",

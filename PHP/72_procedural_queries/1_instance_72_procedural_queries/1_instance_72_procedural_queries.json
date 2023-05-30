@@ -1,4 +1,5 @@
 {
+    "description": "The instance uses `mysqli` to connect and execute a select statement on a mysql database.",
     "code": {
         "path": "./1_instance_72_procedural_queries.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "../72_procedural_queries.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calls to `mysqli_query` or `mysql_query` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_72_procedural_queries.bash",

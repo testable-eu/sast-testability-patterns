@@ -1,4 +1,5 @@
 {
+    "description": "This instance creates an object and casts that object to an array.",
     "code": {
         "path": "./1_instance_46_object_to_array.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_46_object_to_array.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule looks for all casts and checks for which of them the argument is an array."
     },
     "compile": {
         "binary": "./1_instance_46_object_to_array.bash",
@@ -19,7 +20,7 @@
         "sink_file": "./1_instance_46_object_to_array.php",
         "sink_line": 16,
         "source_file": "./1_instance_46_object_to_array.php",
-        "source_line": 2,
+        "source_line": 10,
         "expectation": true
     },
     "properties": {

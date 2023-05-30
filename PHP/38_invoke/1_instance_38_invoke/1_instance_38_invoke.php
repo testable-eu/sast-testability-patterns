@@ -1,13 +1,10 @@
 <?php
-class CallableClass
-{
-    public function __invoke($x)
-    {
-        echo $x;
+class CallableClass {
+    public function __invoke($x) {
+        return $x;
     }
 }
 $obj = new CallableClass;
-$_fp = fopen("php://stdin", "r");
-$b = $_GET["p1"];
-//$b = fgets($_fp);
-$obj($b);
+$b = $_GET["p1"]; // source
+$a = $obj($b);
+echo $a; // sink

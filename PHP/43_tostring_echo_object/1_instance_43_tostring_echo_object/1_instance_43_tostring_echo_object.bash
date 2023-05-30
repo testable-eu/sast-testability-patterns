@@ -1,40 +1,41 @@
 
-$_main: ; (lines=13, args=0, vars=2, tmps=6)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/34_tostring_echo_object/34_tostring_echo_object.php:1-17
-L0 (4):     NOP
-L1 (14):    EXT_STMT
-L2 (14):    T2 = FETCH_R (global) string("_GET")
-L3 (14):    T3 = FETCH_DIM_R T2 string("p1")
-L4 (14):    ASSIGN CV0($b) T3
-L5 (15):    EXT_STMT
-L6 (15):    V5 = NEW 1 string("TestClass")
-L7 (15):    SEND_VAR_EX CV0($b) 1
-L8 (15):    DO_FCALL
-L9 (15):    ASSIGN CV1($class) V5
-L10 (17):   EXT_STMT
-L11 (17):   ECHO CV1($class)
-L12 (17):   RETURN int(1)
+$_main:
+     ; (lines=10, args=0, vars=2, tmps=6)
+     ; (before optimizer)
+     ; /.../PHP/43_tostring_echo_object/1_instance_43_tostring_echo_object/1_instance_43_tostring_echo_object.php:1-16
+     ; return  [] RANGE[0..0]
+0000 DECLARE_CLASS string("testclass")
+0001 T2 = FETCH_R (global) string("_GET")
+0002 T3 = FETCH_DIM_R T2 string("p1")
+0003 ASSIGN CV0($b) T3
+0004 V5 = NEW 1 string("TestClass")
+0005 SEND_VAR_EX CV0($b) 1
+0006 DO_FCALL
+0007 ASSIGN CV1($class) V5
+0008 ECHO CV1($class)
+0009 RETURN int(1)
 LIVE RANGES:
-        5: L7 - L9 (new)
+     5: 0005 - 0007 (new)
 
-TestClass::__construct: ; (lines=7, args=1, vars=1, tmps=1)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/34_tostring_echo_object/34_tostring_echo_object.php:5-7
-L0 (5):     EXT_NOP
-L1 (5):     CV0($foo) = RECV 1
-L2 (6):     EXT_STMT
-L3 (6):     ASSIGN_OBJ THIS string("foo")
-L4 (6):     OP_DATA CV0($foo)
-L5 (7):     EXT_STMT
-L6 (7):     RETURN null
+TestClass::__construct:
+     ; (lines=4, args=1, vars=1, tmps=1)
+     ; (before optimizer)
+     ; /.../PHP/43_tostring_echo_object/1_instance_43_tostring_echo_object/1_instance_43_tostring_echo_object.php:4-6
+     ; return  [] RANGE[0..0]
+0000 CV0($foo) = RECV 1
+0001 ASSIGN_OBJ THIS string("foo")
+0002 OP_DATA CV0($foo)
+0003 RETURN null
 
-TestClass::__toString: ; (lines=6, args=0, vars=0, tmps=1)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/34_tostring_echo_object/34_tostring_echo_object.php:9-11
-L0 (9):     EXT_NOP
-L1 (10):    EXT_STMT
-L2 (10):    T0 = FETCH_OBJ_R THIS string("foo")
-L3 (10):    RETURN T0
-L4 (11):    EXT_STMT
-L5 (11):    RETURN null
+TestClass::__toString:
+     ; (lines=5, args=0, vars=0, tmps=1)
+     ; (before optimizer)
+     ; /.../PHP/43_tostring_echo_object/1_instance_43_tostring_echo_object/1_instance_43_tostring_echo_object.php:8-10
+     ; return  [] RANGE[0..0]
+0000 T0 = FETCH_OBJ_R THIS string("foo")
+0001 VERIFY_RETURN_TYPE T0
+0002 RETURN T0
+0003 VERIFY_RETURN_TYPE
+0004 RETURN null
+LIVE RANGES:
+     0: 0001 - 0002 (tmp/var)

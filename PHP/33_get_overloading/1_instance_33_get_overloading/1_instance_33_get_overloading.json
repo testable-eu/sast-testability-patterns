@@ -1,13 +1,14 @@
 {
+    "description": "The instance shows overloading of the `__get` function.",
     "code": {
         "path": "./1_instance_33_get_overloading.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
         "rule": "./1_instance_33_get_overloading.sc",
         "method": "joern",
         "rule_accuracy": "FP",
-        "notes": null
+        "notes": "The discovery rule first gets all class names, where the method `__get` is defined.\nAfterwards it collects all `NEW` calles and filters them to see which of the instanciated objects has the method `__get` defined.\nThe rule would be perfect, if we could additionally check, if one of the created objects invokes the `__get` method within its lifetime."
     },
     "compile": {
         "binary": "./1_instance_33_get_overloading.bash",

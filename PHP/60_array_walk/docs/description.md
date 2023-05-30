@@ -1,0 +1,1 @@
+In PHP `array_walk` applies a user defined function to every element in an array.

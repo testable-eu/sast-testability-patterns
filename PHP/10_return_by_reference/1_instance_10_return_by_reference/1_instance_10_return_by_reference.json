@@ -1,4 +1,5 @@
 {
+    "description": "This instance target the usage of return values being passed by reference.",
     "code": {
         "path": "./1_instance_10_return_by_reference.php",
         "injection_skeleton_broken": false

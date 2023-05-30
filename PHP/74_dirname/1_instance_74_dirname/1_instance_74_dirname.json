@@ -1,25 +1,26 @@
 {
+    "description": "The instance uses two PHP files. The first one saves a user controlled value and than includes a file which outputs this from the `GLOBALS` array. It finds the path for the include file by invoking `dirname`.",
     "code": {
-        "path": "./folder/a.php",
+        "path": "./_code/1_instance_74_dirname_0.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_74_dirname.py",
-        "method": "python",
-        "rule_accuracy": "FP",
-        "notes": null
+        "rule": "./1_instance_74_dirname.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calls to `dirname` on opcode level."
     },
     "compile": {
-        "binary": "./folder/a.php",
+        "binary": "./_code/1_instance_74_dirname_0.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./_includes/ttt/b.php",
-        "sink_line": 3,
-        "source_file": "./folder/a.php",
-        "source_line": 3,
+        "sink_file": "./_includes/1_instance_74_dirname_1.php",
+        "sink_line": 2,
+        "source_file": "./_code/1_instance_74_dirname_0.php",
+        "source_line": 2,
         "expectation": true
     },
     "properties": {

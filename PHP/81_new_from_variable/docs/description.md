@@ -1,0 +1,1 @@
+The name for the class an object can be instantiated from, can be stored in a variable as for example string.

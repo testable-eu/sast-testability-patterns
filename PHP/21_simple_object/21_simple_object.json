@@ -1,6 +1,6 @@
 {
     "name": "Simple Object",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_21_simple_object/1_instance_21_simple_object.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,0 +1,1 @@
+This pattern targets arithmetic operations performed on strings. Is a SAST tool able to capture the changed input?

@@ -1,0 +1,1 @@
+In PHP [`substr_replace`](https://www.php.net/manual/en/function.substr-replace.php) replaces one part of the input string with another string.

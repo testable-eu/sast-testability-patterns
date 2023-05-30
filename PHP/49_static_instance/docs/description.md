@@ -1,0 +1,1 @@
+In PHP a static variable can contain an instance of that class.

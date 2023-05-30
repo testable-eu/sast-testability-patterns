@@ -1,18 +1,18 @@
 <?php
-class PropertyTest{
-    private $var = 'safe';
+class PropertyTest {
+    private $x = 'safe';
 
-    public function __set($name, $value){
+    public function __set($name, $value) {
         $this->$name = $value;
     }
 
-    public function __get($name){
-        echo $this->$name;
+    public function __get($name) {
+        echo $this->$name; // sink
         return $this->$name;
     }
 }
 
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 $obj = new PropertyTest;
-$obj->var = $b;
-$res = $obj->var;
+$obj->x = $b;
+$obj->x;

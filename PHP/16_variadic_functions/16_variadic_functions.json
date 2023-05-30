@@ -1,6 +1,6 @@
 {
     "name": "Variadic Functions",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -12,5 +12,5 @@
         "./2_instance_16_variadic_functions/2_instance_16_variadic_functions.json",
         "./3_instance_16_variadic_functions/3_instance_16_variadic_functions.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

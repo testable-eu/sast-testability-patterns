@@ -1,6 +1,6 @@
 {
     "name": "Exit",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_56_exit/1_instance_56_exit.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

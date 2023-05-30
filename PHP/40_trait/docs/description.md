@@ -1,0 +1,1 @@
+PHP only supports single inheritance. A trait can define methods to be used in multiple classes. This makes it possible for a class in PHP to inherit multiple behaviours.

@@ -1,0 +1,2 @@
+Old PHP versions (before PHP8) allowed programmers to create functions with `create_function()`.
+In PHP [`create_function`](https://www.php.net/manual/en/function.create-function) dynamically creates a function from a string.

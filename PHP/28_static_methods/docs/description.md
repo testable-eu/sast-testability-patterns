@@ -1,0 +1,1 @@
+In PHP the Scope Resolution Operator (`::`) can be used to access static methods or variables. This pattern targets to capture static methods.

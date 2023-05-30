@@ -1,6 +1,6 @@
 {
     "name": "Use With Closures",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -11,5 +11,5 @@
         "./1_instance_20_use_with_closures/1_instance_20_use_with_closures.json",
         "./2_instance_20_use_with_closures/2_instance_20_use_with_closures.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,6 +1,6 @@
 {
     "name": "Unset Overloading",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -8,7 +8,9 @@
         "php_v7.4.9"
     ],
     "instances": [
-        "./1_instance_35_unset_overloading/1_instance_35_unset_overloading.json"
+        "./1_instance_35_unset_overloading/1_instance_35_unset_overloading.json",
+        "./2_instance_35_unset_overloading/2_instance_35_unset_overloading.json",
+        "./3_instance_35_unset_overloading/3_instance_35_unset_overloading.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

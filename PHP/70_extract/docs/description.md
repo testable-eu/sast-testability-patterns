@@ -1,0 +1,1 @@
+In PHP [`extract`](https://www.php.net/manual/en/function.extract.php) can be used, to turn key-values pairs from an array into variables in the current scope.

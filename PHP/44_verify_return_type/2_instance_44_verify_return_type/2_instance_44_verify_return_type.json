@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows, a function, that returns a string. When returning an object from that function, the `__toString` method of that object is invoked.",
     "code": {
         "path": "./2_instance_44_verify_return_type.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "../44_verify_return_type.sc",
+        "rule": "./2_instance_44_verify_return_type.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "That rule searches for `VERIFY_RETURN_TYPE` in opcode and will find all occurences, where any function has an explicit return type."
     },
     "compile": {
         "binary": "./2_instance_44_verify_return_type.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_44_verify_return_type.php",
-        "sink_line": 10,
+        "sink_line": 9,
         "source_file": "./2_instance_44_verify_return_type.php",
-        "source_line": 20,
+        "source_line": 19,
         "expectation": true
     },
     "properties": {
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "The function returning a specific type could call the conversion to that type explicitly. That might not only include calling `__toString`, but also other type conversions.",
         "transformation": null,
         "modeling_rule": null
     }

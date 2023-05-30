@@ -1,6 +1,5 @@
 <?php
-function foo($b)
-{
+function foo($b) {
     $bar = $b;
     try {
         throw new Exception('Exception');
@@ -16,8 +15,9 @@ function foo($b)
         return $bar;
     }
 }
-$b = $_GET["p1"];
-echo foo($b . "\n");
+$b = $_GET["p1"]; // source
+$a = foo($b . "\n");
+echo $a; // sink
 // The output:
 // catch
 // finally

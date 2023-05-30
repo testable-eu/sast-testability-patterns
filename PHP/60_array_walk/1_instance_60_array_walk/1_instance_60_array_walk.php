@@ -1,9 +1,8 @@
 <?php
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 
-function F($b)
-{
-    echo $b;
+function F($b) {
+    echo $b; // sink
 }
 
 $arr = [$b, "a", "b"];

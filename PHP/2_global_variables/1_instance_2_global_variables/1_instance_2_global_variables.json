@@ -1,4 +1,5 @@
 {
+    "description": "This instance should capture the use of global variables in a function.",
     "code": {
         "path": "./1_instance_2_global_variables.php",
         "injection_skeleton_broken": false

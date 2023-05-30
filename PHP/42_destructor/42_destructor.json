@@ -1,6 +1,6 @@
 {
     "name": "Destructor",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_42_destructor/1_instance_42_destructor.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,14 +1,12 @@
 <?php
-
-class myclass{
-	
+class myclass {
 	function F($b){
-		echo $b;
+		return $b;
 	}
 }
 
-$a = $_GET["p1"];
-//$a = "abc";
+$b = $_GET["p1"]; // source
 $obj = new myclass();
 $func = "F";
-$obj->$func($a);
+$a = $obj->$func($b);
+echo $a; // sink

@@ -1,6 +1,6 @@
 {
-    "name": "Foreach with Array",
-    "description": "",
+    "name": "Foreach With Array",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -11,5 +11,5 @@
         "./1_instance_59_foreach_with_array/1_instance_59_foreach_with_array.json",
         "./2_instance_59_foreach_with_array/2_instance_59_foreach_with_array.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

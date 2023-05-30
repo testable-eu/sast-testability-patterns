@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows, that `__isset` is also invoked when `empty()` is called.",
     "code": {
         "path": "./2_instance_34_isset_overloading.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "./2_instance_34_isset_overloading.sc",
+        "rule": "../34_isset_overloading.sc",
         "method": "joern",
         "rule_accuracy": "FP",
-        "notes": null
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
         "binary": "./2_instance_34_isset_overloading.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_34_isset_overloading.php",
-        "sink_line": 9,
+        "sink_line": 6,
         "source_file": "./2_instance_34_isset_overloading.php",
-        "source_line": 19,
+        "source_line": 15,
         "expectation": true
     },
     "properties": {

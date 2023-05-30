@@ -1,0 +1,1 @@
+When it is easier for a SAST tool, to capture named functions, can one just rewrite an unnamed function and name it?

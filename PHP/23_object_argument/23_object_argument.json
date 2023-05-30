@@ -1,6 +1,6 @@
 {
     "name": "Object Argument",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_23_object_argument/1_instance_23_object_argument.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,16 +1,17 @@
 {
+    "description": "The instance uses the unpack operator to call the `add` function, but this time, one ",
     "code": {
         "path": "./2_instance_18_send_unpack.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./../1_instance_18_send_unpack/1_instance_18_send_unpack.sc",
+        "rule": "../18_send_unpack.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
-        "binary": null,
+        "binary": "./2_instance_18_send_unpack.bash",
         "instruction": null,
         "dependencies": null
     },

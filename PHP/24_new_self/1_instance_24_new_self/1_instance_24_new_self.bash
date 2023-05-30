@@ -1,53 +1,51 @@
 
-$_main: ; (lines=9, args=0, vars=2, tmps=5)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/23_new_self/23_new_self.php:1-23
-L0 (21):    EXT_STMT
-L1 (21):    V2 = NEW 0 string("myclass")
-L2 (21):    DO_FCALL
-L3 (21):    ASSIGN CV0($obj) V2
-L4 (22):    EXT_STMT
-L5 (22):    INIT_METHOD_CALL 0 CV0($obj) string("F")
-L6 (22):    V5 = DO_FCALL
-L7 (22):    ASSIGN CV1($obj2) V5
-L8 (23):    RETURN int(1)
+$_main:
+     ; (lines=8, args=0, vars=2, tmps=5)
+     ; (before optimizer)
+     ; /.../PHP/24_new_self/1_instance_24_new_self/1_instance_24_new_self.php:1-22
+     ; return  [] RANGE[0..0]
+0000 V2 = NEW 0 string("myclass")
+0001 DO_FCALL
+0002 ASSIGN CV0($obj) V2
+0003 INIT_METHOD_CALL 0 CV0($obj) string("F")
+0004 V5 = DO_FCALL
+0005 ASSIGN CV1($a) V5
+0006 ECHO CV1($a)
+0007 RETURN int(1)
 LIVE RANGES:
-        2: L2 - L3 (new)
+     2: 0001 - 0002 (new)
 
-myclass::__construct: ; (lines=8, args=0, vars=0, tmps=3)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/23_new_self/23_new_self.php:5-8
-L0 (5):     EXT_NOP
-L1 (6):     EXT_STMT
-L2 (6):     T1 = FETCH_R (global) string("_GET")
-L3 (6):     T2 = FETCH_DIM_R T1 string("p1")
-L4 (6):     ASSIGN_OBJ THIS string("b")
-L5 (6):     OP_DATA T2
-L6 (8):     EXT_STMT
-L7 (8):     RETURN null
+myclass::__construct:
+     ; (lines=5, args=0, vars=0, tmps=3)
+     ; (before optimizer)
+     ; /.../PHP/24_new_self/1_instance_24_new_self/1_instance_24_new_self.php:4-6
+     ; return  [] RANGE[0..0]
+0000 T1 = FETCH_R (global) string("_GET")
+0001 T2 = FETCH_DIM_R T1 string("p1")
+0002 ASSIGN_OBJ THIS string("b")
+0003 OP_DATA T2
+0004 RETURN null
 
-myclass::F: ; (lines=10, args=0, vars=1, tmps=4)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/23_new_self/23_new_self.php:10-13
-L0 (10):    EXT_NOP
-L1 (11):    EXT_STMT
-L2 (11):    V1 = NEW 0 (self) (exception)
-L3 (11):    DO_FCALL
-L4 (11):    ASSIGN CV0($obj2) V1
-L5 (12):    EXT_STMT
-L6 (12):    INIT_METHOD_CALL 0 CV0($obj2) string("T")
-L7 (12):    DO_FCALL
-L8 (13):    EXT_STMT
-L9 (13):    RETURN null
+myclass::F:
+     ; (lines=7, args=0, vars=1, tmps=4)
+     ; (before optimizer)
+     ; /.../PHP/24_new_self/1_instance_24_new_self/1_instance_24_new_self.php:8-11
+     ; return  [] RANGE[0..0]
+0000 V1 = NEW 0 (self) (exception)
+0001 DO_FCALL
+0002 ASSIGN CV0($obj2) V1
+0003 INIT_METHOD_CALL 0 CV0($obj2) string("T")
+0004 V4 = DO_FCALL
+0005 RETURN V4
+0006 RETURN null
 LIVE RANGES:
-        1: L3 - L4 (new)
+     1: 0001 - 0002 (new)
 
-myclass::T: ; (lines=6, args=0, vars=0, tmps=1)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/23_new_self/23_new_self.php:15-17
-L0 (15):    EXT_NOP
-L1 (16):    EXT_STMT
-L2 (16):    T0 = FETCH_OBJ_R THIS string("b")
-L3 (16):    ECHO T0
-L4 (17):    EXT_STMT
-L5 (17):    RETURN null
+myclass::T:
+     ; (lines=3, args=0, vars=0, tmps=1)
+     ; (before optimizer)
+     ; /.../PHP/24_new_self/1_instance_24_new_self/1_instance_24_new_self.php:13-15
+     ; return  [] RANGE[0..0]
+0000 T0 = FETCH_OBJ_R THIS string("b")
+0001 RETURN T0
+0002 RETURN null

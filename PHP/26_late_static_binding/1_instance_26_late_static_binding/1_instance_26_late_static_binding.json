@@ -1,4 +1,5 @@
 {
+    "description": "This instance binds the method `test` to the class `B`. This is why the function `who` from class `B` will be called, which is vulnerable.",
     "code": {
         "path": "./1_instance_26_late_static_binding.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "../26_late_static_binding.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for an  `INIT_STATIC_METHOD_CALL`, where the first argument is static."
     },
     "compile": {
         "binary": "./1_instance_26_late_static_binding.bash",
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_26_late_static_binding.php",
-        "sink_line": 13,
+        "sink_line": 19,
         "source_file": "./1_instance_26_late_static_binding.php",
         "source_line": 17,
         "expectation": true

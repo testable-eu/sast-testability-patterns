@@ -1,13 +1,14 @@
 {
+    "description": "This instance focuses on the catch part of the exception.",
     "code": {
         "path": "./1_instance_51_catch_exceptions.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
         "rule": "./1_instance_51_catch_exceptions.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for all calls to `CATCH` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_51_catch_exceptions.bash",
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_51_catch_exceptions.php",
-        "sink_line": 16,
+        "sink_line": 15,
         "source_file": "./1_instance_51_catch_exceptions.php",
         "source_line": 9,
         "expectation": true

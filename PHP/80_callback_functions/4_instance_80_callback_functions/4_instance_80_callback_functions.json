@@ -1,4 +1,5 @@
 {
+    "description": "The instance calls `call_user_func` on the string 'F' and a user defined value.",
     "code": {
         "path": "./4_instance_80_callback_functions.php",
         "injection_skeleton_broken": false
@@ -19,8 +20,8 @@
     "discovery": {
         "rule": "./4_instance_80_callback_functions.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `call_user_func` on opcode level."
     },
     "properties": {
         "category": "D3",
