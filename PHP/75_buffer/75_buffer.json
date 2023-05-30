@@ -1,6 +1,6 @@
 {
     "name": "Buffer",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -8,7 +8,8 @@
         "php_v7.4.9"
     ],
     "instances": [
-        "./1_instance_75_buffer/1_instance_75_buffer.json"
+        "./1_instance_75_buffer/1_instance_75_buffer.json",
+        "./2_instance_75_buffer/2_instance_75_buffer.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

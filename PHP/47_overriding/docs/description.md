@@ -1,0 +1,1 @@
+A child class can override a method from a parent class by implementing this function with the same parameters and the same return type.

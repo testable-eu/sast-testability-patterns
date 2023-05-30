@@ -1,0 +1,1 @@
+In PHP it is possible to call a static method from the instance of a class using the Scope Resolution Operator (`::`).

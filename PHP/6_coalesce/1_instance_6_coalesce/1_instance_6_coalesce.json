@@ -1,10 +1,11 @@
 {
+    "description": "This instance targets the use of the coalescing operator when we try to access an array element, that does not exist.",
     "code": {
         "path": "./1_instance_6_coalesce.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_6_coalesce.sc",
+        "rule": "../6_coalesce.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
         "notes": "This rule should discover all usages of the null coalescing operator"
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_6_coalesce.php",
-        "sink_line": 6,
+        "sink_line": 5,
         "source_file": "./1_instance_6_coalesce.php",
         "source_line": 2,
         "expectation": true
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "One could transform that case by inserting an if-statement, that checks for the length of the array before accessing certain indices. That might not work in all the cases though.",
         "transformation": null,
         "modeling_rule": null
     }

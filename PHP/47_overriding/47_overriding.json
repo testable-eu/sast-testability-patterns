@@ -1,6 +1,6 @@
 {
     "name": "Overriding",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -8,7 +8,8 @@
         "php_v7.4.9"
     ],
     "instances": [
-        "./1_instance_47_overriding/1_instance_47_overriding.json"
+        "./1_instance_47_overriding/1_instance_47_overriding.json",
+        "./2_instance_47_overriding/2_instance_47_overriding.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,6 +1,6 @@
 {
     "name": "Coalesce",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -9,7 +9,8 @@
     ],
     "instances": [
         "./1_instance_6_coalesce/1_instance_6_coalesce.json",
-        "./2_instance_6_coalesce/2_instance_6_coalesce.json"
+        "./2_instance_6_coalesce/2_instance_6_coalesce.json",
+        "./3_instance_6_coalesce/3_instance_6_coalesce.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }
