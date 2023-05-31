@@ -183,6 +183,18 @@
                 "source_and_sink",
                 "negative_test_case"
             ]
+        },
+        "reporting": {
+            "neglect_sast_measurement": {
+                "type": "boolean",
+                "description": "Should this instance not be included in SAST measurement?",
+                "default": "true"
+            },
+            "neglect_instance_discovery": {
+                "type": "boolean",
+                "description": "Should this instance not be included in SAST discovery?",
+                "default": "true"
+            }
         }
     }
 }
