@@ -1,24 +1,25 @@
 {
+    "description": "This instance provides another indirection through which the user input reaches the sink. In this instance, it is stored in an intermediate variable, which is assigned to another variable, which itself links to the instance variable, that is used for the output.",
     "code": {
-        "path": "./3_instance___14_object_assigned_by_reference.php",
+        "path": "./3_instance_14_object_assigned_by_reference.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./../1_instance___14_object_assigned_by_reference/1_instance___14_object_assigned_by_reference.sc",
+        "rule": "../14_object_assigned_by_reference.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
-        "binary": null,
+        "binary": "./3_instance_14_object_assigned_by_reference.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./3_instance___14_object_assigned_by_reference.php",
+        "sink_file": "./3_instance_14_object_assigned_by_reference.php",
         "sink_line": 10,
-        "source_file": "./3_instance___14_object_assigned_by_reference.php",
+        "source_file": "./3_instance_14_object_assigned_by_reference.php",
         "source_line": 5,
         "expectation": true
     },

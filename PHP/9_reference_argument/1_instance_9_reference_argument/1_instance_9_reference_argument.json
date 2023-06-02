@@ -1,4 +1,5 @@
 {
+    "description": "This instance should target arguments passed by reference to a function.",
     "code": {
         "path": "./1_instance_9_reference_argument.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./1_instance_9_reference_argument.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": ""
+        "notes": "This rule searches fo `SEND_REF` in the opcode, which is the opcode equivalent for passing values by reference to a function. Therefot the rule should be Perfect."
     },
     "compile": {
         "binary": "./1_instance_9_reference_argument.bash",
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "If possible, one could avoid passing the values by reference, instead, one could explicitly return those values from the function, so that the function has no side effects on the input values.",
         "transformation": null,
         "modeling_rule": null
     }

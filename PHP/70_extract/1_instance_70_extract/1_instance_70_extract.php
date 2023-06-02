@@ -1,5 +1,5 @@
 <?php
-    $aaa = $_GET["p1"];
-    $arr = array("A"=>$aaa,"B"=>"BBB");
-    extract($arr);
-    echo $A . $B;
+$b = $_GET["p1"]; // source
+$arr = array("A"=>$b,"B"=>"BBB");
+extract($arr);
+echo $A; // sink

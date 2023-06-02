@@ -2,7 +2,7 @@
 $_main:
      ; (lines=12, args=0, vars=3, tmps=8)
      ; (before optimizer)
-     ; /tp-framework/testability_patterns/PHP/76_function_variable/2_instance_76_function_variable/2_instance_76_function_variable.php:1-8
+     ; /.../PHP/76_function_variable/2_instance_76_function_variable/2_instance_76_function_variable.php:1-9
      ; return  [] RANGE[0..0]
 0000 T3 = FETCH_R (global) string("_GET")
 0001 T4 = FETCH_DIM_R T3 string("p1")
@@ -20,7 +20,7 @@ $_main:
 F:
      ; (lines=3, args=1, vars=1, tmps=0)
      ; (before optimizer)
-     ; /tp-framework/testability_patterns/PHP/76_function_variable/2_instance_76_function_variable/2_instance_76_function_variable.php:2-4
+     ; /.../PHP/76_function_variable/2_instance_76_function_variable/2_instance_76_function_variable.php:2-4
      ; return  [] RANGE[0..0]
 0000 CV0($st) = RECV 1
 0001 RETURN CV0($st)

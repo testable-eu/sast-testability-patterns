@@ -1,0 +1,1 @@
+In PHP [Superglobals](https://www.php.net/manual/en/language.variables.superglobals.php) are variables, that are available in all scopes. The variables are `$GLOBALS`, `$_SERVER`, `$_GET`, `$_POST`, `$_FILES`, `$_COOKIE`, `$_SESSION`, `$_REQUEST`, `$_ENV`.

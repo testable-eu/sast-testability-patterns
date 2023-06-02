@@ -1,4 +1,5 @@
 {
+    "description": "For this instance, `$_GET['p1']` should be set to 'b', in order to output `$_GET['p2']`.",
     "code": {
         "path": "./2_instance_84_variable_variables.php",
         "injection_skeleton_broken": false
@@ -6,7 +7,7 @@
     "discovery": {
         "rule": "./2_instance_84_variable_variables.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {

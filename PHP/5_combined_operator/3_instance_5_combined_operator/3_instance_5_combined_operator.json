@@ -1,17 +1,19 @@
 {
+    "description": "This instance shows the use of multiple assign statements in one line, but the source is only invoked by another indirection.",
     "code": {
         "path": "./3_instance_5_combined_operator.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "",
+        "rule": "./3_instance_5_combined_operator.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The discovery looks for an `ASSIGN` statement. The rule could be better, if we could check if the `ASSIGN` statement in the source code is in the same line as another `ASSIGN` statement."
     },
     "compile": {
-        "binary": "",
-        "instruction": null
+        "binary": "./3_instance_5_combined_operator.bash",
+        "instruction": null,
+        "dependencies": ""
     },
     "expectation": {
         "type": "xss",
@@ -29,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "../docs/remediation_notes.md",
         "transformation": null,
         "modeling_rule": null
     }

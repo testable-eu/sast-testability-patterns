@@ -1,0 +1,1 @@
+In PHP `get_called_class` gets the class the static method is called in.

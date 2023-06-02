@@ -1,6 +1,6 @@
 {
     "name": "Catch Exceptions",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_51_catch_exceptions/1_instance_51_catch_exceptions.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

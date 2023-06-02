@@ -1,19 +1,16 @@
 <?php
 class BaseClass {
-
     public $var = 'safe';
 
     function __construct($b) {
-        print "In BaseClass constructor\n";
         $this->var = $b;
     }
     function __destruct() {
-        print "Destroying " . __CLASS__ . "\n";
-        echo $this->var;
+        echo $this->var; // sink
     }
 }
 
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 // In BaseClass constructor
 // There is XSS when the object will be destroyed
 $obj = new BaseClass($b);

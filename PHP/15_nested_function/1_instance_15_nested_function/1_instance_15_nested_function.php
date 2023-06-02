@@ -1,7 +1,6 @@
 <?php
-
-function F(){
-    function D($b){ // tarpit
+function F() {
+    function D($b) { // tarpit
         echo $b; // sink
     }
 }

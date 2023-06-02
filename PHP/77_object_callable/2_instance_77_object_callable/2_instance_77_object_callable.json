@@ -1,4 +1,5 @@
 {
+    "description": "This instance gets the class from which it should instantiate the object from from a user defined variable. So if `$_GET['p2']` is `Foo` this is vulnerable.",
     "code": {
         "path": "./2_instance_77_object_callable.php",
         "injection_skeleton_broken": false
@@ -6,7 +7,7 @@
     "discovery": {
         "rule": "../77_object_callable.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_77_object_callable.php",
-        "sink_line": 11,
+        "sink_line": 16,
         "source_file": "./2_instance_77_object_callable.php",
-        "source_line": 14,
+        "source_line": 11,
         "expectation": true
     },
     "properties": {

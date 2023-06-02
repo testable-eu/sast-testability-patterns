@@ -1,4 +1,5 @@
 {
+    "description": "The instance takes a user input and parses that string into variables. For example the input could be 'first=value&arr[]=foo+bar&arr[]=baz' to trigger the vulnerability.",
     "code": {
         "path": "./1_instance_62_parse_str_built_in_function.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_62_parse_str_built_in_function.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calles to the function `parse_str`."
     },
     "compile": {
         "binary": "./1_instance_62_parse_str_built_in_function.bash",

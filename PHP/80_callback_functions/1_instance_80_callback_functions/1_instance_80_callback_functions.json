@@ -1,4 +1,5 @@
 {
+    "description": "The instance uses `call_user_func` with one argument for the function (`$func`) being completely unknown.",
     "code": {
         "path": "./1_instance_80_callback_functions.php",
         "injection_skeleton_broken": false
@@ -6,7 +7,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_80_callback_functions.php",
-        "sink_line": 8,
+        "sink_line": 9,
         "source_file": "./1_instance_80_callback_functions.php",
         "source_line": 6,
         "expectation": true
@@ -20,7 +21,7 @@
         "rule": "./1_instance_80_callback_functions.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for an `INIT_USER_CALL` with an argument `call_user_func`."
     },
     "properties": {
         "category": "D1",

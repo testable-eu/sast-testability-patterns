@@ -1,6 +1,6 @@
 {
     "name": "Track Error",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_53_track_error/1_instance_53_track_error.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

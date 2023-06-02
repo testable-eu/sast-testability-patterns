@@ -1,6 +1,6 @@
 {
     "name": "Dirname",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",

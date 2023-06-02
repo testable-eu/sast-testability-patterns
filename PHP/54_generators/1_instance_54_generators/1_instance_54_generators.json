@@ -1,4 +1,5 @@
 {
+    "description": "The instance shows a simple generator, that generates the input value three times.",
     "code": {
         "path": "./1_instance_54_generators.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_54_generators.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The discovery rule searches for `GENERATOR_CREATE` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_54_generators.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_54_generators.php",
-        "sink_line": 11,
+        "sink_line": 12,
         "source_file": "./1_instance_54_generators.php",
-        "source_line": 7,
+        "source_line": 8,
         "expectation": true
     },
     "properties": {

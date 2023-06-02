@@ -1,32 +1,30 @@
 
-$_main: ; (lines=16, args=0, vars=3, tmps=8)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/14_use_with_closures/first_ex/first_ex.php:1-13
-L0 (2):     EXT_STMT
-L1 (2):     T3 = FETCH_R (global) string("_GET")
-L2 (2):     T4 = FETCH_DIM_R T3 string("p1")
-L3 (2):     ASSIGN CV0($b) T4
-L4 (3):     EXT_STMT
-L5 (3):     ASSIGN CV1($message) string("safe")
-L6 (5):     EXT_STMT
-L7 (5):     T7 = DECLARE_LAMBDA_FUNCTION string("")
-L8 (5):     BIND_LEXICAL T7 CV1($message)
-L9 (10):    ASSIGN CV2($example) T7
-L10 (11):   EXT_STMT
-L11 (11):   ASSIGN CV1($message) CV0($b)
-L12 (12):   EXT_STMT
-L13 (12):   INIT_DYNAMIC_CALL 0 CV2($example)
-L14 (12):   DO_FCALL
-L15 (13):   RETURN int(1)
+$_main:
+     ; (lines=13, args=0, vars=4, tmps=9)
+     ; (before optimizer)
+     ; /.../PHP/20_use_with_closures/1_instance_20_use_with_closures/1_instance_20_use_with_closures.php:1-14
+     ; return  [] RANGE[0..0]
+0000 T4 = FETCH_R (global) string("_GET")
+0001 T5 = FETCH_DIM_R T4 string("p1")
+0002 ASSIGN CV0($a) T5
+0003 ASSIGN CV1($message) string("safe")
+0004 T8 = DECLARE_LAMBDA_FUNCTION 0
+0005 BIND_LEXICAL T8 CV1($message)
+0006 ASSIGN CV2($example) T8
+0007 ASSIGN CV1($message) CV0($a)
+0008 INIT_DYNAMIC_CALL 0 CV2($example)
+0009 V11 = DO_FCALL
+0010 ASSIGN CV3($b) V11
+0011 ECHO CV3($b)
+0012 RETURN int(1)
 LIVE RANGES:
-        7: L8 - L9 (tmp/var)
+     8: 0005 - 0006 (tmp/var)
 
-{closure}: ; (lines=6, args=0, vars=1, tmps=0)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/14_use_with_closures/first_ex/first_ex.php:5-10
-L0 (5):     EXT_NOP
-L1 (5):     BIND_STATIC CV0($message)
-L2 (9):     EXT_STMT
-L3 (9):     ECHO CV0($message)
-L4 (10):    EXT_STMT
-L5 (10):    RETURN null
+{closure}:
+     ; (lines=3, args=0, vars=1, tmps=0)
+     ; (before optimizer)
+     ; /.../PHP/20_use_with_closures/1_instance_20_use_with_closures/1_instance_20_use_with_closures.php:5-10
+     ; return  [] RANGE[0..0]
+0000 BIND_STATIC CV0($message)
+0001 RETURN CV0($message)
+0002 RETURN null

@@ -1,4 +1,4 @@
 <?php
-$a = $_GET["p1"];
-++$a;
-echo $a;
+$a = $_GET["p1"]; // source
+++$a; // tarpit
+echo $a; // sink

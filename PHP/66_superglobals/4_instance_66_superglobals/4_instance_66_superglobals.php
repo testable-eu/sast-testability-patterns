@@ -1,3 +1,3 @@
 <?php
-    echo $_FILES["p1"];
-    
+$a = $_FILES["p1"]; // source
+echo $a; // sink    

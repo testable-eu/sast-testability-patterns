@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows a user defined value applied to all elements of an array using `array_map`. In this example the input should be set to `F`, to trigger the vulnerability.",
     "code": {
         "path": "./2_instance_61_array_map.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./2_instance_61_array_map.sc",
+        "rule": "../61_array_map.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calles to `array_map`."
     },
     "compile": {
         "binary": "./2_instance_61_array_map.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_61_array_map.php",
-        "sink_line": 4,
+        "sink_line": 3,
         "source_file": "./2_instance_61_array_map.php",
-        "source_line": 7,
+        "source_line": 6,
         "expectation": true
     },
     "properties": {

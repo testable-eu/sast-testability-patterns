@@ -1,0 +1,1 @@
+In PHP the [`include`](https://www.php.net/manual/en/function.include.php) statement  can be used to include and evaluate specific files in the current PHP script.

@@ -1,4 +1,5 @@
 {
+    "description": "The instance shows an example with an array and a `foreach` looping over the array.",
     "code": {
         "path": "./2_instance_59_foreach_with_array.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./2_instance_59_foreach_with_array.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for array related operations on opcode level."
     },
     "compile": {
         "binary": "./2_instance_59_foreach_with_array.bash",

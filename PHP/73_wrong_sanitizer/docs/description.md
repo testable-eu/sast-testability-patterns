@@ -1,0 +1,1 @@
+When dealing with data from untrusted sources,it is always useful to sanitize the data before processing it. PHP offers multiple options to sanitize input strings. This pattern targets some wrong sanitizing functions.

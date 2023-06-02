@@ -1,0 +1,1 @@
+The ellipsis (...) operator in PHP allows you to expand an array or iterable object into a list of arguments that can than be passed to a function.

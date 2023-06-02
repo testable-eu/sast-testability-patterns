@@ -3,9 +3,9 @@
 function add($a, $b) {
     echo $a;
     // XSS vulnerability
-    echo $b;
+    echo $b; // sink
 }
 
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 $a = [1, $b];
-add(...$a);
+add(...$a); // tarpit

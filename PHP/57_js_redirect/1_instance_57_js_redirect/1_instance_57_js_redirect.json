@@ -1,25 +1,26 @@
 {
+    "description": "The instance consists of two PHP files, the first file redirects to the second file, that contains the sink.",
     "code": {
-        "path": "./1_instance_57_js_redirect.php",
+        "path": "./1_instance_57_js_redirect_1.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
         "rule": "./1_instance_57_js_redirect.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for a redirect written in JS in the code."
     },
     "compile": {
-        "binary": "./1_instance_57_js_redirect.bash",
+        "binary": "./1_instance_57_js_redirect_1.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./1_instance_57_js_redirect.php",
-        "sink_line": 5,
-        "source_file": "./1_instance_57_js_redirect.php",
-        "source_line": 5,
+        "sink_file": "./1_instance_57_js_redirect_0.php",
+        "sink_line": 4,
+        "source_file": "./1_instance_57_js_redirect_1.php",
+        "source_line": 4,
         "expectation": true
     },
     "properties": {

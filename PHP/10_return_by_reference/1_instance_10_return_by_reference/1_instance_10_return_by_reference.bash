@@ -1,33 +1,30 @@
 
-$_main: ; (lines=17, args=0, vars=3, tmps=7)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/19_return_by_reference/19_return_by_reference.php:1-18
-L0 (3):     NOP
-L1 (10):    EXT_STMT
-L2 (10):    ASSIGN CV0($b) string("input")
-L3 (11):    EXT_STMT
-L4 (11):    V4 = NEW 0 string("foo")
-L5 (11):    DO_FCALL
-L6 (11):    ASSIGN CV1($obj) V4
-L7 (13):    EXT_STMT
-L8 (13):    INIT_METHOD_CALL 0 CV1($obj) string("getValue")
-L9 (13):    V7 = DO_FCALL
-L10 (13):   ASSIGN_REF (function) CV2($myValue) V7
-L11 (14):   EXT_STMT
-L12 (14):   ASSIGN_OBJ CV1($obj) string("value")
-L13 (14):   OP_DATA CV0($b)
-L14 (17):   EXT_STMT
-L15 (17):   ECHO CV2($myValue)
-L16 (18):   RETURN int(1)
+$_main:
+     ; (lines=13, args=0, vars=3, tmps=9)
+     ; (before optimizer)
+     ; /.../PHP/10_return_by_reference/1_instance_10_return_by_reference/1_instance_10_return_by_reference.php:1-17
+     ; return  [] RANGE[0..0]
+0000 T3 = FETCH_R (global) string("_GET")
+0001 T4 = FETCH_DIM_R T3 string("p1")
+0002 ASSIGN CV0($a) T4
+0003 V6 = NEW 0 string("foo")
+0004 DO_FCALL
+0005 ASSIGN CV1($obj) V6
+0006 INIT_METHOD_CALL 0 CV1($obj) string("getValue")
+0007 V9 = DO_FCALL
+0008 ASSIGN_REF (function) CV2($b) V9
+0009 ASSIGN_OBJ CV1($obj) string("value")
+0010 OP_DATA CV0($a)
+0011 ECHO CV2($b)
+0012 RETURN int(1)
 LIVE RANGES:
-        4: L5 - L6 (new)
+     6: 0004 - 0005 (new)
 
-foo::getValue: ; (lines=6, args=0, vars=0, tmps=1)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/19_return_by_reference/19_return_by_reference.php:5-7
-L0 (5):     EXT_NOP
-L1 (6):     EXT_STMT
-L2 (6):     V0 = FETCH_OBJ_W (ref) THIS string("value")
-L3 (6):     RETURN_BY_REF V0
-L4 (7):     EXT_STMT
-L5 (7):     RETURN_BY_REF (function) null
+foo::getValue:
+     ; (lines=3, args=0, vars=0, tmps=1)
+     ; (before optimizer)
+     ; /.../PHP/10_return_by_reference/1_instance_10_return_by_reference/1_instance_10_return_by_reference.php:5-7
+     ; return  [] RANGE[0..0]
+0000 V0 = FETCH_OBJ_W (ref) THIS string("value")
+0001 RETURN_BY_REF V0
+0002 RETURN_BY_REF (function) null

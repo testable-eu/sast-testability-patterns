@@ -1,6 +1,6 @@
 {
     "name": "Goto",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_55_goto/1_instance_55_goto.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

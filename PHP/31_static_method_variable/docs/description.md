@@ -1,0 +1,1 @@
+In PHP a static method can be stored in a variable and than be called from that variable.

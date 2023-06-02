@@ -1,13 +1,14 @@
 {
+    "description": "The instance uses the unpack operator for calling the `add` function. The sink is within this function.",
     "code": {
         "path": "./1_instance_18_send_unpack.php",
         "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "./1_instance_18_send_unpack.sc",
+        "rule": "../18_send_unpack.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
         "binary": "./1_instance_18_send_unpack.bash",

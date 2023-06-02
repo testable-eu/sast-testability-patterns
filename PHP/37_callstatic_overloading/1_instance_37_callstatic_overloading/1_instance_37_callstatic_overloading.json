@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows, how `__callstatic` is used, when calling a static function on a class.",
     "code": {
         "path": "./1_instance_37_callstatic_overloading.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./1_instance_37_callstatic_overloading.sc",
         "method": "joern",
         "rule_accuracy": "FP",
-        "notes": null
+        "notes": "The discovery rule first gets all class names, where the method `__callstatic` is defined.\nAfterwards it filters all `INIT_STATIC_METHOD_CALL` if an argument contains any of the classes where `__callstatic` was defined."
     },
     "compile": {
         "binary": "./1_instance_37_callstatic_overloading.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_37_callstatic_overloading.php",
-        "sink_line": 7,
+        "sink_line": 5,
         "source_file": "./1_instance_37_callstatic_overloading.php",
-        "source_line": 12,
+        "source_line": 10,
         "expectation": true
     },
     "properties": {

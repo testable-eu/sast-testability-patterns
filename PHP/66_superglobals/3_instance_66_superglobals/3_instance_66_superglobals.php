@@ -1,3 +1,3 @@
 <?php
-    echo $_ENV["p1"];
-    
+$a = $_ENV["p1"]; // source
+echo $a; // sink

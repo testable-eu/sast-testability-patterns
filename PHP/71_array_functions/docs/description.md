@@ -1,0 +1,1 @@
+This pattern should target PHP built-in functions, that can be applied on a array, i.e. `sort`, `array_pad`.

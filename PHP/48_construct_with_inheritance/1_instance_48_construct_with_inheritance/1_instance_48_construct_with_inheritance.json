@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows a construct with inheritance, where the child class is instantiated and the constructor from the parent class is called.",
     "code": {
         "path": "./1_instance_48_construct_with_inheritance.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./1_instance_48_construct_with_inheritance.sc",
         "method": "joern",
         "rule_accuracy": null,
-        "notes": null
+        "notes": "This pattern would profit from source code discovery. As inheritance cannot be detected on opcode level."
     },
     "compile": {
         "binary": "./1_instance_48_construct_with_inheritance.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_48_construct_with_inheritance.php",
-        "sink_line": 6,
+        "sink_line": 15,
         "source_file": "./1_instance_48_construct_with_inheritance.php",
-        "source_line": 18,
+        "source_line": 13,
         "expectation": true
     },
     "properties": {

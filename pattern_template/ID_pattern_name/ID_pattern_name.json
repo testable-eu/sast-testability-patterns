@@ -1,9 +1,10 @@
 {
     "name": "Pattern Name",
-    "description": "./README.md",
+    "description": "",
     "family": "code_pattern_LANG",
     "tags": ["sast", "LANG"],
     "instances": [
-        "./IID_instance_ID_pattern_name/IID_instance_ID_pattern_name.json",
-    ]
+        "./IID_instance_ID_pattern_name/IID_instance_ID_pattern_name.json"
+    ],
+    "version": "v0.draft"
 }

@@ -1,4 +1,5 @@
 {
+    "description": "The instance demonstrates the use of a static function in PHP.",
     "code": {
         "path": "./1_instance_28_static_methods.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_28_static_methods.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for `INIT_STATIC_METHOD_CALL` in the opcode."
     },
     "compile": {
         "binary": "./1_instance_28_static_methods.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_28_static_methods.php",
-        "sink_line": 11,
+        "sink_line": 14,
         "source_file": "./1_instance_28_static_methods.php",
-        "source_line": 14,
+        "source_line": 12,
         "expectation": true
     },
     "properties": {

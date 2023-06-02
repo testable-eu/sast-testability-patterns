@@ -1,62 +1,53 @@
 
-$_main: ; (lines=11, args=0, vars=1, tmps=5)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/42_try_catch_finally/second_ex/second_ex.php:1-24
-L0 (19):    EXT_STMT
-L1 (19):    T1 = FETCH_R (global) string("_GET")
-L2 (19):    T2 = FETCH_DIM_R T1 string("p1")
-L3 (19):    ASSIGN CV0($b) T2
-L4 (20):    EXT_STMT
-L5 (20):    INIT_FCALL 1 240 string("foo")
-L6 (20):    T4 = CONCAT CV0($b) string("
+$_main:
+     ; (lines=10, args=0, vars=2, tmps=6)
+     ; (before optimizer)
+     ; /.../PHP/52_try_catch_finally/2_instance_52_try_catch_finally/2_instance_52_try_catch_finally.php:1-24
+     ; return  [] RANGE[0..0]
+0000 T2 = FETCH_R (global) string("_GET")
+0001 T3 = FETCH_DIM_R T2 string("p1")
+0002 ASSIGN CV0($b) T3
+0003 INIT_FCALL 1 240 string("foo")
+0004 T5 = CONCAT CV0($b) string("
 ")
-L7 (20):    SEND_VAL T4 1
-L8 (20):    V5 = DO_FCALL
-L9 (20):    ECHO V5
-L10 (24):   RETURN int(1)
+0005 SEND_VAL T5 1
+0006 V6 = DO_UCALL
+0007 ASSIGN CV1($a) V6
+0008 ECHO CV1($a)
+0009 RETURN int(1)
 
-foo: ; (lines=33, args=1, vars=3, tmps=7)
-    ; (before optimizer)
-    ; /home/user/gitlab/static-tools---latex/paper_code/PHP/Testability_Patterns/42_try_catch_finally/second_ex/second_ex.php:2-18
-L0 (2):     EXT_NOP
-L1 (2):     CV0($b) = RECV 1
-L2 (4):     EXT_STMT
-L3 (4):     ASSIGN CV1($bar) CV0($b)
-L4 (5):     NOP
-L5 (6):     EXT_STMT
-L6 (6):     V5 = NEW 1 string("Exception")
-L7 (6):     SEND_VAL_EX string("Exception") 1
-L8 (6):     DO_FCALL
-L9 (6):     THROW V5
-L10 (6):    JMP L18
-L11 (7):    CV2($e) = CATCH string("Exception")
-L12 (8):    EXT_STMT
-L13 (8):    ECHO string("catch 
+foo:
+     ; (lines=23, args=1, vars=3, tmps=7)
+     ; (before optimizer)
+     ; /.../PHP/52_try_catch_finally/2_instance_52_try_catch_finally/2_instance_52_try_catch_finally.php:2-17
+     ; return  [] RANGE[0..0]
+0000 CV0($b) = RECV 1
+0001 ASSIGN CV1($bar) CV0($b)
+0002 V5 = NEW 1 string("Exception")
+0003 SEND_VAL_EX string("Exception") 1
+0004 DO_FCALL
+0005 THROW V5
+0006 JMP 0012
+0007 CV2($e) = CATCH string("Exception")
+0008 ECHO string("catch 
 ")
-L14 (10):   EXT_STMT
-L15 (10):   T7 = QM_ASSIGN CV1($bar)
-L16 (10):   T4 = FAST_CALL L20 T7
-L17 (10):   RETURN T7
-L18 (11):   T4 = FAST_CALL L20
-L19 (11):   JMP L31
-L20 (12):   EXT_STMT
-L21 (12):   ECHO string("finally 
+0009 T7 = QM_ASSIGN CV1($bar)
+0010 T4 = FAST_CALL 0014 T7
+0011 RETURN T7
+0012 T4 = FAST_CALL 0014
+0013 JMP 0022
+0014 ECHO string("finally 
 ")
-L22 (14):   EXT_STMT
-L23 (14):   INIT_FCALL 1 96 string("htmlspecialchars")
-L24 (14):   SEND_VAR CV1($bar) 1
-L25 (14):   V8 = DO_FCALL
-L26 (14):   ASSIGN CV1($bar) V8
-L27 (16):   EXT_STMT
-L28 (16):   DISCARD_EXCEPTION T4
-L29 (16):   RETURN CV1($bar)
-L30 (16):   FAST_RET T4
-L31 (18):   EXT_STMT
-L32 (18):   RETURN null
+0015 INIT_FCALL 1 96 string("htmlspecialchars")
+0016 SEND_VAR CV1($bar) 1
+0017 V8 = DO_ICALL
+0018 ASSIGN CV1($bar) V8
+0019 DISCARD_EXCEPTION T4
+0020 RETURN CV1($bar)
+0021 FAST_RET T4
+0022 RETURN null
 LIVE RANGES:
-        5: L7 - L9 (new)
-        7: L16 - L17 (tmp/var)
+     5: 0003 - 0005 (new)
+     7: 0010 - 0011 (tmp/var)
 EXCEPTION TABLE:
-        L5, L11, L20, L30
-
-
+     0002, 0007, 0014, 0021

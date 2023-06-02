@@ -7,7 +7,7 @@ function f ( $o, $b ) {
   $o->prop = $b;
 }
 
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 f($x,$b);
 // XSS vulnerability, it will print $b
-echo $x->prop;
+echo $x->prop; // sink

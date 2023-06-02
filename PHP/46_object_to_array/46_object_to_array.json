@@ -1,6 +1,6 @@
 {
-    "name": "Object to Array",
-    "description": "",
+    "name": "Object To Array",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_46_object_to_array/1_instance_46_object_to_array.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

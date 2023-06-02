@@ -1,10 +1,10 @@
 <?php
-class myclass{
+class myclass {
 	public $a;
 }
 
-$a = $_GET["p1"];
+$a = $_GET["p1"]; // source
 $obj = new myclass();
 $obj->a = $a;
-$obj->a++;
-echo $obj->a;
+$obj->a++; // tarpit
+echo $obj->a; // sink

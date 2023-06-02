@@ -1,17 +1,19 @@
 {
+    "description": "This instance targets the usage of two assign statements in one line and shows, that the outer assign is a sink.",
     "code": {
         "path": "./2_instance_5_combined_operator.php",
         "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "",
+        "rule": "./2_instance_5_combined_operator.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The discovery looks for an `ASSIGN` statement. The rule could be better, if we could check if the `ASSIGN` statement in the source code is in the same line as another `ASSIGN` statement."
     },
     "compile": {
-        "binary": "",
-        "instruction": null
+        "binary": "./2_instance_5_combined_operator.bash",
+        "instruction": null,
+        "dependencies": ""
     },
     "expectation": {
         "type": "xss",
@@ -29,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "../docs/remediation_notes.md",
         "transformation": null,
         "modeling_rule": null
     }

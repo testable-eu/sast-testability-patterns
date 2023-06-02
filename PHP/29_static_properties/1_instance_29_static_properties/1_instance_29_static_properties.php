@@ -1,16 +1,15 @@
 <?php
-class Foo
-{
+class Foo {
     static $b = 'safe';
-    function __construct($b){
+    function __construct($b) {
         self::$b = $b;
     }
-    function baz()
-    {
+    function baz() {
         // $b has the input, XSS Vulnerability
-        echo self::$b;
+        return self::$b;
     }
 }
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 $ob = new Foo($b);
-$ob->baz();
+$a = $ob->baz();
+echo $a; // sink

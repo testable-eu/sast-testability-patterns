@@ -1,0 +1,38 @@
+{
+    "description": "This instance is not vulnerable. As the object has the property `x`, `__isset` will not be called.",
+    "code": {
+        "path": "./4_instance_34_isset_overloading.php",
+        "injection_skeleton_broken": true
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./4_instance_34_isset_overloading.php",
+        "sink_line": 7,
+        "source_file": "./4_instance_34_isset_overloading.php",
+        "source_line": 12,
+        "expectation": false
+    },
+    "compile": {
+        "binary": "./4_instance_34_isset_overloading.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "discovery": {
+        "rule": "../34_isset_overloading.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
+        "notes": "../docs/discovery_notes.md"
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

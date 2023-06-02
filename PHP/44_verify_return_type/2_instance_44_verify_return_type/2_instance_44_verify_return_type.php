@@ -1,22 +1,20 @@
 <?php
-class TestClass
-{
-    public $foo;
-    public function __construct($foo){
-        $this->foo = $foo;
+class TestClass {
+    public $x;
+    public function __construct($val) {
+        $this->x = $val;
     }
 
-    public function __toString(){
-        echo 'XSS: ' . $this->foo;
-        return $this->foo;
+    public function __toString() {
+        echo $this->x; // sink
+        return $this->x;
     }
 }
 
 // will call the function __toString(), XSS vulnerability
-function F($b):string{
+function F($b):string {
     $class = new TestClass($b);
     return $class;
 }
-$b = $_GET["p1"];
-// will print string
+$b = $_GET["p1"]; // source
 F($b);

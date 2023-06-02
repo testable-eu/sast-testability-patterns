@@ -1,4 +1,5 @@
 {
+    "description": "This instance passes an object to a function, the function modifies the object itself.",
     "code": {
         "path": "./1_instance_23_object_argument.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_23_object_argument.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule first collects all `ASSIGN` calls, that are reachable by a `NEW` call in `G1`.\nIn `R2` all calls to `SEND` using a variable are gathered.\nIn the end all of the `SEND` calls are filtered and only those taken, where any element of `G1` is included."
     },
     "compile": {
         "binary": "./1_instance_23_object_argument.bash",

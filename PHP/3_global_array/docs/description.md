@@ -1,0 +1,1 @@
+This pattern targets [`GLOBALS`](https://www.php.net/manual/en/reserved.variables.globals.php) array. This array contains references to all variables which are defined in the global scope.

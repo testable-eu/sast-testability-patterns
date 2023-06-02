@@ -1,0 +1,1 @@
+The `foreach` construct in PHP offers an easy way to iterate over an array or iterable objects.

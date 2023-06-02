@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows, that the content of two different array elements can be connected using a reference. If one changes, the other one changes as well.",
     "code": {
         "path": "./1_instance_12_make_ref.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_12_make_ref.sc",
+        "rule": "../12_make_ref.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for occurences of `MAKE_REF` and should therefor be perfect."
     },
     "compile": {
         "binary": "./1_instance_12_make_ref.bash",

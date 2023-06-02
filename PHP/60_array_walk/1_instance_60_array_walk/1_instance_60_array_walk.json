@@ -1,13 +1,14 @@
 {
+    "description": "The instance shows `array_walk` applied to an array. The function `F` will be applied to all elements of that array.",
     "code": {
         "path": "./1_instance_60_array_walk.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
-        "rule": "./1_instance_60_array_walk.sc",
+        "rule": "../60_array_walk.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for all calles to the function `array_walk`."
     },
     "compile": {
         "binary": "./1_instance_60_array_walk.bash",
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_60_array_walk.php",
-        "sink_line": 6,
+        "sink_line": 5,
         "source_file": "./1_instance_60_array_walk.php",
         "source_line": 2,
         "expectation": true
@@ -30,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "Is it easier for a SAST tool, when `array_walk` is transformed to a for-loop over all elements and apply the function inside the loop?",
         "transformation": null,
         "modeling_rule": null
     }

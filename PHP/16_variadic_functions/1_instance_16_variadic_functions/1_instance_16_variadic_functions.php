@@ -1,12 +1,11 @@
 <?php
-
 // $numbers: list of parameters 
 function sum(...$numbers) {
     foreach ($numbers as $n) {
         // XSS when it will print the last element $b
-        echo $n;
+        echo $n; // sink
     }
 }
 
-$b = $_GET["p1"];
-sum(1, 2, 3, $b);
+$a = $_GET["p1"]; // source
+sum(1, 2, 3, $a); // tarpit

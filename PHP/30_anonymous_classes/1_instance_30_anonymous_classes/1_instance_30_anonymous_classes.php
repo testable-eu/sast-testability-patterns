@@ -1,10 +1,10 @@
 <?php
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 $util = (new class {
-    public function log($msg)
-    {
-        echo $msg;
+    public function log($msg) {
+        return $msg;
     }
 });
 // will print the input $b, XSS vulnerability
-$util->log($b);
+$a = $util->log($b);
+echo $a; // sink

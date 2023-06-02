@@ -1,0 +1,1 @@
+When an object is passed to a function as an argument, PHP wil pass it as reference, so every change made to the object inside the function will also affect the object itself.

@@ -1,4 +1,5 @@
 {
+    "description": "This instance targets the usage of a post increment operator on a static variable of a class, which contains a string.",
     "code": {
         "path": "./8_instance_7_string_arithmetic_operations.php",
         "injection_skeleton_broken": false
@@ -10,7 +11,7 @@
         "notes": "To be Perfect the discovery rule should be able to recognize when the variable, on which the operation is performed, is not a integer"
     },
     "compile": {
-        "binary": "",
+        "binary": "./8_instance_7_string_arithmetic_operations.bash",
         "instruction": null,
         "dependencies": null
     },

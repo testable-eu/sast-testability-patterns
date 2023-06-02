@@ -1,0 +1,1 @@
+In PHP `self` is used to refer to the current class. So `self::method` refers to a static method defined in the current class.

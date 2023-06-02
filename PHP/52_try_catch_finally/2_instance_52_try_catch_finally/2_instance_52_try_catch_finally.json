@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows the same construct as the previous instance. But this time, the sanitized value from the finally statement is returned.",
     "code": {
         "path": "./2_instance_52_try_catch_finally.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./2_instance_52_try_catch_finally.sc",
+        "rule": "../52_try_catch_finally.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `FAST_RET` on opcode level."
     },
     "compile": {
         "binary": "./2_instance_52_try_catch_finally.bash",
@@ -19,7 +20,7 @@
         "sink_file": "./2_instance_52_try_catch_finally.php",
         "sink_line": 20,
         "source_file": "./2_instance_52_try_catch_finally.php",
-        "source_line": 19,
+        "source_line": 18,
         "expectation": false
     },
     "properties": {

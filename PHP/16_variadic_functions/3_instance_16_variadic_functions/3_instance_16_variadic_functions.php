@@ -1,7 +1,6 @@
 <?php
-
 // $numbers: list of parameters 
-function sum(...$numbers) { // tarpit
+function sum(...$numbers) {
     foreach ($numbers as $n) {
             if ($n != 1) {
             	return $n;
@@ -11,5 +10,5 @@ function sum(...$numbers) { // tarpit
 };
 
 $a = $_GET["p1"]; // source
-$b = sum(1, 1, 1, $a);
-echo $b;
+$b = sum(1, 1, 1, $a); // tarpit
+echo $b; // sink

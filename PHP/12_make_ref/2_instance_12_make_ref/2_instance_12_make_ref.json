@@ -1,16 +1,17 @@
 {
+    "description": "This instance does not have a vulnerability. It shows, that only the two referenced values are actually connected. If you output a different value, this is user controlled value.",
     "code": {
         "path": "./2_instance_12_make_ref.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": null,
-        "method": null,
-        "rule_accuracy": null,
-        "notes": null
+        "rule": "../12_make_ref.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for occurences of `MAKE_REF` and should therefor be perfect."
     },
     "compile": {
-        "binary": null,
+        "binary": "./2_instance_12_make_ref.bash",
         "instruction": null,
         "dependencies": null
     },
@@ -19,7 +20,7 @@
         "sink_file": "./2_instance_12_make_ref.php",
         "sink_line": 5,
         "source_file": "./2_instance_12_make_ref.php",
-        "source_line": 4,
+        "source_line": 3,
         "expectation": false
     },
     "properties": {

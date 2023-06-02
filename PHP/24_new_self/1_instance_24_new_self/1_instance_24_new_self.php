@@ -1,22 +1,21 @@
 <?php
+class myclass {
 
-class myclass{
+    function __construct() {
+        $this->b = $_GET['p1']; // source
+    }
 
-function __construct(){
-    $this->b = $_GET['p1'];
-    //$this->b = "abc";
-}
+    function F() {
+        $obj2 = new self;
+        return $obj2->T();
+    }
 
-function F(){
-   $obj2 = new self;
-   $obj2->T();
-}
-
-function T(){
-    echo $this->b;
-}
+    function T() {
+        return $this->b;
+    }
 }
 
 
 $obj = new myclass();
-$obj2 = $obj->F();
+$a = $obj->F();
+echo $a; // sink

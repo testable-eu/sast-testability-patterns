@@ -1,4 +1,5 @@
 {
+    "description": "Similar to instance 4, but this time, the second argument is wrapped in an array.",
     "code": {
         "path": "./5_instance_80_callback_functions.php",
         "injection_skeleton_broken": false
@@ -19,8 +20,8 @@
     "discovery": {
         "rule": "./5_instance_80_callback_functions.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `call_user_func` on opcode level."
     },
     "properties": {
         "category": "D4",

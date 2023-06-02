@@ -1,4 +1,5 @@
 {
+    "description": "This instance demonstrates, that when you clone an object, both the cloned object and the original object have the same value.",
     "code": {
         "path": "./1_instance_25_clone.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_25_clone.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for the opcode `CLONE`."
     },
     "compile": {
         "binary": "./1_instance_25_clone.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_25_clone.php",
-        "sink_line": 11,
+        "sink_line": 16,
         "source_file": "./1_instance_25_clone.php",
-        "source_line": 14,
+        "source_line": 12,
         "expectation": true
     },
     "properties": {

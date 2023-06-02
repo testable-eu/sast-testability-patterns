@@ -1,0 +1,38 @@
+{
+    "description": "This instance shows, that wenn calling unset on a property of an object that does not exist it invokes calling `__unset`.",
+    "code": {
+        "path": "./2_instance_35_unset_overloading.php",
+        "injection_skeleton_broken": true
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_35_unset_overloading.php",
+        "sink_line": 10,
+        "source_file": "./2_instance_35_unset_overloading.php",
+        "source_line": 14,
+        "expectation": true
+    },
+    "compile": {
+        "binary": "./2_instance_35_unset_overloading.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "discovery": {
+        "rule": "../35_unset_overloading.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
+        "notes": "../docs/discovery_notes.md"
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

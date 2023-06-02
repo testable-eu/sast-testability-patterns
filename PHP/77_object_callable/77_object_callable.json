@@ -1,6 +1,6 @@
 {
     "name": "Object Callable",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -11,5 +11,5 @@
         "./1_instance_77_object_callable/1_instance_77_object_callable.json",
         "./2_instance_77_object_callable/2_instance_77_object_callable.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

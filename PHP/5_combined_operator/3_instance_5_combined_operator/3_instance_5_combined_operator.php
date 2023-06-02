@@ -1,4 +1,4 @@
 <?php
-$a = $_GET["p1"];
-$c = ($b = $a) . " safe";
-echo $b;
+$a = $_GET["p1"]; // source
+$c = ($b = $a) . " safe"; // tarpit
+echo $b; // sink

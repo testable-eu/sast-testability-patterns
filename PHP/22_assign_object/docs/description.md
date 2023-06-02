@@ -1,0 +1,1 @@
+Object assignment in PHP creates a reference to the same object in memory, rather than a new copy, which means that any changes made to the object through one variable or function parameter will be reflected in all other variables or parameters that reference the same object.

@@ -1,0 +1,1 @@
+The [goto](https://www.php.net/manual/en/control-structures.goto.php) statement can be used, to jump to another section in the programm indicated by a label. This is considered bad coding style.

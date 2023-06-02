@@ -1,30 +1,31 @@
 {
+    "description": "This instance targets using the `GLOBALS` array outside of functions inside the main block.",
     "code": {
         "path": "./2_instance_3_global_array.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./../1_instance_3_global_array/1_instance_3_global_array.sc",
+        "rule": "./2_instance_3_global_array.sc",
         "method": "joern",
         "rule_accuracy": "FP",
         "notes": "Using discovery rule of another instance. A specific discovery rule for this instance would be more accurate if we could check if the GLOBALS fetch is done INSIDE the main block"
     },
     "remediation": {
-        "notes": null,
+        "notes": "Instead of using the `GLOBALS` array, one could transform the code to use the 'normal' name of the variable instead",
         "transformation": null,
         "modeling_rule": null
     },
     "compile": {
-        "binary": "",
+        "binary": "./2_instance_3_global_array.bash",
         "dependencies": null,
         "instruction": null
     },
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_3_global_array.php",
-        "sink_line": 5,
+        "sink_line": 4,
         "source_file": "./2_instance_3_global_array.php",
-        "source_line": 3,
+        "source_line": 2,
         "expectation": true
     },
     "properties": {

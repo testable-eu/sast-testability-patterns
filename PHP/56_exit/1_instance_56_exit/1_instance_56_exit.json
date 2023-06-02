@@ -1,4 +1,5 @@
 {
+    "description": "The instance demonstrates `exit`, where the argument for that function is a user controlled value.",
     "code": {
         "path": "./1_instance_56_exit.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_56_exit.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `EXIT` on opcode level and filters out those, where the argument is a variable."
     },
     "compile": {
         "binary": "./1_instance_56_exit.bash",

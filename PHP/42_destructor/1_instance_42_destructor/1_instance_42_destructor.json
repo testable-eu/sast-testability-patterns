@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows a simple use of `__destruct` and that method contains a sink.",
     "code": {
         "path": "./1_instance_42_destructor.php",
-        "injection_skeleton_broken": false
+        "injection_skeleton_broken": true
     },
     "discovery": {
         "rule": "./1_instance_42_destructor.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The discovery rule first gets all class names, where the method `__destruct` is defined.\nAfterwards it collects all `NEW` calles and filters them to see which of the instanciated objects has the method `__destruct` defined.\nThe rule would be perfect, if we could additionally check, if one of the created objects invokes the `__destruct` method within its lifetime."
     },
     "compile": {
         "binary": "./1_instance_42_destructor.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_42_destructor.php",
-        "sink_line": 12,
+        "sink_line": 9,
         "source_file": "./1_instance_42_destructor.php",
-        "source_line": 16,
+        "source_line": 13,
         "expectation": true
     },
     "properties": {

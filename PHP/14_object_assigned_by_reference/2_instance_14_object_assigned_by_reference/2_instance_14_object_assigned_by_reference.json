@@ -1,24 +1,25 @@
 {
+    "description": "The instance shows a variable assigned to an instance variable of an object by reference. The other variable is first set to a user controlled input and than this variable is assigned to an instance variable of an object.",
     "code": {
-        "path": "./2_instance__14_object_assigned_by_reference.php",
+        "path": "./2_instance_14_object_assigned_by_reference.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./../1_instance__14_object_assigned_by_reference/1_instance__14_object_assigned_by_reference.sc",
+        "rule": "../14_object_assigned_by_reference.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "../docs/discovery_notes.md"
     },
     "compile": {
-        "binary": null,
+        "binary": "./2_instance_14_object_assigned_by_reference.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./2_instance__14_object_assigned_by_reference.php",
+        "sink_file": "./2_instance_14_object_assigned_by_reference.php",
         "sink_line": 9,
-        "source_file": "./2_instance__14_object_assigned_by_reference.php",
+        "source_file": "./2_instance_14_object_assigned_by_reference.php",
         "source_line": 7,
         "expectation": true
     },

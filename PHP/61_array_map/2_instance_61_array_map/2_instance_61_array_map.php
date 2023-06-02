@@ -1,11 +1,10 @@
 <?php
-function F($b)
-{
-    echo $b;
+function F($b) {
+    echo $b; // sink
 }
 
-$a = $_GET["p1"];
+$a = $_GET["p1"]; // source
 $b = $_GET["p2"];
 $input = [$a, "a", "b"];
-//call the closure for each element in the array
+// XSS vulnerability, when $b="F"
 array_map($b, $input);

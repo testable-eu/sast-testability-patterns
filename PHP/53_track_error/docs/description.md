@@ -1,0 +1,1 @@
+PHP suppports one [error control operator](https://www.php.net/manual/en/language.operators.errorcontrol.php). When the @ symbol is prepended to an expression in PHP, any error that might occur when evaluating this expression will be suppressed.

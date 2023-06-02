@@ -1,4 +1,5 @@
 {
+    "description": "The instance triggers an error, which will is suppressed using the @ operator. Afterwards the error will be retrieved and the user controlled value outputted.",
     "code": {
         "path": "./1_instance_53_track_error.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_53_track_error.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The discovery rule searches for `BEGIN_SILENCE` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_53_track_error.bash",

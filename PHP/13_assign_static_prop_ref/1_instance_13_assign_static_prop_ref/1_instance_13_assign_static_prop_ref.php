@@ -1,5 +1,5 @@
 <?php
-class myclass{
+class myclass {
 	static $sprop; // tarpit
 };
 

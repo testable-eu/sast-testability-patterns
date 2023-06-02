@@ -1,0 +1,1 @@
+Anonymous classes are classes without a specific name. They can be useful for one-off objects.

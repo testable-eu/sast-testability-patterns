@@ -1,6 +1,6 @@
 {
     "name": "Call Overloading",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",

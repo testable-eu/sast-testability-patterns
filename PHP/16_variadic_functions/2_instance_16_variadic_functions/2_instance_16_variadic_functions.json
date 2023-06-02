@@ -1,25 +1,26 @@
 {
+    "description": "The instance shows a function, that takes an arbitrary number of arguments and returns the fourth, which contains a user controlled value.",
     "code": {
         "path": "./2_instance_16_variadic_functions.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./../1_instance_16_variadic_functions/1_instance_16_variadic_functions.sc",
+        "rule": "../16_variadic_functions.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `RECV_VARIADIC`."
     },
     "compile": {
-        "binary": null,
+        "binary": "./2_instance_16_variadic_functions.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
         "sink_file": "./2_instance_16_variadic_functions.php",
-        "sink_line": 9,
+        "sink_line": 8,
         "source_file": "./2_instance_16_variadic_functions.php",
-        "source_line": 7,
+        "source_line": 6,
         "expectation": true
     },
     "properties": {

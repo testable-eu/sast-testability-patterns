@@ -1,0 +1,1 @@
+Type declarations can be added in PHP to ensure, the arguments or the return value has the right type. If not, a `TypeError` will be thrown. If an argument or a return value does not have the right type, it will implicitly converted to that type, if possible.

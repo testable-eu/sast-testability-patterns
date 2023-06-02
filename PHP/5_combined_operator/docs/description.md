@@ -1,0 +1,1 @@
+In PHP it is possible to combine multiple operators. For discovery, this pattern could profit from a discovery rule at source code level rather than a discovery rule at opcode level, as the combination of multiple operators in one line cannot be seen in opcode any more.

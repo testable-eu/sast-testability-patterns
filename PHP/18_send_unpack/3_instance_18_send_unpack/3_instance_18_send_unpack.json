@@ -1,16 +1,17 @@
 {
+    "description": "This instance shows the opposite and does not use the unpack operator on the `add` function.",
     "code": {
         "path": "./3_instance_18_send_unpack.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": null,
-        "method": null,
-        "rule_accuracy": null,
-        "notes": null
+        "rule": "../18_send_unpack.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": "This pattern does not use the unpack operator, so this rule will never be successfull"
     },
     "compile": {
-        "binary": null,
+        "binary": "./3_instance_18_send_unpack.bash",
         "instruction": null,
         "dependencies": null
     },

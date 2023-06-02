@@ -1,4 +1,5 @@
 {
+    "description": "This instance uses `call_user_func` on the string 'F' and a value defined by the user.",
     "code": {
         "path": "./2_instance_80_callback_functions.php",
         "injection_skeleton_broken": false
@@ -20,7 +21,7 @@
         "rule": "./2_instance_80_callback_functions.py",
         "method": "python",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "This instance could profit from source code discovery."
     },
     "properties": {
         "category": "D2",

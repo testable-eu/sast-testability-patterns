@@ -1,16 +1,15 @@
 <?php
-class Foo
-{
-    static $b = 'safe';
-    function __construct($b){
-        self::$b = $b;
+class Foo {
+    static $x = 'safe';
+    function __construct($b) {
+        self::$x = $b;
     }
-    function baz()
-    {
-        // $b has the input, XSS Vulnerability
-        echo self::$b;
+    function baz() {
+        return self::$x;
     }
 }
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 //it will create new object and call the function baz.
-array(new Foo($b), "baz")();
+$a = array(new Foo($b), "baz")(); // tarpit
+// $a has the input, XSS Vulnerability
+echo $a; // sink

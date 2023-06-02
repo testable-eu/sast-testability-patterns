@@ -1,17 +1,16 @@
 <?php
+class myclass {
 
-class myclass{
-
-    function F($b){
-       self::T($b);
+    function F($b) {
+       return self::T($b);
     }
 
-    function T($b){
-        echo $b;
+    static function T($b) {
+        return $b;
     }
 }
 
-
+$b = $_GET['p1']; // source
 $obj = new myclass();
-
-$obj->F($_GET['p1']);
+$a = $obj->F($b);
+echo $a; // sink

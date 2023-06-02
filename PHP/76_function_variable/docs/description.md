@@ -1,0 +1,1 @@
+In PHP the names of functions can be stored in a variable. When this variable is called, the associate function will be executed.

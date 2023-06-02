@@ -1,4 +1,5 @@
 {
+    "description": "This instance targets using the `GLOBALS` array within a function.",
     "code": {
         "path": "./1_instance_3_global_array.php",
         "injection_skeleton_broken": false
@@ -10,21 +11,21 @@
         "notes": "The discovery rule would be more accurate if we could check if the GLOBALS fetch is done outside the main block"
     },
     "remediation": {
-        "notes": null,
+        "notes": "Most likely, this needs manual transformation, by passing the value as an argument to the function or using a class and an instance variable instead.",
         "transformation": null,
         "modeling_rule": null
     },
     "compile": {
-        "binary": "",
+        "binary": "./1_instance_3_global_array.bash",
         "dependencies": null,
         "instruction": null
     },
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_3_global_array.php",
-        "sink_line": 9,
+        "sink_line": 8,
         "source_file": "./1_instance_3_global_array.php",
-        "source_line": 7,
+        "source_line": 6,
         "expectation": true
     },
     "properties": {

@@ -1,4 +1,5 @@
 {
+    "description": "This instance targets the usage of two assign statements in one line and shows, that the inner assign is a sink.",
     "code": {
         "path": "./1_instance_5_combined_operator.php",
         "injection_skeleton_broken": true
@@ -6,12 +7,13 @@
     "discovery": {
         "rule": "./1_instance_5_combined_operator.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for the usage of `concat`, but that does not mean, that multiple operators have been combined here."
     },
     "compile": {
         "binary": "./1_instance_5_combined_operator.bash",
-        "instruction": null
+        "instruction": null,
+        "dependencies": ""
     },
     "expectation": {
         "type": "xss",
@@ -29,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "",
+        "notes": "../docs/remediation_notes.md",
         "transformation": null,
         "modeling_rule": null
     }

@@ -1,28 +1,18 @@
 <?php
-
-class PropertyTest
-{
+class PropertyTest {
     private $x = 'safe';
 
-    public function __get($name)
-    {
-        return $this->var;
-    }
-
-    public function setx($b)
-    {
+    public function setx($b) {
         $this->x = $b;
     }
 
-    public function __unset($name)
-    {
-        echo "Unsetting " . $this->x;
+    public function __unset($name) {
+        echo $this->x; // sink
     }
 }
 
-$b = $_GET["p1"];
+$b = $_GET["p1"]; // source
 $obj = new PropertyTest;
-$obj->var = $b;
 $obj->setx($b);
 // will call __unset() function, XSS vulnerability
 unset($obj->x);

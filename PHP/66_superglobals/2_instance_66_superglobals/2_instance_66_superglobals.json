@@ -1,26 +1,27 @@
 {
+    "description": "This instance targets the global variable `_SESSION`. There are two php files. The first sets the `_SESSION` variable and includes the second file, which contains the sink.",
     "code": {
-        "path": "./2_instance_66_superglobals.php",
+        "path": "./2_instance_66_superglobals_1.php",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "command_injection",
-        "sink_file": "./2_instance_66_superglobals_b.php",
-        "sink_line": 2,
-        "source_file": "./2_instance_66_superglobals_a.php",
+        "sink_file": "./2_instance_66_superglobals_0.php",
+        "sink_line": 3,
+        "source_file": "./2_instance_66_superglobals_1.php",
         "source_line": 3,
         "expectation": true
     },
     "compile": {
-        "binary": "./2_instance_66_superglobals_a.bash",
+        "binary": "./2_instance_66_superglobals_0.bash",
         "instruction": null,
         "dependencies": null
     },
     "discovery": {
         "rule": "./2_instance_66_superglobals.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "Within the global variables, this rule searches for one that is called `_SESSION`."
     },
     "properties": {
         "category": "S0",

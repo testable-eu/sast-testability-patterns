@@ -1,6 +1,5 @@
 <?php
-
-function F(){
+function F() {
     return $GLOBALS["a"]; // tarpit
 }
 

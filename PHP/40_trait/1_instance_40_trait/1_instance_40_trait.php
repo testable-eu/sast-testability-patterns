@@ -1,16 +1,16 @@
 <?php
-$b = $_GET["p1"];
-
 trait SayWorld {
     public function sayHello($b) {
-        echo $b;
+        return $b;
     }
 }
 
-class MyHelloWorld{
+class MyHelloWorld {
     use SayWorld;
 }
 
+$b = $_GET["p1"]; // source
 $o = new MyHelloWorld();
-// will call the function sayHello() and print $b
-$o->sayHello($b);
+// will call the function sayHello()
+$a = $o->sayHello($b);
+echo $a; // sink

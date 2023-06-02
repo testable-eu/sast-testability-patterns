@@ -1,0 +1,1 @@
+In PHP  `__destruct()` will be called as soon as there are no more references pointing to the object or in a shutdown operation.

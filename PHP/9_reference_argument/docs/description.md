@@ -1,0 +1,1 @@
+PHP enables the passage of arguments to functions by reference, which permits modification of their values within the function. This feature presents a challenge for SAST tools, which must monitor all changes made to the input in the function. Moreover, whenever the input is assigned to another variable, the tool must capture any changes made to both variables.

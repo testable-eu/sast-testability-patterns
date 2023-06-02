@@ -1,6 +1,6 @@
 {
     "name": "Static Instance",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_49_static_instance/1_instance_49_static_instance.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,0 +1,1 @@
+Method names in PHP can be stored in variables and than be called on objects.

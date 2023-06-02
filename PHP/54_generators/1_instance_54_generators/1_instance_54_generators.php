@@ -4,9 +4,10 @@ function gen_one_to_three($b) {
         yield $b;
     }
 }
-$b = $_GET["p1"];
+
+$b = $_GET["p1"]; // source
 $generator = gen_one_to_three($b);
 foreach ($generator as $value) {
     // XSS, it will print the input $b.
-    echo "$value\n";
+    echo $value; // sink
 }

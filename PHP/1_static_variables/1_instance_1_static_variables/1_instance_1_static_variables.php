@@ -1,6 +1,6 @@
 <?php
 
-function F($a){
+function F($a) {
     static $b = 'abc'; // tarpit
     echo $b; // sink (moved out from standard skeleton)
     $b = $a;

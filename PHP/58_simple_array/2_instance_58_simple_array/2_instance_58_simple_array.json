@@ -1,13 +1,14 @@
 {
+    "description": "The instance initializes a simple array and outputs the third element, which does not contain a user controlled input.",
     "code": {
         "path": "./2_instance_58_simple_array.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./2_instance_58_simple_array.sc",
+        "rule": "../58_simple_array.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for array related operations on opcode level."
     },
     "compile": {
         "binary": "./2_instance_58_simple_array.bash",

@@ -1,6 +1,6 @@
 {
     "name": "System",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -12,5 +12,5 @@
         "./2_instance_65_system/2_instance_65_system.json",
         "./3_instance_65_system/3_instance_65_system.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,26 +1,27 @@
 {
+    "description": "This instance uses three PHP files. One file which takes two user inputs. Depending on the second input, it includes either sink file one `2_instance_79_dynamic_include_0.php` or another file (`2_instance_79_dynamic_include_2.php`), which just outputs a string.",
     "code": {
-        "path": "./2_instance_79_dynamic_include.php",
+        "path": "./2_instance_79_dynamic_include_1.php",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./a.php",
+        "sink_file": "./2_instance_79_dynamic_include_0.php",
         "sink_line": 2,
-        "source_file": "./2_instance_79_dynamic_include.php",
-        "source_line": 3,
+        "source_file": "./2_instance_79_dynamic_include_1.php",
+        "source_line": 2,
         "expectation": true
     },
     "compile": {
-        "binary": "./2_instance_79_dynamic_include.bash",
+        "binary": "./2_instance_79_dynamic_include_1.bash",
         "instruction": null,
         "dependencies": null
     },
     "discovery": {
         "rule": "./2_instance_79_dynamic_include.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for `include`, that uses a string as an argument on opcode level. It is the same rule as for instance 1."
     },
     "properties": {
         "category": "D3",

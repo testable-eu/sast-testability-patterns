@@ -1,3 +1,3 @@
 <?php
-$a = $_GET["p1"];
-exec($a, $val);
+$a = $_GET["p1"]; // source
+exec($a, $val); // sink

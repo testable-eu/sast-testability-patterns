@@ -1,4 +1,5 @@
 {
+    "description": "This instance shows the super global variable `_ENV`.",
     "code": {
         "path": "./3_instance_66_superglobals.php",
         "injection_skeleton_broken": false
@@ -6,7 +7,7 @@
     "expectation": {
         "type": "path_manipulation",
         "sink_file": "./3_instance_66_superglobals.php",
-        "sink_line": 2,
+        "sink_line": 3,
         "source_file": "./3_instance_66_superglobals.php",
         "source_line": 2,
         "expectation": true
@@ -19,8 +20,8 @@
     "discovery": {
         "rule": "./3_instance_66_superglobals.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "Within the global variables, this rule searches for one that is called `_ENV`."
     },
     "properties": {
         "category": "S0",

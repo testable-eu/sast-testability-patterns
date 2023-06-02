@@ -1,26 +1,27 @@
 {
+    "description": "This instance gets a user defined input and than includes a file, which outputs the value `a` from the `GLOBALS` array.",
     "code": {
-        "path": "./5_instance_79_dynamic_include.php",
+        "path": "./5_instance_79_dynamic_include_1.php",
         "injection_skeleton_broken": false
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./a.php",
+        "sink_file": "./5_instance_79_dynamic_include_0.php",
         "sink_line": 2,
-        "source_file": "./5_instance_79_dynamic_include.php",
+        "source_file": "./5_instance_79_dynamic_include_1.php",
         "source_line": 2,
         "expectation": true
     },
     "compile": {
-        "binary": "./5_instance_79_dynamic_include.bash",
+        "binary": "./5_instance_79_dynamic_include_1.bash",
         "instruction": null,
         "dependencies": null
     },
     "discovery": {
         "rule": "./5_instance_79_dynamic_include.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "Perfect",
+        "notes": "This rule just searches for an `INCLUDE` on opcode level."
     },
     "properties": {
         "category": "D1",

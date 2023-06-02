@@ -1,4 +1,5 @@
 {
+    "description": "The instance demonstrates how you can get the class from the object, that called the static method.",
     "code": {
         "path": "./1_instance_27_get_called_class.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./1_instance_27_get_called_class.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for the opcode `GET_CALLED_CLASS`."
     },
     "compile": {
         "binary": "./1_instance_27_get_called_class.bash",
@@ -17,7 +18,7 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_27_get_called_class.php",
-        "sink_line": 13,
+        "sink_line": 19,
         "source_file": "./1_instance_27_get_called_class.php",
         "source_line": 17,
         "expectation": true

@@ -1,13 +1,14 @@
 {
+    "description": "This instance uses two user inputs. if the second input is set to `event`, the resulting array is the same as in instance 1.",
     "code": {
         "path": "./2_instance_68_compact.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./2_instance_68_compact.sc",
+        "rule": "../68_compact.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for function calls to `compact` on opcode level."
     },
     "compile": {
         "binary": "./2_instance_68_compact.bash",

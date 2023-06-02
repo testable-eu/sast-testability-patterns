@@ -1,0 +1,1 @@
+Multiple variables can point to the same object in memory using references. When the value of one variable changes, it changes the value of all the other variables referencing that same value.

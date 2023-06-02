@@ -1,0 +1,1 @@
+[Arrays](https://www.php.net/manual/en/language.types.array.php) in PHP are actually sorted maps. This pattern targets the use of a simple array.

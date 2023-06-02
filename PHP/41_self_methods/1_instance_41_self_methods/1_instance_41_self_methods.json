@@ -1,4 +1,5 @@
 {
+    "description": "The instance shows, how to call a static function of a class from a non static function of that class.",
     "code": {
         "path": "./1_instance_41_self_methods.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_41_self_methods.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule looks for static method calls (`INIT_STATIC_METHOD_CALL`) in the opcode and checks if the argument of that function is `self`."
     },
     "compile": {
         "binary": "./1_instance_41_self_methods.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_41_self_methods.php",
-        "sink_line": 10,
+        "sink_line": 16,
         "source_file": "./1_instance_41_self_methods.php",
-        "source_line": 17,
+        "source_line": 13,
         "expectation": true
     },
     "properties": {

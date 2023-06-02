@@ -1,4 +1,5 @@
 {
+    "description": "This instance uses the array function `array_pad` to pad an array to a certain length with a user controlled value.",
     "code": {
         "path": "./2_instance_71_array_functions.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./2_instance_71_array_functions.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for function calls to `array_pad` on opcode level."
     },
     "compile": {
         "binary": "./2_instance_71_array_functions.bash",

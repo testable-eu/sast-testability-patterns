@@ -1,6 +1,6 @@
 {
     "name": "Function Variable",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -11,5 +11,5 @@
         "./1_instance_76_function_variable/1_instance_76_function_variable.json",
         "./2_instance_76_function_variable/2_instance_76_function_variable.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

@@ -1,0 +1,1 @@
+In PHP [Exceptions](https://www.php.net/manual/en/language.exceptions.php) are similar to other languages. An exception can be thrown and caught, try blocks indicate positions in code, where exceptions can occur. This pattern should target catching an exception.

@@ -1,0 +1,1 @@
+PHP allows declaring a function inside another function.

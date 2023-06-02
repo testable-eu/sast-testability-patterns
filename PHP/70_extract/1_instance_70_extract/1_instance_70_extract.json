@@ -1,4 +1,5 @@
 {
+    "description": "The instance extracts variables from an array.",
     "code": {
         "path": "./1_instance_70_extract.php",
         "injection_skeleton_broken": false
@@ -7,7 +8,7 @@
         "rule": "./1_instance_70_extract.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for function calls to `extract` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_70_extract.bash",
