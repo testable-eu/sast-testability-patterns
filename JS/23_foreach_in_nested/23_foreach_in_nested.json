@@ -4,7 +4,7 @@
     "family": "code_pattern_js",
     "tags": [],
     "instances": [
-        "./1_instance_23_forEach_in_nested/1_instance_23_forEach_in_nested.json"
+        "./1_instance_23_foreach_in_nested/1_instance_23_foreach_in_nested.json"
     ],
     "version": "v0.draft"
 }
