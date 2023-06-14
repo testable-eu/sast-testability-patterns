@@ -10,7 +10,7 @@
         "sink_line": 22,
         "source_file": "./pattern_src_code.js",
         "source_line": 10,
-        "expectation": false
+        "expectation": true
     },
     "compile": {
         "binary": null,

@@ -9,7 +9,7 @@
         "sink_line": 23,
         "source_file": "./2_instance_33_array_length_server.js",
         "source_line": 16,
-        "expectation": false
+        "expectation": true
     },
     "discovery": {
         "rule": "./2_instance_33_array_length.sc",

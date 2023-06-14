@@ -10,7 +10,7 @@
         "sink_line": 32,
         "source_file": "./pattern_src_code.js",
         "source_line": 24,
-        "expectation": true
+        "expectation": false
     },
     "discovery": {
         "rule": "./../pattern_discovery_rule.sc",
