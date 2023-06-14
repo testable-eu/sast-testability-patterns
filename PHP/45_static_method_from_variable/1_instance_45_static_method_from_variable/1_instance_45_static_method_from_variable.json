@@ -1,4 +1,5 @@
 {
+    "description": "This instance calls a static function on a variable. That variable contains an instance of a class.",
     "code": {
         "path": "./1_instance_45_static_method_from_variable.php",
         "injection_skeleton_broken": false
@@ -6,8 +7,8 @@
     "discovery": {
         "rule": "./1_instance_45_static_method_from_variable.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule searches for `INIT_STATIC_METHOD_CALL` where the first argument is a variable."
     },
     "compile": {
         "binary": "./1_instance_45_static_method_from_variable.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_45_static_method_from_variable.php",
-        "sink_line": 10,
+        "sink_line": 11,
         "source_file": "./1_instance_45_static_method_from_variable.php",
-        "source_line": 14,
+        "source_line": 8,
         "expectation": true
     },
     "properties": {

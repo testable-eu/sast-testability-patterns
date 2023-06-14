@@ -1,0 +1,38 @@
+{
+    "description": "This instance shows, that instead of `ob_get_contents` and `ob_end_clean`, you can use `ob_get_clean` which does the same. It returns the buffered output and ends the buffering.",
+    "code": {
+        "path": "./2_instance_75_buffer.php",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_75_buffer.php",
+        "sink_line": 6,
+        "source_file": "./2_instance_75_buffer.php",
+        "source_line": 2,
+        "expectation": true
+    },
+    "compile": {
+        "binary": "./2_instance_75_buffer.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "discovery": {
+        "rule": "../75_buffer.sc",
+        "method": "joern",
+        "rule_accuracy": "Perfect",
+        "notes": "The rule searches for function calls to `ob_start` on opcode level."
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

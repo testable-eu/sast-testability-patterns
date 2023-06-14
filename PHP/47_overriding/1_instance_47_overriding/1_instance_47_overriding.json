@@ -1,13 +1,14 @@
 {
+    "description": "This instance shows an inheritance construct, where both parent and child class implement the same function. An object of the parent class is instantiated and the function is called on that object. As it is an object of the parent class this instance is vulnerable.",
     "code": {
         "path": "./1_instance_47_overriding.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_47_overriding.sc",
+        "rule": "../47_overriding.sc",
         "method": "joern",
-        "rule_accuracy": null,
-        "notes": null
+        "rule_accuracy": "FP",
+        "notes": "The rule would be perfect, if we could check for inheritance. This instance might profid from source code discovery."
     },
     "compile": {
         "binary": "./1_instance_47_overriding.bash",
@@ -17,9 +18,9 @@
     "expectation": {
         "type": "xss",
         "sink_file": "./1_instance_47_overriding.php",
-        "sink_line": 6,
+        "sink_line": 17,
         "source_file": "./1_instance_47_overriding.php",
-        "source_line": 18,
+        "source_line": 14,
         "expectation": true
     },
     "properties": {

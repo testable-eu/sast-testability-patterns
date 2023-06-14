@@ -1,0 +1,1 @@
+This pattern targets the usage of variables as keys for arrays in PHP.

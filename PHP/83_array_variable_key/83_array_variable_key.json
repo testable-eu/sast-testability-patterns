@@ -1,6 +1,6 @@
 {
     "name": "Array Variable Key",
-    "description": "",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -12,5 +12,5 @@
         "./2_instance_83_array_variable_key/2_instance_83_array_variable_key.json",
         "./3_instance_83_array_variable_key/3_instance_83_array_variable_key.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

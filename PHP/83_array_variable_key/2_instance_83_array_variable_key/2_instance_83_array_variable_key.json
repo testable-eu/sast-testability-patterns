@@ -1,4 +1,5 @@
 {
+    "description": "The instance creates an array, where a user defined value is assigned to 'ttt'. The output value is determined by `$_GET['p2']`. So if that is set to 'ttt', this code is vulnerable.",
     "code": {
         "path": "./2_instance_83_array_variable_key.php",
         "injection_skeleton_broken": false
@@ -6,7 +7,7 @@
     "discovery": {
         "rule": "./2_instance_83_array_variable_key.sc",
         "method": "joern",
-        "rule_accuracy": null,
+        "rule_accuracy": "FP",
         "notes": null
     },
     "compile": {
@@ -19,7 +20,7 @@
         "sink_file": "./2_instance_83_array_variable_key.php",
         "sink_line": 6,
         "source_file": "./2_instance_83_array_variable_key.php",
-        "source_line": 3,
+        "source_line": 5,
         "expectation": false
     },
     "properties": {

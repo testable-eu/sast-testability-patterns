@@ -1,0 +1,38 @@
+{
+    "description": "This instance is similar to the previous instance. The difference is, that this time the object is instantiated from the child class and the function in the child class is not vulnerable.",
+    "code": {
+        "path": "./2_instance_47_overriding.php",
+        "injection_skeleton_broken": false
+    },
+    "expectation": {
+        "type": "xss",
+        "sink_file": "./2_instance_47_overriding.php",
+        "sink_line": 18,
+        "source_file": "./2_instance_47_overriding.php",
+        "source_line": 14,
+        "expectation": false
+    },
+    "compile": {
+        "binary": "./2_instance_47_overriding.bash",
+        "instruction": null,
+        "dependencies": null
+    },
+    "discovery": {
+        "rule": "../47_overriding.sc",
+        "method": "joern",
+        "rule_accuracy": "FP",
+        "notes": "The rule would be perfect, if we could check for inheritance"
+    },
+    "properties": {
+        "category": "S0",
+        "feature_vs_internal_api": "FEATURE",
+        "input_sanitizer": false,
+        "source_and_sink": false,
+        "negative_test_case": false
+    },
+    "remediation": {
+        "notes": "",
+        "transformation": null,
+        "modeling_rule": null
+    }
+}

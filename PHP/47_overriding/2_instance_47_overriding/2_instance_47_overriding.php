@@ -12,6 +12,7 @@ class child_class extends parent_class {
 }
 
 $b = $_GET['p1']; // source
-$obj = new parent_class();
+$obj = new child_class();
+// The F of child_class is called, so no XSS
 $a = $obj->F($b);
 echo $a; // sink

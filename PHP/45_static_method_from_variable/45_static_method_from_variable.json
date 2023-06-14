@@ -1,6 +1,6 @@
 {
-    "name": "Static Method from Variable",
-    "description": "",
+    "name": "Static Method From Variable",
+    "description": "./docs/description.md",
     "family": "code_pattern_php",
     "tags": [
         "sast",
@@ -10,5 +10,5 @@
     "instances": [
         "./1_instance_45_static_method_from_variable/1_instance_45_static_method_from_variable.json"
     ],
-    "version": "v0.draft"
+    "version": "v1.0"
 }

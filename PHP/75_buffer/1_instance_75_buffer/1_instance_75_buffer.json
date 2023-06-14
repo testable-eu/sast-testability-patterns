@@ -1,13 +1,14 @@
 {
+    "description": "The instance shows an example of buffering in PHP. The variable `x` contains everything that should have been written to the output.",
     "code": {
         "path": "./1_instance_75_buffer.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
-        "rule": "./1_instance_75_buffer.sc",
+        "rule": "../75_buffer.sc",
         "method": "joern",
         "rule_accuracy": "Perfect",
-        "notes": null
+        "notes": "The rule searches for function calls to `ob_start` on opcode level."
     },
     "compile": {
         "binary": "./1_instance_75_buffer.bash",

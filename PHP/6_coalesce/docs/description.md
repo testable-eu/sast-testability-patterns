@@ -1,0 +1,1 @@
+The coalescence operator (also known as the null coalescing operator) in PHP is used to check if a variable is set and not null, and if it is not, it returns a default value.

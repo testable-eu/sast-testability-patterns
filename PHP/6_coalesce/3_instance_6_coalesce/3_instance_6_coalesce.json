@@ -1,7 +1,7 @@
 {
-    "description": "This instance should show, that `null` triggers the alternative value to be inserted.",
+    "description": "This instance should show, that the coalescing operator works with a short version as well.",
     "code": {
-        "path": "./2_instance_6_coalesce.php",
+        "path": "./3_instance_6_coalesce.php",
         "injection_skeleton_broken": false
     },
     "discovery": {
@@ -11,15 +11,15 @@
         "notes": "This rule should discover all usages of the null coalescing operator"
     },
     "compile": {
-        "binary": "./2_instance_6_coalesce.bash",
+        "binary": "./3_instance_6_coalesce.bash",
         "instruction": null,
         "dependencies": null
     },
     "expectation": {
         "type": "xss",
-        "sink_file": "./2_instance_6_coalesce.php",
-        "sink_line": 4,
-        "source_file": "./2_instance_6_coalesce.php",
+        "sink_file": "./3_instance_6_coalesce.php",
+        "sink_line": 5,
+        "source_file": "./3_instance_6_coalesce.php",
         "source_line": 2,
         "expectation": true
     },
@@ -31,7 +31,7 @@
         "negative_test_case": false
     },
     "remediation": {
-        "notes": "One could rewrite this with an if-else statement, and check if something is `null` before assigning.",
+        "notes": "This could be transformed in an if-statement.",
         "transformation": null,
         "modeling_rule": null
     }
