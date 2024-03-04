@@ -7,8 +7,7 @@
         "java"
     ],
     "instances": [
-        "./1_instance_26_assign_object1_to_object2/1_instance_26_assign_object1_to_object2.json",
-        "./2_instance_26_assign_object1_to_object2/2_instance_26_assign_object1_to_object2.json"
+        "./1_instance_26_assign_object1_to_object2/1_instance_26_assign_object1_to_object2.json"
     ],
     "version": "v1.0"
 }
