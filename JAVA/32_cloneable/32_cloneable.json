@@ -7,7 +7,8 @@
         "java"
     ],
     "instances": [
-        "./32_cloneable_rule.sc"
+        "./1_instance_32_cloneable/1_instance_32_cloneable.json",
+        "./2_instance_32_cloneable/2_instance_32_cloneable.json"
     ],
     "version": "v1.0"
 }
